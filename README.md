@@ -1,1 +1,0 @@
-# namecoin.org-jekyll
