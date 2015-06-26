@@ -28,10 +28,10 @@ title: Exchanges
 [24change](https://24change.com)<br>
 [alcurEX](https://alcurex.org)<br>
 [btc-e](https://btc-e.com)<br>
-[coinMKT](https://coinmkt.com)<br>
+[Bter](https://bter.com)<br>
+[Cex.io](https://cex.io/nmc-btc)<br>
 [Cryptsy](https://www.cryptsy.com)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
-[Lilion Transfer](http://liliontransfer.org)<br>
 [ShapeShift](https://shapeshift.io/)<br>
 [Vircurex](https://vircurex.com)<br>
 </span>
