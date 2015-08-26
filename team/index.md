@@ -10,7 +10,7 @@ title: Team
 ## Daniel Kraft (domob)
 
 **Chief Namecoin Scientist** <br>
-Daniel is our lead C++ developer, currently working on namecoind, Namecoin-Qt, and libcoin. Daniel is also our specialist for identity applications, being the author of NameID, the Bitmessage Namecoin integration, and the OTR Namecoin integration. Daniel is currently a PhD student at University of Graz in Austria.
+Daniel is our lead C++ developer, currently working on Namecoin Core. Daniel is also our specialist for identity applications, being the author of NameID, the Bitmessage Namecoin integration, and the OTR Namecoin integration. Daniel is currently a PhD student at University of Graz in Austria.
 
 ## Phelix
 
