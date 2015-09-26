@@ -10,7 +10,7 @@ title: Team
 ## Daniel Kraft (domob)
 
 **Chief Namecoin Scientist** <br>
-Daniel is our lead C++ developer, currently working on namecoind, Namecoin-Qt, and libcoin. Daniel is also our specialist for identity applications, being the author of NameID, the Bitmessage Namecoin integration, and the OTR Namecoin integration. Daniel is currently a PhD student at University of Graz in Austria.
+Daniel is our lead C++ developer, currently working on Namecoin Core. Daniel is also our specialist for identity applications, being the author of NameID, the Bitmessage Namecoin integration, and the OTR Namecoin integration. Daniel is currently a PhD student at University of Graz in Austria.
 
 ## Phelix
 
@@ -25,7 +25,7 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 ## Jeremy Rand (biolizard89)
 
 **Lead Application Engineer & Community Organizer** <br>
-Jeremy is our .bit application specialist, and works on FreeSpeechMe, NMControl, and other projects such as DyName. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Jeremy is currently a computer science undergraduate at University of Oklahoma in the U.S.
+Jeremy is our .bit application specialist, and works on FreeSpeechMe, NMControl, and other projects such as DyName. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
 
 ## Zachary Lym (indolering)
 
