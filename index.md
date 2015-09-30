@@ -5,9 +5,9 @@ title: Namecoin
 
 {::options parse_block_html="true" /}
 
-**Namecoin** is an experimental open-source technology which improves decentralization, security, censorship resistance, privacy, and speed of certain Internet technologies such as DNS and identities.
+**Namecoin** is an experimental open-source technology which improves decentralization, security, censorship resistance, privacy, and speed of certain components of the Internet infrastructure such as DNS and identities.
 
-(For the technically minded, Namecoin is a key/value pair registration and transfer system based on the Bitcoin cryptocurrency.)
+(For the technically minded, Namecoin is a key/value pair registration and transfer system based on the Bitcoin technology.)
 
 *Bitcoin frees money – Namecoin frees DNS, identities, and other technologies.*
 
@@ -18,10 +18,10 @@ title: Namecoin
 ## What can Namecoin be used for?
 
 * Protect free-speech rights online by making the web more resistant to censorship.
-* Access websites using the .bit top-level domain.
-* Decentralized TLS (HTTPS) certificate validation, backed by blockchain consensus.
-* Human-meaningful Tor .onion domains.
 * Attach identity information such as GPG and OTR keys and email, Bitcoin, and Bitmessage addresses to an identity of your choice.
+* Human-meaningful Tor .onion domains.
+* Decentralized TLS (HTTPS) certificate validation, backed by blockchain consensus.
+* Access websites using the .bit top-level domain.
 * Proposed ideas such as file signatures, voting, bonds/stocks/shares, web of trust, notary services, and proof of existence. (To be implemented.)
 
 </div>
@@ -44,8 +44,8 @@ What does Namecoin do under the hood?
 
 ## More Information
 
-* [.bit DNS](https://bit.namecoin.org/)
 * [Namecoin Identities](https://nameid.org)
+* [.bit DNS](https://bit.namecoin.org/)
 
 ## Donate
 Help keep us **strong**.
