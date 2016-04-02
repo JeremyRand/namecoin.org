@@ -31,7 +31,6 @@ title: Exchanges
 [Bter](https://bter.com)<br>
 [bx.in.th](https://bx.in.th)<br>
 [Cex.io](https://cex.io/nmc-btc)<br>
-[Cryptsy](https://www.cryptsy.com)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
 [Poloniex](https://poloniex.com)<br>
