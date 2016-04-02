@@ -29,14 +29,16 @@ title: Exchanges
 [alcurEX](https://alcurex.org)<br>
 [btc-e](https://btc-e.com)<br>
 [Bter](https://bter.com)<br>
+[bx.in.th](https://bx.in.th)<br>
 [Cex.io](https://cex.io/nmc-btc)<br>
-[Cryptsy](https://www.cryptsy.com)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
+[Livecoin](https://www.livecoin.net/)<br>
+[Poloniex](https://poloniex.com)<br>
 [ShapeShift](https://shapeshift.io/)<br>
-[Vircurex](https://vircurex.com)<br>
+[Vircurex](https://vircurex.com)<sup>use with caution, see [discussion](https://bitcointalk.org/index.php?topic=49383.1200)</sup><br>
 </span>
 
-Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges atm are not verified in any way.
+Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
 The current fees are 1000/300/100NMC per year*. To get on the list contact exchanges a|t namecoin.org
 
 *Kraken received an honorary silver level for supporting us with their libcoin library.
