@@ -30,7 +30,6 @@ title: Exchanges
 [btc-e](https://btc-e.com)<br>
 [Bter](https://bter.com)<br>
 [Cex.io](https://cex.io/nmc-btc)<br>
-[Cryptsy](https://www.cryptsy.com)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
 [ShapeShift](https://shapeshift.io/)<br>
 [Vircurex](https://vircurex.com)<br>
