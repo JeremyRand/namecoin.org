@@ -33,6 +33,7 @@ title: Exchanges
 [Cex.io](https://cex.io/nmc-btc)<br>
 [Cryptsy](https://www.cryptsy.com)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
+[Livecoin](https://www.livecoin.net/)<br>
 [Poloniex](https://poloniex.com)<br>
 [ShapeShift](https://shapeshift.io/)<br>
 [Vircurex](https://vircurex.com)<sup>use with caution, see [discussion](https://bitcointalk.org/index.php?topic=49383.1200)</sup><br>
