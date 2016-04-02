@@ -7,7 +7,7 @@ title: Blockchain Explorers
 
 ### With support for name and currency operations
 
-[namecoin.webbtc](http://namecoin.webbtc.com/) (open source)<br>
+[namecoin.webbtc](https://namecoin.webbtc.com/) (open source)<br>
 [namecha.in](https://namecha.in/) (closed source)<br>
 
 ### Currency operations only
