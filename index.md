@@ -63,7 +63,7 @@ What does Namecoin do under the hood?
 
 **2015-03-20** [Interview](http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant) with Namecoin lead developer Daniel Kraft.
 
-**2014-12-19** **Softfork** upcoming with block 212500 (around New Year's Eve). Pool operators and solo miners please [update to v0.3.80](download) asap. Regular users are recommended to update, too.  See the [Release notes.](https://forum.namecoin.info/viewtopic.php?p=13717)
+**2014-12-19** **Softfork** upcoming with block 212500 (around New Year's Eve). Pool operators and solo miners please [update to v0.3.80]({{site.baseurl}}download/) asap. Regular users are recommended to update, too.  See the [Release notes.](https://forum.namecoin.info/viewtopic.php?p=13717)
 
 **2014-12-16** As of block **210000** the Namecoin block reward halved to **25NMC**. Happy halving day!
 
