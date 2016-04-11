@@ -49,7 +49,7 @@ What does Namecoin do under the hood?
 
 ## News
 
-**2015-11-10** Out now: [NMControl v0.8.1](https://namecoin.org/?p=download).
+**2015-11-10** Out now: [NMControl v0.8.1]({{site.baseurl}}download/).
 
 **2015-10-13** A vulnerability was found in [Bitcoin Core](https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability). It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.
 
