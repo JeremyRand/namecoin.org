@@ -49,7 +49,7 @@ What does Namecoin do under the hood?
 
 ## News
 
-**2015-11-10** Out now: [NMControl v0.8.1](https://namecoin.org/?p=download).
+**2015-11-10** Out now: [NMControl v0.8.1]({{site.baseurl}}download/).
 
 **2015-10-13** A vulnerability was found in [Bitcoin Core](https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability). It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.
 
@@ -63,7 +63,7 @@ What does Namecoin do under the hood?
 
 **2015-03-20** [Interview](http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant) with Namecoin lead developer Daniel Kraft.
 
-**2014-12-19** **Softfork** upcoming with block 212500 (around New Year's Eve). Pool operators and solo miners please [update to v0.3.80](download) asap. Regular users are recommended to update, too.  See the [Release notes.](https://forum.namecoin.info/viewtopic.php?p=13717)
+**2014-12-19** **Softfork** upcoming with block 212500 (around New Year's Eve). Pool operators and solo miners please [update to v0.3.80]({{site.baseurl}}download/) asap. Regular users are recommended to update, too.  See the [Release notes.](https://forum.namecoin.info/viewtopic.php?p=13717)
 
 **2014-12-16** As of block **210000** the Namecoin block reward halved to **25NMC**. Happy halving day!
 
