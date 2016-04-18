@@ -69,3 +69,7 @@ With Python 2.7 installed you can run nmcontrol.py directly from [source](https:
 ## Namecoin Core Client
 
 For miners, developers, console only and expert users. [Source on Github](https://github.com/namecoin/namecoin-core).
+
+## Help Us Test Betas
+
+Want to help us test improvements in Namecoin?  Check out the [Beta Downloads]({{site.baseurl}}download/betas/) page.
