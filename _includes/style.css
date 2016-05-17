@@ -26,7 +26,7 @@ body > footer {
     height: 99px;
 }
 
-body > footer > .container {
+body > footer > .container, body > footer > .container-fluid {
     opacity: 0.6;
     padding-top: 33px;
 }
