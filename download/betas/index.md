@@ -33,8 +33,8 @@ Known or reported issues:
 
 Downloads:
 
-* [GNU/Linux 32-bit tar.gz (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/linuxbuild/namecoin-0.12.99-linux32.tar.gz)
 * [GNU/Linux 64-bit tar.gz (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/linuxbuild/namecoin-0.12.99-linux64.tar.gz)
+* [GNU/Linux 32-bit tar.gz (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/linuxbuild/namecoin-0.12.99-linux32.tar.gz)
 
 Gitian signatures:
 
@@ -84,10 +84,10 @@ Known or reported issues:
 
 Downloads:
 
-* [Windows 32-bit Installer (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32-setup-unsigned.exe)
-* [Windows 32-bit zip (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32.zip)
 * [Windows 64-bit Installer (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win64-setup-unsigned.exe)
 * [Windows 64-bit zip (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win64.zip)
+* [Windows 32-bit Installer (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32-setup-unsigned.exe)
+* [Windows 32-bit zip (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32.zip)
 
 Gitian signatures:
 
@@ -137,8 +137,9 @@ Known or reported issues:
 
 Downloads:
 
-* [Windows 32-bit zip (Hosted by Google Drive)](https://drive.google.com/open?id=0B6-yIQJRtCE-azgzcnJvbENnTDg)
 * [Windows 64-bit zip (Hosted by Google Drive)](https://drive.google.com/open?id=0B6-yIQJRtCE-YU8tSVRQSUZXNGc)
+* [Windows 32-bit zip (Hosted by Google Drive)](https://drive.google.com/open?id=0B6-yIQJRtCE-azgzcnJvbENnTDg)
+
 
 Gitian signatures:
 
