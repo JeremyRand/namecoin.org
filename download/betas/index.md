@@ -19,9 +19,123 @@ As usual, it is a good idea to verify the hashes and signatures of these downloa
 
 This adds a "Manage Names" tab to the GUI interface (similar to what's in Namecoin 0.3.80).  You can use it to register, track, update, and renew Namecoin names.  Testers should focus on different ways of creating and managing names, restarting the application mid-update/create/renew, and the details involved in displaying names and name transactions.
 
+**GNU/Linux (0.12.99, April 17, 2016, commit c3cf9893c1726f7cabd8808d236be5744a76d9c2)**
+
+Fixed issues:
+
+* GUI rendering of Namecoin addresses was incorrect.
+* No unit tests were present for pending_firstupdate wallet operations.
+
+Known or reported issues:
+
+* Possible wallet issues that prevent issuing of name_firstupdate and name_update transactions.
+* This build failed Travis CI automated tests.  That doesn't mean that it won't work for you, but extra caution is warranted.
+
+Downloads:
+
+* [GNU/Linux 32-bit tar.gz (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/linuxbuild/namecoin-0.12.99-linux32.tar.gz)
+* [GNU/Linux 64-bit tar.gz (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/linuxbuild/namecoin-0.12.99-linux64.tar.gz)
+
+Gitian signatures:
+
+Brandon Roberts
+
+~~~
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+$ bin/gbuild --url namecoin=https://github.com/brandonrobertz/namecoin-core.git --commit namecoin=c3cf9893c1726f7cabd8808d236be5744a76d9c2 ../namecoin-core-brandonrobertz/contrib/gitian-descriptors/gitian-linux.yml
+
+13c3d8515f8ce4c6ee905b175f2f09b35a10aea2d89d355824b40223624909a0  namecoin-0.12.99-linux32.tar.gz
+d6d5c5091dd4dddb0456fdd1f95f55faae16c34ba696afdc2e4ed550970ca1a0  namecoin-0.12.99-linux64.tar.gz
+59d1f2130528d694fed47a8e401acf5ad076cea01a76c5b36d1c1cd830f45684  src/namecoin-0.12.99.tar.gz
+e7f72914dcf1c59896cf16c65f5953970561aa6a12d55082e5be38299091f48f  namecoin-linux-0.13-res.yml
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iQIcBAEBCAAGBQJXJ5Z4AAoJEHk8mE2JK+fAFxcQAK6f/NjkpyEJ720plfhFfpET
+Ia0qZeXs/UsdSpKTir6d4o7lvsl76GnqQVE2mP5L1sZ0CaC/2K3TI8zQKAVOt4ct
+NHCnkPokRExz1cZFsi4JLGry0IebS0xrCLJ9wLCOEoljKCC/ZiZ00eMRvv4+HZy+
+KhiqqrLt2XfJG3VKlRS3sOgUt1apnN04Lzu+aA6ULfZJYC4ktISxyJGMqWxnyv3c
+xK8/67H4f+5Sv/iyuwSTGM8vPXBCE55LdyLobpZtTknLyH5PCSc9bHtLrUycKJjG
+EUqRwfQ74yXNaOO++YjXJ8UfE/Ttnj7deZ4AVa1bWK7c/nWddBb/krbV9gxJE6x9
+b3Oof+EMX2eihGRmOSxHOjMqVuJaGj4ISF6pADE78CtWojp76GGss9tLR9yIzIZi
+icDIObfuA0HIjM6eBOZaF5yNx9FftChb8kDLaLvsGM94Ah+6FZnW3cdKEuEEl7Dv
+NfxGEYggbzVP9YNoOULyUtoLY8x0NG96Uotyw/rr8WzhBLrbz+ThZFsOdRnD2yvr
+Kac0DhBHBS4/KJ9QfRNGP98Ch6ATMtfjtLmNdK5idT9sqQDC8cZKwap2BzIVnBLR
+qU0sKaWnjuzGwtOIpoYzMXAbHxJ5D9kkA/dOOXcmf7YWNF5rqd2ZRwsQ0HggU/Im
+dcMTUgcAJWp1bxNDLvGp
+=iJ1x
+-----END PGP SIGNATURE-----
+~~~
+
+**Windows (0.12.99, April 17, 2016, commit 4de287f606f3fc156839ee8fe0309f3b6f7e8529)**
+
+Fixed issues:
+
+* GUI rendering of Namecoin addresses was incorrect.
+* No unit tests were present for pending_firstupdate wallet operations.
+
+Known or reported issues:
+
+* Possible wallet issues that prevent issuing of name_firstupdate and name_update transactions.
+* A temporary patch is applied for Windows builds that doesn't match Bitcoin Core's code.
+* This build failed Travis CI automated tests.  That doesn't mean that it won't work for you, but extra caution is warranted.
+
+Downloads:
+
+* [Windows 32-bit Installer (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32-setup-unsigned.exe)
+* [Windows 32-bit zip (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win32.zip)
+* [Windows 64-bit Installer (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win64-setup-unsigned.exe)
+* [Windows 64-bit zip (Hosted by Brandon Roberts)](http://bxroberts.org/gitian-builds/winbuild/namecoin-0.12.99-win64.zip)
+
+Gitian signatures:
+
+Brandon Roberts
+
+~~~
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+$ bin/gbuild --url namecoin=https://github.com/brandonrobertz/namecoin-core.git --commit namecoin=4de287f606f3fc156839ee8fe0309f3b6f7e8529 ../namecoin-core-brandonrobertz/contrib/gitian-descriptors/gitian-win.yml
+
+2fa74227e4fd1341788a8688c4f1d64f9ef913f1f22cbce5b23c8aab9aedac88  namecoin-0.12.99-win-unsigned.tar.gz
+edfcbcb9762c6464a5dee6195e12b146dad5439a3603fe7e2acc0ff970305525  namecoin-0.12.99-win32-setup-unsigned.exe
+f4557f8ded3bdbce121f0293af09772f6151f16daaac14e3f2417e0935f2c993  namecoin-0.12.99-win32.zip
+4ebcbace05109081a84b311c228f4e4f3653c054aa6b63de2e7e2c1687dc7595  namecoin-0.12.99-win64-setup-unsigned.exe
+6cb88d52934a51abde1e75d38ea6ea24d25f2ee68c4cfe180624f797e17cedc0  namecoin-0.12.99-win64.zip
+38205f3dbd6405a4546e2eb8918cc30541d4134ef5de8c6d11e36ee6ab59255d  src/namecoin-0.12.99.tar.gz
+c1df98f012b35a395b29ee7dd87f77587abcf3a22e9bc0d3e46d3b6ffdab78bf  namecoin-win-0.13-res.yml
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJXJqfyAAoJEHk8mE2JK+fAVbcP/3dWOI+/8GUEMJJmAirAQ9Np
+9lFk2aUhgM9fssz3vPVpGmhGX2OxcBkVPxlCobjff0P2n1AGCRUwZgvm8lxqa1XJ
+0zkOMBcsQPJaZLo7mlWprxoj8dmjPGSQ66lBd1ekqjIyZScRJKK8Zux/3FWyaPjD
+HVdT68WzYI6jJOuhGz8SjvnBbOTXYpty7WxGtPASNu8GNQ+EisKBcj9Nbh70l1bD
+UZaabgpb/9YUrIYF3+LGQB5Mav+XVV5JM+eAYN+NKle257zHAHolQxKcGzybzRAn
+TgTQZaDdBPOO8SotpxVpahZ/R0YzFuszet+XMowI9m3d/fVogmqMOkZYv8thulRN
+/jPMRvFCxqeZeRlFDFn+AJ2wyTocOPV5ggtl+30mkqWyGaW8wfgvco6+BWweHLml
+c4GM0IZAedmhspEPA+BiE8B1wX/XujK4aXmxtd4wCOaTjDRKTVt0BFtu5rX0kzE5
+PAXH5+mjs9Eze+VJcJX171jqSEHa/sAGkCK/WjHjEPTG0XjC5jLG6vP2BXr33YNG
+T2PFzcxpp+Ah4gVrwhgNUPj/38vjy3UN544u8WQBXPPwXMDB810qyJxrCCLxN/6S
+Z57yOIO7Zn3oyQG5wSEAkHKheO+O/auPosUcYSIl4bmZiARdEfaP43njBXrSYLmn
+Jqrrvt1s7whLLy/B1lDB
+=DWZU
+-----END PGP SIGNATURE-----
+~~~
+
 **Windows (0.12.99, April 16, 2016, commit f7b2996c5bd7ed8dc50a1be730a4c9979039a94c)**
 
-Note: this build failed Travis CI automated tests.  That doesn't mean that it won't work for you, but extra caution is warranted.
+Known or reported issues:
+
+* Possible wallet issues that prevent issuing of name_firstupdate and name_update transactions.
+* GUI rendering of Namecoin addresses is incorrect.
+* No unit tests for pending_firstupdate wallet operations.
+* A temporary patch is applied for Windows builds that doesn't match Bitcoin Core's code.
+* This build failed Travis CI automated tests.  That doesn't mean that it won't work for you, but extra caution is warranted.
+
+Downloads:
 
 * [Windows 32-bit zip (Hosted by Google Drive)](https://drive.google.com/open?id=0B6-yIQJRtCE-azgzcnJvbENnTDg)
 * [Windows 64-bit zip (Hosted by Google Drive)](https://drive.google.com/open?id=0B6-yIQJRtCE-YU8tSVRQSUZXNGc)
