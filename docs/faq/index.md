@@ -11,7 +11,11 @@ title: FAQ
 
 The Namecoin software is used to register names and store associated values in the blockchain, a shared database distributed by p2p in a secure way. The software can then be used to query the database and retrieve data.
 
-Like Bitcoin, the keys are located on your wallet.dat file, you must protect this file by going to > settings > encrypt wallet and making a backup thereafter. Close the program and copy your wallet.dat from users/appdata/roaming/namecoin to an usb drive for example. Currently it is recommended to backup every 100 transactions or name-operations.
+### Do I need to back up my wallet?
+
+If you're using Namecoin to register or otherwise own names, or to transfer namecoins, then you do need to periodically back up your wallet.  Like Bitcoin, your wallet's keys are located in your `wallet.dat` file.  You should encrypt this file by going to `Settings` > `Encrypt Wallet` and making a backup thereafter. Close the Namecoin client and make a backup of your `wallet.dat` file in your Namecoin profile folder.  (On GNU/Linux, this is usually `~/.namecoin/`; on Windows, it is usually `C:\Users\<Your Username>\AppData\Roaming\Namecoin\`).  It is currently recommended to back up more often than every 100 transactions (including both currency and name transactions).
+
+If you are only using Namecoin to look up names (e.g. browsing .bit domains), then you do not need to encrypt or back up your wallet.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
 The cost includes a network fee and a transaction fee. As of 2014-8-01 the network fee is 0.01 NMC and the transaction fee is 0.005 NMC. There are plans to make this more dynamic.
