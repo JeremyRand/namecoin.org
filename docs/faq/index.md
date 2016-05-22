@@ -11,13 +11,13 @@ title: FAQ
 
 The Namecoin software is used to register names and store associated values in the blockchain, a shared database distributed by p2p in a secure way. The software can then be used to query the database and retrieve data.
 
-Like bitcoin, the keys are located on your wallet.dat file, you must protect this file by going to > settings > encrypt wallet and making a backup thereafter. Close the program and copy your wallet.dat from users/appdata/roaming/namecoin to an usb drive for example. Currently it is recommended to backup every 100 transactions or name-operations.
+Like Bitcoin, the keys are located on your wallet.dat file, you must protect this file by going to > settings > encrypt wallet and making a backup thereafter. Close the program and copy your wallet.dat from users/appdata/roaming/namecoin to an usb drive for example. Currently it is recommended to backup every 100 transactions or name-operations.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
 The cost includes a network fee and a transaction fee. As of 2014-8-01 the network fee is 0.01 NMC and the transaction fee is 0.005 NMC. There are plans to make this more dynamic.
 
 ### How do I obtain namecoins? Can i mine them?
-You can mine them alongside bitcoin or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
+You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
 
 ### Who gets the network fee? 
 The network fees are destroyed by the transaction. Nobody gets them.
@@ -84,13 +84,13 @@ The Namecoin codebase consists of the Bitcoin codebase with relatively minor cha
 * `name_new`, `name_firstupdate` and `name_update` contain a pair of name/value which expires after 36,000 blocks (between 200 and 250 days).
 * The `d/` prefix is used to register a domain name, without the .bit TLD: `{     "name" : "d/opennic",     "value" : "what you want",     "expires_in" : 10227 }`
 * The `id/` prefix is used to register an identity, see http://nameid.org/
-* Energy-efficient: if you are already mining Bitcoins you can merge-mine Namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
+* Energy-efficient: if you are already mining bitcoins you can merge-mine Namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
 
 ### What are the similarities with Bitcoin?
 
 * 21 millions namecoins total, minus the lost coins.
 * 50 coins are generated each block, each 210000 blocks (around 4 years), the reward halves by two.
-* Security: more than half of the bitcoin miners also mine namecoin, giving it a staggering difficulty.
+* Security: more than half of the Bitcoin miners also mine namecoin, giving it a staggering difficulty.
 * Anonymous founder: Vinced, like Satoshi, never revealed his identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts of the open source community.
 * Open source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/namecoin) and even use it on other projects.
 
