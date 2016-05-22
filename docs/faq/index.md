@@ -5,30 +5,6 @@ title: FAQ
 
 {::options parse_block_html="true" /}
 
-## Bitcoin vs. Namecoin
-
-### What is the relationship of this project to Bitcoin?
-
-The Namecoin codebase consists of the Bitcoin codebase with relatively minor changes (~400 lines) and addtional functionality built on top on it. The mining procedure is identical but the block chain is separate, thus creating Namecoin. This approach was taken because Bitcoin developers wanted to focus almost exclusively on making Bitcoin a viable *currency* while the Namecoin developers were interested in building a general data-value store. Bitcoin is a data-value store as well but it attempts to limit the type of data that can be stored to financial transactions, so it is more of a monetary-value store. Namecoin leverages Bitcoin's monetary-value store but focuses more on additional information which can be stored, such as a domain name system or an identification/authorization database.
-
-### What is the difference to Bitcoin?
-
-* There are additional commands for special transactions containing *names* and *data* (key/value pairs).
-* The most important commands are: name_new, name_firstupdate and name_update.
-* The coins used to pay for a name_firstupdate operation are being "destroyed", i.e. every new name reduces the finally usable maximum of 21 Million NMC by 0.01 NMC.
-* `name_new`, `name_firstupdate` and `name_update` contain a pair of name/value which expires after 36,000 blocks (between 200 and 250 days).
-* The `d/` prefix is used to register a domain name, without the .bit TLD: `{     "name" : "d/opennic",     "value" : "what you want",     "expires_in" : 10227 }`
-* The `id/` prefix is used to register an identity, see http://nameid.org/
-* Energy-efficient: if you are already mining Bitcoins you can merge-mine Namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
-
-### What are the similarities with Bitcoin?
-
-* 21 millions namecoins total, minus the lost coins.
-* 50 coins are generated each block, each 210000 blocks (around 4 years), the reward halves by two.
-* Security: more than half of the bitcoin miners also mine namecoin, giving it a staggering difficulty.
-* Anonymous founder: Vinced, like Satoshi, never revealed his identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts of the open source community.
-* Open source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/namecoin) and even use it on other projects.
-
 ## General
 
 ### How does Namecoin work? 
@@ -93,6 +69,30 @@ Names and values are attached to special coins with a value of 0.01 NMC. Updates
 
 ### What if I spend that special coin by mistake? 
 The code prevents those coins from being used for normal payments.
+
+## Bitcoin vs. Namecoin
+
+### What is the relationship of this project to Bitcoin?
+
+The Namecoin codebase consists of the Bitcoin codebase with relatively minor changes (~400 lines) and addtional functionality built on top on it. The mining procedure is identical but the block chain is separate, thus creating Namecoin. This approach was taken because Bitcoin developers wanted to focus almost exclusively on making Bitcoin a viable *currency* while the Namecoin developers were interested in building a general data-value store. Bitcoin is a data-value store as well but it attempts to limit the type of data that can be stored to financial transactions, so it is more of a monetary-value store. Namecoin leverages Bitcoin's monetary-value store but focuses more on additional information which can be stored, such as a domain name system or an identification/authorization database.
+
+### What is the difference to Bitcoin?
+
+* There are additional commands for special transactions containing *names* and *data* (key/value pairs).
+* The most important commands are: name_new, name_firstupdate and name_update.
+* The coins used to pay for a name_firstupdate operation are being "destroyed", i.e. every new name reduces the finally usable maximum of 21 Million NMC by 0.01 NMC.
+* `name_new`, `name_firstupdate` and `name_update` contain a pair of name/value which expires after 36,000 blocks (between 200 and 250 days).
+* The `d/` prefix is used to register a domain name, without the .bit TLD: `{     "name" : "d/opennic",     "value" : "what you want",     "expires_in" : 10227 }`
+* The `id/` prefix is used to register an identity, see http://nameid.org/
+* Energy-efficient: if you are already mining Bitcoins you can merge-mine Namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
+
+### What are the similarities with Bitcoin?
+
+* 21 millions namecoins total, minus the lost coins.
+* 50 coins are generated each block, each 210000 blocks (around 4 years), the reward halves by two.
+* Security: more than half of the bitcoin miners also mine namecoin, giving it a staggering difficulty.
+* Anonymous founder: Vinced, like Satoshi, never revealed his identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts of the open source community.
+* Open source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/namecoin) and even use it on other projects.
 
 ## Weaknesses 
 
