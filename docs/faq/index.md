@@ -49,7 +49,7 @@ You can also use [ncdns](https://github.com/hlandau/ncdns) (experimental).  If y
 
 ### Do I have to pay renewal fees? 
 
-Not at the moment, although there are plans to change this..
+Other than the standard transaction fee, not at the moment.  This might change in the future.
 
 ### Can Namecoin be used to register other data types? 
 
