@@ -20,7 +20,7 @@ If you are only using Namecoin to look up names (e.g. browsing .bit domains), th
 ### How much does it cost to register a domain (a.k.a. a name)? 
 The cost includes a registration fee and a transaction fee. The registration fee is 0.01 NMC, and the transaction fee is determined dynamically by miners (just like in Bitcoin).  The registration fee might be made dynamic in the future.
 
-### How do I obtain namecoins? Can i mine them?
+### How do I obtain namecoins? Can I mine them?
 You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
 
 ### Who gets the registration fee? 
@@ -32,7 +32,7 @@ The miners do, just like in Bitcoin. The standard transaction fee is 0.005 NMC. 
 ### How long are names good for? 
 You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no registration fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
 
-### How do i browse a .bit domain?
+### How do I browse a .bit domain?
 
 There are a few different ways: Web proxys, nmcontrol, ncdns, changing your dns settings etc.
 
@@ -40,7 +40,7 @@ There are a few different ways: Web proxys, nmcontrol, ncdns, changing your dns 
 
 If you have the zeronet software installed you can visit zeronet enabled .bit domains.
 
-### How do i register and host a .bit domain?
+### How do I register and host a .bit domain?
 
 [Register and Configure .bit Domains](https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains)
 
