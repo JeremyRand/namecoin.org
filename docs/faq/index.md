@@ -35,7 +35,7 @@ The miners do, just like in Bitcoin. Paying higher fees improves the chance that
 
 ### How long are names good for? 
 
-You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no registration fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
+You have to renew or update a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. There are no registration fees for renewals or updates, but a transaction fee does apply.
 
 ### How do I browse a .bit domain?
 
