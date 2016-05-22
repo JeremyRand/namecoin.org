@@ -27,7 +27,7 @@ You can mine them alongside bitcoins or trade them, see [How to get Namecoins](h
 The registration fees are destroyed by the transaction. Nobody gets them.
 
 ### Who gets the transaction fee? 
-The miners do, just like in Bitcoin. The standard transaction fee is 0.005 NMC. You can increase this amount if you want to improve the chance that the transaction will be processed as soon as possible.
+The miners do, just like in Bitcoin. Paying higher fees improves the chance that the transaction will be processed quickly.  Like Bitcoin, the client will suggest a fee that is likely to be processed quickly.
 
 ### How long are names good for? 
 You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no registration fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
