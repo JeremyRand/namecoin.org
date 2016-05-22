@@ -9,7 +9,7 @@ title: FAQ
 
 ### How does Namecoin work? 
 
-The Namecoin software is used to register names and store associated values in the blockchain, a shared database distributed by p2p in a secure way. The software can then be used to query the database and retrieve data.
+The Namecoin software is used to register names and store associated values in the blockchain, a shared database distributed by a P2P network in a secure way. The software can then be used to query the database and retrieve data.
 
 ### Do I need to back up my wallet?
 
