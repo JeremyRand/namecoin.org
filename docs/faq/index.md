@@ -18,18 +18,23 @@ If you're using Namecoin to register or otherwise own names, or to transfer name
 If you are only using Namecoin to look up names (e.g. browsing .bit domains), then you do not need to encrypt or back up your wallet.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
+
 The cost includes a registration fee and a transaction fee. The registration fee is 0.01 NMC, and the transaction fee is determined dynamically by miners (just like in Bitcoin).  The registration fee might be made dynamic in the future.
 
 ### How do I obtain namecoins? Can I mine them?
+
 You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
 
 ### Who gets the registration fee? 
+
 The registration fees are destroyed by the transaction. Nobody gets them.
 
 ### Who gets the transaction fee? 
+
 The miners do, just like in Bitcoin. Paying higher fees improves the chance that the transaction will be processed quickly.  Like Bitcoin, the client will suggest a fee that is likely to be processed quickly.
 
 ### How long are names good for? 
+
 You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no registration fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
 
 ### How do I browse a .bit domain?
@@ -45,13 +50,14 @@ If you have the zeronet software installed you can visit zeronet enabled .bit do
 [Register and Configure .bit Domains](https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains)
 
 ### Do I have to pay renewal fees? 
+
 Not at the moment, although there are plans to change this..
 
 ### Can Namecoin be used to register other data types? 
+
 Namecoin can be used to register any data type of data. Each record must follow the same rules (expire time, data size limit, etc). Before introducing a new namespace it is recommended to discuss it on the forum first. Note that for storing significant amounts of data there are other better suited options. If it absolutely has to be in a blockchain consider qora, blockstore, datacoin, and filecoin.
 
 ## Design 
-
 
 ### What is a namespace? 
 
@@ -66,12 +72,15 @@ It depends on the software that reads the information from namecoin. A developer
 This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted, only a salted hash of it. There is a mandatory 12 block wait that gives you enough time to broadcast your name with name_firstupdate, reducing the chance that someone will get in a name_firstupdate ahead of you.
 
 ### Why is there a registration fee? 
+
 The registration fee is initially high, but will be negligible after a couple of years. It is used to slow down the initial registration rate so that plenty of desirable names are left for late adopters.
 
 ### How are names represented? 
+
 Names and values are attached to special coins with a value of 0.01 NMC. Updates are performed by creating a transaction with the name's previous coin as input. Think of it like a colored coin.
 
 ### What if I spend that special coin by mistake? 
+
 The code prevents those coins from being used for normal payments.
 
 ## Bitcoin vs. Namecoin
@@ -101,6 +110,7 @@ The Namecoin codebase consists of the Bitcoin codebase with relatively minor cha
 ## Weaknesses 
 
 ### Name Stealing 
+
 Name stealing on Namecoin is already much more difficult than with traditional domains.  However, once stolen, it's very difficult to recover a .bit domain.  We are working on reducing the damage that the thief can do and reducing the attack surface.  Overall, we feel that .bit is safer than traditional domains.
 
 The simplest response to these concerns is to use the PhishTank. Any high-profile thefts or websites that engage in activity considered harmful to end users will end up in the PhishTank and similar client-side defensive mechanisms.   This removes much of the incentive to steal domains in the first place.
@@ -110,11 +120,13 @@ Secondly, we are working on removing the need for a private key from all mainten
 We feel that such solutions make .bit domains **safer** than the traditional domains: Sex.com was famously stolen **with a fax** and it took *5 years and $4.5 million* in legal fees to recover.  The damages awarded to the original owner have yet to be paid.  While this case occurred in the 90s, we know of national and commercial registrars that could easily tricked into transferring a domain.
 
 ### 51% Attack 
+
 The threat of the 51% attack is similar to that of Bitcoin, indeed Namecoin shares miners with Bitcoin.  Double spends are bad but miners have an economic interest in Namecoin's overall value.  Furthermore, it's not like an attacker can arbitrarily steal domains.  The shenanigans that can be carried out are all obvious and clients can be built to negate the impact of such actions. A 51% attack requires and adversary with tens of millions of dollars they want to blow on screwing with Namecoin and Bitcoin for a few weeks until they run out of money. This is highly unlikely and concerns about a 51% attack are mostly just [bike-shedding](https://en.wikipedia.org/wiki/Parkinson%27s_law_of_triviality).
 
 See the [51% Attack](https://wiki.namecoin.info/index.php?title=51%25_Attack) article for a more thorough analysis.
 
 ### Squatting 
+
 Squatting is simultaneously the most commonly cited and least important issue facing Namecoin.  While irritating in the short term, [it’s a solved problem](https://wiki.namecoin.info/index.php?title=Squatting).
 
 ### Blockchain Anonymity 
