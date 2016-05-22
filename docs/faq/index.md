@@ -18,19 +18,19 @@ If you're using Namecoin to register or otherwise own names, or to transfer name
 If you are only using Namecoin to look up names (e.g. browsing .bit domains), then you do not need to encrypt or back up your wallet.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
-The cost includes a network fee and a transaction fee. As of 2014-8-01 the network fee is 0.01 NMC and the transaction fee is 0.005 NMC. There are plans to make this more dynamic.
+The cost includes a registration fee and a transaction fee. As of 2014-8-01 the registration fee is 0.01 NMC and the transaction fee is 0.005 NMC. There are plans to make this more dynamic.
 
 ### How do I obtain namecoins? Can i mine them?
 You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
 
-### Who gets the network fee? 
-The network fees are destroyed by the transaction. Nobody gets them.
+### Who gets the registration fee? 
+The registration fees are destroyed by the transaction. Nobody gets them.
 
 ### Who gets the transaction fee? 
 The miners do, just like in Bitcoin. The standard transaction fee is 0.005 NMC. You can increase this amount if you want to improve the chance that the transaction will be processed as soon as possible.
 
 ### How long are names good for? 
-You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no network fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
+You have to execute an update on a name every 35,999 blocks at the latest (between 200 and 250 days), otherwise it expires. Usually there are no registration fees for updates. There is a fee of 0.005 NMC, however, if you update very early.
 
 ### How do i browse a .bit domain?
 
@@ -65,8 +65,8 @@ It depends on the software that reads the information from namecoin. A developer
 
 This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted, only a salted hash of it. There is a mandatory 12 block wait that gives you enough time to broadcast your name with name_firstupdate, reducing the chance that someone will get in a name_firstupdate ahead of you.
 
-### Why is there a network fee? 
-The network fee is initially high, but will be negligible after a couple of years. It is used to slow down the initial registration rate so that plenty of desirable names are left for late adopters.
+### Why is there a registration fee? 
+The registration fee is initially high, but will be negligible after a couple of years. It is used to slow down the initial registration rate so that plenty of desirable names are left for late adopters.
 
 ### How are names represented? 
 Names and values are attached to special coins with a value of 0.01 NMC. Updates are performed by creating a transaction with the name's previous coin as input. Think of it like a colored coin.
