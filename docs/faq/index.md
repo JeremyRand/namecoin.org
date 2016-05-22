@@ -19,7 +19,7 @@ If you are only using Namecoin to look up names (e.g. browsing .bit domains), th
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
 
-The cost includes a registration fee and a transaction fee. The registration fee is 0.01 NMC, and the transaction fee is determined dynamically by miners (just like in Bitcoin).  The registration fee might be made dynamic in the future.
+The cost includes a registration fee and a transaction fee. The registration fee is 0.01 NMC, and the transaction fee is determined dynamically by miners (just like in Bitcoin).  The registration fee might be made dynamic in the future, to improve economic incentives.
 
 ### How do I obtain namecoins? Can I mine them?
 
@@ -49,7 +49,7 @@ You can also use [ncdns](https://github.com/hlandau/ncdns) (experimental).  If y
 
 ### Do I have to pay renewal fees? 
 
-Other than the standard transaction fee, not at the moment.  This might change in the future.
+Other than the standard transaction fee, not at the moment.  This might change in the future, to improve economic incentives.
 
 ### Can Namecoin be used to register other data types? 
 
