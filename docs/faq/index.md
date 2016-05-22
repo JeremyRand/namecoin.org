@@ -18,7 +18,7 @@ If you're using Namecoin to register or otherwise own names, or to transfer name
 If you are only using Namecoin to look up names (e.g. browsing .bit domains), then you do not need to encrypt or back up your wallet.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
-The cost includes a registration fee and a transaction fee. As of 2014-8-01 the registration fee is 0.01 NMC and the transaction fee is 0.005 NMC. There are plans to make this more dynamic.
+The cost includes a registration fee and a transaction fee. The registration fee is 0.01 NMC, and the transaction fee is determined dynamically by miners (just like in Bitcoin).  The registration fee might be made dynamic in the future.
 
 ### How do I obtain namecoins? Can i mine them?
 You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
