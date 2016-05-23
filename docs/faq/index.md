@@ -63,9 +63,7 @@ If you're developing an application, consider doing your development on the Test
 
 ### What is a namespace? 
 
-Namespaces distinguish between different type of names in Namecoin.
-
-Like "d/domain" for .bit domains or "id/name" for identity.
+Namespaces are name prefixes used by applications to distinguish between different type of names in Namecoin.  For example, `d/example` is the domain name `example.bit`, and `id/example` is an identity.  Namespaces help prevent multiple applications from accidentally conflicting.  Namecoin itself isn't aware of namespaces, and namespaces don't have any effect on validation rules; they are only used by higher-level applications that use Namecoin.
 
 It depends on the software that reads the information from namecoin. A developer can use a different namespace for a different purpose. For example for "domain.meme" anyone could register the name "meme/domain" and if you had a "meme" TLD aware program it will work. Or if you have software capable of reading the blockchain you could hardcode it to check for updates by looking into the name "program/coolproyect" and then only the person controlling this name could dictate what is the latest version of your program, where to download the hash etc.
 
