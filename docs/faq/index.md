@@ -107,11 +107,11 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 
 ### What are the similarities with Bitcoin?
 
-* 21 millions namecoins total, minus the lost coins.
-* 50 coins are generated each block, each 210000 blocks (around 4 years), the reward halves by two.
-* Security: more than half of the Bitcoin miners also mine namecoin, giving it a staggering difficulty.
-* Anonymous founder: Vinced, like Satoshi, never revealed his identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts of the open source community.
-* Open source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/namecoin) and even use it on other projects.
+* 21 millions coins total, minus the lost coins.
+* 50 coins are generated each block at the beginning; the reward halves each 210000 blocks (around 4 years).
+* Security: a large fraction of Bitcoin miners also mine Namecoin, giving it a staggering difficulty.
+* Pseudonymous founder: Vince, like Satoshi, never revealed his real-world identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts in the FLOSS community.
+* Free / libre / open-source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/) and even use it on other projects.
 
 ## Weaknesses 
 
