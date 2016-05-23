@@ -67,7 +67,7 @@ Namespaces are name prefixes used by applications to distinguish between differe
 
 ### Why is there a separate name_new step? 
 
-This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted, only a salted hash of it. There is a mandatory 12 block wait that gives you enough time to broadcast your name with name_firstupdate, reducing the chance that someone will get in a name_firstupdate ahead of you.
+This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted during the name_new step, only a salted hash of it. There is a mandatory minimum delay of 12 blocks before you can broadcast your name with name_firstupdate; this means that by the time other people know what name you're registering, they would have to reverse at least 12 blocks in order to steal the name.
 
 ### Why is there a registration fee? 
 
