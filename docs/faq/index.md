@@ -57,7 +57,7 @@ Consider that Namecoin values are limited to 520 bytes, and that the block size 
 
 Also consider whether your application benefits from human-readable names.  If your application accepts a hash or other machine-readable format as input, then Namecoin's human-readable names may be overkill for your application.
 
-If you're developing an application, consider doing your development on the Testnet so that your testing doesn't bloat the production blockchain.  If more than one implementation might have the same use case, consider writing a spec so that incompatible implementations of similar ideas don't become a problem.
+If you're developing an application, consider doing your development on the Testnet.  This prevents your testing from bloating the production blockchain, and also allows you to test without spending real money on names.  If more than one implementation might have the same use case, consider writing a spec so that incompatible implementations of similar ideas don't become a problem.
 
 ## Design 
 
