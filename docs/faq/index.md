@@ -102,7 +102,7 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 * The coins used to pay for a name_firstupdate operation are being "destroyed", i.e. every new name reduces the finally usable maximum of 21 Million NMC by 0.01 NMC.
 * `name_new`, `name_firstupdate` and `name_update` contain a pair of name/value which expires after 36,000 blocks (between 200 and 250 days).
 * The `d/` prefix is used to register a domain name, without the .bit TLD: `{     "name" : "d/opennic",     "value" : "what you want",     "expires_in" : 10227 }`
-* The `id/` prefix is used to register an identity, see http://nameid.org/
+* The `id/` prefix is used to register an identity, see https://nameid.org/
 * Energy-efficient: if you are already mining bitcoins you can merge-mine namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
 
 ### What are the similarities with Bitcoin?
