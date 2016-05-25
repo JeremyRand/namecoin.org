@@ -161,6 +161,10 @@ In the meantime, practical advice is that if you want a name but it's squatted, 
 
 ### Blockchain Anonymity 
 
-Like Bitcoin, Namecoin is not anonymous.
+Like Bitcoin, Namecoin is not anonymous.  A thorough description of Bitcoin's poor anonymity properties is outside the scope of this FAQ.
 
-Only after Zerocash has been released and gone through some level of peer review it can be added to the code.  This will enable domain owners to escape political persecution.  This is a very real use-case, we have had political dissidents request this functionality but for the moment it's necessary to use a VPN or Tor to achieve complete anonymity.
+When used properly in conjunction with Tor, Namecoin *may* offer sufficient pseudonymity or location-anonymity for many use cases.  Users who need these properties are advised to carefully evaluate their specific situation.  Using Namecoin over Tor does *not* by itself magically make you anonymous.
+
+We recognize that better anonymity is an important use case.  We occasionally receive questions from users about whether Namecoin can be used anonymously.  While we don't know much about these users (for obvious reasons), some of them appear to be in circumstances where failure of anonymity could lead to significant negative consequences.  We aim to support these use cases in the future, but right now it would be irresponsible and reckless to do so.
+
+We are currently engaging with projects that provide blockchain anonymity (e.g. Monero and Zcash), with the goal of achieving similar anonymity for Namecoin.  Both Monero and Zcash have mathematical security proofs of their anonymity, subject to given assumptions and a given anonymity set.  Blockchain anonymity is also an active research area, so further innovations may very well occur in the future.
