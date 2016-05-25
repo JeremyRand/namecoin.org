@@ -51,9 +51,13 @@ You can also use [ncdns](https://github.com/hlandau/ncdns) (experimental).  If y
 
 Other than the standard transaction fee, not at the moment.  This might change in the future, to improve economic incentives.
 
-### Can Namecoin be used to register other data types? 
+### What applications is Namecoin well-suited to?
 
-Namecoin can be used to register any data type of data. Each record must follow the same rules (expire time, data size limit, etc). Before introducing a new namespace it is recommended to discuss it on the forum first. Note that for storing significant amounts of data there are other better suited options. If it absolutely has to be in a blockchain consider qora, blockstore, datacoin, and filecoin.
+Consider that Namecoin values are limited to 520 bytes, and that the block size limit is somewhere between 500 kB and 1 MB.  (It's lower than Bitcoin's.)  Given that blocks occur approximately every 10 minutes, and that names have to be updated or renewed at least every 35,999 blocks, try to figure out whether your application would comfortably fit into blocks if your application became widespread.  Doman names and identities are applications that are near the upper limit of the scale that Namecoin can handle.  For example, backing up your hard drive to the Namecoin blockchain every night is not feasible.  In many cases, if you want to store data that is larger than 520 bytes, or that is updated very often, you may prefer to only store a content hash or a public key in the blockchain, along with information on where to get the full data.  The full data can then be authenticated using Namecoin as a trust anchor without storing the entire data in Namecoin.  An example of this usage is the ability to delegate .bit domain names to an external DNSSEC nameserver, authenticated by a DS record in the blockchain.
+
+Also consider whether your application benefits from human-readable names.  If your application accepts a hash or other machine-readable format as input, then Namecoin's human-readable names may be overkill for your application.
+
+If you're developing an application, consider doing your development on the Testnet so that your testing doesn't bloat the production blockchain.  If more than one implementation might have the same use case, consider writing a spec so that incompatible implementations of similar ideas don't become a problem.
 
 ## Design 
 
