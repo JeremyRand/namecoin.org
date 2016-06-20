@@ -49,25 +49,14 @@ What does Namecoin do under the hood?
 
 ## News
 
-**2015-11-10** Out now: [NMControl v0.8.1]({{site.baseurl}}download/).
+{% for post in site.posts limit:10 %}
+{% assign content_words = post.content | number_of_words %}
+{% assign excerpt_words = post.excerpt | number_of_words %}
+**[{{ post.date | date: "%Y-%m-%d" }}]({{site.baseurl | append: '@@@' | remove: '/@@@'}}{{ post.url }})** {{ post.excerpt | remove: '<p>' | remove: '</p>' }}  {% if content_words != excerpt_words %} [Read more...]({{site.baseurl | append: '@@@' | remove: '/@@@'}}{{ post.url }}) {% endif %}
 
-**2015-10-13** A vulnerability was found in [Bitcoin Core](https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability). It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.
+{% endfor %}
 
-**2015-08-13** Fix for OpenSSL Consensus Vulnerability has been deployed on 100% of mining hashpower.  Users of NamecoinQ (i.e. namecoind/Namecoin-Qt 0.3.x) are on semi-SPV security, and should wait for at least 6 confirmations for incoming transactions.  Users of Namecoin Core (in beta) are on full-node security.  Thanks to the miners for their quick action and everyone else who assisted in the response.
-
-**2015-07-29** Warning: [severe vulnerability disclosed](https://forum.namecoin.info/viewtopic.php?f=2&t=2354) - be careful.
-
-**2015-05-19** Check out the [Namecoin Bounty Cornucopia](https://forum.namecoin.info/viewtopic.php?p=14754).
-
-**2015-04-17** The **Namecoin** blockchain is now **four years old**. Happy birthday!
-
-**2015-03-20** [Interview](http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant) with Namecoin lead developer Daniel Kraft.
-
-**2014-12-19** **Softfork** upcoming with block 212500 (around New Year's Eve). Pool operators and solo miners please [update to v0.3.80]({{site.baseurl}}download/) asap. Regular users are recommended to update, too.  See the [Release notes.](https://forum.namecoin.info/viewtopic.php?p=13717)
-
-**2014-12-16** As of block **210000** the Namecoin block reward halved to **25NMC**. Happy halving day!
-
-**2014-04-20** Thanks to **Shobute** for designing and **Indolering** for pushing the **new website**.
+[Earlier news]({{site.baseurl}}news/)
 
 For the latest news go to the [Namecoin forum](https://forum.namecoin.org/) or check out [r/namecoin](https://www.reddit.com/r/namecoin).
 
