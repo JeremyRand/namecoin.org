@@ -14,7 +14,7 @@ title: Exchanges
 
 <span style="font-size:115%;">
 **Silver level exchanges**<br>
-[<img alt="Kraken" src="images/kraken.png">](https://kraken.com)<br>
+...<br>
 </span>
 
 <span style="font-size:100%;">
@@ -40,5 +40,3 @@ title: Exchanges
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
 The current fees are 1000/300/100NMC per year*. To get on the list contact exchanges a|t namecoin.org
-
-*Kraken received an honorary silver level for supporting us with their libcoin library.
