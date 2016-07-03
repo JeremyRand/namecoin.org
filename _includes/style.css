@@ -5,6 +5,7 @@ body {
     background: #292e3c;
     font-size: 18px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    word-wrap: break-word;
 }
 
 body > header {
@@ -22,11 +23,11 @@ h2 {
 }
 
 body > footer {
-    background: #292e3c url(../images/fancy.jpg) center bottom;
+    background: #292e3c url({{ "images/fancy.jpg" | prepend: site.baseurl }}) center bottom;
     height: 99px;
 }
 
-body > footer > .container {
+body > footer > .container, body > footer > .container-fluid {
     opacity: 0.6;
     padding-top: 33px;
 }
@@ -42,7 +43,7 @@ nav ul li {
 
 #fancy-graphic {
     height: 350px;
-    background: #292e3c url(../images/fancy.jpg) center top fixed;
+    background: #292e3c url({{ "images/fancy.jpg" | prepend: site.baseurl }}) center top fixed;
     padding-top: 125px;
 }
 
@@ -56,6 +57,28 @@ nav ul li {
     opacity: 0.6;
     position: fixed;
     z-index: 0;
+}
+
+@media (max-width: 549px) {
+  #fancy-graphic {
+    height: 262.5px;
+    padding-top: 93.75px;
+  }
+  
+  #fancy-graphic p {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 399px) {
+  #fancy-graphic {
+    height: 218.75px;
+    padding-top: 78.125px;
+  }
+  
+  #fancy-graphic p {
+    font-size: 2.5em;
+  }
 }
 
 #content {
