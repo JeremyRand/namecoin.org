@@ -7,7 +7,7 @@ title: Download
 
 ## Namecoin-Qt Client
 
-Client for normal use with name management GUI tab (but not for mining or development). Always wait for six confirmations. [Source on Github](https://github.com/namecoin/namecoin).
+Client for normal use with name management GUI tab (but not for mining or development). Always wait for six confirmations. [Source on Github](https://github.com/namecoin/namecoin-legacy).
 
 <div class="row">
 
