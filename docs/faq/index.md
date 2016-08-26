@@ -75,13 +75,13 @@ Names and values are attached to special coins with a value of 0.01 NMC. Updates
 
 The code prevents those coins from being used for normal payments.
 
-## Bitcoin vs. Namecoin
+## Comparison of Namecoin to other projects
 
-### What is the relationship of this project to Bitcoin?
+### What is the relationship of Namecoin to Bitcoin?
 
 The Namecoin codebase consists of the Bitcoin codebase with relatively minor changes (~400 lines) and addtional functionality built on top on it. The mining procedure is identical but the block chain is separate, thus creating Namecoin. This approach was taken because Bitcoin developers wanted to focus almost exclusively on making Bitcoin a viable *currency* while the Namecoin developers were interested in building a *naming system*.  Because of the different intended use cases between the two projects, consensus and protocol rules might make sense in one but not ther other.  Examples of places where it could make sense to have different protocol or consensus rules:
 
-* Namecoin's consensus rules need to enforce uniqueness of names.  While it is possible to store data in Bitcoin (e.g. key/value pairs in `OP_RETURN` outputs), uniqueness is not enforced by Bitcoin.
+* Namecoin's consensus rules need to enforce uniqueness of names.  While it is possible to store data in Bitcoin (e.g. key/value pairs in `OP_RETURN` outputs), uniqueness is not enforced by Bitcoin.  It would be theoretically possible to build a layer on top of Bitcoin that discards `OP_RETURN` outputs that don't respect uniqueness (e.g. a name operation that steals someone else's name), but any such layer would not be enforced by miners.  If transaction validity rules are not enforced by miners, then they are not backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work), which means that [SPV-based lightweight clients](https://bitcoin.org/en/glossary/simplified-payment-verification) will fail to enforce those validity rules.
 * Since consumers expect different fees for financial transactions versus name registrations, and since the volume of financial transactions worldwide versus name registrations worldwide are different, Namecoin and Bitcoin might have different optimal block sizes.
 * In a currency, inflation attacks are fatal, while in a naming system, they simply amount to a spamming or squatting attack: bad, but not anywhere near fatal.  Therefore, decisions about features such as zk-SNARK-based anonymity (which introduce a risk of inflation attacks) might come to different conclusions between Namecoin and Bitcoin.
 * Some script features that make sense for Namecoin might not make sense for Bitcoin, e.g. allowing a scriptPubKey to restrict the scriptPubKeys of any spending transaction.  In a naming system, features like this could make renewing and updating names more convenient and secure, but in a currency, they could be harmful to fungibility.
@@ -89,7 +89,7 @@ The Namecoin codebase consists of the Bitcoin codebase with relatively minor cha
 
 In general, the Namecoin developers attempt to minimize our patchset against Bitcoin.  If a feature makes sense to have in Bitcoin, we try to get it into Bitcoin and then merge it to Namecoin; Namecoin usually only introduces differences from Bitcoin in cases where the proposed change wouldn't make sense for Bitcoin due to the differing use cases.  Although it is theoretically possible to use Namecoin as a general-purpose currency, the Namecoin developers do not encourage this use case.  There are lots of cryptocurrency projects out there that are specifically designed for such usage (e.g. Bitcoin); if you're looking for a currency, you should use one of those projects.
 
-### What is the difference to Bitcoin?
+### What is the difference between Namecoin and Bitcoin?
 
 * There are additional commands for special transactions containing *names* and *data* (key/value pairs).
 * The most important commands are: `name_new`, `name_firstupdate`, and `name_update`.
@@ -99,13 +99,41 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 * The `id/` prefix is used to register an identity, see [NameID](https://nameid.org/).
 * Energy-efficient: if you are already mining bitcoins you can merge-mine namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
 
-### What are the similarities with Bitcoin?
+### What are the similarities between Namecoin and Bitcoin?
 
 * 21 million coins total, minus the lost coins.
 * 50 coins are generated each block at the beginning; the reward halves each 210000 blocks (around 4 years).
 * Security: a large fraction of Bitcoin miners also mine Namecoin, giving it a staggering difficulty.
 * Pseudonymous founder: Vince, like Satoshi, never revealed his real-world identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts in the FLOSS community.
 * Free / libre / open-source platform: Anyone can improve the code and report issues on [GitHub](https://github.com/namecoin/) and even use it on other projects.
+
+### How does Namecoin compare to Tor Onion Services?
+
+The Tor Project's Onion Services (which have a `.onion` top-level domain) use domains which are a public key hash.  This means that their domain names are not human-meaningful, whereas Namecoin domain names are human-meaningful.  Namecoin's `.bit` domains can point to `.onion` domains, providing a human-meaningful naming layer on top of Tor Onion Services.  Blockchain-based systems like Namecoin are, at this time, unable to match the cryptographic security guarantees (against impersonation or deanonymization attacks) that systems like Onion Service names provide when used directly, but Namecoin's human-meaningful names do make Namecoin more resistant than Onion Service names to some classes of attacks that exploit human psychology rather than breaking cryptography.  For example, humans have trouble remembering a public key hash or recognizing a public key hash as the correct one; this is much better with meaningful names such as Namecoin names (or ICANN DNS names).  Attackers can exploit this property of Onion Service names in order to trick users into visiting the incorrect website.  We believe that both systems serve a useful purpose, and determining whether direct usage of Onion Service names or Namecoin naming for Onion Services is more secure for a given user requires consideration of that user's threat model.
+
+### How does Namecoin compare to Blockstack?
+
+Below is a comparison table of Namecoin and Blockstack (with Bitcoin added for reference).
+
+|  | **Namecoin** | **Blockstack** | **Bitcoin** |
+---|--------------|----------------|-------------|
+| **Lightweight validation mode** | [SPV](https://bitcoin.org/en/glossary/simplified-payment-verification) backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work) (e.g. BitcoinJ+libdohj). | Checkpoints provided by a trusted 3rd party. Blockstack refers to this as "Consensus Hashes", "SNV" ("Simplified Name Verification"), or (confusingly) "SPV". Is not backed by PoW and has no relation to Bitcoin's SPV threat model. | SPV backed by PoW (e.g. BitcoinJ). | 
+| **Hashrate attesting to transaction ordering** | ~45% of Bitcoin as of 2016 Aug 23. | 100% of Bitcoin. | 100% of Bitcoin. | 
+| **Hashrate attesting to transaction validity** | ~45% of Bitcoin as of 2016 Aug 23. | 0% of Bitcoin (miners do not attest to transaction validity). | 100% of Bitcoin. | 
+| **Miners possessing a majority of hashrate** | None. | None. | None. | 
+| **Mining pools influencing a majority of hashrate** | None. | None. | None. | 
+| **Legal jurisdictions influencing pools with a majority of hashrate** | China. | China. | China. | 
+| **Infrastructure capable of censoring all new blocks (non-selectively)** | Bitcoin Relay Network, by censoring all Bitcoin blocks that commit to Namecoin blocks. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
+| **Infrastructure capable of censoring new blocks based on content (e.g. targeting a name)** | None. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
+| **Blockchain download size (for full node)** | 2.52 GB as of 2016 Aug 23 ([source](https://bchain.info/NMC/)). | 75.57 GB as of 2016 Aug 23 ([source](https://bchain.info/BTC/)) (same as Bitcoin). | 75.57 GB as of 2016 Aug 23 ([source](https://bchain.info/BTC/)). | 
+| **Consensus codebase** | Fork of Bitcoin Core with minimal changes (primarily merged mining and 3 new opcodes for altering a name database). | Completely new codebase. | Bitcoin Core. | 
+| **Data storage** | Choice between blockchain (similar threat model to Bitcoin) and external storage (lower transaction fees, higher scalability).  External DNS storage currently supports nameservers (threat model is DNSSEC with user-supplied keys; the DNSSEC keys have similar threat model to Bitcoin).  External identity storage currently supports PGP keyservers. | Required external storage; by default [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table).  See the opinions of Bitcoin developers [Peter Todd](https://bitcointalk.org/index.php?topic=395761.msg5970778;topicseen#msg5970778) and [Greg Maxwell](https://bitcointalk.org/index.php?topic=662734.msg7521013;topicseen#msg7521013) about DHT's. | Blockchain. | 
+| **Funding sources and ethics** | Crowdfunding, donations, consulting/contracting (e.g. for F2Pool and an employee of Kraken).  Has refused funding opportunities that were perceived to create conflicts of interest regarding user freedom, privacy, and security.  Frequently references WikiLeaks and Ed Snowden in specification examples and other development discussion. | Funded by an investor who has [endorsed cryptographic backdoors](https://web.archive.org/web/20160319061046/http://avc.com/2016/03/privacy-absolutism/) and who considers [ROT13](https://en.wikipedia.org/wiki/ROT13) to be a ["serious" and "intriguing" security mechanism](https://twitter.com/csoghoian/status/709908777038954496). | (N/A) | 
+| **Do the developers run services that hold users' private keys?** | No.  Many years ago, a former Namecoin developer did run such a service.  It has been discontinued, as the current Namecoin developer team considers such services to be harmful and a liability. | [Yes, Onename.](https://onename.com/) | Not as far as we know. | 
+
+### How does Namecoin compare to Monero?
+
+Monero's MoneroDNS project is similar in concept to Namecoin.  MoneroDNS's technical differences to Namecoin are similar to Monero's technical differences to Bitcoin.  Monero has had much less technical review than Bitcoin, and merge-mined chains based on Monero have significantly less hashrate security available to them than merge-mined chains based on Bitcoin.  On the other hand, Monero's small size enables them to liberally experiment with more advanced features and cryptography, whereas Bitcoin-based systems like Namecoin are more conservative.  The Namecoin and Monero development teams are cooperating on areas of common interest, as both projects agree that Namecoin and Monero both have a future.
 
 ## Weaknesses 
 
@@ -137,7 +165,11 @@ Both of these attacks are detectable.  In the case of reversing transactions, th
 
 It is noteworthy that a 51% attacker cannot sell a name to a user and then steal back the name.  Nor can a 51% attacker buy a name from a seller and then steal back the money.  This is because Namecoin supports *atomic* name trades: reversing the purchase payment also reverses the name transfer, and vice versa.  Double-spending of `name_update` transactions also isn't beneficial to an attacker, because `name_update` transactions typically are sent by a user to themself, meaning that the attacker could only scam themself.
 
-In both Bitcoin and Namecoin, the Chinese government has jurisdiction over a majority of hashpower.  This is problematic for both Bitcoin and Namecoin, and should be fixed in both.  Because not all Bitcoin miners also mine Namecoin, F2Pool has a majority of Namecoin hashpower.  This is also problematic, and should be fixed.  In practice, the Chinese government has considerably more motivation to perform a 51% attack than F2Pool does.  (The Chinese government has a [history of messing with Internet traffic](https://en.wikipedia.org/wiki/Internet_censorship_in_China).  F2Pool has supported Namecoin development both financially and logistically, which makes it unlikely that they would want to attack it.)  Therefore, while Bitcoin theoretically has fewer parties with a hashrate majority, *in practice* the party with the most motivation to attack has a hashrate majority of both Bitcoin and Namecoin.  Mining decentralization is an active research area, and we hope that significant improvements in this area are made, as they would improve the security of both Bitcoin and Namecoin.
+In both Bitcoin and Namecoin, the Chinese government has jurisdiction over a majority of hashpower.  This is problematic for both Bitcoin and Namecoin, and should be fixed in both.  Because not all Bitcoin miners also mine Namecoin, F2Pool previously had a majority of Namecoin hashpower (they no longer do).  This was also problematic when it was the case.  However, in practice, the Chinese government has considerably more motivation to perform a 51% attack than F2Pool does.  (The Chinese government has a [history of messing with Internet traffic](https://en.wikipedia.org/wiki/Internet_censorship_in_China).  F2Pool has supported Namecoin development both financially and logistically, which makes it unlikely that they would want to attack it.)
+
+A majority of Bitcoin's hashpower is routed via the Bitcoin Relay Network, which has the ability to censor Bitcoin blocks that pass through it.  This produces incentives for Bitcoin miners to self-censor any blocks that might violate any policy introduced in the future by Bitcoin Relay Network, because routing blocks through Bitcoin Relay Network reduces orphan rates for miners.  Namecoin's blocks are much smaller than Bitcoin's, and therefore Namecoin does not have similar incentives for centralized block relay infrastructure.  While it is possible for Bitcoin Relay Network to attack Namecoin by censoring Bitcoin blocks that commit to merge-mined Namecoin blocks, it is not feasible for Bitcoin Relay Network to look inside the Namecoin blocks that are committed to, which means that Bitcoin Relay Network cannot censor Namecoin blocks by content as they can with Bitcoin blocks.  Bitcoin Relay Network is operated by Bitcoin Core developer Matt Corallo, who is unlikely to want to attack Bitcoin (just as F2Pool is unlikely to want to attack Namecoin).
+
+The takeaway here is that while F2Pool theoretically used to be capable of attacking Namecoin (but not Bitcoin), and Bitcoin Relay Network is theoretically capable of attacking Bitcoin (but not Namecoin), *in practice* the party with the most motivation to attack either chain (the Chinese government) has jurisdiction over a hashrate majority of both Bitcoin and Namecoin.  Mining decentralization is an active research area, and we hope that significant improvements in this area are made, as they would improve the security of both Bitcoin and Namecoin.
 
 ### Is squatting a problem?  What can be done about it?
 
