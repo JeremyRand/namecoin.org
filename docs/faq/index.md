@@ -15,7 +15,7 @@ The Namecoin software is used to register names and store associated values in t
 
 If you're using Namecoin to register or otherwise own names, or to transfer namecoins, then you do need to periodically back up your wallet.  Like Bitcoin, your wallet's keys are located in your `wallet.dat` file.  You should encrypt this file by going to `Settings` > `Encrypt Wallet` and making a backup thereafter. Close the Namecoin client and make a backup of your `wallet.dat` file in your Namecoin profile folder.  (On GNU/Linux, this is usually `~/.namecoin/`; on Windows, it is usually `C:\Users\<Your Username>\AppData\Roaming\Namecoin\`).  It is currently recommended to back up more often than every 100 transactions (including both currency and name transactions).
 
-If you are only using Namecoin to look up names (e.g. browsing .bit domains), then you do not need to encrypt or back up your wallet.
+If you are only using Namecoin to look up names (e.g. browsing `.bit` domains), then you do not need to encrypt or back up your wallet.
 
 ### How much does it cost to register a domain (a.k.a. a name)? 
 
@@ -63,9 +63,9 @@ If you're developing an application, consider doing your development on the Name
 
 Namespaces are name prefixes used by applications to distinguish between different type of names in Namecoin.  For example, `d/example` is the domain name `example.bit`, and `id/example` is an identity.  Namespaces help prevent multiple applications from accidentally conflicting.  Namecoin itself isn't aware of namespaces, and namespaces don't have any effect on validation rules; they are only used by higher-level applications that use Namecoin.
 
-### Why is there a separate name_new step? 
+### Why is there a separate `name_new` step? 
 
-This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted during the name_new step, only a salted hash of it. There is a mandatory minimum delay of 12 blocks before you can broadcast your name with name_firstupdate; this means that by the time other people know what name you're registering, they would have to reverse at least 12 blocks in order to steal the name.
+This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted during the `name_new` step, only a salted hash of it. There is a mandatory minimum delay of 12 blocks before you can broadcast your name with `name_firstupdate`; this means that by the time other people know what name you're registering, they would have to reverse at least 12 blocks in order to steal the name.
 
 ### How are names represented? 
 
@@ -92,20 +92,20 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 ### What is the difference to Bitcoin?
 
 * There are additional commands for special transactions containing *names* and *data* (key/value pairs).
-* The most important commands are: name_new, name_firstupdate and name_update.
-* The coins used to pay for a name_firstupdate operation are being "destroyed", i.e. every new name reduces the finally usable maximum of 21 Million NMC by 0.01 NMC.
+* The most important commands are: `name_new`, `name_firstupdate`, and `name_update`.
+* The coins used to pay for a `name_firstupdate` operation are destroyed, i.e. every new name reduces the finally usable maximum of 21 million NMC by 0.01 NMC.
 * `name_new`, `name_firstupdate` and `name_update` contain a pair of name/value which expires after 36,000 blocks (between 200 and 250 days).
 * The `d/` prefix is used to register a domain name, without the .bit TLD: `{     "name" : "d/opennic",     "value" : "what you want",     "expires_in" : 10227 }`
-* The `id/` prefix is used to register an identity, see https://nameid.org/
+* The `id/` prefix is used to register an identity, see [NameID](https://nameid.org/).
 * Energy-efficient: if you are already mining bitcoins you can merge-mine namecoins at no extra cost for hardware and electricity. Examples for merge-mining pools: mmpool.org, eligius.st, p2pool.org and many others.
 
 ### What are the similarities with Bitcoin?
 
-* 21 millions coins total, minus the lost coins.
+* 21 million coins total, minus the lost coins.
 * 50 coins are generated each block at the beginning; the reward halves each 210000 blocks (around 4 years).
 * Security: a large fraction of Bitcoin miners also mine Namecoin, giving it a staggering difficulty.
 * Pseudonymous founder: Vince, like Satoshi, never revealed his real-world identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts in the FLOSS community.
-* Free / libre / open-source platform: Anyone can improve the code and report issues on [Github](https://github.com/namecoin/) and even use it on other projects.
+* Free / libre / open-source platform: Anyone can improve the code and report issues on [GitHub](https://github.com/namecoin/) and even use it on other projects.
 
 ## Weaknesses 
 
@@ -113,7 +113,7 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 
 For an attacker who does not have a majority of hashrate, stealing a Namecoin name is, roughly speaking, equivalent to the task of stealing bitcoins.  This usually requires stealing the private key which owns the name.  Assuming that proper security measures are in place by the owner, this is very difficult.  However, if a user fails to keep their private keys safe, all bets are off.  The standard method for attempting to steal bitcoins is to use malware; this is likely to be equally effective for stealing Namecoin names.  Users can protect themselves using all the standard methods of avoiding malware, which are out of scope of this FAQ.
 
-The good news is that the script system inherent in Bitcoin and Namecoin is designed to enable features that make theft more difficult.  Many features are under development would allow users considerable flexibility in constructing anti-theft policies that meet their needs.  For example:
+The good news is that the script system inherent in Bitcoin and Namecoin is designed to enable features that make theft more difficult.  Many features are under development that would allow users considerable flexibility in constructing anti-theft policies that meet their needs.  For example:
 
 * **Multisig** (similar to Bitcoin) would allow names to be controlled by M-of-N keys.  Some of these keys could belong to the various directors of a company, be stored in a secure location, or be stored by semi-trusted service providers.  This is currently supported by the Namecoin protocol and consensus rules, but not well-exposed to end users.
 * **Offline signing** (similar to Bitcoin) would allow names to be controlled by keys that are located on an air-gapped computer, an isolated offline Qubes virtual machine, or a hardware wallet.  This is currently supported by the Namecoin protocol and consensus rules, but not well-exposed to end users.
@@ -131,11 +131,11 @@ We are unaware of convincing empirical evidence of how Namecoin's theft risk com
 
 Information about what a 51% attacker can do in Bitcoin is [described on the Bitcoin StackExchange](https://bitcoin.stackexchange.com/a/662).  Namecoin is quite similar.  The primary things that adversely affect Namecoin are reversing transactions sent by the attacker and preventing transactions from gaining confirmations.
 
-Reversing transactions sent by the attacker would allow name registrations to be stolen if the reversed transaction is a name_firstupdate.  This is because prior to being registered, names are considered to be "anyone can spend", meaning that prior to the registration, any arbitrary attacker is equally in ownership of a name as the user who actually registers it.  Preventing transactions from gaining any confirmations would allow names to be stolen if all transactions for a name are prevented from confirming until the name expires after 36000 blocks, at which point the attacker can register it.
+Reversing transactions sent by the attacker would allow name registrations to be stolen if the reversed transaction is a `name_firstupdate`.  This is because prior to being registered, names are considered to be "anyone can spend", meaning that prior to the registration, any arbitrary attacker is equally in ownership of a name as the user who actually registers it.  Preventing transactions from gaining any confirmations would allow names to be stolen if all transactions for a name are prevented from confirming until the name expires after 36000 blocks, at which point the attacker can register it.
 
-Both of these attacks are detectable.  In the case of reversing transactions, the evidence would be an extremely long fork in the blockchain, possibly thousands of blocks long or longer.  In the case of preventing transactions from confirming, the evidence would be that the blockchain indicates that a name expired and was re-registered.  In both cases, it is detectable which names were attacked.  In the case of preventing transactions from confirming, it is also possible for the legitimate owner of the stolen name to register a new name after the attack is over, and sign it with the owner key of the original name, thus proving common ownership and allowing secure resurrection of the name.  The only way to prevent this resurrection is for the attacker to continue to expend mining resources on the attack for as long as they with to prevent the name from being resurrected.  In the case of the reversing transactions, it is not possible to prove ownership of the original name and resurrect it.  Luckily, reversing old transactions is considerably more expensive than preventing new transactions from confirming.
+Both of these attacks are detectable.  In the case of reversing transactions, the evidence would be an extremely long fork in the blockchain, possibly thousands of blocks long or longer.  In the case of preventing transactions from confirming, the evidence would be that the blockchain indicates that a name expired and was re-registered.  In both cases, it is detectable which names were attacked.  In the case of preventing transactions from confirming, it is also possible for the legitimate owner of the stolen name to register a new name after the attack is over, and sign it with the owner key of the original name, thus proving common ownership and allowing secure resurrection of the name.  The only way to prevent this resurrection is for the attacker to continue to expend mining resources on the attack for as long as they with to prevent the name from being resurrected.  In the case of reversing transactions, it is not possible to prove ownership of the original name and resurrect it.  Luckily, reversing old transactions is considerably more expensive than preventing new transactions from confirming.
 
-It is noteworthy that a 51% attacker cannot sell a name to a user and then steal back the name.  Nor can a 51% attacker buy a name from a seller and then steal back the money.  This is because Namecoin supports *atomic* name trades: reversing the purchase payment also reverses the name transfer, and vice versa.  Double-spending of name_update transactions also isn't beneficial to an attacker, because name_update transactions typically are sent by a user to themself, meaning that the attacker could only scam themself.
+It is noteworthy that a 51% attacker cannot sell a name to a user and then steal back the name.  Nor can a 51% attacker buy a name from a seller and then steal back the money.  This is because Namecoin supports *atomic* name trades: reversing the purchase payment also reverses the name transfer, and vice versa.  Double-spending of `name_update` transactions also isn't beneficial to an attacker, because `name_update` transactions typically are sent by a user to themself, meaning that the attacker could only scam themself.
 
 In both Bitcoin and Namecoin, the Chinese government has jurisdiction over a majority of hashpower.  This is problematic for both Bitcoin and Namecoin, and should be fixed in both.  Because not all Bitcoin miners also mine Namecoin, F2Pool has a majority of Namecoin hashpower.  This is also problematic, and should be fixed.  In practice, the Chinese government has considerably more motivation to perform a 51% attack than F2Pool does.  (The Chinese government has a [history of messing with Internet traffic](https://en.wikipedia.org/wiki/Internet_censorship_in_China).  F2Pool has supported Namecoin development both financially and logistically, which makes it unlikely that they would want to attack it.)  Therefore, while Bitcoin theoretically has fewer parties with a hashrate majority, *in practice* the party with the most motivation to attack has a hashrate majority of both Bitcoin and Namecoin.  Mining decentralization is an active research area, and we hope that significant improvements in this area are made, as they would improve the security of both Bitcoin and Namecoin.
 
