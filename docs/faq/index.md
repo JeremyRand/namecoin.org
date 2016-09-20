@@ -109,7 +109,7 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 
 ## Weaknesses 
 
-### Name Stealing 
+### How easy is it for names to be stolen?  What can be done if it happens?
 
 For an attacker who does not have a majority of hashrate, stealing a Namecoin name is, roughly speaking, equivalent to the task of stealing bitcoins.  This usually requires stealing the private key which owns the name.  Assuming that proper security measures are in place by the owner, this is very difficult.  However, if a user fails to keep their private keys safe, all bets are off.  The standard method for attempting to steal bitcoins is to use malware; this is likely to be equally effective for stealing Namecoin names.  Users can protect themselves using all the standard methods of avoiding malware, which are out of scope of this FAQ.
 
@@ -127,7 +127,7 @@ Unfortunately, if all of the above security measures fail (or are not in use for
 
 We are unaware of convincing empirical evidence of how Namecoin's theft risk compares to that of the ICANN domain name system when the recommended security procedures of both are in use; this is difficult to measure because it is likely that a significant number of Namecoin users and ICANN domain name system users are not using the recommended security procedures.
 
-### 51% Attack
+### What is the threat posed by 51% attacks?
 
 Information about what a 51% attacker can do in Bitcoin is [described on the Bitcoin StackExchange](https://bitcoin.stackexchange.com/a/662).  Namecoin is quite similar.  The primary things that adversely affect Namecoin are reversing transactions sent by the attacker and preventing transactions from gaining confirmations.
 
@@ -139,7 +139,7 @@ It is noteworthy that a 51% attacker cannot sell a name to a user and then steal
 
 In both Bitcoin and Namecoin, the Chinese government has jurisdiction over a majority of hashpower.  This is problematic for both Bitcoin and Namecoin, and should be fixed in both.  Because not all Bitcoin miners also mine Namecoin, F2Pool has a majority of Namecoin hashpower.  This is also problematic, and should be fixed.  In practice, the Chinese government has considerably more motivation to perform a 51% attack than F2Pool does.  (The Chinese government has a [history of messing with Internet traffic](https://en.wikipedia.org/wiki/Internet_censorship_in_China).  F2Pool has supported Namecoin development both financially and logistically, which makes it unlikely that they would want to attack it.)  Therefore, while Bitcoin theoretically has fewer parties with a hashrate majority, *in practice* the party with the most motivation to attack has a hashrate majority of both Bitcoin and Namecoin.  Mining decentralization is an active research area, and we hope that significant improvements in this area are made, as they would improve the security of both Bitcoin and Namecoin.
 
-### Squatting 
+### Is squatting a problem?  What can be done about it?
 
 There are several types of squatting concerns sometimes raised in relation to Namecoin.
 
@@ -153,7 +153,7 @@ At the moment, the current developers consider other issues to be somewhat highe
 
 In the meantime, practical advice is that if you want a name but it's squatted, try to contact the owner (many squatters leave contact information in the value of their names) and see if they'll let you have it.  We have heard of many cases where squatters either gave away names or sold them for very little money if the recipient actually planned to use the name rather than resell it.  If they demand money that you're unwilling to pay, consider registering a different name.  It's unlikely that the website or service you want to set up can only work with that one specific name.  Strategies for finding an unused ICANN domain name or an untrademarked business name are likely to be applicable for Namecoin too.
 
-### Blockchain Anonymity 
+### Is Namecoin anonymous?
 
 Like Bitcoin, Namecoin is not anonymous.  A thorough description of Bitcoin's poor anonymity properties is outside the scope of this FAQ.
 
