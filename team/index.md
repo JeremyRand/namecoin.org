@@ -27,6 +27,11 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 **Lead Application Engineer & Community Organizer** <br>
 Jeremy is our .bit application specialist, and works on FreeSpeechMe, NMControl, and other projects such as DyName. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
 
+## Brandon "Brando" Roberts
+
+**Lead C++ GUI Engineer** <br>
+Brandon is a hacker with a background in independent journalism and machine learning who works on Namecoin-Qt. In addition to his work on Namecoin Core, he maintains a Namecoin port of Bitcore, Bitcore-Namecoin. When he's not on his computer he's probably skateboarding.
+
 ## Zachary Lym (indolering)
 
 **Lead UX Engineer & Community Organizer** <br>
