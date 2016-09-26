@@ -25,7 +25,7 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 ## Jeremy Rand (biolizard89)
 
 **Lead Application Engineer & Community Organizer** <br>
-Jeremy is our .bit application specialist, and works on FreeSpeechMe, NMControl, and other projects such as DyName. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
+Jeremy is our .bit application specialist, and works on our codebases relating to TLS, Tor, and SPV, among other projects. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Outside of Namecoin, he has a background in console game hacking (in particular, synchronizing multiple game consoles with each other and with virtual reality hardware) and educational robotics. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
 
 ## Brandon "Brando" Roberts
 
