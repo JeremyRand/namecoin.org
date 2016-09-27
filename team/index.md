@@ -50,7 +50,7 @@ Cassini (working under a pseudonym) holds the reins in the Mac OS X world. He is
 ## Peter Conrad (pmc)
 
 **Linux Build Maintainer** <br>
-Peter uses his 20 years of Unix/Linux experience to manage namecoin packages for the major linux distributions. Outside the Namecoin community he is working as a freelance software developer.
+Peter uses his 20 years of Unix/Linux experience to manage Namecoin packages for the major Linux distributions. Outside the Namecoin community he is working as a freelance software developer.
 
 ## Anonymous Developers
 
