@@ -25,7 +25,12 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 ## Jeremy Rand (biolizard89)
 
 **Lead Application Engineer & Community Organizer** <br>
-Jeremy is our .bit application specialist, and works on FreeSpeechMe, NMControl, and other projects such as DyName. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
+Jeremy is our .bit application specialist, and works on our codebases relating to TLS, Tor, and SPV, among other projects. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Outside of Namecoin, he has a background in console game hacking (in particular, synchronizing multiple game consoles with each other and with virtual reality hardware) and educational robotics. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
+
+## Brandon "Brando" Roberts
+
+**Lead C++ GUI Engineer** <br>
+Brandon is a hacker with a background in independent journalism and machine learning who works on Namecoin-Qt. In addition to his work on Namecoin Core, he maintains a Namecoin port of Bitcore, Bitcore-Namecoin. When he's not on his computer he's probably skateboarding.
 
 ## Zachary Lym (indolering)
 
@@ -45,7 +50,7 @@ Cassini (working under a pseudonym) holds the reins in the Mac OS X world. He is
 ## Peter Conrad (pmc)
 
 **Linux Build Maintainer** <br>
-Peter uses his 20 years of Unix/Linux experience to manage namecoin packages for the major linux distributions. Outside the Namecoin community he is working as a freelance software developer.
+Peter uses his 20 years of Unix/Linux experience to manage Namecoin packages for the major Linux distributions. Outside the Namecoin community he is working as a freelance software developer.
 
 ## Anonymous Developers
 
