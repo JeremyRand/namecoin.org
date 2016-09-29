@@ -210,3 +210,9 @@ Y8KZVgiGjFAqQ45j4ngB
 =iBUs
 -----END PGP SIGNATURE-----
 ~~~
+
+## Lightweight SPV BitcoinJ Name Lookup Client
+
+This is a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing .bit domains with ncdns), which synchronizes faster and uses less storage, but trusts Namecoin miners more than Namecoin Core does.
+
+[Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
