@@ -96,3 +96,22 @@ td, th {
     border: 1px solid #999;
     padding: 0.5em;
 }
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -51px;
+    height: 51px;
+    visibility: hidden;
+}
+
+/* TODO: refactor this */
+@media (max-width: 1003px) and (min-width: 768px) {
+    *[id]:before {
+        display: block;
+        content: " ";
+        margin-top: -101px;
+        height: 101px;
+        visibility: hidden;
+    }
+}
