@@ -5,9 +5,9 @@ author: Jeremy Rand
 tags: [Releases, libdohj Releases]
 ---
 
-If you watched [my lightning talk at Decentralized Web Summit 2016](https://archive.org/details/DecentralizedWeb20160609pt1?start=21490) (and if you didn't, shame on you -- go watch it right now along with [the other talks](https://archive.org/details/decentralizedwebsummit2016?&sort=publicdate)!), you'll remember that I announced SPV name lookups were working.  I'm happy to announce that that code is now published *in preliminary form* on GitHub for testing.
+If you watched [my lightning talk at Decentralized Web Summit 2016](https://archive.org/details/DecentralizedWeb20160609pt1?start=21490) (and if you didn't, shame on you -- go watch it right now along with [the other talks](https://archive.org/details/decentralizedwebsummit2016?&sort=publicdate)!), you'll remember that I announced SPV name lookups were working.  I'm happy to announce that that code is now published *in preliminary form* on GitHub, and binaries are available for testing.
 
-[Instructions for using the SPV client are available here]({{site.baseurl}}docs/bitcoinj-name-lookups/).  Once installed, it's basically a drop-in replacement for Namecoin Core for any application that does name lookups (such as ncdns).  Test reports are greatly appreciated so that we can do a proper release sooner.
+You can download it at the [Beta Downloads]({{site.baseurl}}download/betas/) page.  Once installed, it's basically a drop-in replacement for Namecoin Core for any application that does name lookups (such as ncdns).  Test reports are greatly appreciated so that we can do a proper release sooner.
 
 Initial syncup using a residential clearnet cable modem connection takes between 5 minutes and 10 minutes, depending on the settings.  (It is probably feasible to improve this.)  Lookup latency for `name_show` varies from 2 seconds to 4 milliseconds, depending on the settings.  (It is also probably feasible to improve this.)
 
@@ -23,6 +23,4 @@ Remember: this is a beta, *for testing purposes only*.  Don't use this for situa
 
 In addition, some notes about security.  SPV protects you from being served expired name data, and protects you from being served unexpired name data that isn't part of the longest chain.  However, the SPV modes other than `leveldbtxcache` (see the documentation) don't protect you from being served outdated name data that hasn't yet expired, nor does it protect you from being served false nonexistence responses, nor does it protect you from someone logging which names you look up.  We made an intentional design decision to trust webbtc.com here, rather than the Namecoin P2P network, because the P2P network is unauthenticated, trivially easy to wiretap, and trivially easy to Sybil.  `leveldbtxcache` mode avoids these isues, although it takes about twice as long to synchronize.  We have plans to add further improvements in these areas as well.  SPV also doesn't protect you from attackers with a large amount of hashpower.  As with Bitcoin, a major reason that miners can't easily attack end users is because there are enough full nodes on the network to keep the miners honest.  If you have the ability to run Namecoin Core (syncup time of a few hours, and a few GB of storage), you should do so -- you'll have better security for yourself, and you'll be improving the security of other users who can't run a full node.
 
-This development work was sponsored by a 1.0 BTC bounty from the Namecoin Marketing and Development Fund [1].  If you'd like to see more awesome things happen in the Namecoin development scene, [please donate](https://namecoin.org/donate/)!
-
-[1] Most of us are working for free, and 1.0 BTC doesn't come close to covering the development costs of the SPV client.
+Have fun testing!

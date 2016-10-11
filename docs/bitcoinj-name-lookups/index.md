@@ -13,14 +13,14 @@ This is documentation for the BitcoinJ-based name lookup client by Namecoin's Le
 
 **Warning: this is beta software, and is not suitable for production use.  It is being made available for testing purposes only.  It doesn't support proxying or stream isolation.  In the examples on this page, we explicitly pass command-line arguments telling the client that this is okay.  Leaving off those arguments will result in an error for safety reasons.**
 
-Right now binaries are not available, so you'll need to install from source code.
-
 ## Build prerequisites
+
+(This is only if you want to build from source.)
 
 ### GNU/Linux
 
 1. Install OpenJDK from your package repositories.  These instructions will be updated later with specific package names.  Development was done with JDK 8; JDK 7 might work but is untested.
-2. Make sure that the `JAVA_HOME` environment variable is set.
+2. Make sure that the `JAVA_HOME` environment variable is set.  On Jeremy's Debian Jessie VM, he had to manually set it to `/usr/lib/jvm/java-8-openjdk-amd64`.
 3. Install Maven from your package repositories.  These instructions will be updated later with specific package names.
 
 ### Windows
@@ -29,13 +29,15 @@ Right now binaries are not available, so you'll need to install from source code
 2. Make sure that the `JAVA_HOME` environment variable is set.  On Jeremy's Windows 10 VM, he had to manually set it to `C:\Program Files\Java\jdk1.8.0_101`.
 3. Install Maven.  Note that Maven's official download site uses non-TLS downloads (insecure), MD5 checksums (insecure), and 1024-bit DSA signing keys (insecure).  If you enjoy being MITM-attacked and installing malware, you can use the [Maven download page](https://maven.apache.org/download.cgi) and the [Maven install page](https://maven.apache.org/install.html).
 
-For those of you who *don't* enjoy installing malware, we're looking at what options are available, e.g. cross-compiling from GNU/Linux.
+For those of you who *don't* enjoy installing malware, we suggest building from source on GNU/Linux and copying the binary to Windows.
 
 ### OS X
 
 No idea.  If anyone can contribute instructions for OS X, let us know.
 
 ## Build instructions
+
+(This is only if you want to build from source.)
 
 There are 2 different branches available.  A partially-stable branch uses Dogecoin's upstream version of libdohj.  A bleeding-edge branch uses a modified fork of libdohj that is not yet upstreamed.  Neither branch should be considered stable, since they are both using a modified fork of bitcoinj-addons that is not yet upstreamed.  Test reports against the bleeding-edge branch are likely to be more useful.  **Trying to install both branches on the same machine is likely to cause problems unless the Gradle caches are entirely cleared when switching between them.**
 
@@ -59,23 +61,24 @@ For the bleeding-edge branch:
 ~~~
 git clone https://github.com/JeremyRand/libdohj.git
 cd libdohj
-git checkout namecoin-local-lookup
+git checkout namecoin-local-lookup-2
 mvn clean install
 cd namecoin
 mvn clean install
 cd ../..
 git clone https://github.com/JeremyRand/bitcoinj-addons.git
 cd bitcoinj-addons
-git checkout getd4-draft-local-lookup
+git checkout getd4-draft-local-lookup-2
 ./gradlew clean :bitcoinj-daemon:assemble
 ~~~
+
+For either branch, the binary will be created at `bitcoinj-daemon/build/libs/bitcoinj-daemon-0.1.1-SNAPSHOT.jar`.
 
 ## Running it
 
 **All API elements that are not directly taken from Namecoin Core (including all command-line arguments and all URL formats and JSON structures for the upstream REST API) are not guaranteed to have a stable API; they might be renamed, modified, or removed in the future.**
 
 ~~~
-cd bitcoinj-daemon/build/libs
 java -jar ./bitcoinj-daemon-0.1.1-SNAPSHOT.jar --connection.proxyenabled=false --connection.streamisolation=false
 ~~~
 
