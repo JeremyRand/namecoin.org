@@ -19,6 +19,33 @@ As usual, it is a good idea to verify the hashes and signatures of these downloa
 
 This adds a "Manage Names" tab to the GUI interface (similar to what's in Namecoin 0.3.80).  You can use it to register, track, update, and renew Namecoin names.  Testers should focus on different ways of creating and managing names, restarting the application mid-update/create/renew, and the details involved in displaying names and name transactions.
 
+**0.13.99-name-tab-beta1**
+
+Fixed issues:
+
+* Tests were failing.
+* Wallet unlock wasn't triggered on `name_firstupdate`.
+* iCCP errors were appearing.
+* `name_firstupdate` errors were ignored.
+* Broken links in name tab UI.
+
+Known or reported issues:
+
+* This build has not yet been reproduced by multiple Gitian builders.
+
+Downloads:
+
+* [GNU/Linux (x86 64-bit) (tgz)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-x86_64-linux-gnu.tar.gz)
+* [GNU/Linux (x86 32-bit) (tgz)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-i686-pc-linux-gnu.tar.gz)
+* [GNU/Linux (ARM 64-bit) (tgz)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-aarch64-linux-gnu.tar.gz)
+* [GNU/Linux (ARM 32-bit) (tgz)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-arm-linux-gnueabihf.tar.gz)
+* [Windows (64-bit) (Installer)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64-setup-unsigned.exe)
+* [Windows (32-bit) (Installer)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32-setup-unsigned.exe)
+* [Windows (64-bit) (zip)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64.zip)
+* [Windows (32-bit) (zip)](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32.zip)
+
+Gitian signatures: [At the usual place on GitHub.](https://github.com/namecoin/gitian.sigs)
+
 **GNU/Linux (0.12.99, April 17, 2016, commit c3cf9893c1726f7cabd8808d236be5744a76d9c2)**
 
 Fixed issues:
