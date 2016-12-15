@@ -32,6 +32,11 @@ Jeremy is our .bit application specialist, and works on our codebases relating t
 **Lead C++ GUI Engineer** <br>
 Brandon is a hacker with a background in independent journalism and machine learning who works on Namecoin-Qt. In addition to his work on Namecoin Core, he maintains a Namecoin port of Bitcore, Bitcore-Namecoin. When he's not on his computer he's probably skateboarding.
 
+## Joseph Bisch
+
+**Lead Porting & Reproducible Build Engineer** <br>
+Joseph works on porting Bitcoin software to Namecoin, and also specializes in reproducible builds.  Outside of Namecoin, he has done development work relating to Bitcoin wallet software, the Gitian reproducible build tool (his contributions are primarily used by The Tor Project), and the Debian GNU/Linux distribution.
+
 ## Zachary Lym (indolering)
 
 **Lead UX Engineer & Community Organizer** <br>
