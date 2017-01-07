@@ -35,9 +35,9 @@ Adding P2P wire protocol commands may be fine if it helps you in accomplishing t
 Namecoin currently supports integration with the DNS resolvers on desktop OS's such as GNU/Linux, Windows, and macOS.  Integration with the Tor anonymity network on desktop OS's (with domain names pointing to IP addresses, DNS names, and onion services) is almost ready for use.  However, there are several other applications and environments where Namecoin domain names would be beneficial.  Some of these are:
 
 * The Android mobile OS.  This might also include porting an Android Light Client to Namecoin.
-* The I2P anonymity network (names point to IP addresses, DNS names, and eepsites).
-* The Freenet anonymous hosting network (names point to freesites).
-* The ZeroNet decentralized hosting network (names point to ZeroNet sites).  ZeroNet already has partial support for Namecoin but currently uses a centralized server to look up names.
+* The [I2P](https://geti2p.net/) anonymity network (names point to IP addresses, DNS names, and eepsites).
+* The [Freenet](https://freenetproject.org/) anonymous hosting network (names point to freesites).
+* The [ZeroNet](https://zeronet.io/) decentralized hosting network (names point to ZeroNet sites).  ZeroNet already has partial support for Namecoin but currently uses a centralized server to look up names.
 * The IPFS decentralized hosting network (names point to IPFS sites).
 
 You are free to integrate Namecoin domain names into any additional platform(s) or application(s) of your choice, as long as they do not enforce DRM (this means Apple iOS is not acceptable).  In many cases, it is likely that you would benefit from talking to the developers of whatever application you would be working with (e.g. if you're implementing Namecoin support in I2P, you might want to talk to the developers of an I2P client implementation).
@@ -62,7 +62,7 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 * Ricochet.  **TODO: Check with Special about whether this is a good idea for 2017.**
 * Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2017**
 * Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2017**
-* Cryptocurrency addresses.  May be relevant to the work by Netki and by Monero's OpenAlias project.
+* Cryptocurrency addresses.  May be relevant to the work by Netki and by [Monero's OpenAlias project](https://www.openalias.org/).
 
 **Difficulty**: Easy-Medium
 
@@ -79,7 +79,7 @@ Namecoin's name management UI isn't particularly friendly to novices; it expects
 * Provide a user-friendly UI for choosing values for the various JSON fields in the Namecoin domain names and identities specifications, which automatically constructs the JSON.
 * When registering a domain name or identity, also register a throwaway name that is used to store the actual value of the name.  By automatically configuring the main name to import a value from the throwaway name, and defaulting to storing the main name and the throwaway name in different wallets, the main name can be kept offline while the throwaway name can be kept in an online wallet.  This reduces risk of name theft considerably.
 * Check existing name configurations for errors (e.g. JSON errors or valid JSON that doesn't conform to the Namecoin domain names or identities specification), and inform the user of what's wrong.  Hugo Landau has written some code in ncdns that may be helpful for this.
-* Namecoin's protocol supports atomic name trades, in which Alice can purchase a name from Bob without counterparty risk.  This could help reduce issues with squatted names.  Make this functionality available in the UI in a simple way.  Both interactive trades (where both parties select and confirm each other) and non-interactive trades (where a trade offer can be posted publicly and another user can accept the offer without further interaction) are possible; you can implement either (or both).  You may find Phelix's ANTPY and Ryan Castellucci's nametrade implementations to be interesting.
+* Namecoin's protocol supports atomic name trades, in which Alice can purchase a name from Bob without counterparty risk.  This could help reduce issues with squatted names.  Make this functionality available in the UI in a simple way.  Both interactive trades (where both parties select and confirm each other) and non-interactive trades (where a trade offer can be posted publicly and another user can accept the offer without further interaction) are possible; you can implement either (or both).  You may find [Phelix's ANTPY](https://github.com/phelixnmc/antpy) and [Ryan Castellucci's nametrade](https://github.com/ryancdotorg/nametrade) implementations to be interesting.
 * Implement automatic renewal of names so that users don't accidentally let their name expire, and/or automatic pre-signing of renewals when the name is registered/updated so that the wallet doesn't need to be unlocked in order to renew.  Be careful about deanonymization vectors based on timing when a name is renewed!
 * Allow users to control the transaction fees they pay for name operations.  (Right now the default fee policy is always used.)
 
@@ -97,7 +97,7 @@ You are free to implement any name management UI improvements of your choice in 
 
 Namecoin suffers the same problems with traceability (lack of anonymity) of coin flows that Bitcoin does, plus additional linkability given the data attached to name transactions.  When Namecoin is used for its stated purpose to provide censorship-resistant browsing and registration of domains for possibly controversial purposes (e.g. under repressive regimes), this may be even a bigger problem than with Bitcoin.  You could improve this situation in several ways:
 
-* Improve usability of registering a name anonymously by automating a purchase of namecoins using an anonymous currency like Monero or Zcash as part of the name registration process.  This reduces the risk of private data leaking while purchasing namecoins (e.g. banking details at an exchange, or Bitcoin blockchain analysis data).  Integrating with a decentralized exchange such as Bitsquare might be a useful way to do this (this might also make it easier to register Namecoin names with national currencies).  Future advances in blockchain technology such as atomic cross-chain trades might be applicable, so try to make sure that your code could be reused with as few changes as possible for such use cases once they're ready.
+* Improve usability of registering a name anonymously by automating a purchase of namecoins using an anonymous currency like Monero or Zcash as part of the name registration process.  This reduces the risk of private data leaking while purchasing namecoins (e.g. banking details at an exchange, or Bitcoin blockchain analysis data).  Integrating with a decentralized exchange such as [Bitsquare](https://bitsquare.io/) might be a useful way to do this (this might also make it easier to register Namecoin names with national currencies).  Future advances in blockchain technology such as atomic cross-chain trades might be applicable, so try to make sure that your code could be reused with as few changes as possible for such use cases once they're ready.
 * Keep each registered name separate on the blockchain.  This reduces the risk of private data leaking in the Namecoin blockchain.  This might be done using the Coin Control or HD Wallet features of wallet software.
 * Improve the ability for Namecoin-related software to run safely when routed over Tor or other anonymity networks.  This might include testing for and fixing proxy leaks, application-layer protocol leaks, timing metadata leaks, and incorrect or missing stream isolation, among other things.  It's okay if this work includes some fixes to upstream software (e.g. Bitcoin wallet software), but a significant component of your project should be Namecoin-specific.
 
