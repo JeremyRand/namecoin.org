@@ -115,3 +115,33 @@ td, th {
         visibility: hidden;
     }
 }
+
+
+/* Begin nojs */
+
+html.nojs .dropdown-toggle:focus + .dropdown-menu, html.nojs .dropdown-toggle:active + .dropdown-menu, html.nojs .dropdown-menu:focus, html.nojs .dropdown-menu:active, html.nojs .dropdown-menu:hover {
+    display: block;
+}
+
+html.nojs .navbar-header {
+    float: left;
+}
+@media (max-width: 767px) {
+    html.nojs .navbar-toggle:focus + .collapse, html.nojs .navbar-toggle:active + .collapse, html.nojs .collapse:focus, html.nojs .collapse:active, html.nojs .collapse:hover {
+        display: block;
+    }
+    
+    html.nojs .collapse {
+        padding-top: 2em;
+        max-height: none;
+    }
+    
+    html.nojs .dropdown-menu {
+        float: none;
+        position: static;
+    }
+}
+@media (min-width: 768px) {
+}
+
+/* End nojs */

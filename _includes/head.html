@@ -12,34 +12,5 @@
     {% include style.css %}
     </style>
     
-    <noscript>
-        <style>
-        .dropdown-toggle:focus + .dropdown-menu, .dropdown-toggle:active + .dropdown-menu, .dropdown-menu:focus, .dropdown-menu:active, .dropdown-menu:hover {
-            display: block;
-        }
-        
-        .navbar-header {
-            float: left;
-        }
-        @media (max-width: 767px) {
-            .navbar-toggle:focus + .collapse, .navbar-toggle:active + .collapse, .collapse:focus, .collapse:active, .collapse:hover {
-                display: block;
-            }
-            
-            .collapse {
-                padding-top: 2em;
-                max-height: none;
-            }
-            
-            .dropdown-menu {
-                float: none;
-                position: static;
-            }
-        }
-        @media (min-width: 768px) {
-        }
-        </style>
-    </noscript>
-    
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
