@@ -40,4 +40,4 @@ title: Exchanges
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
-The current fees are 1000/300/100NMC per year*. To get on the list contact exchanges a|t namecoin.org
+The current fees are 1000/300/100NMC per year. To get on the list contact exchanges a|t namecoin.org
