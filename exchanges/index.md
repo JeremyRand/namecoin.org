@@ -8,6 +8,11 @@ title: Exchanges
 <span style="font-size:130%;">&#8644;</span> You can buy and sell **Namecoins** here:
 
 <span style="font-size:130%;">
+**Decentralized exchanges**<br>
+[Bitsquare](https://bitsquare.io/)<br>
+</span>
+
+<span style="font-size:130%;">
 **Gold level exchanges**<br>
 ...<br>
 </span>
@@ -27,7 +32,6 @@ title: Exchanges
 [247exchange](https://www.247exchange.com/)<br>
 [24change](https://24change.com)<br>
 [alcurEX](https://alcurex.org)<br>
-[Bitsquare](https://bitsquare.io/)<br>
 [btc-e](https://btc-e.com)<br>
 [Bter](https://bter.com)<br>
 [bx.in.th](https://bx.in.th)<br>
