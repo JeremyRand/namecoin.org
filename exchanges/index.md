@@ -24,7 +24,7 @@ title: Exchanges
 
 <span style="font-size:100%;">
 **Bronze level exchanges**<br>
-[<img alt="Cryptonit" src="images/cryptonit.png" width="160px">](https://cryptonit.net)<br>
+...<br>
 </span>
 
 <span style="font-size:85%;">
