@@ -23,7 +23,7 @@ The cost includes a registration fee and a transaction fee. The registration fee
 
 ### How do I obtain namecoins? Can I mine them?
 
-You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.info/index.php?title=How_to_get_Namecoins).
+You can mine them alongside bitcoins or trade them, see [How to get Namecoins](https://wiki.namecoin.org/index.php?title=How_to_get_Namecoins).
 
 ### Who gets the registration fee? 
 
@@ -45,7 +45,7 @@ You can also use [ncdns](https://github.com/hlandau/ncdns) (experimental).  If y
 
 ### How do I register and host a .bit domain?
 
-[Register and Configure .bit Domains](https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains)
+[Register and Configure .bit Domains](https://wiki.namecoin.org/index.php?title=Register_and_Configure_.bit_Domains)
 
 ### Do I have to pay renewal fees? 
 

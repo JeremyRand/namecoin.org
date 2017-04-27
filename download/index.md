@@ -68,8 +68,8 @@ OS X builds of Namecoin Core are not yet available.  For now, either build Namec
 
 ### Windows
 
-Download [v0.3.80 installer](https://namecoin.info/files/Namecoin_v0.3.80_setup.exe)<br>
-[Release information and signatures](https://forum.namecoin.info/viewtopic.php?f=8&t=2123).
+Download [v0.3.80 installer](https://namecoin.org/files/Namecoin_v0.3.80_setup.exe)<br>
+[Release information and signatures](https://forum.namecoin.org/viewtopic.php?f=8&t=2123).
 
 </div>
 
@@ -87,8 +87,8 @@ Linux packages provided by OBS.<br>
 
 ### Mac OS X
 
-Download [v0.3.80 Namecoin-Qt](https://namecoin.info/files/Namecoin-Qt.app-0.3.80-a00c33d.zip).<br>
-[Release information](https://forum.namecoin.info/viewtopic.php?f=8&t=2235).
+Download [v0.3.80 Namecoin-Qt](https://namecoin.org/files/Namecoin-Qt.app-0.3.80-a00c33d.zip).<br>
+[Release information](https://forum.namecoin.org/viewtopic.php?f=8&t=2235).
 
 </div>
 
@@ -104,8 +104,8 @@ NMControl connects your browser/application to the client. It allows you, for ex
 
 ### Windows
 
-Download [v0.8.1 installer](https://namecoin.info/files/NMControl_v0.8.1_setup.exe).<br>
-[Release information and signatures (read this first)](https://forum.namecoin.info/viewtopic.php?f=8&t=2402).
+Download [v0.8.1 installer](https://namecoin.org/files/NMControl_v0.8.1_setup.exe).<br>
+[Release information and signatures (read this first)](https://forum.namecoin.org/viewtopic.php?f=8&t=2402).
 
 </div>
 
@@ -113,7 +113,7 @@ Download [v0.8.1 installer](https://namecoin.info/files/NMControl_v0.8.1_setup.e
 
 ### Linux and Mac OS X
 
-With Python 2.7 installed you can run nmcontrol.py directly from [source](https://github.com/namecoin/nmcontrol). If you need help ask on Github or on the [forum](https://forum.namecoin.info/viewtopic.php?f=8&t=2402).
+With Python 2.7 installed you can run nmcontrol.py directly from [source](https://github.com/namecoin/nmcontrol). If you need help ask on Github or on the [forum](https://forum.namecoin.org/viewtopic.php?f=8&t=2402).
 
 </div>
 

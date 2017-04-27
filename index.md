@@ -37,7 +37,7 @@ What does Namecoin do under the hood?
 * Like bitcoins, Namecoin names are difficult to censor or seize.
 * Lookups do not generate network traffic (improves privacy).
 
-**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS](https://bit.namecoin.info).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
+**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS](https://bit.namecoin.org).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
 
 </div>
 </div>
@@ -66,4 +66,4 @@ Official anouncements will also be made on [this BitcoinTalk thread](https://bit
 Help keep us **strong**.  [You can donate to the Namecoin project here.]({{site.baseurl}}donate/)
 
 ## Participate
-With **Namecoin** you can make a difference.  We need your **help to free information**, especially in documentation, marketing, and [coding](https://github.com/namecoin/).  You are welcome at the [forum](https://forum.namecoin.info/).  There may be [bounties](https://forum.namecoin.info/viewforum.php?f=18), too.
+With **Namecoin** you can make a difference.  We need your **help to free information**, especially in documentation, marketing, and [coding](https://github.com/namecoin/).  You are welcome at the [forum](https://forum.namecoin.org/).  There may be [bounties](https://forum.namecoin.org/viewforum.php?f=18), too.
