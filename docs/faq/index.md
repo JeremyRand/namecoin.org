@@ -83,7 +83,7 @@ The code prevents those coins from being used for normal payments.
 
 ### What is the relationship of Namecoin to Bitcoin?
 
-The Namecoin codebase consists of the Bitcoin codebase with relatively minor changes (~400 lines) and addtional functionality built on top on it. The mining procedure is identical but the block chain is separate, thus creating Namecoin. This approach was taken because Bitcoin developers wanted to focus almost exclusively on making Bitcoin a viable *currency* while the Namecoin developers were interested in building a *naming system*.  Because of the different intended use cases between the two projects, consensus and protocol rules might make sense in one but not ther other.  Examples of places where it could make sense to have different protocol or consensus rules:
+The Namecoin codebase consists of the Bitcoin codebase with relatively minor changes (~400 lines) and additional functionality built on top on it. The mining procedure is identical but the block chain is separate, thus creating Namecoin. This approach was taken because Bitcoin developers wanted to focus almost exclusively on making Bitcoin a viable *currency* while the Namecoin developers were interested in building a *naming system*.  Because of the different intended use cases between the two projects, consensus and protocol rules might make sense in one but not the other.  Examples of places where it could make sense to have different protocol or consensus rules:
 
 * Namecoin's consensus rules need to enforce uniqueness of names.  While it is possible to store data in Bitcoin (e.g. key/value pairs in `OP_RETURN` outputs), uniqueness is not enforced by Bitcoin.  It would be theoretically possible to build a layer on top of Bitcoin that discards `OP_RETURN` outputs that don't respect uniqueness (e.g. a name operation that steals someone else's name), but any such layer would not be enforced by miners.  If transaction validity rules are not enforced by miners, then they are not backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work), which means that [SPV-based lightweight clients](https://bitcoin.org/en/glossary/simplified-payment-verification) will fail to enforce those validity rules.
 * Since consumers expect different fees for financial transactions versus name registrations, and since the volume of financial transactions worldwide versus name registrations worldwide are different, Namecoin and Bitcoin might have different optimal block sizes.
@@ -108,7 +108,7 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 * 21 million coins total, minus the lost coins.
 * 50 coins are generated each block at the beginning; the reward halves each 210000 blocks (around 4 years).
 * Security: a large fraction of Bitcoin miners also mine Namecoin, giving it a staggering difficulty.
-* Pseudonymous founder: Vince, like Satoshi, never revealed his real-world identity and dissapeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts in the FLOSS community.
+* Pseudonymous founder: Vince, like Satoshi, never revealed his real-world identity and disappeared around the same time, leaving Namecoin project wild in the open, to flourish only thanks to the help of enthusiasts in the FLOSS community.
 * Free / libre / open-source platform: Anyone can improve the code and report issues on [GitHub](https://github.com/namecoin/) and even use it on other projects.
 
 ### How does Namecoin compare to Tor Onion Services?
@@ -122,18 +122,90 @@ Below is a comparison table of Namecoin and Blockstack (with Bitcoin added for r
 |  | **Namecoin** | **Blockstack** | **Bitcoin** |
 ---|--------------|----------------|-------------|
 | **Lightweight validation mode** | [SPV](https://bitcoin.org/en/glossary/simplified-payment-verification) backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work) (e.g. BitcoinJ+libdohj). | Checkpoints provided by a trusted 3rd party. Blockstack refers to this as "Consensus Hashes", "SNV" ("Simplified Name Verification"), or (confusingly) "SPV". Is not backed by PoW and has no relation to Bitcoin's SPV threat model. | SPV backed by PoW (e.g. BitcoinJ). | 
-| **Hashrate attesting to transaction ordering** | ~45% of Bitcoin as of 2016 Aug 23. | 100% of Bitcoin. | 100% of Bitcoin. | 
-| **Hashrate attesting to transaction validity** | ~45% of Bitcoin as of 2016 Aug 23. | 0% of Bitcoin (miners do not attest to transaction validity). | 100% of Bitcoin. | 
+| **Hashrate attesting to transaction ordering** | ~71% of Bitcoin as of 2017 Aug 31. | 100% of Bitcoin. | 100% of Bitcoin. | 
+| **Hashrate attesting to transaction validity** | ~71% of Bitcoin as of 2017 Aug 31. | 0% of Bitcoin (miners do not attest to transaction validity). | 100% of Bitcoin. | 
 | **Miners possessing a majority of hashrate** | None. | None. | None. | 
 | **Mining pools influencing a majority of hashrate** | None. | None. | None. | 
 | **Legal jurisdictions influencing pools with a majority of hashrate** | China. | China. | China. | 
 | **Infrastructure capable of censoring all new blocks (non-selectively)** | Bitcoin Relay Network, by censoring all Bitcoin blocks that commit to Namecoin blocks. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
 | **Infrastructure capable of censoring new blocks based on content (e.g. targeting a name)** | None. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
-| **Blockchain download size (for full node)** | 2.52 GB as of 2016 Aug 23 ([source](https://bchain.info/NMC/)). | 75.57 GB as of 2016 Aug 23 ([source](https://bchain.info/BTC/)) (same as Bitcoin). | 75.57 GB as of 2016 Aug 23 ([source](https://bchain.info/BTC/)). | 
-| **Consensus codebase** | Fork of Bitcoin Core with minimal changes (primarily merged mining and 3 new opcodes for altering a name database). | Completely new codebase. | Bitcoin Core. | 
-| **Data storage** | Choice between blockchain (similar threat model to Bitcoin) and external storage (lower transaction fees, higher scalability).  External DNS storage currently supports nameservers (threat model is DNSSEC with user-supplied keys; the DNSSEC keys have similar threat model to Bitcoin).  External identity storage currently supports PGP keyservers. | Required external storage; by default [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table).  See the opinions of Bitcoin developers [Peter Todd](https://bitcointalk.org/index.php?topic=395761.msg5970778;topicseen#msg5970778) and [Greg Maxwell](https://bitcointalk.org/index.php?topic=662734.msg7521013;topicseen#msg7521013) about DHT's. | Blockchain. | 
-| **Funding sources and ethics** | Crowdfunding, donations, consulting/contracting (e.g. for F2Pool and an employee of Kraken).  Has refused funding opportunities that were perceived to create conflicts of interest regarding user freedom, privacy, and security.  Frequently references WikiLeaks and Ed Snowden in specification examples and other development discussion. | Funded by an investor who has [endorsed cryptographic backdoors](https://web.archive.org/web/20160319061046/http://avc.com/2016/03/privacy-absolutism/) and who considers [ROT13](https://en.wikipedia.org/wiki/ROT13) to be a ["serious" and "intriguing" security mechanism](https://twitter.com/csoghoian/status/709908777038954496). | (N/A) | 
-| **Do the developers run services that hold users' private keys?** | No.  Many years ago, a former Namecoin developer did run such a service.  It has been discontinued, as the current Namecoin developer team considers such services to be harmful and a liability. | [Yes, Onename.](https://onename.com/) | Not as far as we know. | 
+| **Scalability (blockchain download size, fully validating node)** | 5.08 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/namecoin/)) (includes name values). | 154.47 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/bitcoin/)), plus name values. | 154.47 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/bitcoin/)). | 
+| **Scalability (maximum name updates per hour)** | ~5494 to ~10989 (~546 on-chain bytes per update, block size limit 500 kB to 1 MB per ~10 minutes) | ~4363 to ~6545 ([~275 on-chain bytes](https://blockchainbdgpzk.onion/tx/c7ec9f0312751d77591fae93f106fa086dab09f89e50159d6e4724d8c7630f16) per update, block size limit 200 kB to 300 kB per ~10 minutes) | N/A | 
+| **Scalability (required incoming bandwidth for read operations, full block node)** | 500 kB to 1 MB per ~10 minutes (if blocks are full) | 1 MB per ~10 minutes for Bitcoin parent chain (blocks usually full), plus all name operation data | 1 MB per ~10 minutes (blocks usually full) | 
+| **Scalability (required incoming bandwidth for read operations, headers-only node)** | ~1 kB to ~10 kB per ~10 minutes, plus a Merkle branch per read operation | Headers-only nodes not possible | 80 B per ~10 minutes | 
+| **Consensus codebase** | Fork of Bitcoin Core with minimal changes (primarily merged mining and 3 new opcodes for altering a name database). | Codebase built by Blockstack developers. | Bitcoin Core. | 
+| **Blockchain type** | Is a sidechain (merge-mined with Bitcoin). | Developers have [stated](https://web.archive.org/web/20160310134327/https://blockstack.org/blockstack.pdf) that "the community needs to look into side chains" because Blockstack's design won't scale well. | Bitcoin. | 
+| **Parent blockchain agility** | Bitcoin is the de facto parent chain.  If Bitcoin is attacked, dies out, or has other issues, miners can use a different SHA256D parent chain without requiring any changes in Namecoin's consensus rules (this worked in practice when "Bitcoin Cash" forked from Bitcoin).  Non-SHA256D parent chains could be adopted via a hardfork. | Bitcoin is the enforced parent chain.  Using any non-Bitcoin parent chain requires a hardfork. | No parent chain. | 
+| **Data storage** | Choice between blockchain (similar threat model to Bitcoin; resistance to censorship is enforced as a consensus rule) and external storage (lower transaction fees, higher scalability).  External DNS storage currently supports nameservers (threat model is DNSSEC with user-supplied keys; the DNSSEC keys have similar threat model to Bitcoin).  External identity storage currently supports PGP keyservers. | Required external storage; consensus rules do not enforce resistance to censorship. | Blockchain; resistance to censorship is enforced as a consensus rule. | 
+| **Namespace creation pricing** | Creating namespaces is open to all users, free of charge. | Creating a desirable namespace [costs a large amount of money](https://github.com/blockstack/blockstack-core/blob/40f3bd7ed38a7d0536b9156275e4433aec14576b/blockstack/lib/config.py#L428) (0.4 BTC minimum; 40 BTC for a 2-character namespace). | N/A. | 
+| **Name pricing and name length** | All names have equal registration price. | Name registration price deterministically depends on length, character usage, and namespace. | N/A. | 
+| **Name pricing and exchange rates** | Price optimality is dependent on NMC/fiat exchange rates. | Price optimality is dependent on BTC/fiat exchange rates. | N/A. | 
+| **Names premined?** | Not premined. | Premined. | N/A. | 
+| **Coins premined?** | Not premined. | N/A. | Not premined. | 
+| **Funding sources and ethics** | Crowdfunding, donations, consulting/contracting (e.g. for F2Pool and an employee of Kraken).  Has refused funding opportunities that were perceived to create conflicts of interest regarding user freedom, privacy, and security.  Frequently references WikiLeaks and Ed Snowden in specification examples and other development discussion. | Business model is not publicly disclosed.  [Seed round led](https://web.archive.org/web/20161210022027/http://venturebeat.com/2014/11/14/y-combinator-backed-onename-raises-1-5m-open-sources-its-bitcoin-identity-directory/) by an investor who has [endorsed cryptographic backdoors](https://web.archive.org/web/20160319061046/http://avc.com/2016/03/privacy-absolutism/) and who considers [ROT13](https://en.wikipedia.org/wiki/ROT13) to be a ["serious" and "intriguing" security mechanism](https://web.archive.org/web/20170831210355/https:/twitter.com/csoghoian/status/709908777038954496), and another investor who has also [endorsed cryptographic backdoors](https://web.archive.org/web/20160318165939/http://continuations.com:80/post/139510663785/key-based-device-unlocking-questionidea-re-apple). | (N/A) | 
+| **Do the developers run services that hold users' private keys?** | No.  Many years ago, a former Namecoin developer did run such a service.  It has been discontinued, as the current Namecoin developer team considers such services to be harmful and a liability. | Yes, [Onename](https://onename.com/) holds users' private keys. | Not as far as we know. | 
+
+The Blockstack developers have demonstrated a repeated, consistent history of obfuscating their security model.  Three examples:
+
+1. At launch, Blockstack used a [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table) for data storage.  See the opinions of Bitcoin developers [Peter Todd](https://web.archive.org/web/20170319062730/https://bitcointalk.org/index.php?topic=395761.msg5970778;topicseen#msg5970778) and [Greg Maxwell](https://web.archive.org/web/20170319064612/https://bitcointalk.org/index.php?topic=662734.msg7521013;topicseen#msg7521013) about DHT's.  Namecoin developers publicly [warned](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that DHT's were likely to be unsafe in Blockstack.  Quoting the Namecoin blogpost from 2015 Sept. 29:
+  
+> Additionally, DHT-based discovery of storage nodes is one of the classic suggestions of new users as an alternative to DNS seeds, and, originally, IRC-based discovery: it has never been committed because it is trivial to attack DHT-based networks, and partly because once a node is connected, Bitcoin (and thus Namecoin) peer nodes are solicitous with peer-sharing.
+  
+> As an actual data store, DHT as it is classically described runs into issues with non-global or non-contiguous storage, with little to no way to verify the completeness of the data stored therein. With the decoupled headers in OP_RETURN-using transactions in Bitcoin and the data storage in a DHT (or DHT-like) separate network, there is the likelihood of some little-used data simply disappearing entirely from the network. There is no indication of how Blockstore intends to handle this highly-likely failure condition.
+  
+In response to this criticism, Ryan Shea (Blockstack CEO) [stated](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2016 Sept. 30:
+  
+> > Using a DHT could mean that data could become inaccessible
+> 
+> The information one gets from the DHT is hash-validated by the record in the blockchain which means you can get it from anywhere without trusting the source. The DHT is just one possible source of information and we have set up mirrors to ensure data redundancy and allow anyone to run a mirror in addition to a DHT node. Further, the data in the DHT gets periodically data mined and re-populated as needed by mirrors, to ensure there is no data loss whatsoever. This has been extensively tested.
+  
+Muneeb Ali (Blockstack CTO) also [stated](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2016 Sept. 30 (emphasis in original):
+  
+> Their DHT arguments show a lack of understanding of how Blockstore's storage works. They **incorrectly assume that the DHT doesn't have global state. It does.**
+  
+However, on 2017 Jan. 23, Muneeb Ali (Blockstack CTO) [posted](https://archive.is/KJ3GX) the following (link uses archive.is, which is not Tor-friendly, due to Blockstack apparently blocking the Tor-friendly archive.org Wayback Machine from archiving their forum):
+  
+> Over this weekend (Jan 22), some community members (thanks, Albin!) reported "Data not saved in DHT" error for their profiles. I debugged this issue and turned out that some nodes of our DHT deployment were on a partition. This is very common in DHTs. We've been lucky in our deployment (which started in summer 2015 and has been running continuously since) and haven't experienced partition issues that frequently. This is because of:
+> 
+> 1. Active monitoring of default discovery nodes and throwing more RAM/CPU at the discovery nodes, so it's hard to overwhelm them with requests.
+> 2. Use of a caching layer where even if the underlying DHT network is experiencing, and recovering from, a partition read queries going to nodes that use a caching layer will still work for (heavily) cached data.
+> 3. We can proactively check the blockchain for new data and check if data has propagated on the DHT network (traditional DHTs don't have any such channel where new data writes get broadcasted).
+> 
+> Even with these additional monitoring and caching services, and extra information about new writes, we still experience issues. And the Atlas network described above helps a lot because it's a fundamentally new design which, in my view, is much better than using a traditional DHT for our use case.
+> Anyway, just restored the DHT partition and things are back to normal.
+  
+Blockstack subsequently stopped using a DHT; Muneeb Ali (Blockstack CTO) [stated](https://archive.is/KJ3GX) on 2017 Jan. 13 about why their proposed replacement (a custom P2P network called Atlas) is better than their DHT (emphasis in original; link uses archive.is, which is not Tor-friendly, due to Blockstack apparently blocking the Tor-friendly archive.org Wayback Machine from archiving their forum):
+  
+> Atlas nodes have a **global view** of the state meaning that they know if they're missing any data items. This is because we use the blockchain to propagate information about new puts (new data items written to the network). This increases reliability a lot because traditional DHT nodes don't even know if they're missing data (there is no global view in traditional DHTs and there are theoretical proofs for that).
+  
+In other words, the exact issue whose existence we pointed out, and he denied, in 2015.
+2. Namecoin developers [pointed out](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that Blockstack was incompatible with SPV.  Ryan Shea (Blockstack CEO) [replied on Reddit](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2015 Sept. 30:
+  
+> > Implementing SPV wouldn't be secure as it depends on having all block information
+> 
+> The short version is that blockstore definitely supports lightweight nodes. We'll be publishing a blog post on exactly how this works very soon.
+  
+Muneeb Ali (Blockstack CTO) also [claimed](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2015 Sept. 30 (emphasis in original):
+  
+> it is **possible to have SPV-like functionality** in Blockstore. We will publish details about it.
+  
+However, the Blockstack developers **already knew** that this was impossible; on 2014 Dec. 12 (before Namecoin developers pointed out the issue), Chris Pacia (an OpenBazaar developer collaborating with Blockstack) [stated](https://web.archive.org/web/20170509074132/https://github.com/blockstack/blockstack-core/issues/1) on the Blockstack issue tracker:
+  
+> OK. I don't think a blockchain-only lightweight proof is possible without an additional consensus mechanism (blockchain). In fact, I think this is why counterparty and mastercoin don't have SPV implementations ― because you can't do it.
+  
+The system that Blockstack ended up releasing was... trusted 3rd-party checkpoint hashes.  Not remotely similar to SPV, and not something that most blockchain developers would refer to as a "lightweight node".
+3. Namecoin developers have pointed out in this FAQ that Onename (Blockstack's centralized web application for registering names) holds users' private keys.  On 2017 Apr. 07, Muneeb Ali (Blockstack CTO) [complained](https://web.archive.org/web/20170509072808/https://github.com/namecoin/namecoin.org/issues/131) about this, stating:
+  
+> Private keys on Onename are encrypted with a password only the user has. So Onename doesn’t technically hold private keys, just encrypted blobs that are useless without the users’ passwords.
+In comparison, Coinbase actually holds private keys. Exchanges can send bitcoin without the user's permission. This is not the case for Onename.
+  
+Namecoin developers initially pointed out that the web server could easily serve malicious JavaScript to steal private keys, and therefore Blockstack developers still had access to keys.  However, it turned out to be even worse than that.  Blockstack's own documentation [states](https://web.archive.org/web/20170508084105/https://onename.zendesk.com/hc/en-us/articles/207755189-Profile-being-processed-for-new-registrations):
+  
+> For new registration, the Onename webapp registers your username on Blockstack on your behalf and then transfers the ownership to you.
+  
+This implies that the Onename server controls the keys during the registration process, and could easily steal names while they're being registered without serving malicious JavaScript.  A quite different picture than what one might imagine from what Muneeb said to us.
+
+Blockstack's security model obfuscation raises serious questions about whether any future security claims by the Blockstack developers can be taken at face value.
 
 ### How does Namecoin compare to Monero?
 
