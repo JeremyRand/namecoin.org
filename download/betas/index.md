@@ -53,3 +53,18 @@ GpcAkajMtMUk9xJjwEax
 ~~~
 
 [Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
+
+## ncdns for Windows Installer (2017-05-25)
+
+This is an installer for ncdns for Windows which also automatically installs and configures Namecoin Core and Unbound. For more information, see the [news post announcing this release]({{site.baseurl}}2017/05/25/ncdns.html).
+
+* [ncdns-install.exe]({{site.baseurl}}files/ncdns-2017-05-25-notreproduced/ncdns-install-2017-05-25-notreproduced.exe)
+* [ncdns-install.exe.sig]({{site.baseurl}}files/ncdns-2017-05-25-notreproduced/ncdns-install-2017-05-25-notreproduced.exe.sig)
+* [ncdns Installer Source Code](https://github.com/namecoin/ncdns-nsis)
+* [ncdns Source Code](https://github.com/namecoin/ncdns)
+
+### Known Issues
+
+* Build is not yet reproducible. (This build was made by Hugo Landau.)
+* The installer will prompt about setting up TLS support, but this doesn't do anything yet.
+
