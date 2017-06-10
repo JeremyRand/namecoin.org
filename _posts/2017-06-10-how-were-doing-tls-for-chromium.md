@@ -13,7 +13,7 @@ Convergence was in a somewhat special situation, though: it reused a lot of code
 
 So, we went back to the drawing board, and came up with a new solution.
 
-As a first iteration, TLS implementations have a root CA trust store, and injecting a self-signed end-entity x509 certificate into the root CA trust store will allow that certificate to be trusted for use by a website.  (For an explanation of how this can be done with Windows CryptoAPI, see my previous post, [Reverse-Engineering CryptoAPI's Certificate Registry Blobs]({{site.baseurl}}2017/05/27/reverse-engineering-cryptoapi-cert-blobs.html)).
+As a first iteration, TLS implementations have a root CA trust store, and injecting a self-signed end-entity x509 certificate into the root CA trust store will allow that certificate to be trusted for use by a website.  (For an explanation of how this can be done with Windows CryptoAPI, see my previous post, [Reverse-Engineering CryptoAPI's Certificate Registry Blobs]({{site.baseurl}}2017/05/27/reverse-engineering-cryptoapi-cert-blobs.html)).  We can do this right before the TLS connection is opened by hooking the DNS request for the `.bit` domain (this is easy since we control the ncdns codebase that processes the DNS request).
 
 However, there are three major issues with this approach:
 
