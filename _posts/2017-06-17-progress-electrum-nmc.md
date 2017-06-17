@@ -9,11 +9,11 @@ Work on the electrum port for Namecoin has been moving along nicely. It was deci
 So far the electrum client has been ported over for compatability with electrumX. This includes the re-branding, blockchain parameters and other electrum related settings for blockchain verification
 
 On the roadmap now are:
-  - Extend electrumX NMC Support to allow for full veritification of AuxPow
-  - Modify new electrum client to verify the new AuxPow
-  - Add Name handling support to electrum
-  
-  
+
+* Extend electrumX NMC Support to allow for full veritification of AuxPow
+* Modify new electrum client to verify the new AuxPow
+* Add Name handling support to electrum
+
 These repo's are for testing purposes only. Do not use these unless your willing to risk losing funds. 
 
 [Client](https://github.com/Multicoin-co/electrum-nmc)    
