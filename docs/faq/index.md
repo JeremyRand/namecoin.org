@@ -57,6 +57,10 @@ Consider that Namecoin values are limited to 520 bytes, and that the block size 
 
 If you're developing an application, consider doing your development on the Namecoin Testnet.  This prevents your testing from bloating the production blockchain, and also allows you to test without spending real money on names.  If more than one implementation might have the same use case, consider writing a spec so that incompatible implementations of similar ideas don't become a problem.
 
+### What is the smallest currency unit of Namecoin called?
+
+The smallest currency unit of Namecoin is called the *swartz* (similar to the *satoshi* in Bitcoin).  It is named after Aaron Swartz, the activist who was murdered by the U.S. government, and who [proposed Nakanames](https://web.archive.org/web/20170424134548/http://www.aaronsw.com/weblog/squarezooko) (which, along with BitDNS, described the concept that was later implemented as Namecoin).
+
 ## Design 
 
 ### What is a namespace? 
