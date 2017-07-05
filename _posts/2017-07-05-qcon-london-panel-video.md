@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QCon London 2017 Video: Practical Cryptography & Blockchain Panel
+title: "QCon London 2017 Video: Practical Cryptography & Blockchain Panel"
 author: Jeremy Rand
 tags: [News]
 ---
