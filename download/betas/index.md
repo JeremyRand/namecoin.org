@@ -77,7 +77,7 @@ This is a tool that permits Namecoin naming (or any other naming method that spe
 ### Known Issues
 
 * Prop279 is still an early draft, and might change heavily.  dns-prop279 will change accordingly.
-* `tor` doesn't implement Prop279 (see above point); the [LibreTorNS](https://github.com/namecoin/LibreTorNS) shim is required if you want to use or test dns-prop279.
+* `tor` doesn't implement Prop279 (see above point); the [TorNS](https://github.com/meejah/TorNS) shim is required if you want to use or test dns-prop279.
 * dns-prop279 doesn't follow the current Namecoin Domain Names specification for onion service records (we might amend the specification to match dns-prop279's behavior).
 * dns-prop279 doesn't properly return error codes; all errors will be treated as `NXDOMAIN`.
 * dns-prop279 hasn't been carefully checked for proxy leaks.
