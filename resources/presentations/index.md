@@ -11,6 +11,8 @@ title: Presentations
 
 ## QCon London 2017
 
+[Case Study: Alternate Blockchains (video and slides).]({{site.baseurl}}2017/07/07/qcon-london-case-study-video.html)
+
 [Practical Cryptography & Blockchain Panel (video).]({{site.baseurl}}2017/07/05/qcon-london-panel-video.html)
 
 ## Decentralized Web Summit 2016
