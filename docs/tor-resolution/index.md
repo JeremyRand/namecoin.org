@@ -21,6 +21,8 @@ This could be either Namecoin Core or the BitcoinJ name lookup client.  Note tha
 
 ## Install ncdns
 
+See [ncdns documentation]({{site.baseurl}}docs/ncdns).
+
 You should install ncdns on a machine which has a trusted network path to the machine running Tor.  It is **not** necessary to install Dnssec-Trigger if you're only planning to use Namecoin resolution with Tor.
 
 **Warning: ncdns caches responses by default, which may pose a deanonymization vector.**
