@@ -63,6 +63,8 @@ This is an installer for ncdns for Windows which also automatically installs and
 * [ncdns Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
 
+See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
+
 ### Known Issues
 
 * Build is not yet reproducible. (This build was made by Hugo Landau.)
