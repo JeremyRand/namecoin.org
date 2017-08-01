@@ -8,7 +8,7 @@ title: Download
 ## Namecoin Core Client (with Qt Name Tab)
 
 * Name wallet: includes graphical interface and command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
-* Name resolver: allows looking up names (use in combination with ncdns or NMControl to browse .bit domains).
+* Name lookup: allows looking up names (use in combination with ncdns or NMControl to browse .bit domains).
 * Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
 * **Not suitable for mining.**
 
