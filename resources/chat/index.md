@@ -17,8 +17,8 @@ Two chat channels exist for Namecoin.
 
 \#namecoin is accessible via the following methods:
 
-* Matrix (Tor-friendly): #freenode_#namecoin:matrix.org
-* [Riot web chat](https://riot.im/app/#/room/#freenode_#namecoin:matrix.org) (Tor-friendly)
+* Matrix (Tor-friendly): #namecoin:matrix.org
+* [Riot web chat](https://riot.im/app/#/room/#namecoin:matrix.org) (Tor-friendly)
 * Freenode IRC: #namecoin
 * [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin)
 
@@ -28,8 +28,8 @@ Two chat channels exist for Namecoin.
 
 \#namecoin-dev is accessible via the following methods:
 
-* Matrix (Tor-friendly): #freenode_#namecoin-dev:matrix.org
-* [Riot web chat](https://riot.im/app/#/room/#freenode_#namecoin-dev:matrix.org) (Tor-friendly)
+* Matrix (Tor-friendly): #namecoin-dev:matrix.org
+* [Riot web chat](https://riot.im/app/#/room/#namecoin-dev:matrix.org) (Tor-friendly)
 * Freenode IRC: #namecoin-dev
 * [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin-dev)
 
