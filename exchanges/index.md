@@ -9,7 +9,7 @@ title: Exchanges
 
 <span style="font-size:130%;">
 **Decentralized exchanges**<br>
-[Bitsquare](https://bitsquare.io/)<br>
+[Bisq](https://bitsquare.io/)<br>
 </span>
 
 <span style="font-size:130%;">
