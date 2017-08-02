@@ -54,21 +54,27 @@ GpcAkajMtMUk9xJjwEax
 
 [Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
 
-## ncdns for Windows Installer (2017-05-25)
+## ncdns
 
-This is an installer for ncdns for Windows which also automatically installs and configures Namecoin Core and Unbound. For more information, see the [news post announcing this release]({{site.baseurl}}2017/05/30/ncdns.html).
-
-* [ncdns-install.exe]({{site.baseurl}}files/ncdns-2017-05-25-notreproduced/ncdns-install-2017-05-25-notreproduced.exe)
-* [ncdns-install.exe.sig]({{site.baseurl}}files/ncdns-2017-05-25-notreproduced/ncdns-install-2017-05-25-notreproduced.exe.sig)
-* [ncdns Installer Source Code](https://github.com/namecoin/ncdns-nsis)
-* [ncdns Source Code](https://github.com/namecoin/ncdns)
+ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is most likely what you want to install.
 
 See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
 
+The ncdns Windows installer also automatically installs and configures Namecoin Core and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in Chromium, Google Chrome, and Opera if they are installed.  It's basically all you need for browsing `.bit` domain names.  Release signed by Hugo Landau.
+
+ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a DNS resolver (e.g. Unbound) separately; they do not support TLS certificate validation (except for the Windows plain binaries, with additional setup required).
+
+* [ncdns v0.0.3 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win64-install.exe)
+* [ncdns v0.0.3 Windows (64-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win64-install.exe.sha256sum.asc)
+* [ncdns v0.0.3 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win32-install.exe)
+* [ncdns v0.0.3 Windows (32-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win32-install.exe.sha256sum.asc)
+* [ncdns v0.0.3 plain binaries for GNU/Linux, DragonflyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, macOS, Windows (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.3)
+* [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
+* [ncdns Source Code](https://github.com/namecoin/ncdns)
+
 ### Known Issues
 
-* Build is not yet reproducible. (This build was made by Hugo Landau.)
-* The installer will prompt about setting up TLS support, but this doesn't do anything yet.
+* Build is not yet reproducible.
 
 ## dns-prop279
 

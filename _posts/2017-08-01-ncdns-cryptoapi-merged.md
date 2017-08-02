@@ -1,14 +1,18 @@
 ---
 layout: post
-title: ncdns CryptoAPI Certificate Injection Merged
+title: TLS Support for Chromium on Windows Released
 author: Jeremy Rand
-tags: [News]
+tags: [Releases, ncdns Releases]
 ---
 
-After quite a bit of code cleanup, ncdns has merged my PR for CryptoAPI dehydrated certificate injection.  This means that the ncdns master branch can now be used for Namecoin-based TLS certificate validation in Chromium and Chrome on Windows.  Huge thanks to Hugo Landau for the code review.
+After quite a bit of code cleanup, we've released a new beta of ncdns for Windows, which includes Namecoin-based TLS certificate validation for Chromium, Google Chrome, and Opera on Windows.  This includes both the CryptoAPI certificate injection and NUMS HPKP injection that were discussed previously.  You can download it on the [Beta Downloads page]({{site.baseurl}}download/betas/).  We've also posted binaries of ncdns (without install scripts or TLS support) for a number of other operating systems; they're also linked on the Beta Downloads page.
 
-Hugo is still doing some code cleanup of the automated NUMS HPKP injection before it gets merged to the NSIS installer, so for now the Chromium/Windows support requires following some manual installation instructions.  The good news is that Hugo has addressed nearly all of my review there, so I'm hoping we can get fully automated Chromium support merged to the NSIS installer very soon, at which point we'll do a release.  Awesome work by Hugo on this.
+Credit for this release goes to:
 
-This work was funded by NLnet.
+* Jeremy Rand: Cert injection Go implementation; NUMS HPKP injection concept and Go implementation; review of Hugo's code.
+* Hugo Landau: Cert injection NSIS implementation; NUMS HPKP injection NSIS implementation; review of Jeremy's code.
+* Ryan Castellucci: Dehydrated certificates concept+algorithm; NUMS hash algorithm and Python implementation.
+
+This work was funded by NLnet Foundation's Internet Hardening Fund.
 
 Meanwhile, Namecoin TLS development focus has started to shift toward Firefox TLS support.
