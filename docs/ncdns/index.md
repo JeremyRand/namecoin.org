@@ -13,11 +13,15 @@ You can download ncdns at the [Beta Downloads]({{site.baseurl}}download/betas/) 
 
 ### Windows
 
-An installer wizard is available, which will also install the necessary dependencies (Namecoin Core and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/)).
+An installer wizard is available, which will also install the necessary dependencies (Namecoin Core and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/)).  It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
+
+* Chromium
+* Google Chrome
+* Opera
 
 ### Other OS's
 
-Currently, ncdns for non-Windows OS's must be built from source code.
+ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a Namecoin name lookup client (e.g. Namecoin Core) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
 
 ## Supplying your own Namecoin node
 
