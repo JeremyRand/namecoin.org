@@ -62,13 +62,13 @@ See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
 
 The ncdns Windows installer also automatically installs and configures Namecoin Core and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in Chromium, Google Chrome, and Opera if they are installed.  It's basically all you need for browsing `.bit` domain names.  Release signed by Hugo Landau.
 
-ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a DNS resolver (e.g. Unbound) separately; they do not support TLS certificate validation (except for the Windows plain binaries, with additional setup required).
+ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they do not support TLS certificate validation (except for the Windows plain binaries, with additional setup required).
 
-* [ncdns v0.0.3 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win64-install.exe)
-* [ncdns v0.0.3 Windows (64-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win64-install.exe.sha256sum.asc)
-* [ncdns v0.0.3 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win32-install.exe)
-* [ncdns v0.0.3 Windows (32-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.3/ncdns-v0.0.3-win32-install.exe.sha256sum.asc)
-* [ncdns v0.0.3 plain binaries for GNU/Linux, DragonflyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, macOS, Windows (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.3)
+* [ncdns v0.0.4 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win64-install.exe)
+* [ncdns v0.0.4 Windows (64-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win64-install.exe.sha256sum.asc)
+* [ncdns v0.0.4 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win32-install.exe)
+* [ncdns v0.0.4 Windows (32-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win32-install.exe.sha256sum.asc)
+* [ncdns v0.0.4 plain binaries for GNU/Linux, DragonflyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.4)
 * [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
 
