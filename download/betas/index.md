@@ -23,6 +23,8 @@ You need to have Java installed:
 * If you're using Windows, [download it from the Oracle website](https://www.java.com/en/download/manual.jsp).  **Make sure you right-click the `.exe` installer, click `Properties`, and click `Digital Signatures`.  It should be signed by `Oracle America, Inc.`  If it is not, do not install it.**
 * We're not sure about OS X.  If anyone can contribute instructions for OS X, let us know.
 
+**If you're using Windows, you will need to install the Microsoft Visual C++ 2010 Redistributable Package.  [Download for 64-bit Windows is here.](https://www.microsoft.com/en-us/download/details.aspx?id=14632)  [Download for 32-bit Windows is here.](https://www.microsoft.com/en-us/download/details.aspx?id=5555)**
+
 [Download 0.1.1 Beta 1 (bleeding-edge branch, cross-platform JAR) (Hosted by Google Drive).](https://drive.google.com/file/d/0B3JMWdAb62L5UTJQYVFVcnBKWnc/view?usp=sharing)
 
 ~~~
@@ -61,6 +63,8 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
 
 The ncdns Windows installer also automatically installs and configures Namecoin Core and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in Chromium, Google Chrome, and Opera if they are installed.  It's basically all you need for browsing `.bit` domain names.  Release signed by Hugo Landau.
+
+**Before running the ncdns Windows installer, you will need to install the [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679).**
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they do not support TLS certificate validation (except for the Windows plain binaries, with additional setup required).
 
