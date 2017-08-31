@@ -3,6 +3,9 @@ layout: post
 title: Early Christmas Present for Namecoin
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/105921946435/
+  - /post/105921946435/early-christmas-present-for-namecoin/
 ---
 Christmas has come early for Namecoin: Discus Fish (aka F2Pool) has donated 20,000 namecoins to fund a reimplementation based on mainline Bitcoin!
 

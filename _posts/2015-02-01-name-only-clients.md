@@ -3,6 +3,9 @@ layout: post
 title: Name-Only Clients
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/109811339625/
+  - /post/109811339625/lightweight-resolvers/
 ---
 Currently, the only options for people wanting to resolve Namecoin names are to deploy a full node or to trust results provided by someone else. It doesn’t have to be this way, though. Like with Bitcoin [lightweight SPV](https://bitcoin.org/en/glossary/simplified-payment-verification) clients which have much smaller local storage requirements can be created for Namecoin. Unlike Bitcoin, we can have “Namecoin Name-Only Clients” that give up support for “Namecoin as a currency” in exchange for better security and even lighter storage requirements.
 

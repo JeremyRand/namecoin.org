@@ -3,6 +3,9 @@ layout: post
 title: Cakes for Competitors
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/104506865810/
+  - /post/104506865810/cakes-for-competitors/
 ---
 The proliferation of cryptocurrencies working on decentralized TLDs has spurred a narrative of competition with Namecoin. However, the distance between our communities is small, and the competition is friendly. The free software movement has shown us that multiple approaches strengthen the ecosystem. Competition is not the zero-sum game fundamentalist Chicago-school economists make it out to be.
 

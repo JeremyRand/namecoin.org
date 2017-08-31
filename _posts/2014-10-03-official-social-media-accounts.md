@@ -3,6 +3,9 @@ layout: post
 title: Official Social Media Accounts
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/99085765545/
+  - /post/99085765545/official-social-media-accounts/
 ---
 A large number of unofficial social media accounts have been making false claims about Namecoin.  While we wish to encourage a healthy community and decentralization, we take user safety very seriously. Content posted through these accounts may pose a threat to average users, and the Namecoin development team has established official social media accounts in an attempt to help protect users.
 
