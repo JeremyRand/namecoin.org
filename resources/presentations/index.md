@@ -5,6 +5,10 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## Global Conference on Educational Robotics 2017
+
+[Video, slides, and paper are here.]({{site.baseurl}}2017/08/23/gcer-2017-video.html)
+
 ## ICANN58
 
 [Videos and slides are here.]({{site.baseurl}}2017/04/17/icann-58-summary.html)
