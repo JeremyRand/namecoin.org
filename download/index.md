@@ -5,6 +5,10 @@ title: Download
 
 {::options parse_block_html="true" /}
 
+## Warning Regarding Web Wallet Scams
+
+Scammers have been running fake Namecoin web wallets that steal coins.  The Namecoin developers don't recommend using web wallets.  Use a locally installed wallet such as Namecoin Core to store your coins.
+
 ## Namecoin Core Client (with Qt Name Tab)
 
 * Name wallet: includes graphical interface and command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
