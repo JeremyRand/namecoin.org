@@ -24,7 +24,7 @@ The raw transaction API is useful for a few reasons.  First, it lets you create 
 
 ## What's wrong with Namecoin Core's raw transaction API?
 
-It's not raw enough!  First off, the only name transactions it can create are `name_firstupdate`; it can't create `name_new` or `name_firstupdate` transactions.  That rules out handling name registrations, and consequently means that anonymously registering names or controlling the fee for name registrations is a no-go.  Secondly, it can't create `name_update` outputs with a higher monetary value than the default 0.01 NMC.  That rules out pure name transactions.
+It's not raw enough!  First off, the only name transactions it can create are `name_update`; it can't create `name_new` or `name_firstupdate` transactions.  That rules out handling name registrations, and consequently means that anonymously registering names or controlling the fee for name registrations is a no-go.  Secondly, it can't create `name_update` outputs with a higher monetary value than the default 0.01 NMC.  That rules out pure name transactions.
 
 ## How are we fixing this?
 
@@ -39,12 +39,12 @@ Users of the raw transaction API will need to update their code.  If you're usin
 
 ## Who's involved in this work?
 
-* Jeremy Rand wrote a rough spec for the new API
+* Jeremy Rand wrote a rough spec for the new API.
 * Daniel Kraft is implementing the changes to the API.
 * Jeremy Rand plans to utilize the new API in proof-of-concept scripts for several use cases (including the above 4 use cases).
 * Brandon Roberts plans to convert Jeremy's proof-of-concept scripts into GUI features in Namecoin-Qt.
 
-* This work was funded in part by NLnet Foundation's Internet Hardening Fund.
+This work was funded in part by NLnet Foundation's Internet Hardening Fund.
 
 ## What might come later?
 
