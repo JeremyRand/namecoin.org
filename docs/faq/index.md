@@ -147,7 +147,7 @@ Below is a comparison table of Namecoin and Blockstack (with Bitcoin added for r
 
 The Blockstack developers have demonstrated a repeated, consistent history of obfuscating their security model.  Three examples:
 
-1. At launch, Blockstack used a [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table) for data storage.  See the opinions of Bitcoin developers [Peter Todd](https://web.archive.org/web/20170319062730/https://bitcointalk.org/index.php?topic=395761.msg5970778;topicseen#msg5970778) and [Greg Maxwell](https://web.archive.org/web/20170319064612/https://bitcointalk.org/index.php?topic=662734.msg7521013;topicseen#msg7521013) about DHT's.  Namecoin developers publicly [warned](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that DHT's were likely to be unsafe in Blockstack.  Quoting the Namecoin blogpost from 2015 Sept. 29:
+Example 1: At launch, Blockstack used a [DHT](https://en.wikipedia.org/wiki/Distributed_hash_table) for data storage.  See the opinions of Bitcoin developers [Peter Todd](https://web.archive.org/web/20170319062730/https://bitcointalk.org/index.php?topic=395761.msg5970778;topicseen#msg5970778) and [Greg Maxwell](https://web.archive.org/web/20170319064612/https://bitcointalk.org/index.php?topic=662734.msg7521013;topicseen#msg7521013) about DHT's.  Namecoin developers publicly [warned](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that DHT's were likely to be unsafe in Blockstack.  Quoting the Namecoin blogpost from 2015 Sept. 29:
   
 > Additionally, DHT-based discovery of storage nodes is one of the classic suggestions of new users as an alternative to DNS seeds, and, originally, IRC-based discovery: it has never been committed because it is trivial to attack DHT-based networks, and partly because once a node is connected, Bitcoin (and thus Namecoin) peer nodes are solicitous with peer-sharing.
   
@@ -179,7 +179,8 @@ Blockstack subsequently stopped using a DHT; Muneeb Ali (Blockstack CTO) [stated
 > Atlas nodes have a **global view** of the state meaning that they know if they're missing any data items. This is because we use the blockchain to propagate information about new puts (new data items written to the network). This increases reliability a lot because traditional DHT nodes don't even know if they're missing data (there is no global view in traditional DHTs and there are theoretical proofs for that).
   
 In other words, the exact issue whose existence we pointed out, and he denied, in 2015.
-2. Namecoin developers [pointed out](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that Blockstack was incompatible with SPV.  Ryan Shea (Blockstack CEO) [replied on Reddit](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2015 Sept. 30:
+
+Example 2: Namecoin developers [pointed out](https://web.archive.org/web/20150930144501/http://blog.namecoin.org/post/130158040415/onenames-blockstore-is-much-less-secure-than) when Blockstack launched that Blockstack was incompatible with SPV.  Ryan Shea (Blockstack CEO) [replied on Reddit](https://web.archive.org/web/20151004130708/https://www.reddit.com/r/Bitcoin/comments/3mwtw8/onenames_blockstore_is_much_less_secure_than/) on 2015 Sept. 30:
   
 > > Implementing SPV wouldn't be secure as it depends on having all block information
 > 
@@ -194,7 +195,8 @@ However, the Blockstack developers **already knew** that this was impossible; on
 > OK. I don't think a blockchain-only lightweight proof is possible without an additional consensus mechanism (blockchain). In fact, I think this is why counterparty and mastercoin don't have SPV implementations ― because you can't do it.
   
 The system that Blockstack ended up releasing was... trusted 3rd-party checkpoint hashes.  Not remotely similar to SPV, and not something that most blockchain developers would refer to as a "lightweight node".
-3. Namecoin developers have pointed out in this FAQ that Onename (Blockstack's centralized web application for registering names) holds users' private keys.  On 2017 Apr. 07, Muneeb Ali (Blockstack CTO) [complained](https://web.archive.org/web/20170509072808/https://github.com/namecoin/namecoin.org/issues/131) about this, stating:
+
+Example 3: Namecoin developers have pointed out in this FAQ that Onename (Blockstack's centralized web application for registering names) holds users' private keys.  On 2017 Apr. 07, Muneeb Ali (Blockstack CTO) [complained](https://web.archive.org/web/20170509072808/https://github.com/namecoin/namecoin.org/issues/131) about this, stating:
   
 > Private keys on Onename are encrypted with a password only the user has. So Onename doesn’t technically hold private keys, just encrypted blobs that are useless without the users’ passwords.
 In comparison, Coinbase actually holds private keys. Exchanges can send bitcoin without the user's permission. This is not the case for Onename.
