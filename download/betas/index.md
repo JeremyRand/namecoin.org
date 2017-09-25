@@ -13,7 +13,7 @@ The more people test these downloads, the faster they'll be ready for release.  
 
 As usual, it is a good idea to verify the hashes and signatures of these downloads (especially the ones not hosted on namecoin.org).  The more people reproduced the hashes, the better.  If you're paranoid, run them inside an isolated virtual machine.
 
-## High Priority: Lightweight SPV BitcoinJ Name Lookup Client
+## Lightweight SPV BitcoinJ Name Lookup Client
 
 This is a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing .bit domains with ncdns), which synchronizes faster and uses less storage, but trusts Namecoin miners more than Namecoin Core does.
 
@@ -62,17 +62,17 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
 
-The ncdns Windows installer also automatically installs and configures Namecoin Core and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in Chromium, Google Chrome, and Opera if they are installed.  It's basically all you need for browsing `.bit` domain names.  Release signed by Hugo Landau.
+The ncdns Windows installer also automatically installs and configures Namecoin Core and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.  Release signed by Hugo Landau.
 
 **Before running the ncdns Windows installer, you will need to install the [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679).**
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they do not support TLS certificate validation (except for the Windows plain binaries, with additional setup required).
 
-* [ncdns v0.0.4 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win64-install.exe)
-* [ncdns v0.0.4 Windows (64-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win64-install.exe.sha256sum.asc)
-* [ncdns v0.0.4 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win32-install.exe)
-* [ncdns v0.0.4 Windows (32-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.4/ncdns-v0.0.4-win32-install.exe.sha256sum.asc)
-* [ncdns v0.0.4 plain binaries for GNU/Linux, DragonflyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.4)
+* [ncdns v0.0.5 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.5/ncdns-v0.0.5-win64-install.exe)
+* [ncdns v0.0.5 Windows (64-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.5/ncdns-v0.0.5-win64-install.exe.sha256sum.asc)
+* [ncdns v0.0.5 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.5/ncdns-v0.0.5-win32-install.exe)
+* [ncdns v0.0.5 Windows (32-bit) signed hash](https://www.namecoin.org/files/ncdns-v0.0.5/ncdns-v0.0.5-win32-install.exe.sha256sum.asc)
+* [ncdns v0.0.5 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.5)
 * [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
 
