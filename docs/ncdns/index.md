@@ -13,10 +13,11 @@ You can download ncdns at the [Beta Downloads]({{site.baseurl}}download/betas/) 
 
 ### Windows
 
-An installer wizard is available, which will also install the necessary dependencies (Namecoin Core and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/)).  It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
+An installer wizard is available, which will also install the necessary dependencies (Namecoin Core, the BitcoinJ/libdohj SPV name lookup client, and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/)).  It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
 
 * Chromium
 * Google Chrome
+* Google Chrome Canary
 * Opera
 
 ### Other OS's
@@ -25,10 +26,10 @@ ncdns plain binaries (without install scripts) are available for most major oper
 
 ## Supplying your own Namecoin node
 
-The ncdns Windows installer will offer to install Namecoin Core and configure ncdns to use it.  However, there are several reasons why you might want to supply your own Namecoin node:
+The ncdns Windows installer will offer to install Namecoin Core or the BitcoinJ/libdohj SPV client, and configure ncdns to use it.  However, there are several reasons why you might want to supply your own Namecoin node:
 
 * You're not using Windows.
-* You want to use a Namecoin node that isn't Namecoin Core (e.g. the libdohj SPV client).
+* You want to use a Namecoin node that isn't Namecoin Core or the BitcoinJ/libdohj SPV client.
 * You want to run a Namecoin node on a different machine than ncdns.
 * You want to handle updating Namecoin Core separately from updating ncdns.
 
