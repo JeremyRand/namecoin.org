@@ -3,6 +3,9 @@ layout: post
 title: Namecoin Response to Recent No-IP Seizure
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/91894977885/
+  - /post/91894977885/namecoin-response-to-recent-no-ip-seizure/
 ---
 On June 30, 2014, customers of the No-IP dynamic DNS service suddenly experienced an outage.  According to media reports, the outage was not caused by a technical issue or any kind of negligence by No-IP, but rather by a court order requested by Microsoft, supposedly to fight cybercrime.  For background, see [No-IP’s official statement](https://www.noip.com/blog/2014/06/30/ips-formal-statement-microsoft-takedown/?utm_source=email&utm_medium=notice&utm_campaign=letter-from-dan).
  

@@ -3,6 +3,9 @@ layout: post
 title: OneName’s Blockstore is much less secure than Namecoin
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/130158040415/
+  - /post/130158040415/onenames-blockstore-is-much-less-secure-than/
 ---
 *Note: the naming system described in this post, Blockstore, is now named Blockstack.*
 

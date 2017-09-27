@@ -3,6 +3,9 @@ layout: post
 title: New Version 0.3.80, Softfork Upcoming
 author: Namecoin Developers
 tags: [Alerts, NamecoinQ Alerts, Releases, NamecoinQ Releases]
+redirect_from:
+  - /post/105749327770/
+  - /post/105749327770/new-version-0380-softfork/
 ---
 This release smooths the transition to a new Namecoin codebase rebased on the latest version of Bitcoin!
 

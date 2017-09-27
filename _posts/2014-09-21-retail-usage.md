@@ -3,6 +3,9 @@ layout: post
 title: Namecoin & Retail Usage
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/98072799240/
+  - /post/98072799240/namecoin-retail-usage/
 ---
 Well-meaning investors have been pushing for various currency-related use cases for Namecoin such as ATMs, acceptance at retailers, etc.  The core development team sees these efforts as benign but generally do not expend time nor funds on them.  Why would developers of a currency not place a priority on currency related use-cases?
 

@@ -3,6 +3,9 @@ layout: post
 title: The Great Aggregating Postmortem
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/97092159695/
+  - /post/97092159695/the-great-aggregating-postmortem/
 ---
 In the past couple of weeks, Namecoin suffered outages. Someone (whom we’ve nicknamed “The Aggregator”) tried consolidating a large quantity of “loose change” into a single address. When done correctly, this is good because it reduces the amount of data lite clients [Jeremy edit 2017 05 10: this means UTXO-pruned clients] need to keep. Unfortunately, a combination of volume and an oversight in fee policies led to miners getting knocked offline.
 

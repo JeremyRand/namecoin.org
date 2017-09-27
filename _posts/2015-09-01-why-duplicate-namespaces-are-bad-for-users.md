@@ -3,6 +3,9 @@ layout: post
 title: Why Duplicate Namespaces Are Bad for Users
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/128123165075/
+  - /post/128123165075/why-duplicate-namespaces-are-bad-for-users/
 ---
 Every now and then, we’re approached by users who are asking about namespaces which duplicate functionality of the officially recommended namespaces.  Examples of these namespaces include `tor/`, `i2p/`, and `u/`.  We think these duplicate namespaces are harmful to end users.  This blog post will try to explain why duplicating functionality of existing namespaces is almost always a bad idea.
 

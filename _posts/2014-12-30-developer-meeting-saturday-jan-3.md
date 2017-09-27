@@ -3,6 +3,9 @@ layout: post
 title: Developer Meeting Saturday, Jan. 3
 author: Namecoin Developers
 tags: [News]
+redirect_from:
+  - /post/106664933555/
+  - /post/106664933555/developer-meeting-saturday-jan-3/
 ---
 Lately we’ve had a few new people who are interested in joining development. This is, of course, awesome.  Unfortunately, helping them get started has been kind of ad-hoc, because there’s not a great way to have a low-latency conversation with current developers to bounce ideas off of. None of the current developers are in IRC at predictable, consistent times, and some developers are rarely on IRC at all. Forums have too much latency and overhead for quick back-and-forth discussions. This is a non-ideal situation.
 
