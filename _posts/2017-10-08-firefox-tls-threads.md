@@ -23,7 +23,17 @@ Once Firefox has finished verifying the certificate, it asks the Experiment for 
 
 Unfortunately, at this point Murphy decided he wanted a rematch.  My code was consistently crashing Firefox sometime between the C++ code issuing a call to the Experiment and the Experiment receiving the call.  I guessed that this was a thread safety issue (Mozilla doesn't guarantee that the socket info or certificate objects are thread-safe).  And indeed, once I modified my C++ code to duplicate the relevant data rather than passing a pointer to a thread, this was fixed.  Murphy didn't go away without a fight though -- it looks like Mozilla's pointer objects also aren't thread-safe, so I needed to use a regular C++ pointer instead of Mozilla's smart pointers.  (For now, that means that my code has a small memory leak.  Obviously that will be fixed later.)
 
-After doing all of the above, I decided to check performance.  On both my Qubes installation and my bare-metal Fedora live system, the latency from positive overrides is now greatly reduced.  I don't have exact scientific measurements (I was just skimming the quite verbose debug output), but it looks like on Fedora, the worst-case latency (as usual, probably due to incomplete JavaScript JIT warmup) was around 4 ms (down from 6 ms), and the latency after a few verifications (to warm up the JIT) was somewhere in the vicinity of 400 to 600 μs (down from about 1 ms).
+After doing all of the above, I decided to check performance.  On both my Qubes installation and my bare-metal Fedora live system, the latency from positive overrides is now greatly reduced.  Below are graphs of the latency added by positive overrides on my bare-metal Fedora live system:
+
+<img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-uncached.svg">
+
+<img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-cached.svg">
+
+The graphs appear to show a noticible speedup over time.  Part of this is likely to be attributable to the JavaScript JIT warming up.  Another part of it may be an artifact of the script I used to make Firefox verify the certificates: I first did 3 batches of 5 certs, then a batch of 10 certs, then a batch of 20 certs, for a total of 45 certificate verifications.  The graphs also show that certificates that were previously cached tended to verify faster; this is because the cache is located in the Experiment rather than the WebExtension, which eliminates a cross-thread call.
+
+You can also take a look at [the raw data used to generate these graphs]({{site.baseurl}}data/webextensions-latency/2017-10-07/raw-data.ods) (in OpenDocument spreadsheet format).  This also includes percentile analysis.
+
+It should be noted that this data is not intended to be scientifically reproducible; there are likely to be differences between setups that could impact the latency significantly, and I made no effort to control for or document such differences.  That said, it's likely to be a useful indicator of how well we're doing.  My opinion is that this is much, much closer to a performance impact that Mozilla would plausibly be willing to merge, compared to the performance before this optimization.  However, additional work is still warranted.  (And, of course, it's Mozilla's opinion, not mine, that matters here!)
 
 There are 2 additional major optimizations that I intend to do (which aren't yet started):
 
