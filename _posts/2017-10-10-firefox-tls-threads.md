@@ -25,9 +25,9 @@ Unfortunately, at this point Murphy decided he wanted a rematch.  My code was co
 
 After doing all of the above, I decided to check performance.  On both my Qubes installation and my bare-metal Fedora live system, the latency from positive overrides is now greatly reduced.  Below are graphs of the latency added by positive overrides on my bare-metal Fedora live system:
 
-<picture><source srcset="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-uncached.svg" type="image/svg+xml"><source srcset="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-uncached.png" type="image/png"><img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-uncached.png"></picture>
+<img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-uncached.png">
 
-<picture><source srcset="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-cached.svg" type="image/svg+xml"><source srcset="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-cached.png" type="image/png"><img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-cached.png"></picture>
+<img src="{{site.baseurl}}data/webextensions-latency/2017-10-07/graph-cached.png">
 
 The graphs appear to show a noticeable speedup over time.  Part of this is likely to be attributable to the JavaScript JIT warming up.  Another part of it may be an artifact of the script I used to make Firefox verify the certificates: I first did 3 batches of 5 certs, then a batch of 10 certs, then a batch of 20 certs, for a total of 45 certificate verifications.  The graphs also show that certificates that were previously cached tended to verify faster; this is because the cache is located in the Experiment rather than the WebExtension, which eliminates a cross-thread call.
 
