@@ -52,6 +52,8 @@ _service_to_command = {
 }
 ~~~
 
+If you're using Tor Browser Bundle, or are otherwise using a non-default Tor control port, you'll need to update the control port in `poc.py` as per the TorNS documentation.
+
 ## Running it
 
 Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `python poc.py` in the TorNS directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.
