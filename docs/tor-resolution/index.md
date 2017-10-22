@@ -15,9 +15,9 @@ Hopefully you've already done this.  Note that these instructions are not tested
 
 ## Install a Namecoin name lookup client
 
-**If you're using the ncdns for Windows installer and want to use Namecoin Core (not the BitcoinJ name lookup client), you can skip this step.**
+**If you're using the ncdns for Windows installer, you can skip this step.**
 
-This could be either Namecoin Core or the BitcoinJ name lookup client.  Note that if you're using Namecoin Core, you may wish to make Namecoin Core route its traffic over Tor (this procedure should be identical as what you'd do for Bitcoin Core).  The BitcoinJ name lookup client doesn't yet support routing its traffic over Tor.  If you're using the BitcoinJ name lookup client, it is strongly recommended that you use `leveldbtxcache` mode; this is because the other modes will generate network traffic that isn't subject to stream isolation.
+This could be either Namecoin Core or the BitcoinJ name lookup client.  Note that if you're using Namecoin Core, you may wish to make Namecoin Core route its traffic over Tor (this procedure should be identical as what you'd do for Bitcoin Core).  The BitcoinJ name lookup client doesn't yet support routing its traffic over Tor.  If you're using the BitcoinJ name lookup client, it is strongly recommended that you use `leveldbtxcache` mode (this is the default if you're running the shortcut created by the ncdns for Windows installer; it is **not** the default if you're running it from the command line); this is because the other modes will generate network traffic that isn't subject to stream isolation.
 
 ## Install ncdns
 
@@ -54,9 +54,8 @@ _service_to_command = {
 
 ## Running it
 
-Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `poc.py` from TorNS.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.
+Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `python poc.py` in the TorNS directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.
 
 Semantically, `.bit.onion` means that a domain name will always resolve to a `.onion` address (meaning that `.bit.onion names` are encrypted and authenticated regardless of whether TLS is used); `.bit` means that a domain name will resolve to any of `.onion`, IPv6, IPv4, or CNAME, meaning that `.bit` names are only encrypted and authenticated if TLS is used.  These semantics are open to revision later, as the Tor community evolves its canonical naming semantics.
 
-Namecoin name owners can specify a `.onion` domain via the `txt` field in the `_tor` subdomain of their name.
-
+Namecoin name owners can specify a `.onion` domain via the `txt` field in the `_tor` subdomain of their name.  This specification is open to revision later, as the Tor community evolves its canonical naming specifications.  (In particular, it is possible that `TXT` records might be replaced with `SRV` records.)
