@@ -11,7 +11,7 @@ Namecoin can be used for name resolution with Tor.  This guide covers how to set
 
 ## Install Tor
 
-Hopefully you've already done this.  Note that these instructions are not tested in any way with Whonix, Tails, or SubgraphOS; such systems use control port filters that may cause problems.
+Hopefully you've already done this.  Note that these instructions are not tested in any way with Whonix, Tails, or Subgraph OS; such systems use control port filters that may cause problems.
 
 ## Install a Namecoin name lookup client
 
@@ -29,7 +29,7 @@ You should install ncdns on a machine which has a trusted network path to the ma
 
 ## Install dns-prop279
 
-dns-prop279 can be downloaded at the [Beta Downloads]({{site.baseurl}}download/betas/) page.  Currently binaries are not available; building from source is required.  The build is not yet reproducible.
+dns-prop279 can be downloaded at the [Beta Downloads]({{site.baseurl}}download/betas/#dns-prop279) page.  Currently binaries are not available; building from source is required.  The build is not yet reproducible.
 
 To build from source:
 
@@ -58,6 +58,6 @@ If you're using Tor Browser Bundle, or are otherwise using a non-default Tor con
 
 Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `python poc.py` in the TorNS directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.
 
-Semantically, `.bit.onion` means that a domain name will always resolve to a `.onion` address (meaning that `.bit.onion names` are encrypted and authenticated regardless of whether TLS is used); `.bit` means that a domain name will resolve to any of `.onion`, IPv6, IPv4, or CNAME, meaning that `.bit` names are only encrypted and authenticated if TLS is used.  These semantics are open to revision later, as the Tor community evolves its canonical naming semantics.
+Semantically, `.bit.onion` means that a domain name will always resolve to a `.onion` address (meaning that `.bit.onion` names are encrypted and authenticated regardless of whether TLS is used); `.bit` means that a domain name will resolve to any of `.onion`, IPv6, IPv4, or CNAME, meaning that `.bit` names are only encrypted and authenticated if TLS is used.  These semantics are open to revision later, as the Tor community evolves its canonical naming semantics.
 
 Namecoin name owners can specify a `.onion` domain via the `txt` field in the `_tor` subdomain of their name.  This specification is open to revision later, as the Tor community evolves its canonical naming specifications.  (In particular, it is possible that `TXT` records might be replaced with `SRV` records.)
