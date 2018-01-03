@@ -40,7 +40,7 @@ Do you mine Bitcoin at a mining pool?  Consider using a Bitcoin mining pool that
 
 ## Write documentation
 
-Is our documentation not clear (or just plain missing) about something?  Are you good at creating text, image, or video tutorials?  You can help us by improving our documentation.  Talk to us (Matrix or IRC preferred) and we'll be happy to assist.
+Is our documentation not clear about (or just plain missing) something?  Are you good at creating text, image, or video tutorials?  You can help us by improving our documentation.  Talk to us (Matrix or IRC preferred) and we'll be happy to assist.
 
 ## Write code
 
