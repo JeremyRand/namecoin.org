@@ -87,7 +87,7 @@ Security concerns:
 
 * ISP's would be in a position to censor names without easy detection.
 * ISP's would be in a position to serve fraudulent PKI data (e.g. TLSA records), which would enable ISP's to easily wiretap users and infect users with malware.
-* This would even endanger users who are running Namecoin locally, because it would make it much more difficult to detect misconfigured systems that are accidentally leaking Namecoin queries to the ISP.
+* Either of the above security concerns would even endanger users who are running Namecoin locally, because it would make it much more difficult to detect misconfigured systems that are accidentally leaking Namecoin queries to the ISP.
 
 Usability concerns:
 
