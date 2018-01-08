@@ -156,10 +156,32 @@ Namecoin currently uses JSON encoding for the values of names, which isn't parti
 
 ## Soft Hard Name Fork?
 
+**I suggest not listing this one for 2018.  -Jeremy**
+
 ## Block explorer?
 
 ## Binary transparency?
 
+**I suggest not listing this one for 2018.  -Jeremy**
+
 ## TLS?
 
+* Windows
+* MacOS
+* GNU/Linux
+* OpenSSL
+* NSS
+* GnuTLS
+* Cert-Shim
+* TLS-Pool
+* Go
+* Python
+* CertBot
+* Caddy
+* HSTS Simulation
+
 **TODO: I think TLS is acceptable as long as it's not an item that's already primarily assigned to us from NLnet.  -Jeremy**
+
+## Unit/Integration Tests / Reproducible Builds / Packaging / Hardening?
+
+**TODO: Are these appropriate for GSoC?  Need to ask the Google people.  -Jeremy**
