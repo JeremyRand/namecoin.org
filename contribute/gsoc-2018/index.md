@@ -9,7 +9,7 @@ Namecoin intends to apply for Google Summer of Code 2018 as a mentor organizatio
 
 **This Ideas Page is still under construction, and contains some relics from 2015, 2016, and 2017. Check back soon for updates.**
 
-If you are interested in working on one of the following projects, get in touch with us! For low-latency discussion, many of our developers can be reached via #namecoin-dev on Freenode IRC (we also are present in #namecoin). If you're not able to get an answer on there (which is possible, since several of our developers won't be able to respond during class or work), please post in the [forum](https://forum.namecoin.org/). If you have your own ideas for good Namecoin projects, we would love to hear them and support you with those, too!  All of the project ideas are fairly customizable based on your interests and skills (which is why the "Difficulty" fields aren't completely precise.)  **Please talk to us early in the formation of your proposal; this allows us to give you more useful feedback.**
+If you are interested in working on one of the following projects, get in touch with us! For low-latency discussion, many of our developers can be reached via [#namecoin-dev]({{site.baseurl}}resources/chat/#namecoin-dev) (we also are present in [#namecoin]({{site.baseurl}}resources/chat/#namecoin)). If you're not able to get an answer on there (which is possible, since several of our developers won't be able to respond during class or work), please post in the [forum](https://forum.namecoin.org/). If you have your own ideas for good Namecoin projects, we would love to hear them and support you with those, too!  All of the project ideas are fairly customizable based on your interests and skills (which is why the "Difficulty" fields aren't completely precise.)  **Please talk to us early in the formation of your proposal; this allows us to give you more useful feedback.**
 
 **TODO: Check whether we have additional mentors whom we can list, confirm the suggested mentors.**
 
@@ -58,10 +58,11 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 * OpenSSH client login.
 * Bitmessage.  Daniel Kraft implemented a proof-of-concept that is now part of Bitmessage, but it could be significantly improved, e.g. by implementing reverse lookups (Bitmessage addresses to Namecoin identities).  Be careful about blockchain bloat; it might be more scalable to implement reverse lookups in the Bitmessage protocol rather than the Namecoin blockchain.
 * OTR (Off The Record Messaging) and OMEMO.  Daniel Kraft implemented a proof-of-concept for Pidgin, but it is obsolete, and Pidgin itself is no longer considered particularly safe.  There are lots of IM clients that support OTR or OMEMO; adding Namecoin support to one of them would be beneficial.
-* PGP.  Phelix implemented a proof-of-concept of a Namecoin PGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.
+* OpenPGP.  Phelix implemented a proof-of-concept of a Namecoin OpenPGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.
 * Ricochet.  **TODO: Check with Special about whether this is a good idea for 2018.**
-* Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018**
-* Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018**
+* Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018.**
+* Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018.**
+* Matrix.  **TODO: Check with Matrix devs about whether this is a good idea for 2018**
 * Cryptocurrency addresses.  May be relevant to the work by Netki and by [Monero's OpenAlias project](https://www.openalias.org/).
 
 **Difficulty**: Easy-Medium
@@ -73,6 +74,8 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 **Possible Mentors**: Daniel?, Jeremy, maybe someone else????
 
 ## Name Management UI Improvements
+
+**TODO: I think Brandon is already working on this for Namecoin Core.  Should we remove it?  Should we require combining with a Lightweight Client?  Something else?  -Jeremy**
 
 Namecoin's name management UI isn't particularly friendly to novices; it expects them to be familiar with JSON and to be able to look up details in a fairly complicated specification.  Some kinds of poor security practice (e.g. using the same keys to update a name's value as can be used to transfer the name) may go unnoticed by average users, and other configuration errors may be difficult to debug by users unfamiliar with DNSSEC.  Some useful features of the Namecoin protocol remain unavailable in the UI, hampering their adoption.  You could help improve the UI in several ways:
 
@@ -95,9 +98,9 @@ You are free to implement any name management UI improvements of your choice in 
 
 ## Anonymity
 
-Namecoin suffers the same problems with traceability (lack of anonymity) of coin flows that Bitcoin does, plus additional linkability given the data attached to name transactions.  When Namecoin is used for its stated purpose to provide censorship-resistant browsing and registration of domains for possibly controversial purposes (e.g. under repressive regimes), this may be even a bigger problem than with Bitcoin.  You could improve this situation in several ways:
+Namecoin suffers the same problems with traceability (lack of anonymity) of coin flows that Bitcoin does, plus additional linkability given the data attached to name transactions.  When Namecoin is used for its stated purpose to provide censorship-resistant, MITM-resistant browsing and registration of domains for possibly controversial purposes (e.g. under repressive regimes), this may be even a bigger problem than with Bitcoin.  You could improve this situation in several ways:
 
-* Improve usability of registering a name anonymously by automating a purchase of namecoins using an anonymous currency like Monero or Zcash as part of the name registration process.  This reduces the risk of private data leaking while purchasing namecoins (e.g. banking details at an exchange, or Bitcoin blockchain analysis data).  Integrating with a decentralized exchange such as [Bitsquare](https://bitsquare.io/) might be a useful way to do this (this might also make it easier to register Namecoin names with national currencies).  Future advances in blockchain technology such as atomic cross-chain trades might be applicable, so try to make sure that your code could be reused with as few changes as possible for such use cases once they're ready.
+* Improve usability of registering a name anonymously by automating a purchase of namecoins using an anonymous currency like Monero or Zcash as part of the name registration process.  This reduces the risk of private data leaking while purchasing namecoins (e.g. banking details at an exchange, or Bitcoin blockchain analysis data).  Integrating with a decentralized exchange such as [Bisq](https://bisq.network/) might be a useful way to do this (this might also make it easier to register Namecoin names with national currencies).  Future advances in blockchain technology such as atomic cross-chain trades might be applicable, so try to make sure that your code could be reused with as few changes as possible for such use cases once they're ready.
 * Keep each registered name separate on the blockchain.  This reduces the risk of private data leaking in the Namecoin blockchain.  This might be done using the Coin Control or HD Wallet features of wallet software.
 * Improve the ability for Namecoin-related software to run safely when routed over Tor or other anonymity networks.  This might include testing for and fixing proxy leaks, application-layer protocol leaks, timing metadata leaks, and incorrect or missing stream isolation, among other things.  It's okay if this work includes some fixes to upstream software (e.g. Bitcoin wallet software), but a significant component of your project should be Namecoin-specific.
 
@@ -112,6 +115,8 @@ You are free to choose any anonymity improvements you wish in any Namecoin-relat
 **Possible Mentors**: Jeremy, Daniel?, Ryan?, Joseph?, Brandon????, Hugo????
 
 ## Search Engine / Metrics
+
+**TODO: I think Jonas is already working on this, should we remove it from the GSoC list?  -Jeremy**
 
 When we're asked how many people use Namecoin, what they use it for, and what example Namecoin websites exist, we currently have to say that we don't know.  This is a totally unnecessary conundrum; the blockchain is public and the websites are public.  You can help us learn more about how Namecoin is used in the real world by creating a search engine and metrics analysis system for Namecoin.  Since Namecoin is decentralized, the decentralized search engine YaCy would be a great fit for this.  This project idea has two components:
 
@@ -154,3 +159,7 @@ Namecoin currently uses JSON encoding for the values of names, which isn't parti
 ## Block explorer?
 
 ## Binary transparency?
+
+## TLS?
+
+**TODO: I think TLS is acceptable as long as it's not an item that's already primarily assigned to us from NLnet.  -Jeremy**
