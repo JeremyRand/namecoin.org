@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Google Summer of Code (GSoC) 2017 Project Ideas
+title: Google Summer of Code (GSoC) 2018 Project Ideas
 ---
 
 {::options parse_block_html="true" /}
 
-Namecoin intends to apply for Google Summer of Code 2017 as a mentor organization.
+Namecoin intends to apply for Google Summer of Code 2018 as a mentor organization.
 
-**This Ideas Page is still under construction, and contains some relics from 2015 and 2016. Check back soon for updates.**
+**This Ideas Page is still under construction, and contains some relics from 2015, 2016, and 2017. Check back soon for updates.**
 
 If you are interested in working on one of the following projects, get in touch with us! For low-latency discussion, many of our developers can be reached via #namecoin-dev on Freenode IRC (we also are present in #namecoin). If you're not able to get an answer on there (which is possible, since several of our developers won't be able to respond during class or work), please post in the [forum](https://forum.namecoin.org/). If you have your own ideas for good Namecoin projects, we would love to hear them and support you with those, too!  All of the project ideas are fairly customizable based on your interests and skills (which is why the "Difficulty" fields aren't completely precise.)  **Please talk to us early in the formation of your proposal; this allows us to give you more useful feedback.**
 
@@ -59,9 +59,9 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 * Bitmessage.  Daniel Kraft implemented a proof-of-concept that is now part of Bitmessage, but it could be significantly improved, e.g. by implementing reverse lookups (Bitmessage addresses to Namecoin identities).  Be careful about blockchain bloat; it might be more scalable to implement reverse lookups in the Bitmessage protocol rather than the Namecoin blockchain.
 * OTR (Off The Record Messaging) and OMEMO.  Daniel Kraft implemented a proof-of-concept for Pidgin, but it is obsolete, and Pidgin itself is no longer considered particularly safe.  There are lots of IM clients that support OTR or OMEMO; adding Namecoin support to one of them would be beneficial.
 * PGP.  Phelix implemented a proof-of-concept of a Namecoin PGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.
-* Ricochet.  **TODO: Check with Special about whether this is a good idea for 2017.**
-* Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2017**
-* Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2017**
+* Ricochet.  **TODO: Check with Special about whether this is a good idea for 2018.**
+* Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018**
+* Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018**
 * Cryptocurrency addresses.  May be relevant to the work by Netki and by [Monero's OpenAlias project](https://www.openalias.org/).
 
 **Difficulty**: Easy-Medium
