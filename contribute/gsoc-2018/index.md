@@ -32,7 +32,7 @@ Adding P2P wire protocol commands may be fine if it helps you in accomplishing t
 
 ## Domain Name Integration with Additional Platforms/Applications
 
-Namecoin currently supports integration with the DNS resolvers on desktop OS's such as GNU/Linux, Windows, and macOS.  Integration with the Tor anonymity network on desktop OS's (with domain names pointing to IP addresses, DNS names, and onion services) is almost ready for use.  However, there are several other applications and environments where Namecoin domain names would be beneficial.  Some of these are:
+Namecoin currently supports integration with the DNS resolvers on desktop OS's such as GNU/Linux, Windows, and macOS.  Integration with the Tor anonymity network on desktop OS's (with domain names pointing to IP addresses, DNS names, and onion services) is also working.  However, there are several other applications and environments where Namecoin domain names would be beneficial.  Some of these are:
 
 * The Android mobile OS.  This might also include porting an Android Light Client to Namecoin.
 * The [I2P](https://geti2p.net/) anonymity network (names point to IP addresses, DNS names, and eepsites).
