@@ -7,7 +7,7 @@ title: Exchanges
 
 <span style="font-size:130%;">&#8644;</span> You can buy and sell **Namecoins** here:
 
-<span style="font-size:130%;">
+<span id="decentralized-exchanges" style="font-size:130%;">
 **Decentralized exchanges**<br>
 [Bisq](https://bitsquare.io/)<br>
 </span>
