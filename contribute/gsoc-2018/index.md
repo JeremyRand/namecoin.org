@@ -111,28 +111,19 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 
 **Possible Mentors**: Daniel?, Jeremy, maybe someone else????
 
-## Name Management UI Improvements
+## Name Trading UI
 
-**TODO: I think Brandon is already working on this for Namecoin Core.  Should we remove it?  Should we require combining with a Lightweight Client?  Something else?  -Jeremy**
+Namecoin's protocol supports atomic name trades, in which Alice can purchase a name from Bob without counterparty risk.  This could help reduce issues with squatted names.  You could make this functionality available in the UI in a simple way, and possibly investigate a method for buyers and sellers to find each other (e.g. a decentralized bulletin board).  Both interactive trades (where both parties select and confirm each other) and non-interactive trades (where a trade offer can be posted publicly and another user can accept the offer without further interaction) are possible; you can implement either (or both).  You may find [Phelix's ANTPY](https://github.com/phelixnmc/antpy) and [Ryan Castellucci's nametrade](https://github.com/ryancdotorg/nametrade) implementations to be interesting.
 
-Namecoin's name management UI isn't particularly friendly to novices; it expects them to be familiar with JSON and to be able to look up details in a fairly complicated specification.  Some kinds of poor security practice (e.g. using the same keys to update a name's value as can be used to transfer the name) may go unnoticed by average users, and other configuration errors may be difficult to debug by users unfamiliar with DNSSEC.  Some useful features of the Namecoin protocol remain unavailable in the UI, hampering their adoption.  You could help improve the UI in several ways:
+You are free to implement a name trading UI in any Namecoin wallet that you choose.  (Since Namecoin Core is the only currently available wallet application, this would mean either implementing your name trading UI into Namecoin Core or combining some name trading UI tasks with creating a Lightweight Client.)
 
-* Provide a user-friendly UI for choosing values for the various JSON fields in the Namecoin domain names and identities specifications, which automatically constructs the JSON.
-* When registering a domain name or identity, also register a throwaway name that is used to store the actual value of the name.  By automatically configuring the main name to import a value from the throwaway name, and defaulting to storing the main name and the throwaway name in different wallets, the main name can be kept offline while the throwaway name can be kept in an online wallet.  This reduces risk of name theft considerably.
-* Check existing name configurations for errors (e.g. JSON errors or valid JSON that doesn't conform to the Namecoin domain names or identities specification), and inform the user of what's wrong.  Hugo Landau has written some code in ncdns that may be helpful for this.
-* Namecoin's protocol supports atomic name trades, in which Alice can purchase a name from Bob without counterparty risk.  This could help reduce issues with squatted names.  Make this functionality available in the UI in a simple way.  Both interactive trades (where both parties select and confirm each other) and non-interactive trades (where a trade offer can be posted publicly and another user can accept the offer without further interaction) are possible; you can implement either (or both).  You may find [Phelix's ANTPY](https://github.com/phelixnmc/antpy) and [Ryan Castellucci's nametrade](https://github.com/ryancdotorg/nametrade) implementations to be interesting.
-* Implement automatic renewal of names so that users don't accidentally let their name expire, and/or automatic pre-signing of renewals when the name is registered/updated so that the wallet doesn't need to be unlocked in order to renew.  Be careful about deanonymization vectors based on timing when a name is renewed!
-* Allow users to control the transaction fees they pay for name operations.  (Right now the default fee policy is always used.)
-
-You are free to implement any name management UI improvements of your choice in any Namecoin wallet that you choose.  (Since Namecoin Core is the only currently available wallet application, this would mean either implementing your UI improvements into Namecoin Core or combining some of these UI tasks with creating a Lightweight Client.)
-
-**Difficulty**: Easy-Hard
+**Difficulty**: Medium
 
 **Requirements**: Familiarity with UI design in whatever language and UI framework your chosen wallet application uses.  (For example, Namecoin Core uses C++ with Qt.)
 
-**Expected Outcomes/Deliverables**: Modified Namecoin wallet software with your UI improvements.
+**Expected Outcomes/Deliverables**: Modified Namecoin wallet software with your atomic name trading UI.
 
-**Possible Mentors**: Brandon?, Joseph?, Daniel?, Ryan?, Hugo?, Jeremy?
+**Possible Mentors**: Brandon, Jeremy, Joseph?, Daniel?, Ryan?, Hugo?
 
 ## Anonymity
 
