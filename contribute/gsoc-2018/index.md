@@ -55,8 +55,8 @@ You are free to integrate Namecoin domain names into any additional platform(s) 
 Namecoin currently supports integration with TLS implementations (as a decentralized alternative to certificate authorities) on a small number of platforms and applications: positive overrides (self-signed certs are allowed if they match the Namecoin blockchain) for Windows and (on GNU/Linux) NSS, and negative overrides (CA-issued certificates are disallowed if they don't match the Namecoin blockchain) for Chromium.  However, our existing support is rather hacky and has some disadvantages, and we'd love to support more platforms.  Some examples of things we'd like to see support Namecoin for TLS:
 
 * Operating Systems
-_   + Windows
-    + MacOS
+    + Windows
+    + macOS
     + GNU/Linux
     + Android
     + Any other OS
@@ -206,7 +206,7 @@ Namecoin's various subprojects would benefit from improvements in the packaging 
 
 **Requirements**: Familiarity with build systems, packaging, and/or reproducible builds.
 
-**Expected Outcomes/Deliverables**: Modified Namecoin software build scripts with your improvements; possibly also deployed PPA/COPR-style packages or official distro packages packages if you choose to do so.
+**Expected Outcomes/Deliverables**: Modified Namecoin software build scripts with your improvements; possibly also deployed PPA/COPR-style packages or official distribution packages if you choose to do so.
 
 **Possible Mentors**: Jeremy, Hugo?, Joseph?, ???
 
