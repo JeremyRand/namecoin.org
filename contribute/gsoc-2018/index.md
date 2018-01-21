@@ -28,7 +28,7 @@ Adding P2P wire protocol commands may be fine if it helps you in accomplishing t
 
 **Expected Outcomes/Deliverables**: A light client that is usable and supports name transactions.
 
-**Possible Mentors**: Daniel?, Ryan?, Jeremy, Joseph?, Brandon?, Hugo?
+**Possible Mentors**: Daniel?, Ryan?, Jeremy (confirmed), Joseph?, Brandon (confirmed), Hugo?
 
 ## Domain Name Integration with Additional Platforms/Applications
 
@@ -48,7 +48,7 @@ You are free to integrate Namecoin domain names into any additional platform(s) 
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin domain names with the platform(s) or application(s) of your choice.
 
-**Possible Mentors**: Joseph?, Jeremy, Brandon?, Daniel?, Hugo?
+**Possible Mentors**: Joseph?, Jeremy (confimed), Brandon?, Daniel?, Hugo?
 
 ## TLS Integration with Additional Platforms/Applications
 
@@ -86,7 +86,7 @@ It might also be interesting to simulate HSTS by automatically redirecting HTTP 
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin for certificate verification with the platform(s) or application(s) of your choice.
 
-**Possible Mentors**: Jeremy, Hugo?, Ryan?, Anyone else?
+**Possible Mentors**: Jeremy (confirmed), Hugo?, Ryan?, Anyone else?
 
 ## Identity Integration with Additional Applications
 
@@ -109,7 +109,7 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin identities with the protocol(s) or application(s) of your choice.
 
-**Possible Mentors**: Daniel?, Jeremy, maybe someone else????
+**Possible Mentors**: Daniel?, Jeremy (confirmed), maybe someone else????
 
 ## Name Trading UI
 
@@ -123,7 +123,7 @@ You are free to implement a name trading UI in any Namecoin wallet that you choo
 
 **Expected Outcomes/Deliverables**: Modified Namecoin wallet software with your atomic name trading UI.
 
-**Possible Mentors**: Brandon, Jeremy, Joseph?, Daniel?, Ryan?, Hugo?
+**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed), Joseph?, Daniel?, Ryan?, Hugo?
 
 ## Anonymity
 
@@ -141,7 +141,7 @@ You are free to choose any anonymity improvements you wish in any Namecoin-relat
 
 **Expected Outcomes/Deliverables**: Modified Namecoin software with your anonymity improvements.
 
-**Possible Mentors**: Jeremy, Daniel?, Ryan?, Joseph?, Brandon????, Hugo????
+**Possible Mentors**: Jeremy (confirmed), Daniel?, Ryan?, Joseph?, Brandon????, Hugo????
 
 ## Scalability: Segregated Name Values
 
@@ -153,7 +153,7 @@ The data attached to names in Namecoin is permanently part of the blockchain, wh
 
 **Expected Outcomes/Deliverables**: SegVal deployed on a Namecoin testnet.
 
-**Possible Mentors**: Daniel?, Jeremy, Anyone else?
+**Possible Mentors**: Daniel?, Jeremy (confirmed), Anyone else?
 
 ## Block Explorer
 
@@ -165,7 +165,7 @@ Namecoin would benefit from a high-quality libre block explorer with support for
 
 **Expected Outcomes/Deliverables**: A Namecoin block explorer with support for name transactions.
 
-**Possible Mentors**: Brandon?, Jeremy, Hugo?, Joseph?, Ryan?, Anyone else?
+**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed), Hugo?, Joseph?, Ryan?, Anyone else?
 
 ## Search Engine / Metrics
 
@@ -184,7 +184,7 @@ You are free to choose what types of addresses to crawl and what statistics to m
 
 **Expected Outcomes/Deliverables**: Scripts for populating a YaCy index of Namecoin websites and generating statistics about those websites.
 
-**Possible Mentors**: Jeremy, maybe someone else????
+**Possible Mentors**: Jeremy (confirmed), Jonas?, maybe someone else????
 
 ## Packaging Improvements
 
@@ -199,7 +199,7 @@ Namecoin's various subprojects would benefit from improvements in the packaging 
 
 **Expected Outcomes/Deliverables**: Modified Namecoin software build scripts with your improvements; possibly also deployed PPA/COPR-style packages or official distribution packages if you choose to do so.
 
-**Possible Mentors**: Jeremy, Hugo?, Joseph?, ???
+**Possible Mentors**: Jeremy (confirmed), Hugo?, Joseph?, ???
 
 ## Hardening/Sandboxing Improvements
 
@@ -211,7 +211,7 @@ Various hardening and sandboxing technologies exist, e.g. AppArmor, Bubblewrap, 
 
 **Expected Outcomes/Deliverables**: Modifications to the Namecoin-related software of your choice to use the hardening/sandboxing technology or technologies of your choice.
 
-**Possible Mentors**: Jeremy, ???
+**Possible Mentors**: Jeremy (confirmed), ???
 
 ## Your Own Namecoin Use or Enhancement
 
