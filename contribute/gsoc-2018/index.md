@@ -167,25 +167,6 @@ Namecoin would benefit from a high-quality libre block explorer with support for
 
 **Possible Mentors**: Brandon (confirmed), Jeremy (confirmed), Hugo?, Joseph?, Ryan?, Anyone else?
 
-## Search Engine / Metrics
-
-**TODO: I think Jonas is already working on this, should we remove it from the GSoC list?  -Jeremy**
-
-When we're asked how many people use Namecoin, what they use it for, and what example Namecoin websites exist, we currently have to say that we don't know.  This is a totally unnecessary conundrum; the blockchain is public and the websites are public.  You can help us learn more about how Namecoin is used in the real world by creating a search engine and metrics analysis system for Namecoin.  Since Namecoin is decentralized, the decentralized search engine YaCy would be a great fit for this.  This project idea has two components:
-
-* Create scripts to automatically scan the Namecoin blockchain and index each domain name in YaCy.  This could be done via a standard DNS resolver running on the YaCy computer for clearnet websites; you may need to get creative if you wish to index websites hosted on networks like Tor, I2P, Freenet, ZeroNet, or IPFS.
-* Create scripts to generate statistics about usage.  For example: How many websites are using Namecoin?  How many distinct pages exist on a Namecoin website?  (E.g. are they landing pages for squatted names or are they full websites?)  What record types are they using?  (IPv4, IPv6, Tor, I2P, etc.?)  Are they mirrors of non-Namecoin websites?  Do mirrors of non-Namecoin websites and the non-Namecoin websites that they're mirroring link to each other?  Use your imagination; what can we learn about how Namecoin domain names are used in the real world?
-
-You are free to choose what types of addresses to crawl and what statistics to measure.
-
-**Difficulty**: Easy-Medium
-
-**Requirements**: Familiarity with YaCy.
-
-**Expected Outcomes/Deliverables**: Scripts for populating a YaCy index of Namecoin websites and generating statistics about those websites.
-
-**Possible Mentors**: Jeremy (confirmed), Jonas?, maybe someone else????
-
 ## Packaging Improvements
 
 Namecoin's various subprojects would benefit from improvements in the packaging process.  For example:
