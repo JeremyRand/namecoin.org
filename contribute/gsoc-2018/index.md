@@ -7,11 +7,7 @@ title: Google Summer of Code (GSoC) 2018 Project Ideas
 
 Namecoin intends to apply for Google Summer of Code 2018 as a mentor organization.
 
-**This Ideas Page is still under construction, and contains some relics from 2015, 2016, and 2017. Check back soon for updates.**
-
 If you are interested in working on one of the following projects, get in touch with us! For low-latency discussion, many of our developers can be reached via [#namecoin-dev]({{site.baseurl}}resources/chat/#namecoin-dev) (we also are present in [#namecoin]({{site.baseurl}}resources/chat/#namecoin)). If you're not able to get an answer on there (which is possible, since several of our developers won't be able to respond during class or work), please post in the [forum](https://forum.namecoin.org/). If you have your own ideas for good Namecoin projects, we would love to hear them and support you with those, too!  All of the project ideas are fairly customizable based on your interests and skills (which is why the "Difficulty" fields aren't completely precise.)  **Please talk to us early in the formation of your proposal; this allows us to give you more useful feedback.**
-
-**TODO: Check whether we have additional mentors whom we can list, confirm the suggested mentors.**
 
 ## Lightweight Client
 
@@ -28,19 +24,19 @@ Adding P2P wire protocol commands may be fine if it helps you in accomplishing t
 
 **Expected Outcomes/Deliverables**: A light client that is usable and supports name transactions.
 
-**Possible Mentors**: Daniel?, Ryan?, Jeremy (confirmed), Joseph?, Brandon (confirmed), Hugo?
+**Possible Mentors**: Jeremy (confirmed), Brandon (confirmed) <!-- Daniel? -->
 
 ## Domain Name Integration with Additional Platforms/Applications
 
 Namecoin currently supports integration with the DNS resolvers on desktop OS's such as GNU/Linux, Windows, and macOS.  Integration with the Tor anonymity network on desktop OS's (with domain names pointing to IP addresses, DNS names, and onion services) is also working.  However, there are several other applications and environments where Namecoin domain names would be beneficial.  Some of these are:
 
 * The Android mobile OS.  This might also include porting an Android Light Client to Namecoin.
-* The [I2P](https://geti2p.net/) anonymity network (names point to IP addresses, DNS names, and eepsites).
+* The [I2P](https://geti2p.net/) anonymity network (names point to IP addresses, DNS names, and eepsites).  (Note: the [Kovri](https://getkovri.org/) developers are interested in this.)
 * The [Freenet](https://freenetproject.org/) anonymous hosting network (names point to freesites).
 * The [ZeroNet](https://zeronet.io/) decentralized hosting network (names point to ZeroNet sites).  ZeroNet already has partial support for Namecoin but currently uses a centralized server to look up names.
 * The [IPFS](https://ipfs.io/) decentralized hosting network (names point to IPFS sites).
 
-You are free to integrate Namecoin domain names into any additional platform(s) or application(s) of your choice, as long as they do not enforce DRM (this means Apple iOS is not acceptable).  In many cases, it is likely that you would benefit from talking to the developers of whatever application you would be working with (e.g. if you're implementing Namecoin support in I2P, you might want to talk to the developers of an I2P client implementation).  **TODO: Are the Kovri developers interested in mentoring something?**
+You are free to integrate Namecoin domain names into any additional platform(s) or application(s) of your choice, as long as they do not enforce DRM (this means Apple iOS is not acceptable).  In many cases, it is likely that you would benefit from talking to the developers of whatever application you would be working with (e.g. if you're implementing Namecoin support in I2P, you might want to talk to the developers of an I2P client implementation).
 
 **Difficulty**: Easy-Medium
 
@@ -48,7 +44,7 @@ You are free to integrate Namecoin domain names into any additional platform(s) 
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin domain names with the platform(s) or application(s) of your choice.
 
-**Possible Mentors**: Joseph?, Jeremy (confimed), Brandon?, Daniel?, Hugo?
+**Possible Mentors**: Jeremy (confirmed), anonimal (if integrating Namecoin with Kovri; confirmed)
 
 ## TLS Integration with Additional Platforms/Applications
 
@@ -67,8 +63,8 @@ Namecoin currently supports integration with TLS implementations (as a decentral
     + GnuTLS
     + Any other TLS library
 * TLS Shims
-    + Cert-Shim
-    + TLS-Pool
+    + [Cert-Shim](https://bitbucket.org/uf_sensei/cert-shim)
+    + [TLS Pool](https://github.com/arpa2/tlspool)
 * Languages' Standard Libraries
     + Go
     + Python
@@ -86,7 +82,7 @@ It might also be interesting to simulate HSTS by automatically redirecting HTTP 
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin for certificate verification with the platform(s) or application(s) of your choice.
 
-**Possible Mentors**: Jeremy (confirmed), Hugo?, Ryan?, Anyone else?
+**Possible Mentors**: Jeremy (confirmed)
 
 ## Identity Integration with Additional Applications
 
@@ -94,13 +90,13 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 
 * Website single sign-on.  Daniel Kraft's NameID is an interesting proof-of-concept of this, but it is questionable whether OpenID or a Firefox extension are the best ways to do this.  For example, TLS CCA (client certificate authentication) and FIDO have been suggested as more standard alternatives.
 * OpenSSH client login.
-* Bitmessage.  Daniel Kraft implemented a proof-of-concept that is now part of Bitmessage, but it could be significantly improved, e.g. by implementing reverse lookups (Bitmessage addresses to Namecoin identities).  Be careful about blockchain bloat; it might be more scalable to implement reverse lookups in the Bitmessage protocol rather than the Namecoin blockchain.
+* [Bitmessage](https://bitmessage.org/).  Daniel Kraft implemented a proof-of-concept that is now part of Bitmessage, but it could be significantly improved, e.g. by implementing reverse lookups (Bitmessage addresses to Namecoin identities).  Be careful about blockchain bloat; it might be more scalable to implement reverse lookups in the Bitmessage protocol rather than the Namecoin blockchain.
 * OTR (Off The Record Messaging) and OMEMO.  Daniel Kraft implemented a proof-of-concept for Pidgin, but his code is obsolete, and Pidgin itself is no longer considered particularly safe.  There are lots of IM clients that support OTR or OMEMO; adding Namecoin support to one of them would be beneficial.
-* OpenPGP.  Phelix implemented a proof-of-concept of a Namecoin OpenPGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.
+* OpenPGP.  Phelix implemented a proof-of-concept of a Namecoin OpenPGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.  <!--
 * Ricochet.  **TODO: Check with Special about whether this is a good idea for 2018.**
 * Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018.**
 * Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018.**
-* Matrix.  **TODO: Check with Matrix devs about whether this is a good idea for 2018**
+* Matrix.  **TODO: Check with Matrix devs about whether this is a good idea for 2018** -->
 * Cryptocurrency addresses.  May be relevant to the work by Netki and by [Monero's OpenAlias project](https://www.openalias.org/).
 
 **Difficulty**: Easy-Medium
@@ -109,7 +105,7 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 
 **Expected Outcomes/Deliverables**: A working integration of Namecoin identities with the protocol(s) or application(s) of your choice.
 
-**Possible Mentors**: Daniel?, Jeremy (confirmed), maybe someone else????
+**Possible Mentors**: <!-- Daniel? --> Jeremy (confirmed)
 
 ## Name Trading UI
 
@@ -123,7 +119,7 @@ You are free to implement a name trading UI in any Namecoin wallet that you choo
 
 **Expected Outcomes/Deliverables**: Modified Namecoin wallet software with your atomic name trading UI.
 
-**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed), Joseph?, Daniel?, Ryan?, Hugo?
+**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed) <!-- Daniel? -->
 
 ## Anonymity
 
@@ -133,7 +129,7 @@ Namecoin suffers the same problems with traceability (lack of anonymity) of coin
 * Keep each registered name separate on the blockchain.  This reduces the risk of private data leaking in the Namecoin blockchain.  This might be done using the Coin Control or HD Wallet features of wallet software.
 * Improve the ability for Namecoin-related software to run safely when routed over Tor or other anonymity networks.  This might include testing for and fixing proxy leaks, application-layer protocol leaks, timing metadata leaks, and incorrect or missing stream isolation, among other things.  It's okay if this work includes some fixes to upstream software (e.g. Bitcoin wallet software), but a significant component of your project should be Namecoin-specific.
 
-You are free to choose any anonymity improvements you wish in any Namecoin-related software of your choice.  **TODO: are the Bisq people and/or the Monero people interested in mentoring something?  (Asked in #bisq 2018 Jan 18.)**
+You are free to choose any anonymity improvements you wish in any Namecoin-related software of your choice.  <!-- **TODO: are the Bisq people and/or the Monero people interested in mentoring something?  (Asked in #bisq 2018 Jan 18.)** -->
 
 **Difficulty**: Medium-Hard
 
@@ -141,7 +137,7 @@ You are free to choose any anonymity improvements you wish in any Namecoin-relat
 
 **Expected Outcomes/Deliverables**: Modified Namecoin software with your anonymity improvements.
 
-**Possible Mentors**: Jeremy (confirmed), Daniel?, Ryan?, Joseph?, Brandon????, Hugo????
+**Possible Mentors**: Jeremy (confirmed) <!-- Daniel? -->
 
 ## Scalability: Segregated Name Values
 
@@ -153,26 +149,26 @@ The data attached to names in Namecoin is permanently part of the blockchain, wh
 
 **Expected Outcomes/Deliverables**: SegVal deployed on a Namecoin testnet.
 
-**Possible Mentors**: Daniel?, Jeremy (confirmed), Anyone else?
+**Possible Mentors**: <!-- Daniel? --> Jeremy (confirmed)
 
 ## Block Explorer
 
-Namecoin would benefit from a high-quality libre block explorer with support for name transactions.  Brandon Roberts has already ported Bitcore to Namecoin, which might make it feasible to port the Insight block explorer to Namecoin.
+Namecoin would benefit from a high-quality libre block explorer with support for name transactions.  Brandon Roberts has already ported [Bitcore](https://bitcore.io/) to Namecoin, which might make it feasible to port the [Insight block explorer](https://github.com/bitpay/insight-api) to Namecoin.
 
 **Difficulty**: Easy
 
-**Requirements**: **TODO**
+**Requirements**: Basic familiarity with a Bitcoin block explorer implementation.
 
 **Expected Outcomes/Deliverables**: A Namecoin block explorer with support for name transactions.
 
-**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed), Hugo?, Joseph?, Ryan?, Anyone else?
+**Possible Mentors**: Brandon (confirmed), Jeremy (confirmed)
 
 ## Packaging Improvements
 
 Namecoin's various subprojects would benefit from improvements in the packaging process.  For example:
 
 * GNU/Linux packages for Namecoin Core, ncdns, lightweight clients, etc.
-* Reproducible builds for ncdns, lightweight clients, etc.  (Namecoin Core binaries are already reproducible, but we'd love to see reproducible GNU/Linux packages for Namecoin Core.)
+* [Reproducible builds](https://reproducible-builds.org/) for ncdns, lightweight clients, etc.  (Namecoin Core binaries are already reproducible, but we'd love to see reproducible GNU/Linux packages for Namecoin Core.)
 
 **Difficulty**: Easy-Hard
 
@@ -180,11 +176,11 @@ Namecoin's various subprojects would benefit from improvements in the packaging 
 
 **Expected Outcomes/Deliverables**: Modified Namecoin software build scripts with your improvements; possibly also deployed PPA/COPR-style packages or official distribution packages if you choose to do so.
 
-**Possible Mentors**: Jeremy (confirmed), Hugo?, Joseph?, ???
+**Possible Mentors**: Jeremy (confirmed)
 
 ## Hardening/Sandboxing Improvements
 
-Various hardening and sandboxing technologies exist, e.g. AppArmor, Bubblewrap, Qubes's AppVM's, and Subgraph's Oz.  It would be interesting to utilize some of these with software from the Namecoin ecosystem.
+Various hardening and sandboxing technologies exist, e.g. [AppArmor](https://en.wikipedia.org/wiki/AppArmor), [Bubblewrap](https://github.com/projectatomic/bubblewrap), [Qubes](https://www.qubes-os.org/)'s AppVM's, and [Subgraph](https://subgraph.com/sgos/)'s Oz.  It would be interesting to utilize some of these with software from the Namecoin ecosystem.
 
 **Difficulty**: Easy-Medium
 
@@ -192,7 +188,7 @@ Various hardening and sandboxing technologies exist, e.g. AppArmor, Bubblewrap, 
 
 **Expected Outcomes/Deliverables**: Modifications to the Namecoin-related software of your choice to use the hardening/sandboxing technology or technologies of your choice.
 
-**Possible Mentors**: Jeremy (confirmed), ???
+**Possible Mentors**: Jeremy (confirmed)
 
 ## Your Own Namecoin Use or Enhancement
 
