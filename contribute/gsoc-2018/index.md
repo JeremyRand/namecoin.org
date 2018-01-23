@@ -92,11 +92,11 @@ Namecoin could be used for identities with a variety of protocols and applicatio
 * OpenSSH client login.
 * [Bitmessage](https://bitmessage.org/).  Daniel Kraft implemented a proof-of-concept that is now part of Bitmessage, but it could be significantly improved, e.g. by implementing reverse lookups (Bitmessage addresses to Namecoin identities).  Be careful about blockchain bloat; it might be more scalable to implement reverse lookups in the Bitmessage protocol rather than the Namecoin blockchain.
 * OTR (Off The Record Messaging) and OMEMO.  Daniel Kraft implemented a proof-of-concept for Pidgin, but his code is obsolete, and Pidgin itself is no longer considered particularly safe.  There are lots of IM clients that support OTR or OMEMO; adding Namecoin support to one of them would be beneficial.
-* OpenPGP.  Phelix implemented a proof-of-concept of a Namecoin OpenPGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.  <!--
-* Ricochet.  **TODO: Check with Special about whether this is a good idea for 2018.**
-* Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018.**
-* Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018.**
-* Matrix.  **TODO: Check with Matrix devs about whether this is a good idea for 2018** -->
+* OpenPGP.  Phelix implemented a proof-of-concept of a Namecoin OpenPGP keyserver, but it is based on outdated code and might benefit from a fresh attempt.
+<!-- * Ricochet.  **TODO: Check with Special about whether this is a good idea for 2018.**-->
+<!-- * Tox.  **TODO: Check with Tox devs about whether this is a good idea for 2018.**-->
+<!-- * Ring.  **TODO: Check with Ring devs about whether this is a good idea for 2018.**-->
+<!-- * Matrix.  **TODO: Check with Matrix devs about whether this is a good idea for 2018** -->
 * Cryptocurrency addresses.  May be relevant to the work by Netki and by [Monero's OpenAlias project](https://www.openalias.org/).
 
 **Difficulty**: Easy-Medium
