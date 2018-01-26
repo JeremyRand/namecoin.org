@@ -5,7 +5,7 @@ title: Google Summer of Code (GSoC) 2018 Project Ideas
 
 {::options parse_block_html="true" /}
 
-Namecoin intends to apply for Google Summer of Code 2018 as a mentor organization.
+Namecoin has applied for Google Summer of Code 2018 as a mentor organization.
 
 If you are interested in working on one of the following projects, get in touch with us! For low-latency discussion, many of our developers can be reached via [#namecoin-dev]({{site.baseurl}}resources/chat/#namecoin-dev) (we also are present in [#namecoin]({{site.baseurl}}resources/chat/#namecoin)). If you're not able to get an answer on there (which is possible, since several of our developers won't be able to respond during class or work), please post in the [forum](https://forum.namecoin.org/). If you have your own ideas for good Namecoin projects, we would love to hear them and support you with those, too!  All of the project ideas are fairly customizable based on your interests and skills (which is why the "Difficulty" fields aren't completely precise.)  **Please talk to us early in the formation of your proposal; this allows us to give you more useful feedback.**
 
