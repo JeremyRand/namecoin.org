@@ -109,4 +109,6 @@ bleepingcomputer.iq.    600     IN      NS      c.dnspod.com.
 
 Ryan tried registering a `.onion` domain and `bleepingcomputer.malware` on DNSPod as well, but these were rejected as invalid TLD's.  Ryan and I have no clue why `.bit` is on DNSPod's TLD whitelist while `.onion` isn't -- probably because a customer asked for it and DNSPod just doesn't care.
 
-So in conclusion: while this is a rather interesting case of a possible hilarious opsec fail by a ransomware author (which very well might get them arrested), the ransomware itself is fully irrelevant to Namecoin.
+Ryan isn't aware of any prior cases where a malware C&C was set up in a random free authoritative DNS provider such as DNSPod, with the DNS servers hardcoded in the malware.  It's an interesting strategy for malware authors, since authoritative DNS providers usually don't bother to confirm domain name ownership.  Entertainingly, Ryan found that DNSPod isn't verifying ownership of the email addresses used to register accounts either.
+
+So in conclusion: while this is a rather interesting case of a possible hilarious opsec fail by a ransomware author (which very well might get them arrested), and the strategy of using authoritative DNS hosting providers for malware C&C is fascinating as well, the ransomware itself is fully irrelevant to Namecoin.
