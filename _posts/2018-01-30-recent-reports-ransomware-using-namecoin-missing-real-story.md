@@ -25,12 +25,12 @@ However, Bleeping Computer is actually substantially wrong on this point.  Why? 
 {"ns":["A.DNSPOD.COM","B.DNSPOD.COM"]}
 ~~~
 
-First off, note that this is actually a completely invalid Namecoin configuration, because the trailing period is missing from the authoritative nameserver addresses, so any DNS software that tries to process that Namecoin domain will return `SERVFAIL`.  Second, note that the authoritative nameservers listed are... the `dnspod.com` nameservers.  This makes it pretty clear that `a.dnspod.com` isn't actually a Namecoin DNS inproxy.  If it were, and even if the trailing-period fail were corrected in the Namecoin value, the inproxy would end up in a recursion loop.  `a.dnspod.com` is actually just a random authoritative nameserver that happens to be serving records for a domain name that ends in `.bit`.  **Namecoin isn't used anywhere by GandCrab, and killing the Namecoin domain wouldn't have any effect on GandCrab.**  Of course, this raises questions about why exactly that domain name is even registered in Namecoin.  The simplest explanations are:
+First off, note that this is actually a completely invalid Namecoin configuration, because [the trailing period is missing](https://help.directadmin.com/item.php?id=541) from the authoritative nameserver addresses, so any DNS software that tries to process that Namecoin domain will return `SERVFAIL`.  Second, note that the authoritative nameservers listed are... the `dnspod.com` nameservers.  This makes it pretty clear that `a.dnspod.com` isn't actually a Namecoin DNS inproxy.  If it were, and even if the trailing-period fail were corrected in the Namecoin value, the inproxy would end up in a recursion loop.  `a.dnspod.com` is actually just a random authoritative nameserver that happens to be serving records for a domain name that ends in `.bit`.  **Namecoin isn't used anywhere by GandCrab, and killing the Namecoin domain wouldn't have any effect on GandCrab.**  Of course, this raises questions about why exactly that domain name is even registered in Namecoin.  The simplest explanations are:
 
 1. The GandCrab developers are massively incompetent, and have potentially deanonymized themselves by registering a Namecoin domain despite not ever using that Namecoin domain for their ransomware.
 2. Someone unrelated to GandCrab has registered that Namecoin domain for the purpose of trolling security researchers.
 
-It's possible that `dnspod.com`'s nameservers will only allow a `.bit` domain's records to be served from their systems if that `.bit` domain's Namecoin data points to `dnspod.com`'s namservers, and it's further possible that their systems are misconfigured to not notice that the trailing period is missing.  However, this seems rather unlikely to me.  Why?  Well, first, take a look at the WHOIS data for `dnspod.com`:
+It's conceivable that `dnspod.com`'s nameservers will only allow a `.bit` domain's records to be served from their systems if that `.bit` domain's Namecoin data points to `dnspod.com`'s namservers, and it's further possible that their systems are misconfigured to not notice that the trailing period is missing.  However, this seemed rather unlikely to me.  Why?  Well, first, take a look at the WHOIS data for `dnspod.com`:
 
 ~~~
 Registrar URL: http://www.dnspod.cn
@@ -45,4 +45,68 @@ So DNSPod is apparently an ICANN-accredited DNS registrar, with a primary domain
 
 In addition, if DNSPod had such a policy, it's not clear how exactly their customers would be able to switch their Namecoin domains to DNSPod nameservers without encountering downtime while DNSPod was waiting for the Namecoin transaction to propagate.
 
-So while this is a rather interesting case of a possible hilarious opsec fail by a ransomware author (which very well might get them arrested), the ransomware itself is fully irrelevant to Namecoin.
+However, since empiricism is informative, Ryan Castellucci tested this with an account on DNSPod, and confirmed that no such validation occurs:
+
+~~~
+$ dig +tcp jeremyrandissomesortofhumanperson.bit @a.dnspod.com
+
+; <<>> DiG 9.9.5-9+deb8u14-Debian <<>> +tcp jeremyrandissomesortofhumanperson.bit @a.dnspod.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23586
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 3, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;jeremyrandissomesortofhumanperson.bit. IN A
+
+;; ANSWER SECTION:
+jeremyrandissomesortofhumanperson.bit. 600 IN A 255.255.255.255
+
+;; AUTHORITY SECTION:
+jeremyrandissomesortofhumanperson.bit. 600 IN NS b.dnspod.com.
+jeremyrandissomesortofhumanperson.bit. 600 IN NS c.dnspod.com.
+jeremyrandissomesortofhumanperson.bit. 600 IN NS a.dnspod.com.
+
+;; Query time: 595 msec
+;; SERVER: 101.226.79.205#53(101.226.79.205)
+;; WHEN: Wed Jan 31 03:04:24 UTC 2018
+;; MSG SIZE  rcvd: 160
+~~~
+
+(Ryan doesn't own `jeremyrandissomesortofhumanperson.bit`.)  Ryan also did the same for `bleepingcomputer.iq`, implying that DNSPod isn't verifying ownership of DNS domain names either:
+
+~~~
+$ dig +tcp bleepingcomputer.iq @a.dnspod.com A
+
+; <<>> DiG 9.9.5-9+deb8u14-Debian <<>> +tcp bleepingcomputer.iq @a.dnspod.com A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50149
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 3, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;bleepingcomputer.iq.           IN      A
+
+;; ANSWER SECTION:
+bleepingcomputer.iq.    600     IN      A       8.8.8.8
+
+;; AUTHORITY SECTION:
+bleepingcomputer.iq.    600     IN      NS      a.dnspod.com.
+bleepingcomputer.iq.    600     IN      NS      b.dnspod.com.
+bleepingcomputer.iq.    600     IN      NS      c.dnspod.com.
+
+;; Query time: 5758 msec
+;; SERVER: 101.226.79.205#53(101.226.79.205)
+;; WHEN: Wed Jan 31 03:00:39 UTC 2018
+;; MSG SIZE  rcvd: 142
+~~~
+
+Ryan tried registering a `.onion` domain and `bleepingcomputer.malware` on DNSPod as well, but these were rejected as invalid TLD's.  Ryan and I have no clue why `.bit` is on DNSPod's TLD whitelist while `.onion` isn't -- probably because a customer asked for it and DNSPod just doesn't care.
+
+So in conclusion: while this is a rather interesting case of a possible hilarious opsec fail by a ransomware author (which very well might get them arrested), the ransomware itself is fully irrelevant to Namecoin.
