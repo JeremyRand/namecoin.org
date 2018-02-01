@@ -13,6 +13,29 @@ The more people test these downloads, the faster they'll be ready for release.  
 
 As usual, it is a good idea to verify the hashes and signatures of these downloads (especially the ones not hosted on namecoin.org).  The more people reproduced the hashes, the better.  If you're paranoid, run them inside an isolated virtual machine.
 
+## Namecoin Core
+
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 32-bit)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-i686-pc-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (Source code tarball)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99.tar.gz)
+* [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
+* [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
+
+### Things to Test
+
+* Full flow for registering names.
+* Full flow for updating and renewing names.
+* State display in the names list.
+* The above with mainnet, testnet, and regtest networks.
+* The above with encrypted locked, encrypted unlocked, and unencrypted wallets.
+
+### Known Issues
+
+* Windows builds not working (should be fixed in Beta 2)
+* macOS builds not working (should be fixed in Beta 2)
+
 ## Lightweight SPV BitcoinJ Name Lookup Client
 
 This is a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing .bit domains with ncdns), which synchronizes faster and uses less storage, but trusts Namecoin miners more than Namecoin Core does.
