@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Namecoin TLS for Firefox: Phase 6 (Negative Override Cache in C++, WebExtension Aggregation, Coordination with Mozilla, and SQLite as Default)"
+title: "Namecoin TLS for Firefox: Phase 6 (Negative Override Cache in C++, WebExtension Aggregation, and Coordination with Mozilla)"
 author: Jeremy Rand
 tags: [News]
 ---
@@ -15,12 +15,6 @@ So, until I actually get the code to build, I won't be able to do performance ev
 
 Meanwhile, I reached out to Mozilla to get some feedback on the general approach I was taking.  (I had previously discussed high-level details with Mozilla, but this time I provided a WIP code patch, so that it would be easier to evaluate whether I was doing anything with the code that would be problematic.)  This resulted in a discussion about what methods should be used to prevent malicious or buggy extensions from causing unexpected damage to user security.  This is definitely a legitimate concern: messing with certificate verification is dangerous when done improperly, and it's important that users understand what they're getting when they install a WebExtension that might put them at risk.  That discussion is still ongoing, and it's not clear yet what the consensus will arrive at.
 
-In other Firefox-related news, Firefox 58 switched the default NSS database format from BerkeleyDB to SQLite.  This has the happy side effect that my experimental ncdns branch for positive certificate overrides for Chromium on GNU/Linux is likely to work for Firefox 58 and higher (on all OS's) without significant changes.  However, there are 3 caveats:
-
-1. That ncdns branch relies on NSS's `certutil`, for which Mozilla doesn't distribute official binaries.  GNU/Linux distributions usually include `certutil` (e.g. in Fedora's `nss-tools` package), but it's not obvious to me what we'll do for Windows and macOS.  It's probably possible to reproducibly cross-compile `certutil` (most of the relevant code is already built reproducibly by Tor), but this would be extra work for us that I'm not sure we have the resources to handle.
-2. `certutil` is slow in SQLite mode.  Very slow.  800ms latency per certificate, to be specific.  I did some initial debugging of this, and found that this is mostly due to NSS failing to properly batch SQLite writes into a single transaction.  I've filed a bug with Mozilla about this, and while Mozilla confirms that this is a bug that should be fixed, it's not clear when it will be fixed.
-3. Tor Browser doesn't use a persistent NSS database by default, so even once Tor Browser is rebased onto a version of Firefox >=58, my experimental ncdns branch won't work for Tor Browser (unless Tor Browser's configuration is modified to deliberately enable a persistent NSS database, which will decrease Tor Browser's security guarantees).
-
-For these reasons, it's still beneficial to continue pursuing the WebExtensions route.  However, `certutil` is certainly a decent temporary kludge while we wait for WebExtensions support to get merged, and is also a decent contingency plan if for some reason we can't get WebExtensions support to happen.
+(It should be noted that there are some alternative approaches to Firefox support for Namecoin TLS underway as well, which will be covered in a future post.)
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
