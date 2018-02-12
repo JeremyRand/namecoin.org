@@ -15,7 +15,7 @@ Daniel is our lead C++ developer, currently working on Namecoin Core. Daniel is 
 ## Phelix
 
 **Lead Windows Developer & Community Organizer** <br>
-Phelix (who goes by a pseudonym) is our lead Windows developer, and works on namecoind, Namecoin-Qt, NMControl, and other projects such as ANTPY. Phelix also handles financial matters and (along with Jeremy and Indolering) fundraising, and is our longest-serving team member.
+Phelix (who goes by a pseudonym) is our lead Windows developer, and works on namecoind, Namecoin-Qt, NMControl, and other projects such as ANTPY. Phelix also handles financial matters and (along with Jeremy) fundraising, and is our longest-serving team member.
 
 ## Ryan Castellucci
 
@@ -25,7 +25,7 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 ## Jeremy Rand (biolizard89)
 
 **Lead Application Engineer & Community Organizer** <br>
-Jeremy is our .bit application specialist, and works on our codebases relating to TLS, Tor, and SPV, among other projects. Jeremy also handles fundraising (along with Indolering and Phelix), and acts as our build engineer. Outside of Namecoin, he has a background in console game hacking (in particular, synchronizing multiple game consoles with each other and with virtual reality hardware) and educational robotics. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
+Jeremy is our .bit application specialist, and works on our codebases relating to TLS, Tor, and SPV, among other projects. Jeremy also handles fundraising (along with Phelix), and acts as our build engineer. Outside of Namecoin, he has a background in console game hacking (in particular, synchronizing multiple game consoles with each other and with virtual reality hardware) and educational robotics. Jeremy is currently a computer science graduate student at University of Oklahoma in the U.S.
 
 ## Brandon "Brando" Roberts
 
@@ -36,11 +36,6 @@ Brandon is a hacker with a background in independent journalism and machine lear
 
 **Lead Porting & Reproducible Build Engineer** <br>
 Joseph works on porting Bitcoin software to Namecoin, and also specializes in reproducible builds.  Outside of Namecoin, he has done development work relating to Bitcoin wallet software, the Gitian reproducible build tool (his contributions are primarily used by The Tor Project), and the Debian GNU/Linux distribution.
-
-## Zachary Lym (indolering)
-
-**Lead UX Engineer & Community Organizer** <br>
-Indolering (who prefers his pseudonym) is our UX engineer and lead developer for Speech.is as well as acting as a community organizer and (along with Jeremy and Phelix) fundraiser. He is currently an informatics & psychology undergraduate at University of Washington in the U.S., and has interned at Mozilla.
 
 ## Andrew Colosimo (Snailbrain)
 
