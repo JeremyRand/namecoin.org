@@ -12,7 +12,13 @@ I had previously written a WIP PR that implemented positive overrides for NSS, b
 1. Some applications don't use the shared NSS database, but instead use their own.  Firefox is one of these applications.
 2. For security reasons, we want ncdns to run as its own user with restricted permissions.  This would break the database directory auto-detection.
 
-The new PR has explicit configuration options for which NSS database directory is used.
+The new PR has explicit configuration options for which NSS database directory is used.  For example, the following command line config:
+
+~~~
+./ncdns -ncdns.namecoinrpcusername=user -ncdns.namecoinrpcpassword=pass -certstore.nss -certstore.nsscertdir="$(pwd)"/certs -certstore.nssdbdir=/home/user/.pki/nssdb -xlog.severity=DEBUG
+~~~
+
+Allowed [the Namecoin Forum's `.bit` domain](https://nf.bit/) to load in Chromium in my Fedora VM without any TLS errors.  Obviously, this would need to be combined with the negative override functionality provided by the `tlsrestrict_chromium_tool` program (included with ncdns) in order to actually have reasonable security (otherwise, public TLS CA's could issue `.bit` certs that would still be accepted by Chromium).
 
 Some remaining challenges:
 
