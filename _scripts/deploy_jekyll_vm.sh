@@ -1,5 +1,3 @@
-#!/bin/bash
-
 set -euf -o pipefail
 
 cd ~/QubesIncoming/anon-13-git-github-wip/

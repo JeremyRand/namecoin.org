@@ -1,5 +1,3 @@
-#!/bin/bash
-
 set -euf -o pipefail
 
 if [[ "$(pwd)" == */namecoin.org/_scripts ]]

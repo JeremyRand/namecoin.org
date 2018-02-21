@@ -1,5 +1,3 @@
-#!/bin/bash
-
 set -euf -o pipefail
 
 DEPLOY_BETA=0
