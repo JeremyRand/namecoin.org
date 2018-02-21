@@ -15,7 +15,7 @@ To get namecoins, you first need a Namecoin wallet such as Namecoin Core.  See t
 
 The easiest way to get namecoins is to purchase them on an exchange.  See the [list of exchanges]({{site.baseurl}}exchanges/).
 
-You can check current [Namecoin prices at CoinMarketCap](https://coinmarketcap.com/currencies/namecoin/#markets), current [Namecoin prices at Bitsquare](https://market.bitsquare.io/?market=nmc_btc), and [Namecoin historical price](https://bitcoinwisdom.com/markets/btce/nmcusd) charts at BitcoinWisdom. 
+You can check current [Namecoin prices at CryptoCoinCharts](https://www.cryptocoincharts.info/coins/show/nmc), current [Namecoin prices at Bitsquare](https://market.bitsquare.io/?market=nmc_btc), and [Namecoin historical price](https://bitcoinwisdom.com/markets/btce/nmcusd) charts at BitcoinWisdom. 
 
 ## Mining
 
