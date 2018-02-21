@@ -79,6 +79,34 @@ Names and values are attached to special coins with a value of 0.01 NMC. Updates
 
 The code prevents those coins from being used for normal payments.
 
+### Why focus on getting browsers and OS's to support Namecoin instead of getting ISP's or public DNS resolvers (e.g. Google DNS) to do so?
+
+The reasons mostly fall under three categories: security concerns, usability concerns, and political concerns.
+
+Security concerns:
+
+* ISP's would be in a position to censor names without easy detection.
+* ISP's would be in a position to serve fraudulent PKI data (e.g. TLSA records), which would enable ISP's to easily wiretap users and infect users with malware.
+* Either of the above security concerns would even endanger users who are running Namecoin locally, because it would make it much more difficult to detect misconfigured systems that are accidentally leaking Namecoin queries to the ISP.
+
+Usability concerns:
+
+* Namecoin-to-DNS bridges rely on DNS security protocols such as DNSSEC, DNS over TLS, or DNSCrypt to prevent tampering.
+* Many local network firewalls break DNSSEC.
+* Many ISP's don't support DNS over TLS or DNSCrypt.
+* Many OS's don't support DNSSEC, DNS over TLS, or DNSCrypt.
+* These compatibility issues are straightforward to solve by adding locally installed software (e.g. Dnssec-Trigger), but are not otherwise easily solvable by non-technical users.
+* If a non-technical user is installing DNS security software anyway, installing Namecoin as well doesn't add any particular extra difficulty.
+* In the case of non-ISP public DNS resolvers, changing DNS settings manually in mainstream OS's is not something that non-technical users are usually comfortable doing, and is significantly more difficult to walk a user through than simply running a `.exe` file or installing a package via `apt-get`.
+
+Political concerns:
+
+* Namecoin's `.bit` TLD isn't part of the DNS; asking public DNS infrastructure to mirror Namecoin would probably be seen as hostile by IETF and ICANN.
+* Namecoin is seeking to be added to IETF's special-use names registry; the precedent set by `.onion`'s inclusion is that public DNS infrastructure should always return `NXDOMAIN` for special-use names.
+* While getting Namecoin bundled with a major browser or OS certainly is a major undertaking, it's not at all clear that getting Namecoin resolution included by a major ISP or public DNS resolver would be easier.  Statistically (though exceptions certainly exist), software vendors tend to be more interested in innovating via software, security, and cryptography, whereas ISP's tend to be more interested in "innovating" via antitrust violations and net neutrality violations.  We believe that software vendors are therefore more likely to be interested in Namecoin (though we don't claim that no ISP's exist who might be persuadable).
+
+In addition, it's not clear that there would even be any significant benefit to counterbalance these concerns.  Namecoin intentionally makes different tradeoffs from the DNS.  For example, the DNS is much more scalable than Namecoin, can protect name owners from trivial deanonymization much better than Namecoin can, and doesn't rely on comparatively weak game-theoretic security properties as Namecoin does.  Namecoin has some benefits that counterbalance these weaknesses (e.g. the non-reliance on trusted third parties), but serving Namecoin data from public DNS infrastructure would provide the **union** of Namecoin's and the DNS's weaknesses, while providing the **intersection** of Namecoin's and the DNS's strengths.  Users who require a DNS-like naming system that works without any software installation are likely to be better off simply using the DNS.
+
 ## Comparison of Namecoin to other projects
 
 ### What is the relationship of Namecoin to Bitcoin?
