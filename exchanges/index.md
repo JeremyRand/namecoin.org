@@ -19,7 +19,7 @@ title: Exchanges
 
 <span style="font-size:115%;">
 **Silver level exchanges**<br>
-[<img alt="bit.AC" src="images/logo_bitac_164x61.png" width="164px">](https://bit.ac)<br>
+...<br>
 </span>
 
 <span style="font-size:100%;">
