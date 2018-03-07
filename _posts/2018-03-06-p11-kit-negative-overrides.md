@@ -11,7 +11,7 @@ As you may recall, the way our Chromium negative overrides currently work is by 
 
 1. A large organization who wants to create a lot of certificates might buy a name-constrained CA certificate from a public CA, and then use that name-constrained CA to issue more certificates for their organization.  This reduces the overhead of asking a public CA to issue a lot of certificates on-demand, and doesn't introduce any security issues because the name constraint prevents the organization from issuing certificates for domain names that they don't control.
 2. A corporate intranet might create a name-constrained root CA that's only valid for domain names that are internal to the corporate intranet.  This way, employees can install the name-constrained root CA in order to access internal websites, and they don't have to worry that the IT department might be MITM'ing their connections to the public Internet.
-3. A public CA might have a name constraint in their CA certificate that disallows them from issuing certificates for TLD's that have unique regulatory requirements.  For exampe, the Let's Encrypt CA [has (or at one point had) a name constraint disallowing `.mil`](https://github.com/certbot/certbot/issues/1660#issuecomment-161267510), presumably because the U.S. military has their own procedures for issuing certificates.
+3. A public CA might have a name constraint in their CA certificate that disallows them from issuing certificates for TLD's that have unique regulatory requirements.  For exampe, the Let's Encrypt CA [has (or at one point had) a name constraint disallowing `.mil`](https://community.letsencrypt.org/t/why-is-there-a-certificate-name-constraint-for-mil/10130), presumably because the U.S. military has their own procedures for issuing certificates.
 
 The 1st use case is rarely ever used; I suspect that this is because it poses a risk to commercial CA's' business model.  The 2nd use case is also rarely ever used; I suspect this is because many corporate IT departments *want to* MITM all their employees' traffic, and most employees don't have much negotiating power on this topic.  But the 3rd case is quite interesting... if Let's Encrypt uses a name constraint blacklisting `.mil`, could this be used for `.bit`?
 
@@ -30,6 +30,7 @@ This code needs a lot of cleanup before it's ready for release; among the ToDos 
 * Port the certificate handling code to a Go program instead of OpenSSL's command line.
 * Automatically detect which root CA's exist in p11-kit, and apply the name constraint to all of them, instead of only using `DST Root CA X3`.
 * Automatically detect when a public root CA is deleted from p11-kit (e.g. WoSign), and remove the name-constrained CA that corresponds to it.
+* Preserve p11-kit's attached attributes for trust anchors.
 * Make the procedure idempotent.
 * Test whether this works as intended for other p11-kit-supported libraries (Firefox and Chromium use NSS; p11-kit also supports OpenSSL, Java, and GnuTLS among others).
 * Test whether a similar approach with name constraints can work for NSS without p11-kit (this would be relevant for Firefox on all non-Fedora OS's, and Chromium on all non-Fedora GNU/Linux distributions).
