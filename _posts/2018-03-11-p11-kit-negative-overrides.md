@@ -37,7 +37,7 @@ This code needs a lot of cleanup before it's ready for release; among the ToDos 
 * Test whether this works as intended for other p11-kit-supported libraries (Firefox and Chromium use NSS; p11-kit also supports OpenSSL, Java, and GnuTLS among others).
 * Test whether a similar approach with name constraints can work for CryptoAPI (this would be relevant for most non-Mozilla browsers on Windows).
 
-I'm hopeful that this work will allow us to continue supporting Chromium on GNU/Linux after Chromium removes HPKP, and that it will nicely complement the Firefox positive override support that I added to `ncdumpzone`.
+I'm hopeful that this work will allow us to continue supporting Chromium on GNU/Linux after Chromium removes HPKP, and that it will nicely complement the Firefox positive override support [that I added to `ncdumpzone`]({{site.baseurl}}2018/02/20/ncdumpzone-firefox.html).
 
 It should be noted that this approach definitely will not work on most non-Mozilla macOS browsers, because macOS's TLS implementation does not support name constraints.  I'm not aware of any practical way to do negative overrides on macOS (besides the deprecated HPKP support in Chromium), so there's a chance that when we get around to macOS support, we'll just not do negative overrides for macOS (meaning that while Namecoin certificates would work on macOS without errors, malicious public CA's would still be able to do MITM attacks against macOS users just like they can for DNS domain names).  Firefox on macOS shouldn't have this problem, since Firefox doesn't use the OS for certificate verification.
 
