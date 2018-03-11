@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Fedora stores its TLS certificates via a highly interesting software package called p11-kit.  p11-kit is designed to act as "glue" between various TLS libraries, so that (for example) Firefox, Chromium, and OpenSSL all see the same trust anchors.  p11-kit is useful from Namecoin's perspective, since it means that if we can implement Namecoin support for p11-kit, we get support for all the trust stores that p11-kit supports for free.  I've just implemented a proof-of-concept of negative Namecoin overrides for p11-kit.
+Fedora stores its TLS certificates via a highly interesting software package called [p11-kit](https://p11-glue.github.io/p11-glue/trust-module.html).  p11-kit is designed to act as "glue" between various TLS libraries, so that (for example) Firefox, Chromium, and OpenSSL all see the same trust anchors.  p11-kit is useful from Namecoin's perspective, since it means that if we can implement Namecoin support for p11-kit, we get support for all the trust stores that p11-kit supports for free.  I've just implemented a proof-of-concept of negative Namecoin overrides for p11-kit.
 
 As you may recall, the way our Chromium negative overrides currently work is by ~~abusing~~ utilizing HPKP such that public CA's can't sign certificates for the `.bit` TLD.  p11-kit doesn't support key pinning (it's on their roadmap though!), but there is another fun mechanism we can use to achieve a similar result: name constraints.  Name constraints are a feature of the x509 certificate specification that allows a CA certificate to specify constraints on what domain names it can issue certificates for.  There are a few standard use cases for name constraints:
 
@@ -25,6 +25,8 @@ Huge thanks to Crypt32 and davenpcj from Server Fault for first [cluing me in](h
 
 Anyway, with my Bash script, I decided to apply a name constraint to `DST Root CA X3`, which is the root CA that Let's Encrypt uses.  The name constraint I applied blacklists the `.org` TLD (obviously I can't use `.bit` for testing this, since no public CA's are known to have issued a certificate for a `.bit` domain).  And... it works!  The Bash script installed the local root CA as a trust anchor for p11-kit, installed the intermediate and cross-signed CA's as trust-neutral certificates for p11-kit, and installed a copy of the original `DST Root CA X3` certificate to the p11-kit blacklist.  As a result, both Chromium and Firefox still work fine with Let's Encrypt for `.com` websites such as [Technoethical](https://tehnoetic.com/), but return an error for `.org` websites such as [Namecoin.org](https://www.namecoin.org/) -- exactly the behavior we want.
 
+I also made a modified version of my Bash script that installs the modified CA's into a standard NSS sqlite3 database (without p11-kit), and confirmed that this works with both Firefox and Chromium on GNU/Linux.  So p11-kit probably won't be a hard dependency of this approach, meaning that this approach is likely to work for Firefox on all OS's, Chromium on all GNU/Linux distros, and anything else that uses NSS.
+
 This code needs a lot of cleanup before it's ready for release; among the ToDos are:
 
 * Port the certificate handling code to a Go program instead of OpenSSL's command line.
@@ -33,7 +35,6 @@ This code needs a lot of cleanup before it's ready for release; among the ToDos 
 * Preserve p11-kit's attached attributes for trust anchors.
 * Make the procedure idempotent.
 * Test whether this works as intended for other p11-kit-supported libraries (Firefox and Chromium use NSS; p11-kit also supports OpenSSL, Java, and GnuTLS among others).
-* Test whether a similar approach with name constraints can work for NSS without p11-kit (this would be relevant for Firefox on all non-Fedora OS's, and Chromium on all non-Fedora GNU/Linux distributions).
 * Test whether a similar approach with name constraints can work for CryptoAPI (this would be relevant for most non-Mozilla browsers on Windows).
 
 I'm hopeful that this work will allow us to continue supporting Chromium on GNU/Linux after Chromium removes HPKP, and that it will nicely complement the Firefox positive override support that I added to `ncdumpzone`.
