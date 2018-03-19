@@ -7,13 +7,13 @@ tags: [News]
 
 CCC and Chaos West have posted the videos of Namecoin's 34C3 talks.  I've also uploaded the corresponding slides.
 
-* Namecoin as a Decentralized Alternative to Certificate Authorities for TLS
+* *Namecoin as a Decentralized Alternative to Certificate Authorities for TLS*
     - [Video recording](https://media.ccc.de/v/34c3-ChaosWest-3-namecoin_as_a_decentralized_alternative_to_certificate_authorities_for_tls) by Chaos West, hosted by CCC.
     - [Slides]({{site.baseurl}}resources/presentations/34C3/Namecoin_TLS_34C3_Monero_Assembly.pdf) hosted by Namecoin.org.
-* Namecoin for Tor Onion Service Naming (And Other Darknets)
+* *Namecoin for Tor Onion Service Naming (And Other Darknets)*
     - *(No video recording available.)*
     - [Slides]({{site.baseurl}}resources/presentations/34C3/Namecoin_Tor_34C3_Monero_Assembly.pdf) hosted by Namecoin.org.
-* A Blueprint for Making Namecoin Anonymous
+* *A Blueprint for Making Namecoin Anonymous*
     - [Video recording](https://media.ccc.de/v/34c3-ChaosWest-11-a_blueprint_for_making_namecoin_anonymous) by Chaos West, hosted by CCC.
     - [Slides]({{site.baseurl}}resources/presentations/34C3/Namecoin_Anonymity_34C3_Monero_Assembly.pdf) hosted by Namecoin.org.
 
