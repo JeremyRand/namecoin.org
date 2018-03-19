@@ -5,6 +5,10 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## 34C3
+
+[Videos and slides are here.]({{site.baseurl}}2018/03/19/34c3-slides-videos.html)
+
 ## Global Conference on Educational Robotics 2017
 
 [Video, slides, and paper are here.]({{site.baseurl}}2017/08/31/gcer-2017-video.html)
