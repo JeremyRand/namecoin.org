@@ -202,7 +202,7 @@ The end result of all this work is a Go library, and associated Go command-line 
 
 The root and intermediate CA's also have a Subject SerialNumber that contains the following message:
 
-> "This certificate was created on this machine to apply a name constraint to an existing root CA.  Its private key was deleted immediately after the existing root CA was cross-signed.  For more information, see [TODO]".
+> "This certificate was created on this machine to apply a name constraint to an existing root CA.  Its private key was deleted immediately after the existing root CA was cross-signed.  For more information, see [TODO]"
 
 (Of course, the Subject SerialNumber of the intermediate CA is also visible as the Issuer SerialNumber of the cross-signed CA.)  The intention here is that if someone encounters one of these certificates, they'll notice the SerialNumber message and therefore they won't mistakenly assume that their system has been compromised by a malicious CA certificate.  (The "[TODO]" will be replaced later by a URL that contains additional information and explains how to get the source code.)  Kudos to Ryan Castellucci for tipping me off that the Subject SerialNumber field was well-suited to this trick.
 
