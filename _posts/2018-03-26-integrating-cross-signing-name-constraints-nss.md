@@ -46,4 +46,8 @@ Despite these minor caveats, this is an excellent step forward for Namecoin TLS 
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
 
-<div id="footnote1">[1] I *might* have written a program late last year for my master's thesis, given it a name that is simultaneously (1) an obscure Harry Potter joke, (2) an anonymity technology joke, and (3) a Latin and Greek joke, and then devoted about 2-3 pages of my master's thesis to explaining and elaborating on the compound joke.  I probably didn't do that though; that might constitute trolling my university, and I *certainly* wouldn't do that, would I?</div>
+<div id="footnote1">
+
+[1] I *might* have written a program late last year for my master's thesis, given it a name that is simultaneously (1) an obscure Harry Potter joke, (2) an anonymity technology joke, and (3) a Latin and Greek joke, and then devoted about 2-3 pages of my master's thesis to explaining and elaborating on the compound joke.  I probably didn't do that though; that might constitute trolling my university, and I *certainly* wouldn't do that, would I?
+
+</div>
