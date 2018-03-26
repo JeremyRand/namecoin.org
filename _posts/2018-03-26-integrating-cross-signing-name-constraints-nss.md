@@ -5,6 +5,8 @@ author: Jeremy Rand
 tags: [News]
 ---
 
+{::options parse_block_html="true" /}
+
 At the end of [my previous post about porting cross-signing with name constraints to Go]({{site.baseurl}}2018/03/25/cross-signing-name-constraints-go.html), I mentioned that the next phase was to automate the procedure of applying the constraints to all root CA's in NSS, instead of needing to manually dump CA's one-by-one from NSS, run them through my Go tool (currently named `cross_sign_name_constraint_tool`, because I've exhausted my witty software naming quota on another project<a href="#footnote1">[1]</a>), and import them back into NSS.  I'm happy to report that this next phase is essentially complete, and in my testing I blacklisted certificates for the `.org` TLD regardless of which built-in root CA they chained to (without any impact on other TLD's).
 
 My previous post went into quite a bit of technical detail (more so than a typical post of mine), mainly because the details of getting Go to cross-sign with name constraints with minimal attack surface were actually rather illuminating.  In contrast, most of the technical details I could provide for this phase are rather boring (in my opinion, at least), so this post will be more high-level and somewhat shorter than the previous post.  (And no code snippets this time!)
