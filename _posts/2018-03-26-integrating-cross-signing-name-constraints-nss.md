@@ -15,7 +15,7 @@ Early on, I had to make a design decision about how to interact with NSS.  There
 
 1. Pipe data through `certutil`.
 2. Link with the NSS shared libraries via cgo.
-3. Do something weird with sqlite.  (This category actually includes a wide variety of strange things, including using sqlite's command line utility, using sqlite with cgo, and using horrifying LD_PRELOAD hooks to intercept NSS's interaction with sqlite.)
+3. Do something weird with sqlite.  (This category actually includes a wide variety of strange things, including using sqlite's command line utility, using sqlite with cgo, and using horrifying `LD_PRELOAD` hooks to intercept NSS's interaction with sqlite.)
 
 Given that I haven't used sqlite in several years, and that I've never actually used cgo, but I use `certutil` on a daily (if not hourly) basis these days, it was pretty clear that option 1 was going to be the most effective usage of my development time.  And it actually came together surprisingly fast, into a command-line tool that I call `tlsrestrict_nss_tool` (note the naming similarity to `tlsrestrict_chromium_tool` -- the functionality is analogous).  A few of the more "interesting" things I ended up dealing with:
 
