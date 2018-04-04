@@ -38,7 +38,7 @@ As usual, it is a good idea to verify the hashes and signatures of these downloa
 
 ## ConsensusJ-Namecoin
 
-This is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing .bit domains with ncdns).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
+This is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing `.bit` domains with ncdns).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
 
 You need to have Java installed:
 
