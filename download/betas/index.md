@@ -96,6 +96,10 @@ Namecoin users will probably want to use `cross_sign_name_constraint_tool` to di
 * [cross_sign_name_constraint_tool v0.0.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/crosssignnameconstraint/releases/tag/v0.0.2)
 [Source code at GitHub.](https://github.com/namecoin/crosssignnameconstraint)
 
+### Known Issues
+
+* Build is not yet reproducible.
+
 ## tlsrestrict_nss_tool
 
 This tool applies a name constraint exclusion to an NSS sqlite database for all CKBI (built-in) TLS trust anchors, without those trust anchors' consent. The intended use case is to disallow public CA's from issuing certificates for TLD's with unique regulatory or policy requirements, such as:
