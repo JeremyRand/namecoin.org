@@ -9,6 +9,6 @@ We've released `cross_sign_name_constraint_tool` v0.0.2 and `tlsrestrict_nss_too
 
 With this release, in theory Namecoin TLS negative overrides are supported in anything that uses NSS's trust store (including Firefox on all OS's, and Chromium on GNU/Linux, without requiring HPKP).
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/).
+As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#cross_sign_name_constraint_tool).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
