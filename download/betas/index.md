@@ -82,6 +82,40 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 * Build is not yet reproducible.
 
+## cross_sign_name_constraint_tool
+
+This tool applies a name constraint exclusion to a DER-encoded TLS trust anchor via cross-signing, without that trust anchor's consent. The intended use case is to disallow a CA from issuing certificates for a domain name that it has no legitimate business issuing certificates for. For example:
+
+* Disallowing a public CA from issuing certificates for the `.bit` TLD used by Namecoin.
+* Disallowing a public CA from issuing certificates for a TLD controlled by your corporate intranet.
+* Disallowing your corporate intranet's CA from issuing certificates for a TLD allocated by ICANN.
+
+Namecoin users will probably want to use `cross_sign_name_constraint_tool` to disallow any non-Namecoin CA's that they have manually imported to their system from signing `.bit` certificates.  For CA's that are on your system by default, you probably instead want `tlsrestrict_nss_tool` (see below) or `tlsrestrict_chromium_tool` (bundled with ncdns, see above).
+
+* [cross_sign_name_constraint_tool v0.0.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/crosssignnameconstraint/releases/tag/v0.0.2)
+[Source code at GitHub.](https://github.com/namecoin/crosssignnameconstraint)
+
+### Known Issues
+
+* Build is not yet reproducible.
+
+## tlsrestrict_nss_tool
+
+This tool applies a name constraint exclusion to an NSS sqlite database for all CKBI (built-in) TLS trust anchors, without those trust anchors' consent. The intended use case is to disallow public CA's from issuing certificates for TLD's with unique regulatory or policy requirements, such as:
+
+* The `.bit` TLD used by Namecoin.
+* A TLD controlled by your corporate intranet.
+
+Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all CA's that are on their system by default from signing `.bit` certificates.  For CA's that you manually imported yourself, you probably instead want `cross_sign_name_constraint_tool` (see above).
+
+* [tlsrestrict_nss_tool v0.0.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.2)
+[Source code at GitHub.](https://github.com/namecoin/tlsrestrictnss)
+
+### Known Issues
+
+* This tool will probably prevent HPKP from working as intended, unless HPKP is applied to user-defined trust anchors. Firefox is capable of doing this (though it's not the default); Chromium is not (as far as we know).
+* Build is not yet reproducible.
+
 ## dns-prop279
 
 This is a tool that permits Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
