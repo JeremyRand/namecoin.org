@@ -29,9 +29,9 @@ You should install ncdns on a machine which has a trusted network path to the ma
 
 ## Install dns-prop279
 
-dns-prop279 can be downloaded at the [Beta Downloads]({{site.baseurl}}download/betas/#dns-prop279) page.  Currently binaries are not available; building from source is required.  The build is not yet reproducible.
+dns-prop279 can be downloaded at the [Beta Downloads]({{site.baseurl}}download/betas/#dns-prop279) page.  The build is not yet reproducible.
 
-To build from source:
+If you want to build from source:
 
 ~~~
 go get github.com/namecoin/dns-prop279
