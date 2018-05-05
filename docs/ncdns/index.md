@@ -24,6 +24,8 @@ An installer wizard is available, which will also install the necessary dependen
 
 ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a Namecoin name lookup client (e.g. Namecoin Core) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
 
+TLS instructions for ncdns on GNU/Linux are at the [TLS Client Compatibility]({{site.baseurl}}docs/tls-client/) page.
+
 ## Supplying your own Namecoin node
 
 The ncdns Windows installer will offer to install Namecoin Core or the BitcoinJ/libdohj SPV client, and configure ncdns to use it.  However, there are several reasons why you might want to supply your own Namecoin node:
