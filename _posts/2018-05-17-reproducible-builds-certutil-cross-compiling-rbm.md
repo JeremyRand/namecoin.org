@@ -17,7 +17,7 @@ First off, I wanted to build Firefox in rbm without any changes.  This was actua
 ./rbm/rbm build firefox --target nightly --target torbrowser-windows-i686
 ~~~
 
-Next, I looked at Tor's Firefox build script... and I was delighted to see that Tor is *already* building `certutil`.  In fact, you can download `certutil` binaries from Tor's build server right now!  Except... their build script discards the `certutil` binaries for all non-GNU/Linux targets.  How sad.
+Next, I looked at Tor's Firefox build script... and I was delighted to see that Tor is *already* building `certutil`.  In fact, you can [download `certutil` binaries from The Tor Project's download server](http://rqef5a5mebgq46y5.onion/torbrowser/) right now!  (You want the `mar-tools-*.zip` packages.)  Except... their build script discards the `certutil` binaries for all non-GNU/Linux targets.  How sad.
 
 Modifying the build script to also output `certutil.exe` for Windows was reasonably straightforward -- rbm even worked without erroring on the first try.  I did, however, need to try for a few iterations to make sure that I was outputting all of the needed `.dll` files.  However, once I had all the required `.dll` files, a rather odd symptom occurred when I tested it on a Windows machine.  When I ran `certutil.exe` from a command prompt, it would immediately exit without printing anything.  Stranger, when I double-clicked `certutil.exe` in Windows Explorer, it didn't even pop up with a command prompt window before it exited.  In addition, I noticed that if I passed command line arguments to `certutil.exe` telling it to create a new database, it actually did create the database -- but it still didn't display any output.
 
