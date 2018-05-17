@@ -40,6 +40,7 @@ title: Exchanges
 [ShapeShift](https://shapeshift.io/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 [Vircurex](https://vircurex.com)<sup>use with caution, see [discussion](https://bitcointalk.org/index.php?topic=49383.1200)</sup><br>
+[WEX](https://wex.nz/)<br>
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
