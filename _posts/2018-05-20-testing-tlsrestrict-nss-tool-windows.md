@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Now that we got [NSS `certutil` reproducibly cross-compiled for Windows]({{site.baseurl}}2018/05/07/reproducible-builds-certutil-cross-compiling-rbm.html), initial testing has begun on `tlsrestrict_nss_tool` for Windows.
+Now that we got [NSS `certutil` reproducibly cross-compiled for Windows]({{site.baseurl}}2018/05/17/reproducible-builds-certutil-cross-compiling-rbm.html), initial testing has begun on `tlsrestrict_nss_tool` for Windows.
 
 Besides the obvious and rather boring fail that `tlsrestrict_nss_tool` was trying to execute `cp`, which of course isn't going to work on Windows (that particular code segment is a relic from quick prototyping that wasn't ever intended to stay in the codebase), two more interesting issues were identified:
 
