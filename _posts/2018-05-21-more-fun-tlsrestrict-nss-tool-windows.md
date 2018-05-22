@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Last episode: When we last left our hero, tlsrestrict_nss_tool [had a few unfixed bugs]({{site.baseurl}}2018/05/20/testing-tlsrestrict-nss-tool-windows) that made it unusable on Windows.  Everyone believed those bugs would be the final ones.  Were they?  And now, the conclusion to our 2-part special:
+Last episode: When we last left our hero, tlsrestrict_nss_tool [had a few unfixed bugs]({{site.baseurl}}2018/05/20/testing-tlsrestrict-nss-tool-windows.html) that made it unusable on Windows.  Everyone believed those bugs would be the final ones.  Were they?  And now, the conclusion to our 2-part special:
 
 Spoiler alert: no, of course they weren't the final bugs!  Obviously Murphy needs to keep showing up, otherwise life as an engineer would be boring, right?
 
