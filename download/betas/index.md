@@ -59,6 +59,22 @@ You need to have Java installed:
 * Proxies are not yet supported.
 * Build is not yet reproducible.
 
+## Electrum-NMC
+
+Electrum-NMC is a port of the lightweight Bitcoin wallet Electrum to Namecoin.
+
+* [Electrum-NMC v3.1.3-beta1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1.tar.gz)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1.exe)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1-portable.exe)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1-setup.exe)
+* [Electrum-NMC v3.1.3-beta1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/SHA256SUMS.asc)
+
+### Known Issues
+
+* No AuxPoW support (so you can't see whether a transaction is confirmed).  As a workaround, you can check a block explorer (if you trust the explorer).
+* No name transaction support.
+* Build reproducibility is not yet tested.
+
 ## ncdns
 
 ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is most likely what you want to install.
