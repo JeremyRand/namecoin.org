@@ -24,6 +24,8 @@ If you would like your donation to be earmarked for a specific issue/task, you c
 
 * Decentralized search engine for Namecoin websites.  Expected to be feasible with 100 mBTC of donations.  18caYmssEY7PB72jSvTRgFgYiZubSs6cCq
 
+Warnings: Bitcoin does not provide anonymity for donations, although it may (under some circumstances) provide pseudonymity or location-anonymity.
+
 ## ShapeShift Cryptocurrency Donations
 
 ShapeShift can be used to [donate to the Namecoin Marketing and Development Fund](https://www.shapeshift.io/) (operated by Phelix) using many cryptocurrencies other than Bitcoin and Namecoin.  Set the "Receive" address to the Bitcoin address of the Namecoin Marketing and Development Fund (see above).
