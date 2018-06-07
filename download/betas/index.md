@@ -63,11 +63,11 @@ You need to have Java installed:
 
 Electrum-NMC is a port of the lightweight Bitcoin wallet Electrum to Namecoin.
 
-* [Electrum-NMC v3.1.3-beta1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1.tar.gz)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1.exe)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1-portable.exe)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1-setup.exe)
-* [Electrum-NMC v3.1.3-beta1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/SHA256SUMS.asc)
+* [Electrum-NMC v3.1.3-beta1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1.tar.gz)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1.exe)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1-portable.exe)
+* [Electrum-NMC v3.1.3-beta1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1-setup.exe)
+* [Electrum-NMC v3.1.3-beta1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/SHA256SUMS.asc)
 
 ### Known Issues
 
