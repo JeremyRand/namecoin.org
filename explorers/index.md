@@ -7,8 +7,9 @@ title: Blockchain Explorers
 
 ### With support for name and currency operations
 
-[namecoin.webbtc](https://namecoin.webbtc.com/) (open source)<br>
-[namecha.in](https://namecha.in/) (closed source)<br>
+[Cyphrs Namecoin Explorer](https://namecoin.cyphrs.com/) (free software; consensus-safe)<br>
+[namecoin.webbtc](https://namecoin.webbtc.com/) (free software; not consensus-safe)<br>
+[namecha.in](https://namecha.in/) (non-free software)<br>
 
 ### Currency operations only
 
