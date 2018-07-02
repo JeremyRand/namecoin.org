@@ -19,4 +19,4 @@ There's also a licensing side effect of using Electrum-DOGE as a reference.  Ele
 
 More Electrum AuxPoW work will be covered in future posts.
 
-This work was funded by NLnet Foundation's Internet Hardening Fund.
+This work was funded by Cyphrs.
