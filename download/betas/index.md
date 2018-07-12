@@ -63,19 +63,18 @@ You need to have Java installed:
 
 Electrum-NMC is a port of the lightweight Bitcoin wallet Electrum to Namecoin.
 
-* [Electrum-NMC v3.1.3-beta1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1.tar.gz)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1.exe)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1-portable.exe)
-* [Electrum-NMC v3.1.3-beta1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/electrum-nmc-3.1.3-beta1-setup.exe)
-* [Electrum-NMC v3.1.3-beta1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.1.3-beta1/SHA256SUMS.asc)
+* [Electrum-NMC v3.2.2 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2/electrum-nmc-nc3.2.2.tar.gz)
+* [Electrum-NMC v3.2.2 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2/electrum-nmc-nc3.2.2.exe)
+* [Electrum-NMC v3.2.2 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2/electrum-nmc-nc3.2.2-portable.exe)
+* [Electrum-NMC v3.2.2 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2/electrum-nmc-nc3.2.2-setup.exe)
+* [Electrum-NMC v3.2.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2/SHA256SUMS.asc)
 
 ### Known Issues
 
-* No AuxPoW support (so you can't see whether a transaction is confirmed).  As a workaround, you can check a block explorer (if you trust the explorer).
+* AuxPoW support is still experimental.
 * No name transaction support.
 * P2SH and SegWit are not yet disabled in the GUI.  Don't use those features, since P2SH and SegWit aren't enforced on Namecoin yet, meaning that coins sent to such addresses can trivially be stolen.
-* BIP44 key derivation is not yet switched to Namecoin.  Until this is fixed, don't use Electrum-NMC with the same seed as the Bitcoin version of Electrum.  When this gets fixed in the future, any coins received with the old version of Electrum-NMC will probably be inaccessible from the new version of Electrum-NMC.
-* Trezor support is not yet working.
+* Hardware wallets other than Trezor are untested and probably don't work.
 * Build reproducibility is not yet tested.
 
 ## ncdns
