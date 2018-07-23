@@ -31,7 +31,6 @@ title: Exchanges
 **Basic level exchanges**<br>
 [247exchange](https://www.247exchange.com/)<br>
 [24change](https://24change.com)<br>
-[alcurEX](https://alcurex.org)<br>
 [Bter](https://bter.com)<br>
 [bx.in.th](https://bx.in.th)<br>
 [ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
