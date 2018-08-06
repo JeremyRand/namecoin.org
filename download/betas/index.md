@@ -63,7 +63,7 @@ You need to have Java installed:
 
 ## Electrum-NMC
 
-Electrum-NMC is a port of the lightweight Bitcoin wallet Electrum to Namecoin.
+Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 * [**Beta:** Electrum-NMC v3.2.4b1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.4b1/electrum-nmc-nc3.2.4b1.tar.gz)
 * [**Beta:** Electrum-NMC v3.2.4b1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.4b1/SHA256SUMS.asc)
@@ -76,6 +76,8 @@ Electrum-NMC is a port of the lightweight Bitcoin wallet Electrum to Namecoin.
 * [Electrum-NMC v3.2.2.2 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/electrum-nmc-nc3.2.2.2-setup.exe)
 * [Electrum-NMC v3.2.2.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
+
+[Preliminary documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
 ### Known Issues
 
