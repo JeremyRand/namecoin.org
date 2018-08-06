@@ -56,7 +56,9 @@ If you're using Tor Browser Bundle, or are otherwise using a non-default Tor con
 
 ## Running it
 
-Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `python poc.py` in the TorNS directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.
+Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `python poc.py` in the TorNS directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.  Here's a screenshot of [the Tor example rendezvous points page](http://federalistpapers.bit.onion/):
+
+![Screenshot.]({{site.baseurl}}images/screenshots/tor/tor-browser-onion-2018-08-01.png "")
 
 Semantically, `.bit.onion` means that a domain name will always resolve to a `.onion` address (meaning that `.bit.onion` names are encrypted and authenticated regardless of whether TLS is used); `.bit` means that a domain name will resolve to any of `.onion`, IPv6, IPv4, or CNAME, meaning that `.bit` names are only encrypted and authenticated if TLS is used.  These semantics are open to revision later, as the Tor community evolves its canonical naming semantics.
 

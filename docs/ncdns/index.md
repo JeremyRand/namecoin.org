@@ -13,7 +13,11 @@ You can download ncdns at the [Beta Downloads]({{site.baseurl}}download/betas/) 
 
 ### Windows
 
-An installer wizard is available, which will also install the necessary dependencies (Namecoin Core, the BitcoinJ/libdohj SPV name lookup client, and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/)).  It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
+An installer wizard is available.  The ncdns Windows installer will offer to automatically install a Namecoin name lookup client (either Namecoin Core or ConsensusJ-Namecoin) and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/):
+
+![Screenshot.]({{site.baseurl}}images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png "")
+
+It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
 
 * Chromium
 * Google Chrome
