@@ -16,4 +16,4 @@
 
 You can now visit in {{ page.application }} a `.bit` website that supports TLS, e.g. [the Namecoin forum's `.bit` domain](https://nf.bit/).  The website should load in {{ page.application }} without errors, like in this screenshot:
 
-![Screenshot.]({{site.baseurl}}images/screenshots/tls/tls-success-chromium-linux-2018-07-31.png "")
+![Screenshot.]({{site.baseurl}}images/screenshots/tls/tls-success-chromium-linux-2018-07-31.png)

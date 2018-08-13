@@ -35,4 +35,4 @@ If you decide later that you want to remove the negative overrides from {{ page.
 
 If a `.bit` HTTPS website uses a CA-signed certificate that doesn't match the Namecoin blockchain, an error like this will be displayed:
 
-![start.fedoraproject.org uses an invalid security certificate.  The certificate is not trusted because the issuer certificate is unknown.  The server might not be sending the appropriate intermediate certificates.  An additional root certificate may need to be imported.]({{site.baseurl}}images/screenshots/tls/tls-reject-firefox-linux-2018-08-01.png "")
+![start.fedoraproject.org uses an invalid security certificate.  The certificate is not trusted because the issuer certificate is unknown.  The server might not be sending the appropriate intermediate certificates.  An additional root certificate may need to be imported.]({{site.baseurl}}images/screenshots/tls/tls-reject-firefox-linux-2018-08-01.png)
