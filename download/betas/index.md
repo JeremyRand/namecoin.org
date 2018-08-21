@@ -89,10 +89,10 @@ The ncdns Windows installer also automatically installs and configures a Namecoi
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
 
-* [ncdns v0.0.6 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.6/ncdns-v0.0.6-win64-install.exe)
-* [ncdns v0.0.6 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.6/ncdns-v0.0.6-win32-install.exe)
-* [ncdns v0.0.6 Windows Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns-v0.0.6/ncdns-v0.0.6-win.SHA256SUMS.asc)
-* [ncdns v0.0.6 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.6)
+* [ncdns v0.0.8 Windows (64-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.8/ncdns-v0.0.8-win64-install.exe)
+* [ncdns v0.0.8 Windows (32-bit) installer](https://www.namecoin.org/files/ncdns-v0.0.8/ncdns-v0.0.8-win32-install.exe)
+* [ncdns v0.0.8 Windows Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns-v0.0.8/ncdns-v0.0.8-win.SHA256SUMS.asc)
+* [ncdns v0.0.8 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.8)
 * [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
 
