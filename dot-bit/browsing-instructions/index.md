@@ -19,12 +19,6 @@ NMControl is primarily authored by khal and is an official Namecoin project.
 
 To obtain NMControl, visit the [GitHub project.](https://github.com/namecoin/nmcontrol)
 
-### Volunteer-Run DNS Servers
-
-For quick testing, you can set your DNS settings to a DNS server run by a volunteer, which is configured to support Dot-Bit. Using this for everyday browsing or anything sensitive is strongly discouraged, as the DNS server (or anyone between you and the server) can censor, hijack, or surveil all of your Internet traffic (both Dot-Bit and standard traffic).
-
-A list of DNS servers is coming soon.
-
 ### Namecoin Client
 
 While the Namecoin Client (namecoind or namecoin-qt) doesn't let you browse Dot-Bit websites by itself, it is necessary for several of the above programs.
