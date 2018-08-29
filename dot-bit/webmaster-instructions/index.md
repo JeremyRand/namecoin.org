@@ -21,10 +21,6 @@ Namecoin-Qt/namecoind is primarily authored by snailbrain/thecoder/khal/vinced a
 
 DyName is a dynamic DNS update client for Dot-Bit. It is useful if your host can switch IP addresses without warning.
 
-Dynamic DNS is typically risky for Dot-Bit, since the decrypted keys to transfer your domain are located on an Internet-connected server. DyName supports a solution to this: name importation. Register your main domain, e.g. d/valuablename, and keep its wallet encrypted. Register a throwaway name, e.g. dd/useless, and configure DyName to write an IP address to dd/useless. Use the "import" field in d/valuablename to access the IP address from dd/useless. If someone hijacks or steals the throwaway name, just register a new one and change the "import" field in your main name. If your main name has a TLS fingerprint, you won't even have a security risk if the name is stolen -- you'll just have some downtime where the site shows a TLS error.
-
-DyName's name importation security system is fully compatible with the latest NMControl, although the older release of NMControl currently bundled with FreeSpeechMe is not compatible. FreeSpeechMe users who are using their own NMControl installation are fine.
-
-DyName is primarily authored by Jeremy Rand AKA biolizard89.
+Dynamic DNS is typically risky for Dot-Bit, since the decrypted keys to transfer your domain are located on an Internet-connected server.  It is therefore a good idea to use DyName in combination with [delegated alteration]({{site.baseurl}}docs/name-owners/delegated-alteration).
 
 To obtain DyName, [visit the GitHub project.](https://github.com/JeremyRand/DyName)
