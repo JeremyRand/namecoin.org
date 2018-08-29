@@ -28,10 +28,3 @@ DyName's name importation security system is fully compatible with the latest NM
 DyName is primarily authored by Jeremy Rand AKA biolizard89.
 
 To obtain DyName, [visit the GitHub project.](https://github.com/JeremyRand/DyName)
-
-### Online Registrars
-
-There are various online businesses which claim to allow registering Dot-Bit domains. While these may be slightly more convenient than downloading the Namecoin blockchain, the cost is security. The online registrar has the ability to hijack or steal your name, and so does any criminal who compromises the security of the registrar. Registrars also typically charge much higher fees; we've seen registrars charge a 50-fold markup.
-
-A list of online Dot-Bit registrars is coming soon.
-
