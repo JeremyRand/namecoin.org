@@ -4,4 +4,6 @@
 
 {% include tls_cert_override_txt.md %}
 
+{% if os == "GNU/Linux" %}
 {% include tls_restrict_nss_tool.md %}
+{% endif %}
