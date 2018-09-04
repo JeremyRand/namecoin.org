@@ -9,13 +9,13 @@ Namecoins are a token-like currency used to register and update Namecoin names. 
 
 ## Prerequisites
 
-To get namecoins, you first need a Namecoin wallet such as Namecoin Core.  See the Downloads page.
+To get namecoins, you first need a Namecoin wallet such as Namecoin Core.  See the [Downloads]({{site.baseurl}}download/) page.
 
 ## Exchanges
 
 The easiest way to get namecoins is to purchase them on an exchange.  See the [list of exchanges]({{site.baseurl}}exchanges/).
 
-You can check current [Namecoin prices at CryptoCoinCharts](https://www.cryptocoincharts.info/coins/show/nmc), current [Namecoin prices at Bisq](https://markets.bisq.network/?market=nmc_btc), and [Namecoin historical price](https://bitcoinwisdom.com/markets/btce/nmcusd) charts at BitcoinWisdom.
+You can check current [Namecoin prices at CryptoCoinCharts](https://www.cryptocoincharts.info/coins/show/nmc), current [Namecoin prices at Bisq](https://markets.bisq.network/?market=nmc_btc), and [Namecoin historical price charts at BitcoinWisdom](https://bitcoinwisdom.com/markets/btce/nmcusd).
 
 ## Mining
 
