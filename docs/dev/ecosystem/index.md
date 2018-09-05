@@ -59,6 +59,12 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ...
 
+## Registrars
+
+* Blockchain DNS: hxxps://blockchain-dns.info/ (free domains, browser addons, proxy, web API, instant update, etc.)
+* DotBit.me: hxxps://dotbit.me/ (updates in ? time)
+* PeerName.com: hxxps://peername.com/ (updates in 7 days)
+
 ## Analytics Providers
 
 * Bitname.ru
