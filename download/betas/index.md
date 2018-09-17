@@ -48,8 +48,8 @@ You need to have Java installed:
 
 **If you're using Windows, you will need to install the Microsoft Visual C++ 2010 Redistributable Package.  [Download for 64-bit Windows is here.](https://www.microsoft.com/en-us/download/details.aspx?id=14632)  [Download for 32-bit Windows is here.](https://www.microsoft.com/en-us/download/details.aspx?id=5555)**
 
-* [ConsensusJ-Namecoin v0.2.7 (cross-platform JAR)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.2.7/namecoinj-daemon-0.2.7-SNAPSHOT.jar)
-* [ConsensusJ-Namecoin v0.2.7 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.2.7/SHA256SUMS.asc)
+* [ConsensusJ-Namecoin v0.3.1 (cross-platform JAR)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.3.1/namecoinj-daemon-0.3.1-SNAPSHOT.jar)
+* [ConsensusJ-Namecoin v0.3.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.3.1/SHA256SUMS.asc)
 
 [Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
 
