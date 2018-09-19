@@ -59,7 +59,7 @@ The binary will be created at `cj-nmc-daemon/build/libs/namecoinj-daemon-0.3.1-S
 **All API elements that are not directly taken from Namecoin Core (including all command-line arguments and all URL formats and JSON structures for the upstream REST API) are not guaranteed to have a stable API; they might be renamed, modified, or removed in the future.**
 
 ~~~
-java -jar ./bitcoinj-daemon-0.3.1-SNAPSHOT.jar --connection.proxyenabled=false --connection.streamisolation=false
+java -jar ./namecoinj-daemon-0.3.1-SNAPSHOT.jar --connection.proxyenabled=false --connection.streamisolation=false
 ~~~
 
 The blockchain takes around 5 minutes to download.  Once it is fully synchronized, the RPC server will automatically start; it listens on port 8080.
