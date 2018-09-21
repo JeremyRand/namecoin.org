@@ -39,26 +39,6 @@ No idea.  If anyone can contribute instructions for OS X, let us know.
 
 (This is only if you want to build from source.)
 
-There are 2 different branches available.  A partially-stable branch has received substantially more QA testing by the Namecoin community, but uses an older fork of libdohj and ConsensusJ.  A bleeding-edge branch has received less QA testing by the Namecoin community, but uses upstream libdohj and a more recent fork of ConsensusJ.  Neither branch should be considered stable, since they are both using a modified fork of ConsensusJ that is not yet upstreamed.  Test reports against the bleeding-edge branch are likely to be more useful.  **Trying to install both branches on the same machine is likely to cause problems unless the Gradle caches are entirely cleared when switching between them.**
-
-For the partially stable branch:
-
-~~~
-git clone https://github.com/JeremyRand/libdohj.git
-cd libdohj
-git checkout namecoin-local-lookup-2
-mvn clean install
-cd namecoin
-mvn clean install
-cd ../..
-git clone https://github.com/JeremyRand/bitcoinj-addons.git
-cd bitcoinj-addons
-git checkout getd4-draft-local-lookup-2
-./gradlew clean :bitcoinj-daemon:assemble
-~~~
-
-For the bleeding-edge branch:
-
 ~~~
 git clone https://github.com/dogecoin/libdohj.git
 cd libdohj
@@ -68,18 +48,18 @@ mvn clean install
 cd ../..
 git clone https://github.com/JeremyRand/bitcoinj-addons.git
 cd bitcoinj-addons
-git checkout getd4-draft-local-lookup-2-rebase
-./gradlew clean :bitcoinj-daemon:assemble
+git checkout consensusj-namecoin-0.3.1
+./gradlew clean :cj-nmc-daemon:assemble
 ~~~
 
-For the partially stable branch, the binary will be created at `bitcoinj-daemon/build/libs/bitcoinj-daemon-0.1.1-SNAPSHOT.jar`.  For the bleeding-edge branch, the binary will be created at `bitcoinj-daemon/build/libs/bitcoinj-daemon-0.2.7-SNAPSHOT.jar`.
+The binary will be created at `cj-nmc-daemon/build/libs/namecoinj-daemon-0.3.1-SNAPSHOT.jar`.
 
 ## Running it
 
 **All API elements that are not directly taken from Namecoin Core (including all command-line arguments and all URL formats and JSON structures for the upstream REST API) are not guaranteed to have a stable API; they might be renamed, modified, or removed in the future.**
 
 ~~~
-java -jar ./bitcoinj-daemon-0.1.1-SNAPSHOT.jar --connection.proxyenabled=false --connection.streamisolation=false
+java -jar ./namecoinj-daemon-0.3.1-SNAPSHOT.jar --connection.proxyenabled=false --connection.streamisolation=false
 ~~~
 
 The blockchain takes around 5 minutes to download.  Once it is fully synchronized, the RPC server will automatically start; it listens on port 8080.
@@ -98,10 +78,10 @@ Change what port the RPC server listens on.
 
 Change how `name_show` lookups are performed.  The following algorithms are available:
 
-* `restheightapi`: **Only available on bleeding-edge branch.** Looks up the height of the latest `name_anyupdate` operation for the name that has at least 12 confirmations by using a REST API (default URL is `https://namecoin.webbtc.com/name/heights/<name>.json?raw`), and retrieves that block over the P2P network.  This is usually fast, but if the name is part of a very large block, it can take a couple of seconds.  It reveals to the REST API which name is being looked up, and it reveals to a P2P peer what the height of that name is.  The REST API can hide recent `name_anyupdate` operations without being detected.
+* `restheightapi`: Looks up the height of the latest `name_anyupdate` operation for the name that has at least 12 confirmations by using a REST API (default URL is `https://namecoin.webbtc.com/name/heights/<name>.json?raw`), and retrieves that block over the P2P network.  This is usually fast, but if the name is part of a very large block, it can take a couple of seconds.  It reveals to the REST API which name is being looked up, and it reveals to a P2P peer what the height of that name is.  The REST API can hide recent `name_anyupdate` operations without being detected.
 * `restmerkleapi`: Looks up a Merkle proof for the latest `name_anyupdate` operation for the name that has at least 12 confirmations by using a REST API (default URL is `https://namecoin.webbtc.com/name/<name>.json?history&with_height&with_rawtx&with_mrkl_branch&with_tx_idx&raw`).  This is slower than `restheightapi` for most names, but it’s faster than `restheightapi` if the name is in a very large block.  It reveals to the REST API which name is being looked up; it doesn’t reveal anything to the P2P network.  The REST API can hide recent `name_anyupdate` operations without being detected.
 * `restmerkleapisingle`: **Unreliable in the current version.** Similar to `restmerkleapi`, but increases lookup speed by asking the REST API to only generate a Merkle proof for the most recent `name_anyupdate` operation for the name (default URL is `https://namecoin.webbtc.com/name/<name>.json?with_height&with_rawtx&with_mrkl_branch&with_tx_idx&raw`).  Faster than `restmerkleapi`, but will return an error if the name’s most recent update has between 1 and 11 confirmations (inclusive).  The REST API can hide recent `name_anyupdate` operations without being detected.
-* `leveldbtxcache`: Maintains a cache of all unexpired `name_anyupdate` operations, obtained by downloading full blocks (instead of just headers) for all blocks that are newer than 366 days old.  Much, much faster lookups than the REST-API-based algos, and lookups don’t generate any network traffic (so lookup operations are as private as Namecoin Core).  Initial syncup will take somewhat longer, and approximately 412 MB of extra storage will be used for the name database.  It is not feasible for `name_anyupdate` operations to be hidden without detection, because full blocks are downloaded.  There are known hypothetical attacks possible involving reorganizations deeper than 12 blocks; see the libdohj source code comments for details.
+* `leveldbtxcache`: Maintains a cache of all unexpired `name_anyupdate` operations, obtained by downloading full blocks (instead of just headers) for all blocks that are newer than 366 days old.  Much, much faster lookups than the REST-API-based algos, and lookups don’t generate any network traffic (so lookup operations are as private as Namecoin Core).  Initial syncup will take somewhat longer, and approximately 10 MB of extra storage will be used for the name database.  It is not feasible for `name_anyupdate` operations to be hidden without detection, because full blocks are downloaded.  There are known hypothetical attacks possible involving reorganizations deeper than 12 blocks; see the libdohj source code comments for details.
 
 ~~~
 --namelookup.latest.resturlprefix=<prefix>
