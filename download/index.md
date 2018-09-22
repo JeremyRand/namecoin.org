@@ -5,6 +5,28 @@ title: Download
 
 {::options parse_block_html="true" /}
 
+## Namecoin Core Client (Stable Release)
+
+* Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
+* **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
+* Name lookup: allows looking up names (use in combination with ncdns or NMControl to browse .bit domains).
+* Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
+* Recommended for miners.
+* Recommended for users who don't own any names.
+* Recommended for users who are comfortable registering, updating, and renewing their names via the command-line.
+
+**Note that Windows binaries of Namecoin Core Stable Release are not yet available.  For now, Windows users should use the Name Tab Beta (see below) or build from source.**
+
+* [Namecoin Core 0.16.3 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.16.3 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.16.3 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.16.3 (GNU/Linux x86 32-bit)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-i686-pc-linux-gnu.tar.gz)
+* [Namecoin Core 0.16.3 (macOS dmg)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-osx-unsigned.dmg)
+* [Namecoin Core 0.16.3 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3-osx64.tar.gz)
+* [Namecoin Core 0.16.3 (Source code tarball)](https://www.namecoin.org/files/namecoin-core-0.16.3/namecoin-0.16.3.tar.gz)
+* [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
+* [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
+
 ## Namecoin Core Client (with Qt Name Tab)
 
 * Name wallet: includes graphical interface and command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
@@ -46,9 +68,9 @@ Current release: 0.13.99-name-tab-beta1.
 
 <div class="col-sm-4">
 
-### Mac OS X
+### macOS
 
-OS X builds of Namecoin Core are not yet available.  For now, either build Namecoin Core from source or use Namecoin Legacy.
+**macOS binaries of Namecoin Core Name Tab Beta are not yet available.  For now, macOS users should use the Stable Release (see above), build Namecoin Core from source, or use Namecoin Legacy (see below).**
 
 </div>
 
@@ -56,7 +78,7 @@ OS X builds of Namecoin Core are not yet available.  For now, either build Namec
 
 ## Namecoin Legacy Client
 
-* Use this instead of Namecoin Core if Namecoin Core doesn't work or if you need OS X binaries.
+* Use this instead of Namecoin Core if Namecoin Core doesn't work or if you need OS X binaries that include the name management tab.
 * **Not suitable for mining or development.**
 * **Always wait for six confirmations.**
 * **Backup your `wallet.dat` before enabling wallet encryption.**
@@ -119,14 +141,6 @@ With Python 2.7 installed you can run nmcontrol.py directly from [source](https:
 </div>
 
 </div>
-
-## Namecoin Core Client (Stable Release)
-
-* No graphical interface for managing names.
-* No binaries; only source code.
-* Recommended for miners.
-
-[Download release 0.13.0rc1 on GitHub.](https://github.com/namecoin/namecoin-core/releases/tag/nc0.13.0rc1)
 
 ## Help Us Test Betas
 
