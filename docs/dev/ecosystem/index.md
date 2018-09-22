@@ -104,7 +104,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ...
 
-# ElectrumX Instance Operators
+## ElectrumX Instance Operators
 
 * Luggs: email im AT luggs.co
 
