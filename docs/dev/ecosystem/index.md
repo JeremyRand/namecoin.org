@@ -7,6 +7,13 @@ title: Ecosystem
 
 This is a list of known projects or service providers in the Namecoin ecosystem.  Entities on this list should be notified prior to consensus forks or significant specification changes.  **This list includes some entities that are likely to be scams.  Inclusion on this list does not imply endorsement by the Namecoin developers.**
 
+## Communication Channels
+
+* Reddit /r/Namecoin
+* Twitter @Namecoin
+* Namecoin.org news / RSS feed
+* Namecoin Alerts mailing list
+
 ## Node and Wallet Implementations
 
 * libcoin
@@ -53,7 +60,22 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Mining Pools
 
-...
+* BTC.COM: hxxps://twitter.com/btccom_official/ ; email support AT btc.com
+* BTC.TOP: CEO is at hxxps://mobile.twitter.com/jiangzhuoer
+* ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
+* slush: hxxps://slushpool.com/help/contact-us/feedback
+* F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/
+* AntPool
+* Bixin
+* BTPOOL
+* huobi
+* BTCC
+* Waterhole BCH
+* zpool.ca
+* EoBot
+* bitminter
+* bitclub
+* gbminers
 
 ## Exchanges
 
@@ -68,6 +90,21 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 ## Analytics Providers
 
 * Bitname.ru
+* CoinMarketCap
+* Blockchain-DNS.info
+* BitInfoCharts
+* WorldCoinIndex
+* CoinGecko
+* CryptoCoinCharts
+* CoinWarz
+
+## Explorers
+
+...
+
+# ElectrumX Instance Operators
+
+* Luggs: email im AT luggs.co
 
 ## Places to find projects
 
