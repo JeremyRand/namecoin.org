@@ -9,10 +9,11 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Communication Channels
 
+* Namecoin.org news / RSS feed
+* #namecoin and/or #namecoin-dev Matrix/IRC channels
 * Reddit /r/Namecoin
 * Twitter @Namecoin
-* Namecoin.org news / RSS feed
-* Namecoin Alerts mailing list
+* Namecoin Alerts mailing list: namecoin-alerts AT googlegroups.com
 
 ## Node and Wallet Implementations
 
