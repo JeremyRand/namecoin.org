@@ -102,6 +102,10 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Explorers
 
+* Cryptopia: Twitter @Cryptopia_NZ
+* Poloniex: Twitter @Poloniex
+* Tux Exchange: Twitter @tuxexchange
+* WEX: Twitter @WEXnz
 ...
 
 ## ElectrumX Instance Operators
