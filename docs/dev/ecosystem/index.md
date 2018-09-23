@@ -66,10 +66,10 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
 * slush: hxxps://slushpool.com/help/contact-us/feedback
 * F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com
-* AntPool
-* Bixin
+* AntPool: hxxps://support.bitmain.com/hc/en-us/requests/new
+* Bixin: hxxps://pool.bixin.com/
 * BTPOOL
-* huobi
+* huobi: hxxps://www.huobipool.com/
 * BTCC
 * Waterhole BCH
 * zpool.ca: GitHub @crackfoo
