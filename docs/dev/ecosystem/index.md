@@ -65,14 +65,14 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * BTC.TOP: CEO is at hxxps://mobile.twitter.com/jiangzhuoer
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
 * slush: hxxps://slushpool.com/help/contact-us/feedback
-* F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/
+* F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com
 * AntPool
 * Bixin
 * BTPOOL
 * huobi
 * BTCC
 * Waterhole BCH
-* zpool.ca
+* zpool.ca: GitHub @crackfoo
 * EoBot
 * bitminter
 * bitclub
@@ -90,7 +90,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 * Blockchain DNS: hxxps://blockchain-dns.info/ (free domains, browser addons, proxy, web API, instant update, etc.)
 * DotBit.me: hxxps://dotbit.me/ (updates in ? time)
-* PeerName.com: hxxps://peername.com/ (updates in 7 days)
+* PeerName.com: hxxps://peername.com/ (updates in 7 days), email office AT peername.com
 * DomainCoin: hxxps://domaincoin.net/
 
 ## Analytics Providers
