@@ -17,7 +17,17 @@ An installer wizard is available.  The ncdns Windows installer will offer to aut
 
 ![Screenshot.]({{site.baseurl}}images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png)
 
-It also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
+If you're missing a dependency for ConsensusJ-Namecoin, you'll see a notice like this:
+
+!["Cannot use BitcoinJ SPV client (Java must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-java-2018-08-10.png)
+
+Or like this:
+
+!["Cannot use BitcoinJ SPV client (Microsoft Visual C++ Redistributable Package must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-vc2010-2018-08-10.png)
+
+To enable installing ConsensusJ-Namecoin, exit the installer wizard, install the relevant dependency, and re-run the installer wizard.
+
+The ncdns installer wizard also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
 
 * Chromium
 * Google Chrome
