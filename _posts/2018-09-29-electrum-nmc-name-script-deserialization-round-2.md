@@ -15,10 +15,14 @@ I had previously implemented some special UI code for displaying that a name tra
 
 Up next was displaying the name identifiers in the UI.  Again, I'm trying to improve on Namecoin Core's UX here.  For example, I prefer to make `d/wikileaks` show up as `wikileaks.bit`.  My code also recognizes invalid `d/` names, e.g. names with uppercase characters, and indicates that they're not valid domain names.  Ditto for `id/` names.  In addition, if the namespace is unknown or the identifier isn't valid under the namespace rules, I actually check whether the identifier consists entirely of ASCII printable characters.  If it does, I print it in ASCII; if it doesn't, I print it in hex.  Similar checks are in place for values.  The Namecoin consensus rules have always allowed binary data to exist in identifiers and values, but the UI for this functionality was pretty much always missing.  Electrum-NMC should handle this kind of thing without trouble.  One practical example of how this could be used in the future is storing values as CBOR rather than JSON.  CBOR is substantially more compact, especially when storing binary data like TLS certificates, which means *moar scaling* and *moar savings on transaction fees*.  (CBOR also seems to be a common choice by the DNS community, including people at IETF and ICANN.)
 
+Finally, I implemented the `name_show` console command.  It includes SPV verification, just like Electrum's history tab.  Every output JSON field from Namecoin Core is present, although currently none of the optional input fields are supported.  It probably wouldn't be very difficult to hook this into ncdns.  However, it should be noted that Electrum's SPV verification is a weaker security model than ConsensusJ-Namecoin's leveldbtxcache SPV security model.  In addition, there's only one public Namecoin ElectrumX server instance, so the concept of the "longest chain" isn't exactly meaningful.  Even so, it's vastly more secure than centralized inproxies like OpenNIC, and it might be useful for some people.  Hopefully more people will step up to run public Namecoin ElectrumX servers so that the SPV security model can actually work as intended.
+
 So, with that explanation out of the way, here's what you really came here for: *screenshots!*
 
 ![A screenshot of name transactions visible in the Electrum-NMC History tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-09-29-Names-in-History-Tab.png)
 
 ![A screenshot of name data visible in the Electrum-NMC Transaction Details tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-09-29-Name-in-Transaction-Details.png)
+
+![A screenshot of a name_show command's output in the Electrum-NMC Console tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-09-29-Name-Show-in-Console-Tab.png)
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
