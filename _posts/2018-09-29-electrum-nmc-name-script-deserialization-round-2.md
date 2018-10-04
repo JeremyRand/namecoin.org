@@ -29,4 +29,4 @@ So, with that explanation out of the way, here's what you really came here for: 
 
 ![A screenshot of the Electrum-NMC Manage Names tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-01-Manage-Names-Tab.png)
 
-This work was funded by Cyphrs.
+This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.
