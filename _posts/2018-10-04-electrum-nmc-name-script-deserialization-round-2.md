@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-I previously wrote about some work on [making Electrum-NMC handle name scripts]({{site.baseurl}}2018/08/06/electrum-nmc-name-script-deserialization.html).  Today I hacked on that code some more.
+I previously wrote about some work on [making Electrum-NMC handle name scripts]({{site.baseurl}}2018/08/06/electrum-nmc-name-script-deserialization.html).  In the last few days I hacked on that code some more.
 
 As you may have noticed from the screenshot in the previous article, I'm initially testing this code with watching-only wallets, since there are fewer moving parts there and I don't have to worry about constructing and signing transactions.  When looking for addresses to add to the watching-only wallet, I usually just look through the [Cyphrs block explorer](https://namecoin.cyphrs.com/) and take the first few name transactions that show up of each desired type.  Interestingly, I noticed that a subset of the name transactions I picked from the explorer this time weren't visible in the Electrum-NMC GUI.  Some querying of my ElectrumX server indicated that the transactions were definitely being delivered to Electrum-NMC, and inspecting the wallet file showed that the transactions were definitely being added to the wallet.  But for some reason, Electrum-NMC wasn't displaying them.
 
