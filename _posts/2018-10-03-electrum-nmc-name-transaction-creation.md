@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In a previous article, I wrote about [the "reading" side of Electrum-NMC's name script support]({{site.baseurl}}2018/10/03/electrum-nmc-name-script-deserialization-round-2.html) (i.e. detecting and displaying name transactions in the wallet, and doing name lookups).  Obviously, the logical next step is the "writing" side, i.e. creating name transactions.
+In a previous article, I wrote about [the "reading" side of Electrum-NMC's name script support]({{site.baseurl}}2018/10/04/electrum-nmc-name-script-deserialization-round-2.html) (i.e. detecting and displaying name transactions in the wallet, and doing name lookups).  Obviously, the logical next step is the "writing" side, i.e. creating name transactions.
 
 I started out by trying to implement `name_new`.  Electrum's command API is quite flexible (yet quite user-friendly), so most of the relevant functionality was fairly straightforward to implement by adding slight modifications to the existing transaction creation commands.  These modifications essentially just add an extra output to the transaction that has a non-null name operation.  I did, however, need to add some extra functionality to the accounting, to adjust for the fact that a `name_new` transaction destroys 0.01 NMC by permanently locking it inside an output.  (Usually, it's desirable to treat that locked namecent as zero for display purposes, but when funding a transaction, treating it as zero would produce Bad Things ™.)
 
@@ -25,7 +25,7 @@ Modifying the wallet code to pass through name operations to the data structures
 
 The next future step is probably to hook these commands into the GUI.
 
-And, with that out of the way, here are some transactions I created with Electrum-NMC:
+And, with that out of the way, here are some transactions I created with Electrum-NMC's console:
 
 * [`name_new` created by Electrum-NMC, sent to Namecoin Core](https://namecoin.cyphrs.com/tx/9204de3739850d6e0c9c8a5a838747485c1dabddc319a8abfc83f004694e3723)
 * [`name_firstupdate` created by Namecoin Core, spending the `name_new` created by Electrum-NMC](https://namecoin.cyphrs.com/tx/804631725e80ff334fecb8fba85ddbb76ede99ba36d951dac5ab41cb462a375f)
