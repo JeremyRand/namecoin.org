@@ -7,7 +7,7 @@ tags: [News]
 
 In a previous article, I wrote about [the "reading" side of Electrum-NMC's name script support]({{site.baseurl}}2018/10/03/electrum-nmc-name-script-deserialization-round-2.html) (i.e. detecting and displaying name transactions in the wallet, and doing name lookups).  Obviously, the logical next step is the "writing" side, i.e. creating name transactions.
 
-Today I started out by trying to implement `name_new`.  Electrum's command API is quite flexible (yet quite user-friendly), so most of the relevant functionality was fairly straightforward to implement by adding slight modifications to the existing transaction creation commands.  These modifications essentially just add an extra output to the transaction that has a non-null name operation.  I did, however, need to add some extra functionality to the accounting, to adjust for the fact that a `name_new` transaction destroys 0.01 NMC by permanently locking it inside an output.  (Usually, it's desirable to treat that locked namecent as zero for display purposes, but when funding a transaction, treating it as zero would produce Bad Things ™.)
+I started out by trying to implement `name_new`.  Electrum's command API is quite flexible (yet quite user-friendly), so most of the relevant functionality was fairly straightforward to implement by adding slight modifications to the existing transaction creation commands.  These modifications essentially just add an extra output to the transaction that has a non-null name operation.  I did, however, need to add some extra functionality to the accounting, to adjust for the fact that a `name_new` transaction destroys 0.01 NMC by permanently locking it inside an output.  (Usually, it's desirable to treat that locked namecent as zero for display purposes, but when funding a transaction, treating it as zero would produce Bad Things ™.)
 
 Electrum's API philosophy differs from that of Bitcoin Core, in that while Bitcoin Core wallet commands tend to broadcast the result automatically, Electrum wallet commands tend to simply return a transaction, which you're expected to broadcast with the `broadcast` command.  I'm following this approach for the name wallet commands.  Creating the `name_new` transaction completed rather easily without errors; however, when I tried to broadcast the `name_new` transaction, it was rejected by my Namecoin Core node that serves as the backend for my ElectrumX instance.  I inspected my Namecoin Core node's `debug.log`, and quickly found the issue: I had forgotten to set the transaction's `nVersion` field to the value that permits name operations.  Namecoin requires all name operations to appear in transactions with an `nVersion` field of 0x7100, which is a value that doesn't show up in Bitcoin at all.  I decided not to modify the transaction construction API's in Electrum to allow manual setting of the `nVersion` field per command (end users don't want to think about these details), and instead decided that it was easier to simply add a couple of lines to the `Transaction` class so that if you supply it with an output that has a name operation attached to it, the resulting transaction will automatically have its `nVersion` modified.
 
@@ -27,8 +27,9 @@ The next future step is probably to hook these commands into the GUI.
 
 And, with that out of the way, here are some transactions I created with Electrum-NMC:
 
-test/1
-test/2
-test/3
+* [`name_new` created by Electrum-NMC, sent to Namecoin Core](https://namecoin.cyphrs.com/tx/9204de3739850d6e0c9c8a5a838747485c1dabddc319a8abfc83f004694e3723)
+* [`name_firstupdate` created by Namecoin Core, spending the `name_new` created by Electrum-NMC](https://namecoin.cyphrs.com/tx/804631725e80ff334fecb8fba85ddbb76ede99ba36d951dac5ab41cb462a375f)
+* [`name_firstupdate` created by Electrum-NMC](https://namecoin.cyphrs.com/tx/317c6391c94a14c0d777b56b6b31ff1124ce8a6c98874a447239a654f605018a)
+* [`name_update` created by Electrum-NMC](https://namecoin.cyphrs.com/tx/978122fd205d2f87b333b433af51b2e0f9b67ed9b6270d2fa2cbb013e30c0ffd)
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.
