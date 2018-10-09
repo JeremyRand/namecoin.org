@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-I previously wrote about [creating name transactions in the Electrum-NMC console]({{site.baseurl}}2018/10/03/electrum-nmc-name-transaction-creation.html).  Next up, adding GUI support.
+I previously wrote about [creating name transactions in the Electrum-NMC console]({{site.baseurl}}2018/10/06/electrum-nmc-name-transaction-creation.html).  Next up, adding GUI support.
 
 The new `Renew Name` and `Configure Name...` buttons use the previously discussed `name_update` command as their backend, which makes implementation relatively simple, since it's not difficult for GUI functions to access console commands.  I facilitated the `Renew Name` command by making the `value` parameter of `name_update` optional; if not supplied, it will be set to the current value of the name.
 
