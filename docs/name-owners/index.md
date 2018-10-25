@@ -8,3 +8,4 @@ title: Documentation for Name Owners
 * [Delegated Alteration](delegated-alteration/)
 * [TLS](tls/)
 * [DNSSEC](dnssec/)
+* [Dynamic IP's](dynamic-ips/)
