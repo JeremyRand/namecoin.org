@@ -25,4 +25,4 @@ While the Namecoin Client (namecoind or namecoin-qt) doesn't let you browse Dot-
 
 Namecoin is primarily authored by vinced and khal and is an official Namecoin project.
 
-To download the Namecoin Client, [visit Namecoin.org]({{site.baseurl}}) and [download the wallet.]({{site.baseurl}}download)
+To download the Namecoin Client, [visit Namecoin.org]({{site.baseurl}}) and [download the wallet.]({{site.baseurl}}download/)
