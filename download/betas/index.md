@@ -113,7 +113,7 @@ This tool applies a name constraint exclusion to a DER-encoded TLS trust anchor 
 
 Namecoin users will probably want to use `cross_sign_name_constraint_tool` to disallow any non-Namecoin CA's that they have manually imported to their system from signing `.bit` certificates.  For CA's that are on your system by default, you probably instead want `tlsrestrict_nss_tool` (see below) or `tlsrestrict_chromium_tool` (bundled with ncdns, see above).
 
-* [cross_sign_name_constraint_tool v0.0.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/crosssignnameconstraint/releases/tag/v0.0.2)
+* [cross_sign_name_constraint_tool v0.0.3 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/crosssignnameconstraint/releases/tag/v0.0.3)
 * [cross_sign_name_constraint_tool Source Code at GitHub.](https://github.com/namecoin/crosssignnameconstraint)
 
 ### Known Issues
@@ -129,7 +129,7 @@ This tool applies a name constraint exclusion to an NSS sqlite database for all 
 
 Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all CA's that are on their system by default from signing `.bit` certificates.  For CA's that you manually imported yourself, you probably instead want `cross_sign_name_constraint_tool` (see above).
 
-* [tlsrestrict_nss_tool v0.0.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.2)
+* [tlsrestrict_nss_tool v0.0.3 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.3)
 * [tlsrestrict_nss_tool Source Code at GitHub.](https://github.com/namecoin/tlsrestrictnss)
 
 ### Known Issues
