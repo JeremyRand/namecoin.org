@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-[The New York Times published what appears to be a highly interesting scoop](https://www.nytimes.com/2018/10/20/us/politics/saudi-image-campaign-twitter.html) on October 20, 2018.  The New York Times article alleges that the government behind the State Sponsored Actors attack on circa 40 Twitter users (most of whom, including me, were free software developers and privacy activists) was none other than Saudi Arabia.  Those of us who were [notified of the attack in 2015](https://web.archive.org/web/20161106031003/https://state-sponsored-actors.net/) have been trying to find out more ever since, with no luck until now.
+[The New York Times published what appears to be a highly interesting scoop](https://www.nytimes.com/2018/10/20/us/politics/saudi-image-campaign-twitter.html) on October 20, 2018.  The New York Times article alleges that the government behind the State Sponsored Actors attack on circa 40 Twitter users (most of whom, including me, were free software developers and privacy activists) was none other than Saudi Arabia.  Those of us who were [notified of the attack in 2015](https://www.state-sponsored-actors.org/) have been trying to find out more ever since, with no luck until now.
 
 As a precaution against censorship risk, the relevant subsection of the article is reproduced below:
 
