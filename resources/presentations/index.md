@@ -5,6 +5,10 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## Decentralized Web Summit 2018
+
+[Video is here.]({{site.baseurl}}2018/11/02/decentralized-web-summit-2018-summary.html)
+
 ## 34C3
 
 [Videos and slides are here.]({{site.baseurl}}2018/03/19/34c3-slides-videos.html)
