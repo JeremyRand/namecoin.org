@@ -7,7 +7,7 @@ title: Presentations
 
 ## Decentralized Web Summit 2018
 
-[Video is here.]({{site.baseurl}}2018/10/25/decentralized-web-summit-2018-summary.html)
+[Video is here.]({{site.baseurl}}2018/11/02/decentralized-web-summit-2018-summary.html)
 
 ## 34C3
 
