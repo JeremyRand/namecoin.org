@@ -51,8 +51,10 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
     * Used by Dotbit.me browser extension
     * Used by Dotbit.me web proxy ("Surf .Bit" tab of Dotbit.me website)
 * OpenNIC: hxxps://www.opennic.org/
-    * Namecoin resolver info at https://wiki.opennic.org/opennic:dot:bit
+    * Namecoin resolver info at hxxps://wiki.opennic.org/opennic:dot:bit
     * Seems to be operated by Calum McAlinden
+* ZeroName
+    * Used by ZeroNet's default configuration
 
 ## .bit Resolver Software (not services)
 
@@ -137,6 +139,13 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 ## ElectrumX Instance Operators
 
 * Luggs: email im AT luggs.co
+
+## Search engines
+
+* Liddle
+    * hxxp://liddle-bit.com/
+    * hxxp://liddle.bit/
+    * Operated by /u/karakozov on Reddit
 
 ## Places to find projects
 
