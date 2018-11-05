@@ -40,15 +40,41 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * Namecoin-DDClient: hxxps://github.com/hugohp/namecoin-ddclient
 * Indolering nmc.js: hxxps://github.com/indolering/nmc.js
 
-## .bit Resolvers
+## .bit Resolver Services (who run a Namecoin node)
 
-* MeowBit: hxxps://www.meowbit.com/list-of-working-dot-bit-websites/
-* PeerName: hxxps://addons.mozilla.org/en-US/firefox/addon/peername/?src=search
-* Blockchain DNS: hxxps://addons.mozilla.org/en-US/firefox/addon/b-dns/
-* Blockchain DNS: hxxps://github.com/B-DNS/Chrome
-* dot-bit-proxy-extension: hxxps://chrome.google.com/webstore/detail/dot-bit-proxy-extension/boghalnjcplaepdogcbcfjgbaooakkik?hl=en
+* PeerName: hxxps://peername.com/
+    * Used by PeerName browser extension
+* Blockchain-DNS: hxxps://blockchain-dns.info/
+    * Used by Blockchain-DNS browser extension
+    * API URL's: hxxps://github.com/B-DNS/Firefox/blob/0bcaa7da97463d5aef2c470402a978ea1a3508c4/common.js#L54-L64
+* Dotbit.me: hxxps://dotbit.me/
+    * Used by Dotbit.me browser extension
+    * Used by Dotbit.me web proxy ("Surf .Bit" tab of Dotbit.me website)
+* OpenNIC: hxxps://www.opennic.org/
+    * Namecoin resolver info at https://wiki.opennic.org/opennic:dot:bit
+    * Seems to be operated by Calum McAlinden
+
+## .bit Resolver Software (not services)
+
+* PeerName browser extension:
+    * Chrome: hxxps://chrome.google.com/webstore/detail/peername/kkdihlopcnkjinfjhbeopjfmnfpcoaop
+    * Opera: hxxps://addons.opera.com/en/extensions/details/peername-surf-blockchain-based-domains/
+    * Firefox: hxxps://addons.mozilla.org/en-US/firefox/addon/peername/?src=search
+    * Seems to be non-free.
+* Blockchain-DNS browser extension:
+    * Chrome: hxxps://chrome.google.com/webstore/detail/blockchain-dns/hlnmiaddfabbklljanmdilbngnookdgn
+        * Source: hxxps://github.com/B-DNS/Chrome
+        * Unlicense
+    * Firefox: hxxps://addons.mozilla.org/en-US/firefox/addon/b-dns/
+        * Source: hxxps://github.com/B-DNS/Firefox/
+        * Unlicense
+* Dotbit.me browser extension:
+    * Chrome: hxxps://chrome.google.com/webstore/detail/dot-bit-proxy-extension/boghalnjcplaepdogcbcfjgbaooakkik?hl=en
+        * Source: hxxps://github.com/Tagide/chrome-bit-domain-extension
+        * GPLv2
+* MeowBit: hxxps://www.meowbit.com/
 * NamecoinDotCom dot-bit-addon: hxxps://github.com/Namecoindotcom/dot-bit-addon
-* OpenNIC
+    * Namecoin.com seems to be abandoned.
 * Calum McAlinden nmczone: hxxps://github.com/CalumMc/nmczone
 * Chris Double Namecoin-Polipo: hxxps://github.com/doublec/namecoin-polipo
 
