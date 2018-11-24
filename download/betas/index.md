@@ -50,7 +50,7 @@ You need to have Java installed:
 
 * [ConsensusJ-Namecoin v0.3.2.1 (cross-platform JAR)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.3.2.1/namecoinj-daemon-0.3.2-SNAPSHOT.jar)
 * [ConsensusJ-Namecoin v0.3.2.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ConsensusJ-Namecoin/0.3.2.1/SHA256SUMS.asc)
-* [ConsensusJ-Namecoin source code (use the `consensusj-namecoin-0.3.2.1` branch)](https://github.com/JeremyRand/bitcoinj-addons/)
+* [ConsensusJ-Namecoin source code (use the `consensusj-namecoin-0.3.2.1` branch)](https://github.com/JeremyRand/consensusj/)
 * [libdohj source code](https://github.com/dogecoin/libdohj/)
 
 [Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
