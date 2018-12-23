@@ -36,7 +36,7 @@ The ncdns installer wizard also sets up TLS certificate validation for `.bit` do
 
 ### Other OS's
 
-ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a Namecoin name lookup client (e.g. Namecoin Core) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
+ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a [Namecoin name lookup client]({{site.baseurl}}get-started/name-lookup-clients/) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
 
 TLS instructions for ncdns on GNU/Linux are at the [TLS Client Compatibility]({{site.baseurl}}docs/tls-client/) page.
 
