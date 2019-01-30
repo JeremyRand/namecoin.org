@@ -7,7 +7,7 @@ title: Presentations
 
 ## Internet Governance Forum 2018
 
-[Videos, slides, transcript, and report are here.]({{site.baseurl}}2019/01/27/internet-governance-forum-2018-summary.html)
+[Videos, slides, transcript, and report are here.]({{site.baseurl}}2019/01/30/internet-governance-forum-2018-summary.html)
 
 ## Decentralized Web Summit 2018
 
