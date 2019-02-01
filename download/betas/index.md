@@ -67,11 +67,11 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-* [Electrum-NMC v3.3.2 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.2/Electrum-NMC-3.3.2.tar.gz)
-* [Electrum-NMC v3.3.2 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.2/electrum-nmc-nc3.3.2.exe)
-* [Electrum-NMC v3.3.2 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.2/electrum-nmc-nc3.3.2-portable.exe)
-* [Electrum-NMC v3.3.2 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.2/electrum-nmc-nc3.3.2-setup.exe)
-* [Electrum-NMC v3.3.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.2/SHA256SUMS.asc)
+* [Electrum-NMC v3.3.3.1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/Electrum-NMC-3.3.3.1.tar.gz)
+* [Electrum-NMC v3.3.3.1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1.exe)
+* [Electrum-NMC v3.3.3.1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-portable.exe)
+* [Electrum-NMC v3.3.3.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-setup.exe)
+* [Electrum-NMC v3.3.3.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues

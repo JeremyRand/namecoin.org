@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Electrum-NMC v3.3.2 Released"
+title: "Electrum-NMC v3.3.3.1 Released"
 author: Jeremy Rand
 tags: [Releases, Electrum Releases]
 ---
 
-We've released Electrum-NMC v3.3.2.  This release includes important security fixes from upstream Electrum, and we recommend that all users upgrade.  Here's what's new since v3.2.4b1:
+We've released Electrum-NMC v3.3.3.1.  This release includes important security fixes from upstream Electrum, and we recommend that all users upgrade.  Here's what's new since v3.2.4b1:
 
 * Fix accidental Namecoin rebranding in the AuxPoW branch that was causing the AuxPoW branch to error.
 * Fix some tests that were failing.
@@ -23,6 +23,9 @@ We've released Electrum-NMC v3.3.2.  This release includes important security fi
 * Fix broken imports in Labels plugin.
 * Fix bug that prevented using Coin Control for name updates.
 * Add 2 new servers.
+* Improve documentation of timewarp hardfork.
+* Rebranding fixes for update check.
+* Fix icons.
 * Windows binaries are available again.
 * Improvements from upstream Electrum (**including security fixes**).
 
