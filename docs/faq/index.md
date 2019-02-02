@@ -107,6 +107,20 @@ Political concerns:
 
 In addition, it's not clear that there would even be any significant benefit to counterbalance these concerns.  Namecoin intentionally makes different tradeoffs from the DNS.  For example, the DNS is much more scalable than Namecoin, can protect name owners from trivial deanonymization much better than Namecoin can, and doesn't rely on comparatively weak game-theoretic security properties as Namecoin does.  Namecoin has some benefits that counterbalance these weaknesses (e.g. the non-reliance on trusted third parties), but serving Namecoin data from public DNS infrastructure would provide the **union** of Namecoin's and the DNS's weaknesses, while providing the **intersection** of Namecoin's and the DNS's strengths.  Users who require a DNS-like naming system that works without any software installation are likely to be better off simply using the DNS.
 
+### Why focus on browser add-ons and OS packages instead of native browser and OS support?
+
+Because browser add-ons and OS packages are the standard method by which browser and OS vendors evaluate features for future inclusion.  In our discussions with browser vendors and OS vendors (even the ones who are enthusiastic about bundling Namecoin by default), one of the first things they ask for as a prerequisite to inclusion by default is a browser add-on or an OS package.
+
+### Why focus on getting existing browsers and OS's to support Namecoin instead of forking those browsers and OS's?
+
+Maintaining a fork of a web browser or OS is a substantial time investment, and attempting it without the necessary resources would inevitably result in delayed security updates, which would be unethical to our users.  Examples of browser and OS forks that have suffered from delayed security updates include IceCat and Trisquel.  One of the very few cases where a web browser fork has not resulted in a security disaster is Tor Browser, which has the following advantages:
+
+1. The Tor Project employs a dedicated team of full-time browser engineers who merge security fixes from Firefox.
+2. Tor Browser is based on the ESR variant of Firefox, which results in significantly less code churn from upstream.
+3. The Tor Browser developers are actively getting their patches against Firefox merged upstream by Mozilla.
+
+These advantages do not obviously apply to us, so Tor Browser's relative success would not obviously apply to us either.
+
 ### Is Namecoin's support of atomic name trades a feature primarily aimed at squatters?
 
 Short answer: No.  The Namecoin developers are strongly against trademark infringement, and we do not endorse the behavior of users who squat on domains, either in Namecoin or the DNS.
