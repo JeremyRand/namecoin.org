@@ -65,30 +65,22 @@ You need to have Java installed:
 
 Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
-* [**Beta:** Electrum-NMC v3.2.4b1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.4b1/electrum-nmc-nc3.2.4b1.tar.gz)
-* [**Beta:** Electrum-NMC v3.2.4b1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.4b1/SHA256SUMS.asc)
+[Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-
-
-* [Electrum-NMC v3.2.2.2 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/electrum-nmc-nc3.2.2.2.tar.gz)
-* [Electrum-NMC v3.2.2.2 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/electrum-nmc-nc3.2.2.2.exe)
-* [Electrum-NMC v3.2.2.2 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/electrum-nmc-nc3.2.2.2-portable.exe)
-* [Electrum-NMC v3.2.2.2 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/electrum-nmc-nc3.2.2.2-setup.exe)
-* [Electrum-NMC v3.2.2.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.2.2.2/SHA256SUMS.asc)
+* [Electrum-NMC v3.3.3.1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/Electrum-NMC-3.3.3.1.tar.gz)
+* [Electrum-NMC v3.3.3.1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1.exe)
+* [Electrum-NMC v3.3.3.1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-portable.exe)
+* [Electrum-NMC v3.3.3.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-setup.exe)
+* [Electrum-NMC v3.3.3.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
-
-[Preliminary documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
 ### Known Issues
 
-* Downloads marked as **Beta** have received significantly less QA testing, both from Namecoin developers and from upstream Electrum developers.  Expect a higher risk of bugs from such downloads.
 * AuxPoW support is still experimental.
-* No name transaction support **(fixed in Beta)**.
 * P2SH and SegWit are not yet disabled in the GUI.  Don't use those features, since P2SH and SegWit aren't enforced on Namecoin yet, meaning that coins sent to such addresses can trivially be stolen.
-* Hardware wallets other than Trezor are untested and probably don't work **(Safe-T mini also works in Beta)**.
+* Hardware wallets other than Trezor and Safe-T mini are untested and probably don't work.
 * Name transactions are not yet supported for hardware wallets.
 * macOS binaries are not yet available.
-* Windows binaries are only available for the stable release; Windows binaries are not yet available for the Beta.
 * Build reproducibility is not yet tested.
 
 ## ncdns
