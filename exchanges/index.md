@@ -29,7 +29,6 @@ title: Exchanges
 
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
-[24change](https://24change.com)<br>
 [AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
 [Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
 [bx.in.th](https://bx.in.th)<br>
