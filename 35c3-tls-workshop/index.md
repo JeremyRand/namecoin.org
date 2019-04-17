@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 35C3 TLS Workshop Notes
+redirect_from:
+  - /35c3-tls-workshop/
 ---
 
 {::options parse_block_html="true" /}
