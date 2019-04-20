@@ -34,3 +34,7 @@ title: Presentations
 ## Decentralized Web Summit 2016
 
 [Videos and slides are here.]({{site.baseurl}}2016/07/03/decentralized-web-summit.html)
+
+## Grazer Linuxtage 2015
+
+[Video is here.]({{site.baseurl}}2019/04/20/daniel-kraft-at-grazer-linuxtage-2015-video.html)
