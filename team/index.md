@@ -52,6 +52,21 @@ Cassini (working under a pseudonym) holds the reins in the Mac OS X world. He is
 **Linux Build Maintainer** <br>
 Peter uses his 20 years of Unix/Linux experience to manage Namecoin packages for the major Linux distributions. Outside the Namecoin community he is working as a freelance software developer.
 
+## Ahmed Bodiwala
+
+**Electrum Specialist** <br>
+Ahmed did the initial work in porting Electrum to Namecoin.  The result of Ahmed's work (Electrum-NMC) is currently Namecoin's flagship lightweight SPV wallet.
+
+## Aerth
+
+**cgo Specialist** <br>
+Aerth did the initial work in creating pkcs11mod (a Go library for creating PKCS#11 modules) and ncp11 (a PKCS#11 module for Namecoin TLS certificates).  The result of Aerth's work was presented at the 35C3 Critical Decentralization Cluster, and is expected to become Namecoin's flagship method of accessing HTTPS websites in Firefox, Tor Browser, and Chromium.
+
+## Lola Dam
+
+**ZeroNet Specialist** <br>
+Lola works on enhancing Namecoin integration in ZeroNet, a decentralized website hosting system loosely based on BitTorrent.
+
 ## Anonymous Developers
 
 We have several developers who prefer to remain anonymous; their anonymity does not reflect the incredible impact their contributions have made to Namecoin. We are deeply grateful for their work.
