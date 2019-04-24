@@ -11,7 +11,7 @@ title: Presentations
 
 ## Malta Blockchain Summit 2018
 
-[Video is here.]({{site.baseurl}}2019/04/17/malta-blockchain-summit-2018-video.html)
+[Video is here.]({{site.baseurl}}2019/04/24/malta-blockchain-summit-2018-video.html)
 
 ## Decentralized Web Summit 2018
 
