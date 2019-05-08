@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 35C3 TLS Workshop Notes
+redirect_from:
+  - /35c3-tls-workshop/
 ---
 
 {::options parse_block_html="true" /}
@@ -63,7 +65,7 @@ You only need one of ConsensusJ-Namecoin or Electrum-NMC.
 
 ### If you're using Electrum-NMC
 
-1. Create `ncdns.conf` in the directory where ncdns is, and fill it the following, substituting your Electrum-NMC username and password:
+1. Create `ncdns.conf` in the directory where ncdns is, and fill in the following, substituting your Electrum-NMC username and password:
 ~~~
 [ncdns]
 bind="127.0.0.1:5391"
@@ -75,7 +77,7 @@ severity="debug"
 
 ### If you're using ConsensusJ-Namecoin
 
-1. Create `ncdns.conf` in the directory where ncdns is, and fill it the following, using any username and password that you like:
+1. Create `ncdns.conf` in the directory where ncdns is, and fill in the following, using any username and password that you like:
 ~~~
 [ncdns]
 bind="127.0.0.1:5391"
