@@ -86,3 +86,31 @@ Khalahan (a pseudonym) was our lead C++ developer for roughly two years (prior t
 ## Vincent Durham (vinced)
 
 Vincent (a pseudonym) was the creator of Namecoin, forking Bitcoin’s code to create the first solution to Zooko’s Triangle. Vincent is currently retired.
+
+# Pre-Genesis
+
+Several people contributed research that directly evolved into Vincent Durham's creation of Namecoin.
+
+## Appamatto
+
+Appamatto is the author of the BitDNS and BitX proposals in 2010, which proposed using a Bitcoin-like consensus protocol for non-currency applications such as DNS-like functionality.  BitDNS was later implemented as Namecoin; BitX was later implemented as Ethereum.
+
+## Aaron Swartz
+
+Aaron was the author of the Nakanames proposal in 2011, which was later implemented as Namecoin.  Aaron is well-known for co-creating RSS, Creative Commons, Demand Progress, and Reddit.  Aaron was murdered by the U.S. government in 2013.  The atomic unit of NMC, the *swartz*, is named in Aaron's honor.
+
+## Theymos
+
+Theymos proposed that Appamatto's BitDNS design utilize a native token-like currency instead of only names.  Theymos's proposal is responsible for non-miners being able to trustlessly register Namecoin names.
+
+## Dan Kaminsky
+
+Dan suggested to Aaron that Zooko's Triangle, if accurate, constituted an impossibility proof of Bitcoin, because a currency and a naming system reduce to the same problem.  Dan's insight directly led to Aaron proposing Nakanames, which used a Bitcoin-like system to solve Zooko's Triangle.  Dan is well-known for discovering and coordinating a fix for a large-scale DNS cache poisoning vulnerability, and for being one of the Recovery Key Share Holders for the ICANN root zone.
+
+## Satoshi Nakamoto
+
+Satoshi invented AuxPoW mining, which he proposed in order to allow BitDNS and Bitcoin to share miners while using separate blockchains.  Satoshi is well-known as the inventor of Bitcoin.
+
+## Zooko Wilcox
+
+Zooko formalized the problem of Zooko's Triangle, which specified three properties of a naming system that were considered desirable, while conjecturing that only two could be achieved by any given naming system.  Namecoin was the first naming system to achieve all three.  Zooko is well-known for his work on the Tahoe Least-Authority File Store and for being a co-founder of the Zcash anonymity-focused cryptocurrency.
