@@ -30,7 +30,7 @@ title: Exchanges
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
 [AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
-[Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
+[Bleutrade](https://bleutrade.com/)<br>
 [bx.in.th](https://bx.in.th)<br>
 [Cryptopia](https://www.cryptopia.co.nz/Exchange?market=NMC_BTC)<br>
 [Livecoin](https://www.livecoin.net/)<br>
