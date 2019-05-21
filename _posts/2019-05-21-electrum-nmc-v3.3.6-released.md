@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Electrum-NMC v3.3.5 Released"
+title: "Electrum-NMC v3.3.6 Released"
 author: Jeremy Rand
 tags: [Releases, Electrum Releases]
 ---
 
-We've released Electrum-NMC v3.3.5.  This release includes important security fixes, and we recommend that all users upgrade.  Here's what's new since v3.3.3.1.1:
+We've released Electrum-NMC v3.3.6.  This release includes important security fixes, and we recommend that all users upgrade.  Here's what's new since v3.3.3.1.1:
 
 * From upstream Electrum:
     * AppImage: we now also distribute self-contained binaries for x86_64 Linux in the form of an AppImage (#5042). The Python interpreter, PyQt5, libsecp256k1, PyCryptodomex, zbar, hidapi/libusb (including hardware wallet libraries) are all bundled. Note that users of hw wallets still need to set udev rules themselves.
@@ -39,14 +39,23 @@ We've released Electrum-NMC v3.3.5.  This release includes important security fi
     * Importing/sweeping WIF keys: stricter checks (#4638, #5290)
     * Electrum protocol: the client's "user agent" has been changed from "3.3.5" to "electrum/3.3.5". Other libraries connecting to servers can consider not "spoofing" to be Electrum. (#5246)
     * Several other minor bugfixes and usability improvements.
+    * qt: fix crash during 2FA wallet creation (#5334)
+    * fix synchronizer not to keep resubscribing to addresses of already closed wallets (e415c0d9)
+    * fix removing addresses/keys from imported wallets (#4481)
+    * kivy: fix crash when aborting 2FA wallet creation (#5333)
+    * kivy: fix rare crash when changing exchange rate settings (#5329)
+    * A few other minor bugfixes and usability improvements.
 * Namecoin-specific:
     * [Checkpointed AuxPoW truncation]({{site.baseurl}}2019/02/02/electrum-nmc-checkpointed-auxpow-truncation.html).  This requires servers to run ElectrumX v1.9.2 or higher.  All public servers have upgraded; if you run a private server, please make sure that you've upgraded if you want Electrum-NMC to keep working.
     * Pending registrations in Manage Names tab now show the name and value rather than a blank line.
     * Manage Names tab now shows an estimated expiration date in addition to a block count.
+    * Manage Names tab now allows copying identifiers and values to the clipboard.
     * Status bar now shows a count of registered names and pending registrations next to the NMC balance.
     * Set memo in name wallet commands.  This improves Coin Control, which paves the way for anonymity.
-    * We now distribute Android APK binaries and GNU/Linux AppImage binaries (in addition to the previously existing GNU/Linux tarball binaries and Windows binaries).  Android and AppImage binaries are not tested in any way (they might not even boot) -- please test them and let us know what's broken.
+    * We now distribute Android APK binaries and GNU/Linux AppImage binaries (in addition to the previously existing Python tarball binaries and Windows binaries).  Android and AppImage binaries are not tested in any way (they might not even boot) -- please test them and let us know what's broken.
+    * Notify when a new version of Electrum-NMC is available.
     * Add 2 new servers.
+    * Remove 2 old servers that are now being decommissioned.
     * Various fixes for exception handling.
     * Various unit tests and fixes for AuxPoW.
     * Various rebranding fixes.
