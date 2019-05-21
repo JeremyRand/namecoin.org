@@ -67,11 +67,14 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-* [Electrum-NMC v3.3.3.1.1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/Electrum-NMC-3.3.3.1.1.tar.gz)
-* [Electrum-NMC v3.3.3.1.1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1.exe)
-* [Electrum-NMC v3.3.3.1.1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1-portable.exe)
-* [Electrum-NMC v3.3.3.1.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1-setup.exe)
-* [Electrum-NMC v3.3.3.1.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/SHA256SUMS.asc)
+* [Electrum-NMC v3.3.6 for GNU/Linux, Windows, and macOS (Python tar.gz)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum-NMC-3.3.6.tar.gz)
+* [Electrum-NMC v3.3.6 for GNU/Linux, Windows, and macOS (Python zip)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum-NMC-3.3.6.zip)
+* [Electrum-NMC v3.3.6 for GNU/Linux (x86_64 AppImage)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/electrum-nmc-nc3.3.6-x86_64.AppImage)
+* [Electrum-NMC v3.3.6 for Windows (Standalone Executable)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/electrum-nmc-nc3.3.6.exe)
+* [Electrum-NMC v3.3.6 for Windows (Portable version)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/electrum-nmc-nc3.3.6-portable.exe)
+* [Electrum-NMC v3.3.6 for Windows (Installer)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/electrum-nmc-nc3.3.6-setup.exe)
+* [Electrum-NMC v3.3.6 for Android](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum_NMC-3.3.6.0-debug.apk)
+* [Electrum-NMC v3.3.6 Signature (Release signed by Jeremy Rand)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
@@ -80,6 +83,8 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 * P2SH and SegWit are not yet disabled in the GUI.  Don't use those features, since P2SH and SegWit aren't enforced on Namecoin yet, meaning that coins sent to such addresses can trivially be stolen.
 * Hardware wallets other than Trezor and Safe-T mini are untested and probably don't work.
 * Name transactions are not yet supported for hardware wallets.
+* AppImage binaries have not yet been tested.
+* Android binaries have not yet been tested.  They definitely don't have most of the Namecoin-specific GUI features.
 * macOS binaries are not yet available.
 * Build reproducibility is not yet tested.
 
