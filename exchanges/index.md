@@ -35,7 +35,6 @@ title: Exchanges
 [Livecoin](https://www.livecoin.net/)<br>
 [ShapeShift](https://shapeshift.io/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
-[Vircurex](https://vircurex.com)<sup>use with caution, see [discussion](https://bitcointalk.org/index.php?topic=49383.1200)</sup><br>
 [WEX](https://wex.nz/)<br>
 </span>
 
