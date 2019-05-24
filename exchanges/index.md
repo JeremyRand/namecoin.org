@@ -33,7 +33,6 @@ title: Exchanges
 [Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
 [bx.in.th](https://bx.in.th)<br>
 [Livecoin](https://www.livecoin.net/)<br>
-[Poloniex](https://poloniex.com)<br>
 [ShapeShift](https://shapeshift.io/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 [Vircurex](https://vircurex.com)<sup>use with caution, see [discussion](https://bitcointalk.org/index.php?topic=49383.1200)</sup><br>
