@@ -34,7 +34,6 @@ title: Exchanges
 [bx.in.th](https://bx.in.th)<br>
 [Livecoin](https://www.livecoin.net/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
-[WEX](https://wex.nz/)<br>
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
