@@ -33,6 +33,7 @@ title: Exchanges
 [Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
 [bx.in.th](https://bx.in.th)<br>
 [Livecoin](https://www.livecoin.net/)<br>
+[Nova Exchange](https://novaexchange.com/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 </span>
 
