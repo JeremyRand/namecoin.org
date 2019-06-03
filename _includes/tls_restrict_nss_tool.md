@@ -16,7 +16,7 @@
 1. Restart {{ page.application }}.
 {% endif %}{% if os == "Windows" %}1. Install the [Visual C++ 2010 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 1. Install the [Visual C++ 2015 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=53587).
-1. Download `mar-tools-win32.zip` or `mar-tools-win64.zip` (depending on whether you're on 32-bit or 64-bit Windows) from [Tor's download page](https://dist.torproject.org/torbrowser/) (you want the most recent alpha release).
+1. Download `mar-tools-win32.zip` or `mar-tools-win64.zip` (depending on whether you're on 32-bit or 64-bit Windows) from [Tor's download page](https://dist.torproject.org/torbrowser/).
 1. Extract the following files from the `mar-tools` zip to a new `mar-tools-32` or `mar-tools-64` (depending on whether you're on 32-bit or 64-bit Windows) subdirectory of the directory where `tlsrestrict_nss_tool.exe` is:
     * `certutil.exe`
     * `freebl3.dll`
