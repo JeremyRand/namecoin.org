@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-A few days ago I [mentioned ]({{site.baseurl}}2019/09/09/ncp11-now-builds-in-rbm-gnu-linux-64-bit-and-32-bit.html) that ncp11 now builds in rbm.  As you may recall, rbm is the build system used by Tor Browser; it facilitates reproducible builds, which improves the security of the build process against supply-chain attacks.  I've now added several new projects/targets to Namecoin's rbm descriptors:
+A few days ago I [mentioned ]({{site.baseurl}}2019/06/12/ncp11-now-builds-in-rbm-gnu-linux-64-bit-and-32-bit.html) that ncp11 now builds in rbm.  As you may recall, rbm is the build system used by Tor Browser; it facilitates reproducible builds, which improves the security of the build process against supply-chain attacks.  I've now added several new projects/targets to Namecoin's rbm descriptors:
 
 * DNSSEC-HSTS now builds.  For those of you who aren't familiar with DNSSEC-HSTS, see my [35C3 slides]({{site.baseurl}}2019/05/08/35c3-summary.html).
 * certdehydrate-dane-rest-api now builds.  This is a backend tool that's used by both ncp11 and DNSSEC-HSTS.
