@@ -5,14 +5,14 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-ncp11 is now working (both positive and negative TLS certificate overrides) in Tor Browser for Windows.  It turned out that the only things keeping it from working properly once it [built without errors]({{site.baseurl}}2019/06/11/ncp11-now-builds-for-windows.html) were a couple of GNU/Linux-specific file path assumptions, both of which were quite easy to fix.
+ncp11 is now working (both positive and negative TLS certificate overrides) in Tor Browser for Windows.  It turned out that the only things keeping it from working properly once it [built without errors]({{site.baseurl}}2019/06/15/ncp11-now-builds-for-windows.html) were a couple of GNU/Linux-specific file path assumptions, both of which were quite easy to fix.
 
-Actually testing it was mildly tricky, due to the fact that I was trying to use TorNS-Stem (a fork I made of meejah's TorNS tool) for the DNS resolution in Tor Browser, and it turns out that I had introduced a quite stupid bug into TorNS-Stem that caused the Prop279 implementation to launch with an empty set of environment variables.  In GNU/Linux, this is harmless, but (surprise, surprise) in Windows this causes a variety of horrible effects, chief among which is that cryptographic software will be unable to generate random numbers and thus will crash.  I was going to find that out anyway once the Tor community started messing with TorNS-Stem, so probably a good thing that I found it early.  (I wish it hadn't taken me quite so long to figure out why things were crashing, but alas, that's life.)
+Actually testing it was mildly tricky, due to the fact that I was trying to use StemNS (a fork I made of meejah's TorNS tool) for the DNS resolution in Tor Browser, and it turns out that there was a bug in both upstream TorNS and StemNS that caused the Prop279 implementation to launch with an empty set of environment variables.  In GNU/Linux, this is harmless, but (surprise, surprise) in Windows this causes a variety of horrible effects, chief among which is that cryptographic software will be unable to generate random numbers and thus will crash.  I was going to find that out anyway once the Tor community started messing with StemNS, so probably a good thing that I found it early.  (I wish it hadn't taken me quite so long to figure out why things were crashing, but alas, that's life.)  StemNS now has a fix for that bug, and I've submitted a fix upstream to TorNS as well.
 
 So, my estimate of what remains before we can release Tor Browser TLS support:
 
 1. Get the remaining PR's merged to the relevant repos (in particular, ncdns-repro has a few pending PR's that are needed for this).
-2. Tag a release and build/release binaries.
+2. Tag a release and build/upload binaries.
 3. Write some documentation (should be easy to adapt from the 35C3 workshop notes).
 
 Meanwhile, I also tried ncp11 in Firefox for Windows (same installation method as in Tor Browser), and ran into some severe trouble there.  As far as I can tell, the ncp11 library is failing very early in the boot process: it doesn't even get as far as running the `init()` functions in the Go code.  Firefox gives a relatively useless "library failure" error, which is presumably a different code path from the "library failure" error that I'm getting in Debian when loading ncp11 into Firefox via a totally different installation method from the Tor Browser method.
