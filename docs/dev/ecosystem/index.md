@@ -89,7 +89,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Mining Pools
 
-* BTC.COM: hxxps://twitter.com/btccom_official/ ; email support AT btc.com
+* BTC.COM: hxxps://twitter.com/btccom_official/ ; email support AT btc.com ; GitHub @YihaoPeng
 * BTC.TOP: CEO is at hxxps://mobile.twitter.com/jiangzhuoer
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
 * slush: hxxps://slushpool.com/help/contact-us/feedback
@@ -102,9 +102,12 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * Waterhole BCH
 * zpool.ca: GitHub @crackfoo
 * EoBot
-* bitminter
+* BitMinter: hxxps://bitminter.com/ ; hxxps://bitminter.com/contact
 * bitclub
 * gbminers
+* Poolin: hxxps://www.poolin.com/ (website in Chinese) ; Twitter @officialpoolin ; hxxps://www.blockin.com/
+* OK Pool: hxxps://www.okex.me/pool ; email service AT okex.com ; Twitter @OKEx
+* Prohashing: hxxps://prohashing.com ; Twitter @ProHashing ; hxxps://support.prohashing.com ; hxxps://forums.prohashing.com/memberlist.php?mode=contactadmin
 
 ## Exchanges
 
