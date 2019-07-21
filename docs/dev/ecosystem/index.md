@@ -97,7 +97,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * AntPool: hxxps://support.bitmain.com/hc/en-us/requests/new
 * Bixin: hxxps://pool.bixin.com/
 * BTPOOL
-* huobi: hxxps://www.huobipool.com/
+* huobi: hxxps://www.huobipool.com/ ; hxxps://twitter.com/EOS_huobipool
 * BTCC
 * Waterhole BCH
 * zpool.ca: GitHub @crackfoo
