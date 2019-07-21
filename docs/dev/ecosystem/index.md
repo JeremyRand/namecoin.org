@@ -89,7 +89,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Mining Pools
 
-* BTC.COM: hxxps://twitter.com/btccom_official/ ; email support AT btc.com ; GitHub @YihaoPeng
+* BTC.COM: hxxps://support.bitmain.com/hc/en-us/requests/new ; hxxps://twitter.com/btccom_official/ ; email support AT btc.com ; GitHub @YihaoPeng
 * BTC.TOP: hxxps://www.btc.top/en/ ; email support AT btc.top ; CEO is at hxxps://mobile.twitter.com/jiangzhuoer
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
 * slush: hxxps://slushpool.com/help/contact-us/feedback
