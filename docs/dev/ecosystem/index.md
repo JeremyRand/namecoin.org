@@ -95,7 +95,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * slush: hxxps://support.slushpool.com/en-us/conversation/new/2
 * F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com
 * AntPool: hxxps://support.bitmain.com/hc/en-us/requests/new
-* Bixin: hxxps://pool.bixin.com/
+* Bixin (AKA Haopool): hxxps://pool.bixin.com/ ; hxxps://help.haopool.com/en/contact-us/ (only QQ contact) ; hxxps://twitter.com/BixinIM
 * BTPOOL
 * huobi: hxxps://www.huobipool.com/ ; hxxps://twitter.com/EOS_huobipool
 * BTCC
