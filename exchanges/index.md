@@ -35,6 +35,7 @@ title: Exchanges
 [bx.in.th](https://bx.in.th)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
+[Nova Exchange](https://novaexchange.com/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 </span>
 
