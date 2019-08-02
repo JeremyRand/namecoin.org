@@ -33,6 +33,7 @@ title: Exchanges
 [Altilly](https://www.altilly.com/market/)<br>
 [Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
 [bx.in.th](https://bx.in.th)<br>
+[Coingi](https://coingi.com/trade/nmc-btc)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
 [Nova Exchange](https://novaexchange.com/)<br>
