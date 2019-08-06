@@ -15,6 +15,9 @@ The problem here is that this has the effect of coupling a specific commit hash 
 
 So, what to do?  Well, note that there's no fundamentally important reason for the `x509` package to be a subpackage of ncdns.  It ended up there by default because it was initially only used by ncdns and there wasn't an obvious reason to create a new Git repo, but now we have a good reason to move it to its own repo: if the Git commit hash of ncdns and `x509` are independent, then downstream distributors can pick the version of ncdns with whatever bug fixes they want, and independently choose the version of `x509` that supports whatever Go compiler version they want.  I've now done this.  `x509` now lives at [github.com/namecoin/x509-signature-splice/x509](https://github.com/namecoin/x509-signature-splice/tree/master/x509) , and branches are available for every version of the Go compiler that we've ever supported, ranging from Go 1.5.x all the way through Go 1.13.x.  (Note that the Go 1.12.x and Go 1.13.x support is new, as both of those Go releases required rebases in order for `go generate` to run without errors.  So if you use one of those Go versions, you'll find this work especially useful.)
 
-The PR that does the final step of removing `x509` from the ncdns repo and switching over to the new repo will hopefully be merged within the next week.
+The two final steps here are:
+
+1. Removing `x509` from the ncdns repo and switching over to the new repo; this has now been merged.
+1. Updating ncdns-repro to use the new ncdns version; this will happen soon.
 
 This work was funded by NLnet Foundation's Internet Hardening Fund and Cyphrs.
