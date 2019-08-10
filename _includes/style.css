@@ -100,8 +100,6 @@ td, th {
 *[id]:before {
     display: block;
     content: " ";
-    margin-top: -51px;
-    height: 51px;
     visibility: hidden;
 }
 
@@ -110,8 +108,6 @@ td, th {
     *[id]:before {
         display: block;
         content: " ";
-        margin-top: -101px;
-        height: 101px;
         visibility: hidden;
     }
 }
