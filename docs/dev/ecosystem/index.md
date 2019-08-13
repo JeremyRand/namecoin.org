@@ -102,7 +102,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * Waterhole BCH
 * zpool.ca: GitHub @crackfoo
 * EoBot
-* BitMinter: hxxps://bitminter.com/ ; hxxps://bitminter.com/contact
+* BitMinter: hxxps://bitminter.com/ ; hxxps://bitminter.com/contact ; Twitter @BitMinter
 * bitclub
 * gbminers
 * Poolin: hxxps://www.poolin.com/ (website in Chinese) ; Twitter @officialpoolin ; hxxps://www.blockin.com/ ; Twitter @bit_kevin
