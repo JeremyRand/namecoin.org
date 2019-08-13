@@ -91,7 +91,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 * BTC.COM: hxxps://support.bitmain.com/hc/en-us/requests/new ; hxxps://twitter.com/btccom_official/ ; email support AT btc.com ; GitHub @YihaoPeng
 * BTC.TOP: hxxps://www.btc.top/en/ ; email support AT btc.top ; CEO is at hxxps://mobile.twitter.com/jiangzhuoer ; purported Twitter @top_btc (we were unable to verify this account's authenticity)
-* ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
+* ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com ; Twitter @ViaBTC
 * slush: hxxps://support.slushpool.com/en-us/conversation/new/2
 * F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com ; Twitter @f2pool_official ; Twitter @satofishi
 * AntPool: hxxps://support.bitmain.com/hc/en-us/requests/new
