@@ -93,7 +93,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * BTC.TOP: hxxps://www.btc.top/en/ ; email support AT btc.top ; CEO is at hxxps://mobile.twitter.com/jiangzhuoer
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com
 * slush: hxxps://support.slushpool.com/en-us/conversation/new/2
-* F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com
+* F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com ; Twitter @f2pool_official ; Twitter @satofishi
 * AntPool: hxxps://support.bitmain.com/hc/en-us/requests/new
 * Bixin (AKA Haopool): hxxps://pool.bixin.com/ ; hxxps://help.haopool.com/en/contact-us/ (only QQ contact) ; hxxps://twitter.com/BixinIM
 * BTPOOL
@@ -105,7 +105,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * BitMinter: hxxps://bitminter.com/ ; hxxps://bitminter.com/contact
 * bitclub
 * gbminers
-* Poolin: hxxps://www.poolin.com/ (website in Chinese) ; Twitter @officialpoolin ; hxxps://www.blockin.com/
+* Poolin: hxxps://www.poolin.com/ (website in Chinese) ; Twitter @officialpoolin ; hxxps://www.blockin.com/ ; Twitter @bit_kevin
 * OK Pool: hxxps://www.okex.me/pool ; email service AT okex.com ; Twitter @OKEx
 * Prohashing: hxxps://prohashing.com ; Twitter @ProHashing ; hxxps://support.prohashing.com ; hxxps://forums.prohashing.com/memberlist.php?mode=contactadmin
 
