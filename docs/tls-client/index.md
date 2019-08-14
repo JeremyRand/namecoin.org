@@ -16,6 +16,7 @@ Namecoin can be used for TLS certificate validation.  This page covers Namecoin'
 | **mozilla::pkix/NSS/sqlite (OS's with NSS `certutil`)** | Supported via ncdns's `tlsoverridefirefox` feature. | Supported via `tlsrestrict_nss_tool`. |
 | **mozilla::pkix/NSS/sqlite (OS's without NSS `certutil`)** | Supported via ncdns's `tlsoverridefirefox` feature. | Not supported. |
 | **mozilla::pkix/NSS/BDB** | Supported via ncdns's `tlsoverridefirefox` feature. | Not supported. |
+| **mozilla::pkix/NSS/PKCS#11** | Supported via ncp11. | Supported via ncp11. |
 | **NSS/sqlite (OS's with NSS `certutil`)** | Supported via ncdns's `certinject` feature. | Supported via `tlsrestrict_nss_tool`. |
 
 ## TLS Application Compatibility
@@ -32,4 +33,7 @@ Namecoin can be used for TLS certificate validation.  This page covers Namecoin'
 | **Google Chrome Canary (Windows)**<br>Automatically enabled by installer | Supported via CryptoAPI. | Supported via Chromium. |
 | **Opera (GNU/Linux)** | Supported via NSS/sqlite. | Supported via Chromium.<br>Supported via NSS/sqlite. |
 | **Opera (Windows)**<br>Automatically enabled by installer | Supported via CryptoAPI. | Supported via Chromium. |
+| **Tor Browser (GNU/Linux)** <br> [Instructions](tor-browser/gnu-linux/) | Supported via mozilla::pkix/NSS/PKCS#11. | Supported via mozilla::pkix/NSS/PKCS#11. |
+| **Tor Browser (macOS)** <br> [Instructions](tor-browser/macos/) | Supported via mozilla::pkix/NSS/PKCS#11.<br> **Untested** | Supported via mozilla::pkix/NSS/PKCS#11.<br> **Untested** |
+| **Tor Browser (Windows)** <br> [Instructions](tor-browser/windows/) | Supported via mozilla::pkix/NSS/PKCS#11. | Supported via mozilla::pkix/NSS/PKCS#11. |
 
