@@ -34,6 +34,7 @@ title: Exchanges
 [Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
 [bx.in.th](https://bx.in.th)<br>
 [Coingi](https://coingi.com/trade/nmc-btc)<br>
+[Crytrex](https://crytrex.com/)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
 [Nova Exchange](https://novaexchange.com/)<br>
