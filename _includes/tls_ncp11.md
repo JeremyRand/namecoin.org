@@ -22,7 +22,7 @@
 {% assign libnssckbitargetfile = "libnssckbi-namecoin-target.dylib" %}
 {% endif %}
 
-{% if application == "Tor Browser" %}
+{% if page.application == "Tor Browser" %}
 {% assign tornetwork = "1" %}
 {% assign mozillapkix = "1" %}
 {% endif %}
