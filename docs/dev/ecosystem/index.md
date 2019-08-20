@@ -142,6 +142,9 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 ## ElectrumX Instance Operators
 
 * Luggs: email im AT luggs.co
+* Nico Krause email nico AT le-space.de
+* Richard Ulrich: email richi AT paraeasy.ch
+* nmc.bitcoins.sk: Contact info unknown.
 
 ## Search engines
 
