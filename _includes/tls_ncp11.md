@@ -32,18 +32,7 @@
 {{ page.application }} for {{ os }} can be used with Namecoin for TLS positive and negative overrides; this allows certificates for `.bit` domains that match the blockchain to be used without errors, and prevents malicious or compromised public CA's from issuing certificates for `.bit` domains.  Instructions:
 
 1. Install [ncdns]({{site.baseurl}}docs/ncdns/).
-1. {% if os == "GNU/Linux" %}Build{% else %}On a GNU/Linux system, build{% endif %} certdehydrate-dane-rest-api and ncp11 from source, like this:
-   
-       git clone https://github.com/namecoin/ncdns-repro.git
-       cd ncdns-repro
-       make submodule-update
-       ./rbm/rbm build certdehydrate-dane-rest-api --target release --target {{ rbmtarget }}
-       ./rbm/rbm build ncp11 --target release --target {{ rbmtarget }}
-   
-1. The certdehydrate-dane-rest-api binary will be a `.tar.gz` file in `./out/certdehydrate-dane-rest-api/`.
-1. The ncp11 binary will be a `.tar.gz` file in `./out/ncp11/`.
-1. Extract `{{ certdehydratedanerestapifile }}` from the certdehydrate-dane-rest-api `.tar.gz` file{% if os != "GNU/Linux" %} and copy it to your {{ os }} system where {{ page.application }} will be used{% endif %}.
-1. Extract `{{ libncp11file }}` from the ncp11 `.tar.gz` file{% if os != "GNU/Linux" %} and copy it to your {{ os }} system where {{ page.application }} will be used{% endif %}.
+1. Download and extract certdehydrate-dane-rest-api and ncp11 from the [Beta Downloads]({{site.baseurl}}download/betas/) page.
 1. Create a text file called `certdehydrate-dane-rest-api.conf` in the same directory where `{{ certdehydratedanerestapifile }}` is, and fill it with the following contents (if ncdns is listening on a different IP or port, change the following accordingly):
    
        [certdehydrate-dane-rest-api]
