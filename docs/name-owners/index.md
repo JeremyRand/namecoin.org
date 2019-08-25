@@ -10,3 +10,4 @@ title: Documentation for Name Owners
 * [TLS](tls/)
 * [DNSSEC](dnssec/)
 * [Dynamic IP's](dynamic-ips/)
+* [Atomic Name Trading](atomic-name-trading/)
