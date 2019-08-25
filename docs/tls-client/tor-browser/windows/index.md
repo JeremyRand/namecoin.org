@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "TLS for Tor Browser on Windows (64-bit)"
+title: "TLS for Tor Browser on Windows"
 application: "Tor Browser"
 ---
 

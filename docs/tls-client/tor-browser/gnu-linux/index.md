@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "TLS for Tor Browser on GNU/Linux (x86 64-bit)"
+title: "TLS for Tor Browser on GNU/Linux"
 application: "Tor Browser"
 ---
 
