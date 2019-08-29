@@ -81,7 +81,7 @@ In a typical Tor Browser installation, `torrc-defaults` is the correct place to 
 
 ## Running it
 
-Make sure that the name lookup client, ncdns, and Tor are running.  Then, run `{{ controllerpython }} poc.py` in the {{ prop279 }} directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.  Here's a screenshot of [the Tor example rendezvous points page](http://federalistpapers.bit.onion/):
+Make sure that the name lookup client{% if prop279 == "dns-prop279" %}, ncdns,{% endif %} and Tor are running.  Then, run `{{ controllerpython }} poc.py` in the {{ controller }} directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.  Here's a screenshot of [the Tor example rendezvous points page](http://federalistpapers.bit.onion/):
 
 ![Screenshot.]({{site.baseurl}}images/screenshots/tor/tor-browser-onion-2018-08-01.png)
 
