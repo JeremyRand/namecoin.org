@@ -118,6 +118,9 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
     * Email support AT coingi.com
     * Twitter @coingi
 * Cryptopia: Twitter @Cryptopia_NZ
+* Livecoin:
+    * Email support AT livecoin.net
+    * Twitter @livecoin_net
 * Poloniex: Twitter @Poloniex
 * Tux Exchange: Twitter @tuxexchange
 * WEX: Twitter @WEXnz
