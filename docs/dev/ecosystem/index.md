@@ -113,6 +113,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Exchanges
 
+* Altilly: Twitter @altillycom
 * Cryptopia: Twitter @Cryptopia_NZ
 * Poloniex: Twitter @Poloniex
 * Tux Exchange: Twitter @tuxexchange
