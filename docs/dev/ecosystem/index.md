@@ -44,6 +44,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 * PeerName: hxxps://peername.com/
     * Used by PeerName browser extension
+    * Email office AT peername.com
 * Blockchain-DNS: hxxps://blockchain-dns.info/
     * Used by Blockchain-DNS browser extension
     * API URL's: hxxps://github.com/B-DNS/Firefox/blob/0bcaa7da97463d5aef2c470402a978ea1a3508c4/common.js#L54-L64
@@ -55,6 +56,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
     * Seems to be operated by Calum McAlinden
 * ZeroName
     * Used by ZeroNet's default configuration
+    * Twitter @HelloZeroNet
 
 ## .bit Resolver Software (not services)
 
