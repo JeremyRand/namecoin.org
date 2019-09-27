@@ -67,14 +67,14 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-* [Electrum-NMC v3.3.6 for GNU/Linux, Windows, and macOS (Python tar.gz)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum-NMC-3.3.6.tar.gz)
-* [Electrum-NMC v3.3.6 for GNU/Linux, Windows, and macOS (Python zip)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum-NMC-3.3.6.zip)
-* [Electrum-NMC v3.3.6 for GNU/Linux (x86_64 AppImage)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/electrum-nmc-nc3.3.6-x86_64.AppImage)
-* [Electrum-NMC v3.3.6.1 for Windows (Standalone Executable)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6.1/electrum-nmc-nc3.3.6.1.exe)
-* [Electrum-NMC v3.3.6.1 for Windows (Portable version)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6.1/electrum-nmc-nc3.3.6.1-portable.exe)
-* [Electrum-NMC v3.3.6.1 for Windows (Installer)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6.1/electrum-nmc-nc3.3.6.1-setup.exe)
-* [Electrum-NMC v3.3.6 for Android](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/Electrum_NMC-3.3.6.0-debug.apk)
-* [Electrum-NMC v3.3.6 Signature (Release signed by Jeremy Rand)](https://beta.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.6/SHA256SUMS.asc)
+* [Electrum-NMC v3.3.7 for GNU/Linux, Windows, and macOS (Python tar.gz)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/Electrum-NMC-3.3.7.tar.gz)
+* [Electrum-NMC v3.3.7 for GNU/Linux, Windows, and macOS (Python zip)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/Electrum-NMC-3.3.7.zip)
+* [Electrum-NMC v3.3.7 for GNU/Linux (x86_64 AppImage)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/electrum-nmc-nc3.3.7-x86_64.AppImage)
+* [Electrum-NMC v3.3.7 for Windows (Standalone Executable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/electrum-nmc-nc3.3.7.exe)
+* [Electrum-NMC v3.3.7 for Windows (Portable version)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/electrum-nmc-nc3.3.7-portable.exe)
+* [Electrum-NMC v3.3.7 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/electrum-nmc-nc3.3.7-setup.exe)
+* [Electrum-NMC v3.3.7 for Android](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/Electrum_NMC-3.3.7.0-debug.apk)
+* [Electrum-NMC v3.3.7 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.7/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
