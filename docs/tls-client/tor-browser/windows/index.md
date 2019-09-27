@@ -6,4 +6,4 @@ application: "Tor Browser"
 
 {% assign os = "Windows" %}
 
-{% include tls_ncp11.md %}
+{% include tls_tor_browser.md %}

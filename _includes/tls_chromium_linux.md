@@ -11,3 +11,5 @@
 {% include tls_restrict_chromium_tool.md %}
 
 {% include tls_restrict_nss_tool.md %}
+
+{% include tls_dnssec_hsts_webext_system.md %}
