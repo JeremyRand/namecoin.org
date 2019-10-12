@@ -132,6 +132,8 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * DotBit.me: hxxps://dotbit.me/ (updates in ? time)
 * PeerName.com: hxxps://peername.com/ (updates in 7 days), email office AT peername.com
 * DomainCoin: hxxps://domaincoin.net/
+    * Contactable via WHOIS contact form.
+    * Jeremy has the email address of the DomainCoin operator.
 
 ## Analytics Providers
 
@@ -146,7 +148,13 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 
 ## Explorers
 
-...
+* Cyphrs Namecoin Explorer: hxxps://namecoin.cyphrs.com/
+    * Operated by Cyphrs.
+    * Jeremy has Ricochet and Matrix contact info for Cyphrs.
+* Namecha.in: hxxps://namecha.in/
+    * hxxps://namecha.in/contact
+* Bchain: hxxps://bchain.info/NMC/
+* Tokenview: hxxps://nmc.tokenview.com/
 
 ## ElectrumX Instance Operators
 
