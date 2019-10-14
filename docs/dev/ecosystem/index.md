@@ -146,6 +146,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * CoinMarketCap
 * Blockchain-DNS.info
 * BitInfoCharts
+    * Email bitinfocharts AT gmail.com
 * WorldCoinIndex
 * CoinGecko
 * CryptoCoinCharts
@@ -159,7 +160,10 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * Namecha.in: hxxps://namecha.in/
     * hxxps://namecha.in/contact
 * Bchain: hxxps://bchain.info/NMC/
+    * Email info AT bchain.info
+        * Confirmed as responsive.
 * Tokenview: hxxps://nmc.tokenview.com/
+    * Email info AT tokenview.com
 
 ## ElectrumX Instance Operators
 
