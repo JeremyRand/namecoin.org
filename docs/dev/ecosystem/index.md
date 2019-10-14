@@ -48,6 +48,7 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 * Blockchain-DNS: hxxps://blockchain-dns.info/
     * Used by Blockchain-DNS browser extension
     * API URL's: hxxps://github.com/B-DNS/Firefox/blob/0bcaa7da97463d5aef2c470402a978ea1a3508c4/common.js#L54-L64
+    * Jeremy has email contact info for the Blockchain-DNS operator.
 * Dotbit.me: hxxps://dotbit.me/
     * Used by Dotbit.me browser extension
     * Used by Dotbit.me web proxy ("Surf .Bit" tab of Dotbit.me website)
@@ -92,7 +93,11 @@ This is a list of known projects or service providers in the Namecoin ecosystem.
 ## Mining Pools
 
 * BTC.COM: hxxps://support.bitmain.com/hc/en-us/requests/new ; hxxps://twitter.com/btccom_official/ ; email support AT btc.com ; GitHub @YihaoPeng
-* BTC.TOP: hxxps://www.btc.top/en/ ; email support AT btc.top ; CEO is at hxxps://mobile.twitter.com/jiangzhuoer ; purported Twitter @top_btc (we were unable to verify this account's authenticity)
+* BTC.TOP: hxxps://www.btc.top/en/
+    * Email support AT btc.top
+    * CEO is at hxxps://mobile.twitter.com/jiangzhuoer
+    * Purported Twitter @top_btc (we were unable to verify this account's authenticity)
+    * Email handing AT btc.top
 * ViaBTC: hxxps://www.viabtc.com/contact ; email support AT viabtc.com ; Twitter @ViaBTC
 * slush: hxxps://support.slushpool.com/en-us/conversation/new/2
 * F2Pool: GitHub @wangchun; hxxps://www.f2pool.com/ ; email support AT f2pool.com ; Twitter @f2pool_official ; Twitter @satofishi
