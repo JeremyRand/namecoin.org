@@ -32,6 +32,6 @@
        sudo ln -s -T /usr/share/webext/dnssec-hsts "{{ page.webextsystem }}/dnssec-hsts"
    
 
-You may need to restart {{ page.application }}.  {% if enableaddonsdialog %}You may need to enable DNSSEC-HSTS in the {{ page.application }} Addons dialog.
+You may need to restart {{ page.application }}.  {% if enableaddonsdialog %}You may need to enable DNSSEC-HSTS in the {{ page.application }} Addons dialog.{% endif %}
 
 `.bit` domains that support HTTPS will now automatically redirect from HTTP to HTTPS in {{ page.application }}.
