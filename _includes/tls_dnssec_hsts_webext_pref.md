@@ -4,7 +4,7 @@
 
 1. Install [ncdns]({{site.baseurl}}docs/ncdns/).
 1. Download and extract the DNSSEC-HSTS Native Component from the [Beta Downloads]({{site.baseurl}}download/betas/#dnssec-hsts) page.
-1. Install the DNSSEC-HSTS Native Component like this{% if nativemessagingdirrelative %}(substitute your Tor Browser directory){% endif %}:
+1. Install the DNSSEC-HSTS Native Component like this{% if nativemessagingdirrelative %} (substitute your Tor Browser directory){% endif %}:
    
        sudo mkdir -p {{ nativemessagingdir }}/
        sudo cp ./org.namecoin.dnssec_hsts.json {{ nativemessagingdir }}/
