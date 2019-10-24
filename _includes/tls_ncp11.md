@@ -1,6 +1,5 @@
 {% if os == "Windows" %}
 {% assign rbmtarget = "ncdns-windows-x86_64" %}
-{% assign certdehydratedanerestapifile = "certdehydrate-dane-rest-api.exe" %}
 {% assign libncp11file = "ncp11.dll" %}
 {% assign libnssckbifile = "nssckbi.dll" %}
 {% assign libnssckbitargetfile = "nssckbi-namecoin-target.dll" %}
@@ -8,7 +7,6 @@
 
 {% if os == "GNU/Linux" %}
 {% assign rbmtarget = "ncdns-linux-x86_64" %}
-{% assign certdehydratedanerestapifile = "certdehydrate-dane-rest-api" %}
 {% assign libncp11file = "libncp11.so" %}
 {% assign libnssckbifile = "libnssckbi.so" %}
 {% assign libnssckbitargetfile = "libnssckbi-namecoin-target.so" %}
@@ -16,7 +14,6 @@
 
 {% if os == "macOS" %}
 {% assign rbmtarget = "ncdns-osx-x86_64" %}
-{% assign certdehydratedanerestapifile = "certdehydrate-dane-rest-api" %}
 {% assign libncp11file = "libncp11.dylib" %}
 {% assign libnssckbifile = "libnssckbi.dylib" %}
 {% assign libnssckbitargetfile = "libnssckbi-namecoin-target.dylib" %}
@@ -26,6 +23,8 @@
 {% assign tornetwork = "1" %}
 {% assign mozillapkix = "1" %}
 {% endif %}
+
+{% include tls_certdehydrate_dane_rest_api.md %}
 
 ## TLS Positive and Negative Overrides
 

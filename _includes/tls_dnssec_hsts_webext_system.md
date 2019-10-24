@@ -3,6 +3,8 @@
 {% assign nativemessaging = "1" %}
 {% endif %}
 
+{% include tls_certdehydrate_dane_rest_api.md %}
+
 ## Strict Transport Security
 
 {{ page.application }} for {{ os }} can be used with Namecoin for Strict Transport Security; this improves security against sslstrip-style attacks by forcing HTTPS to be used for `.bit` domains that support HTTPS.  Instructions:
