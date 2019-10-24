@@ -16,7 +16,7 @@
        sudo cp ./org.namecoin.dnssec_hsts.json {{ nativemessagingdir }}/
        sudo cp ./dnssec_hsts /usr/bin/
    
-{% else %}1. Download and extract certdehydrate-dane-rest-api from the [Beta Downloads]({{site.baseurl}}download/betas/) page.
+{% else %}1. Download and extract certdehydrate-dane-rest-api from the [Beta Downloads]({{site.baseurl}}download/betas/#certdehydrate-dane-rest-api) page.
 1. Create a text file called `certdehydrate-dane-rest-api.conf` in the same directory where `{{ certdehydratedanerestapifile }}` is, and fill it with the following contents (if ncdns is listening on a different IP or port, change the following accordingly):
    
        [certdehydrate-dane-rest-api]
