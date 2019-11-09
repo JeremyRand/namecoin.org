@@ -38,6 +38,16 @@ Decentralized exchanges offer better security and privacy than centralized excha
 
 DNS seeds help Namecoin users find peers.  You can run a DNS seed via [dnsseeder](https://github.com/gombadi/dnsseeder); ask us for details on Matrix or IRC.
 
+## Run an ElectrumX server
+
+ElectrumX servers help Electrum-NMC users synchronize the blockchain more quickly and securely.  You can run one by installing [ElectrumX](https://github.com/kyuupichan/electrumx).  Please consider running ElectrumX on as many of the following networks as you can:
+
+* Raw IPv4 address
+* Raw IPv6 address
+* Domain name pointing to IPv4 address
+* Domain name pointing to IPv6 address
+* Tor onion service
+
 ## Merge-mine Namecoin
 
 Do you mine Bitcoin at a mining pool?  Consider using a Bitcoin mining pool that also merge-mines Namecoin.  You can help keep Namecoin mining decentralized by using the lowest-hashrate pool available that still meets your requirements, or by using [P2Pool](https://github.com/p2pool/p2pool) or solo-mining.
