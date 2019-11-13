@@ -84,8 +84,7 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 * Hardware wallets other than Trezor and Safe-T mini are untested and probably don't work.
 * Name transactions are not yet supported for hardware wallets.
 * The Android/Linux version doesn't yet have most of the Namecoin-specific GUI features.
-* AppImage binaries have not yet been tested.
-* macOS binaries are not yet available.
+* macOS binaries are not yet available (but the Python binaries should work on macOS).
 * Build reproducibility is not yet tested.
 
 ## ncdns
