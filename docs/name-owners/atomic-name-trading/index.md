@@ -189,7 +189,7 @@ $ namecoin-cli signrawtransactionwithwallet <large hex string>
 }
 ```
 
-Finally, Bob can now again check the signed transaction with "decoderawtransaction", although this is not strictly necessary. He can now pass the partially-signed transaction (the hex string above) to Sally. 
+Finally, Bob can now again check the signed transaction with `decoderawtransaction`, although this is not strictly necessary. He can now pass the partially-signed transaction (the hex string above) to Sally. 
 
 ## Sally Accepts the Offer
 
