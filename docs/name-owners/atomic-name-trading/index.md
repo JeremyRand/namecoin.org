@@ -97,8 +97,8 @@ $ namecoin-cli createrawtransaction "cat tx.in" "cat tx.out" "cat tx.op"
 
 Now Bob can check that everything is fine: 
 
-<pre>
-<code>
+<pre markdown="block">
+<code markdown="span">
 $ namecoin-cli decoderawtransaction <large hex string>
 {
   "txid" : "88180e13968cea5ea611fcb34d26b5391bdc9118f8a35fad2495b07be9e88c7b",
@@ -112,7 +112,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "asm" : "",
         "hex" : ""
       },
-      "value" : <strong>974.90000000</strong>,
+      "value" : **974.90000000**,
       "sequence" : 4294967295
     },
     {
@@ -128,7 +128,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
   ],
   "vout" : [
     {
-      "value" : <strong>10.00000000</strong>,
+      "value" : **10.00000000**,
       "n" : 0,
       "scriptPubKey" : {
         "asm" : "OP_DUP OP_HASH160 3c4b7d4b93bc6194087bbbc422fd6cd1a40f820e OP_EQUALVERIFY OP_CHECKSIG",
@@ -136,12 +136,12 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "<strong>mm1mGfLEMjFPyGsbkcoYiN6yiPcBztK6Dw</strong>"
+          "**mm1mGfLEMjFPyGsbkcoYiN6yiPcBztK6Dw**"
         ]
       }
     },
     {
-      "value" : <strong>964.89500000</strong>,
+      "value" : **964.89500000**,
       "n" : 1,
       "scriptPubKey" : {
         "asm" : "OP_DUP OP_HASH160 ab96c9bfb7c55de825be7f12bd38dd25b62be02b OP_EQUALVERIFY OP_CHECKSIG",
@@ -149,7 +149,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "<strong>mwAEUoA3NzSmASyWxrTK1mhsd4pFvruoXj</strong>"
+          "**mwAEUoA3NzSmASyWxrTK1mhsd4pFvruoXj**"
         ]
       }
     },
@@ -167,12 +167,12 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "<strong>mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR</strong>"
+          "**mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR**"
         ]
       }
     }
   ],
-  "fees" : <strong>0.00500000</strong>
+  "fees" : **0.00500000**
 }
 </code>
 </pre>
