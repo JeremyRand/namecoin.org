@@ -271,7 +271,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
 }
 ```
 
-It is also crucial to check which inputs Bob has prepared for her to sign, so that she doesn't end up sending something she doesn't intend to send. I'm not completely sure what would be the easiest and safest way to ensure that the transaction from Bob is not malicious. A possible way to guard against this could be to look up the address holding the sold name, export its private key, and use "signrawtransactionwithwallet" with this private key as optional argument.
+It is also crucial to check which inputs Bob has prepared for her to sign, so that she doesn't end up sending something she doesn't intend to send. I'm not completely sure what would be the easiest and safest way to ensure that the transaction from Bob is not malicious. A possible way to guard against this could be to look up the address holding the sold name, export its private key, and use `signrawtransactionwithwallet` with this private key as optional argument.
 
 When everything is fine, Sally can sign her parts of the input: 
 
