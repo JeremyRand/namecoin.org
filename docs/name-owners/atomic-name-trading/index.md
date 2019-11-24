@@ -111,7 +111,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "asm" : "",
         "hex" : ""
       },
-      "value" : **974.90000000**,
+      "value" : <strong>974.90000000</strong>,
       "sequence" : 4294967295
     },
     {
@@ -127,7 +127,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
   ],
   "vout" : [
     {
-      "value" : **10.00000000**,
+      "value" : <strong>10.00000000</strong>,
       "n" : 0,
       "scriptPubKey" : {
         "asm" : "OP_DUP OP_HASH160 3c4b7d4b93bc6194087bbbc422fd6cd1a40f820e OP_EQUALVERIFY OP_CHECKSIG",
@@ -135,12 +135,12 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "**mm1mGfLEMjFPyGsbkcoYiN6yiPcBztK6Dw**"
+          "<strong>mm1mGfLEMjFPyGsbkcoYiN6yiPcBztK6Dw</strong>"
         ]
       }
     },
     {
-      "value" : **964.89500000**,
+      "value" : <strong>964.89500000</strong>,
       "n" : 1,
       "scriptPubKey" : {
         "asm" : "OP_DUP OP_HASH160 ab96c9bfb7c55de825be7f12bd38dd25b62be02b OP_EQUALVERIFY OP_CHECKSIG",
@@ -148,7 +148,7 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "**mwAEUoA3NzSmASyWxrTK1mhsd4pFvruoXj**"
+          "<strong>mwAEUoA3NzSmASyWxrTK1mhsd4pFvruoXj</strong>"
         ]
       }
     },
@@ -166,12 +166,12 @@ $ namecoin-cli decoderawtransaction <large hex string>
         "reqSigs" : 1,
         "type" : "pubkeyhash",
         "addresses" : [
-          "**mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR**"
+          "<strong>mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR</strong>"
         ]
       }
     }
   ],
-  "fees" : **0.00500000**
+  "fees" : <strong>0.00500000</strong>
 }
 ```
 
