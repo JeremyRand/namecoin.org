@@ -7,7 +7,7 @@ title: Atomic Name Trading
 
 Because both currency transactions and name operations share a common technical backing (the Namecoin blockchain), it is possible to construct transactions that transfer both namecoins and a name *atomically*. This means that it is guaranteed that either both transfers succeed or both transfers are not executed at all. A potentially very useful application of this technique is trading of names for namecoins, since this makes it possible to sell or buy a name in a completely trustless manner without the necessity to use escrow.
 
-At the moment, it is possible to make such transfers only using RPC commands to namecoind directly. But in the future, hopefully an easy-to-use UI will be developed that handles all the technicalities. On this page, the basic work-flow will be described with RPC commands. We will assume as an example that Bob wants to buy `d/my-cool-domain` from Sally for 10 NMC. The work-flow for this transaction is shown below on the testnet. 
+At the moment, it is possible to make such transfers only using RPC commands to Namecoin Core directly. But in the future, hopefully an easy-to-use UI will be developed that handles all the technicalities. On this page, the basic work-flow will be described with RPC commands. We will assume as an example that Bob wants to buy `d/my-cool-domain` from Sally for 10 NMC. The work-flow for this transaction is shown below on the testnet. 
 
 ## Bob Prepares a Buy Offer
 
