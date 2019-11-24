@@ -30,7 +30,7 @@ To construct the transaction, Bob needs to use the `createrawtransaction` RPC co
 
 * Currency inputs: These will be provided by Bob to pay the 10 NMC to Sally as well as the transaction fee.
 * Currency outputs: 10 NMC to Sally's address and potential change back to Bob.
-* A name_update operation to be performed.
+* A `name_update` operation to be performed.
 
 In this example, these three parts will be written in seperate files for simplicity, and then these files will be used in the final RPC command. Of course, it is also possible to write everything directly onto the command line. 
 
@@ -75,7 +75,7 @@ Required currency outputs are the price paid to Sally as well as the change paid
 
 ### The Name Operation
 
-The last part of the transaction that needs to be created is the name operation. It should be a name_update of `d/my-cool-domain` to some value (can be chosen by Bob already at this stage, but it usually isn't too important for a name trade) and to Bob's address `mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR`. The corresponding data to put in the last file `tx.op` is this: 
+The last part of the transaction that needs to be created is the name operation. It should be a `name_update` of `d/my-cool-domain` to some value (can be chosen by Bob already at this stage, but it usually isn't too important for a name trade) and to Bob's address `mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR`. The corresponding data to put in the last file `tx.op` is this: 
 
 ```
 {
