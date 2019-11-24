@@ -97,7 +97,8 @@ $ namecoin-cli createrawtransaction "cat tx.in" "cat tx.out" "cat tx.op"
 
 Now Bob can check that everything is fine: 
 
-```
+<pre>
+<code>
 $ namecoin-cli decoderawtransaction <large hex string>
 {
   "txid" : "88180e13968cea5ea611fcb34d26b5391bdc9118f8a35fad2495b07be9e88c7b",
@@ -173,7 +174,8 @@ $ namecoin-cli decoderawtransaction <large hex string>
   ],
   "fees" : <strong>0.00500000</strong>
 }
-```
+</code>
+</pre>
 
 The most important pieces to check are highlighted above, but they are obviously the addresses as well as the amounts to be sent. It is also a good idea to check the calculated fees to make sure there's no typo in the amounts resulting in exorbitantly high fees.
 
