@@ -158,12 +158,14 @@ Namecoin users will probably want to use `cross_sign_name_constraint_tool` to di
 DNSSEC-HSTS enforces TLS for Namecoin websites that support TLS, which protects against sslstrip attacks.  Firefox users need both the WebExtensions Component and the Native Component.  Chromium users need the WebExtensions component and certdehydrate-dane-rest-api (see above), but not the Native Component.
 
 * [DNSSEC-HSTS WebExtensions Component v0.0.1 for Firefox](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-0.0.1.xpi)
+* [DNSSEC-HSTS WebExtensions Component v0.0.2 for Chrome](https://www.namecoin.org/files/dnssec-hsts/dnssec-hsts-0.0.2/dnssec-hsts-0.0.2-crx.tar.xz)
 * [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-linux-x86_64.tar.gz)
 * [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-linux-i686.tar.gz)
 * [DNSSEC-HSTS Native Component v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-windows-x86_64.tar.gz)
 * [DNSSEC-HSTS Native Component v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-windows-i686.tar.gz)
 * [DNSSEC-HSTS Native Component v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-osx-x86_64.tar.gz)
 * [DNSSEC-HSTS v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
+* [DNSSEC-HSTS v0.0.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/dnssec-hsts/dnssec-hsts-0.0.2/SHA256SUMS.asc)
 * [DNSSEC-HSTS rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [DNSSEC-HSTS WebExtensions Component Source Code](https://github.com/namecoin/dnssec-hsts)
 * [DNSSEC-HSTS Native Component Source Code](https://github.com/namecoin/dnssec-hsts-native)
