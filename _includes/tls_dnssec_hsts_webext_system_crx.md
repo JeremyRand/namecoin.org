@@ -6,7 +6,7 @@
 
 1. Install [ncdns]({{site.baseurl}}docs/ncdns/).
 1. Download and extract certdehydrate-dane-rest-api from the [Beta Downloads]({{site.baseurl}}download/betas/#certdehydrate-dane-rest-api) page.
-1. Create a text file called `certdehydrate-dane-rest-api.conf` in the same directory where `{{ certdehydratedanerestapifile }}` is, and fill it with the following contents (if ncdns is listening on a different IP or port, change the following accordingly):
+1. Create a text file called `certdehydrate_dane_rest_api.conf` in the same directory where `{{ certdehydratedanerestapifile }}` is, and fill it with the following contents (if ncdns is listening on a different IP or port, change the following accordingly):
    
        [certdehydrate-dane-rest-api]
        nameserver="127.0.0.1"
