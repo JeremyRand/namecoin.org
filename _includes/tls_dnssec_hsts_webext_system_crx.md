@@ -19,7 +19,9 @@
    
        sudo mkdir /usr/local/namecoin/ /usr/share/google-chrome/extensions/
        sudo cp ./dnssec-hsts*.crx /usr/local/namecoin/dnssec-hsts.crx
+       sudo chmod +r /usr/local/namecoin/dnssec-hsts.crx
        sudo cp ./ogimlildljgffpifafnhjggflenjhljf.json /usr/share/google-chrome/extensions/
+       sudo chmod +r /usr/share/google-chrome/extensions/ogimlildljgffpifafnhjggflenjhljf.json
    
 
 You may need to restart {{ page.application }}.
