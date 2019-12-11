@@ -10,14 +10,14 @@ ncdns includes the tool `generate_nmc_cert`.  This tool can be used to create a 
 Example usage:
 
 ~~~
-$ ./generate_nmc_cert -ecdsa-curve P256 -host www.example.bit -start-date "Jan 1 00:00:00 2017" -end-date "Jan 1 00:00:00 2020"
-2017/08/10 20:03:59 written cert.pem
-2017/08/10 20:03:59 written key.pem
-2017/08/10 20:03:59 Your Namecoin cert is: {"d8":[1, "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0bhYUDX2X+wpDs+Kdxfyz2goO7OygMZNZJStfBCOeJCA/LZnOvK2tkjIyMR+6cpG0o+GM74ALtwOdzdCBjL61w==",4944096,5259456,10,"MEUCIEdBFF9QqgIi64BM4XY1G3Fd9M2MgGdcYHsJzANhcxwwAiEAx/IqQR10fPia/d13z9EwHAgbilBM3kZCsW3LxnC3qqc="]}
-2017/08/10 20:03:59 SUCCESS: The cert rehydrated to an identical form.  Place the generated files in your HTTPS server, and place the above JSON in the "tls" field for your Namecoin name.
+$ ./generate_nmc_cert -host www.example.bit
+2019/12/11 06:47:41 written cert.pem
+2019/12/11 06:47:41 written key.pem
+2019/12/11 06:47:41 Your Namecoin cert is: {"d8":[1,"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOcD7/hnngrlW3XrTviUjXHgbvraj3mw7Wa872Iti6Dp0Jrb9P6ZsINAZSU4mucH37zX7/pscyb6UBO08SqDP+w==",5253561,5358681,10,"MEUCIQDQF/IAHUv1UqGTGrWMvu/Tfj6PiNRBb3eTerpyZmTJjAIgeEc3a8yyNY09PrDSGkEOh0T6ZmVqbesqnZVLYszEnWI="]}
+2019/12/11 06:47:41 SUCCESS: The cert rehydrated to an identical form.  Place the generated files in your HTTPS server, and place the above JSON in the "tls" field for your Namecoin name.
 ~~~
 
-(Users who know what they are doing can choose other ECDSA curves; use the `--help` option to see the list of available curves.)
+By default, certificates use the P256 curve and are valid from generation time for approximately 1 year.  Users who know what they are doing can choose different ECDSA curves or validity periods; use the `-help` option to see the list of available options.
 
 The JSON object displayed should be enclosed in an array, and placed in the `tls` field for the domain where you want the TLSA record to appear.  Usually, this will be the `_443._tcp` subdomain of the domain name that points to the website.  An example of a typical configuration is:
 
