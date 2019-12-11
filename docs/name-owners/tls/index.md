@@ -51,7 +51,7 @@ Remember that if you have an `ns` record above the `tls` record, the `ns` record
 
 ~~~
 {
-    "ns": "ns21.cloudns.net",
+    "ns": "ns21.cloudns.net.",
     "map": {
         "_tcp": {
             "map": {
