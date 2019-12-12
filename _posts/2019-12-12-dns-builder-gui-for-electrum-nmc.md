@@ -31,22 +31,22 @@ So far, the following features work:
     * SSH fingerprints
     * TXT records
     * SRV records
+    * Domain data imports
 * Parsing subdomains (recursively)
+* Creating and sorting subdomains
 * Input validation (only verifying that integer fields are valid integers, and no real-time feedback)
 * Repairing the deprecated forms of Tor and ZeroNet records
+* Size optimizations, e.g. setting `"ip6"` to a string instead of an array containing one string
 
 The following features still need implementation:
 
 * Creating and parsing the following record types:
     * WHOIS info
     * DNAME subtree aliases (not particularly high priority because it's a footgun)
-    * Domain data imports
-* Creating and sorting subdomains
-* Editing existing records
+* Editing existing records (this is partially implemented)
 * Deleting existing records
 * More input validation (the sharp-eyed among you probably noticed that it allowed me to enter `blah.onion` as a Tor onion service despite that string being invalid), with real-time feedback
 * More friendly guidance for some parameters (e.g. the "Cert. usage", "Selector", and "Matching Type" parameters in the TLS tab would probably be more suitable as a drop-down list or combo box)
-* Size optimizations, e.g. setting `"ip6"` to a string instead of an array containing one string (not particularly high priority because Namecoin blocks are quite small right now, and there are more productive optimizations possible via changing the spec)
 
 Hopefully this work will improve the UX so that Namecoin domain owners aren't expected to handle JSON manually.
 
