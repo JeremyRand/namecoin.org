@@ -9,26 +9,24 @@ title: Download
 
 * Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
 * **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
-* Name lookup: allows looking up names (use in combination with ncdns or NMControl to browse .bit domains).
+* Name lookup: allows looking up names (use in combination with [ncdns]({{site.baseurl}}docs/ncdns) or NMControl to browse `.bit` domains).
 * Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
 * Recommended for miners.
 * Recommended for users who don't own any names.
 * Recommended for users who are comfortable registering, updating, and renewing their names via the command-line.
 
-Current release: 0.18.0.
+Current release: 0.19.0.1.
 
-* [Namecoin Core 0.18.0 (GNU/Linux RISC-V 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-riscv64-linux-gnu.tar.gz)
-* [Namecoin Core 0.18.0 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.18.0 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.18.0 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.18.0 (GNU/Linux x86 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-i686-pc-linux-gnu.tar.gz)
-* [Namecoin Core 0.18.0 (Windows 64-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-win64-setup-unsigned.exe)
-* [Namecoin Core 0.18.0 (Windows 64-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-win64.zip)
-* [Namecoin Core 0.18.0 (Windows 32-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-win32-setup-unsigned.exe)
-* [Namecoin Core 0.18.0 (Windows 32-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-win32.zip)
-* [Namecoin Core 0.18.0 (macOS dmg)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-osx-unsigned.dmg)
-* [Namecoin Core 0.18.0 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0-osx64.tar.gz)
-* [Namecoin Core 0.18.0 (Source code tarball)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.18.0/namecoin-0.18.0.tar.gz)
+* [Namecoin Core 0.19.0.1 (GNU/Linux RISC-V 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-riscv64-linux-gnu.tar.gz)
+* [Namecoin Core 0.19.0.1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.19.0.1 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.19.0.1 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.19.0.1 (GNU/Linux x86 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-i686-pc-linux-gnu.tar.gz)
+* [Namecoin Core 0.19.0.1 (Windows 64-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-win64-setup-unsigned.exe)
+* [Namecoin Core 0.19.0.1 (Windows 64-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-win64.zip)
+* [Namecoin Core 0.19.0.1 (macOS dmg)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-osx-unsigned.dmg)
+* [Namecoin Core 0.19.0.1 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-osx64.tar.gz)
+* [Namecoin Core 0.19.0.1 (Source code tarball)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1.tar.gz)
 * [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
 * [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
 
@@ -83,7 +81,7 @@ Current release: 0.13.99-name-tab-beta1.
 
 ## Namecoin Legacy Client
 
-* Use this instead of Namecoin Core if Namecoin Core doesn't work or if you need OS X binaries that include the name management tab.
+* Use this instead of Namecoin Core if Namecoin Core doesn't work or if you need macOS binaries that include the name management tab.
 * **Not suitable for mining or development.**
 * **Always wait for six confirmations.**
 * **Backup your `wallet.dat` before enabling wallet encryption.**
@@ -103,9 +101,9 @@ Download [v0.3.80 installer](https://namecoin.org/files/Namecoin_v0.3.80_setup.e
 
 <div class="col-sm-4">
 
-### Linux Packages
+### GNU/Linux Packages
 
-Linux packages provided by OBS.<br>
+GNU/Linux packages provided by OBS.<br>
 [Command line client (namecoind)](https://software.opensuse.org/download.html?project=home%3Ap_conrad%3Acoins&amp;package=namecoin).<br>
 [Graphical interface (Namecoin-Qt)](https://software.opensuse.org/download.html?project=home%3Ap_conrad%3Acoins&amp;package=namecoin-gui).
 
@@ -113,7 +111,7 @@ Linux packages provided by OBS.<br>
 
 <div class="col-sm-4">
 
-### Mac OS X
+### macOS
 
 Download [v0.3.80 Namecoin-Qt](https://namecoin.org/files/Namecoin-Qt.app-0.3.80-a00c33d.zip).<br>
 [Release information](https://forum.namecoin.org/viewtopic.php?f=8&t=2235).
@@ -139,7 +137,7 @@ Download [v0.8.1 installer](https://namecoin.org/files/NMControl_v0.8.1_setup.ex
 
 <div class="col-sm-4">
 
-### Linux and Mac OS X
+### GNU/Linux and macOS
 
 With Python 2.7 installed you can run nmcontrol.py directly from [source](https://github.com/namecoin/nmcontrol). If you need help ask on Github or on the [forum](https://forum.namecoin.org/viewtopic.php?f=8&t=2402).
 

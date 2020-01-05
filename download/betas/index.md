@@ -38,13 +38,13 @@ As usual, it is a good idea to verify the hashes and signatures of these downloa
 
 ## ConsensusJ-Namecoin
 
-ConsensusJ-Namecoin is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing `.bit` domains with ncdns).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
+ConsensusJ-Namecoin is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing `.bit` domains with [ncdns]({{site.baseurl}}docs/ncdns)).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
 
 You need to have Java installed:
 
 * If you're using GNU/Linux, use your package manager.
 * If you're using Windows, [download it from the Oracle website](https://www.java.com/en/download/manual.jsp).  **Make sure you right-click the `.exe` installer, click `Properties`, and click `Digital Signatures`.  It should be signed by `Oracle America, Inc.`  If it is not, do not install it.**
-* We're not sure about OS X.  If anyone can contribute instructions for OS X, let us know.
+* We're not sure about macOS.  If anyone can contribute instructions for macOS, let us know.
 
 **If you're using Windows, you will need to install the [Microsoft Visual C++ 2010 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999).**
 
