@@ -39,7 +39,7 @@ You have to renew or update a name every 35,999 blocks at the latest (between 20
 
 ### How do I browse a .bit domain?
 
-See [Browsing .bit Websites](https://bit.namecoin.org/browse.html).
+See [Browsing .bit Websites]({{site.baseurl}}dot-bit/browsing-instructions/).
 
 You can also use [ncdns]({{site.baseurl}}docs/ncdns) (experimental).  If you have the [ZeroNet](https://zeronet.io/) software installed, you can visit ZeroNet-enabled .bit domains.
 

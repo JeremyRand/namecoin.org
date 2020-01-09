@@ -37,7 +37,7 @@ What does Namecoin do under the hood?
 * Like bitcoins, Namecoin names are difficult to censor or seize.
 * Lookups do not generate network traffic (improves privacy).
 
-**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS](https://bit.namecoin.org).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
+**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS]({{site.baseurl}}dot-bit/).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
 
 </div>
 </div>
@@ -45,7 +45,7 @@ What does Namecoin do under the hood?
 ## More Information
 
 * [Namecoin Identities](https://nameid.org)
-* [.bit DNS](https://bit.namecoin.org/)
+* [.bit DNS]({{site.baseurl}}dot-bit/)
 
 ## News
 
