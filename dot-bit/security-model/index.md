@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Dot-Bit Security / Threat Model
+redirect_from:
+  - /dot-bit/security.html
 ---
 
 {::options parse_block_html="true" /}
