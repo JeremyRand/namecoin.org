@@ -13,6 +13,16 @@
 	    <a href="https://github.com/namecoin/namecoin.org/blob/master/{{page.path}}"><i>Submit corrections or improvements to this page</i></a>
         </div>
 
+        <div class="container-fluid" style="float: left; text-align: center; padding-top: 0px; color: #FFF;">
+            <p>Thanks to our funders:</p>
+            {% assign shuffled_sponsors = site.data.sponsors | sample: 5 %}
+            <ul class="list-inline">
+                {% for i in shuffled_sponsors %}
+                    <li style="padding-left: 10px; padding-right: 10px;">{{ i }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
         <script src="{{ "js/jquery-1.11.0.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
         <script src="{{ "js/script.js" | prepend: site.baseurl }}"></script>
