@@ -7,7 +7,7 @@ title: Presentations
 
 ## 36C3
 
-[Videos and slides are here.]({{site.baseurl}}2020/01/05/36c3-summary.html)
+[Videos and slides are here.]({{site.baseurl}}2020/01/11/36c3-summary.html)
 
 ## 35C3
 
