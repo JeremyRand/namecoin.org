@@ -24,7 +24,10 @@ h2 {
 
 body > footer {
     background: #292e3c url({{ "images/fancy.jpg" | prepend: site.baseurl }}) center bottom;
-    height: 99px;
+    /* This height makes the background fully cover the footer in Tor Browser
+     * Desktop, even if zoomed in or out a few times
+     */
+    height: 11em;
 }
 
 body > footer > .container, body > footer > .container-fluid {
