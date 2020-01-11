@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Namecoin 36C3 Workshop: Namecoin in Tor Browser Demo
+title: "Namecoin 36C3 Workshop: Namecoin in Tor Browser Demo"
 redirect_from:
   - /36c3-workshop/
 ---
