@@ -5,9 +5,13 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## 36C3
+
+[Videos and slides are here.]({{site.baseurl}}2020/01/11/36c3-summary.html)
+
 ## 35C3
 
-[Slides are here.]({{site.baseurl}}2019/05/08/35c3-summary.html)  (Video coming soon....)
+[Slides are here.]({{site.baseurl}}2019/05/08/35c3-summary.html)
 
 ## Internet Governance Forum 2018
 
