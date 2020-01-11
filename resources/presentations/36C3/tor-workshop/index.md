@@ -15,19 +15,19 @@ You'll need a GNU/Linux system to run Namecoin in Tor Browser.  Either bare-meta
 
 ## Download Tor Browser
 
-If you don't already have Tor Browser, you'll need to download and install it.  https://www.torproject.org/download/
+If you don't already have Tor Browser, you'll need to download and install it.  [https://www.torproject.org/download/](https://www.torproject.org/download/)
 
 ## Download Tor Browser Nightly
 
-Tor Browser Nightly builds are available via an onion service managed by boklm from Tor: http://f4amtbsowhix7rrf.onion/tor-browser-builds/
+Tor Browser Nightly builds are available via an onion service managed by boklm from Tor: [http://f4amtbsowhix7rrf.onion/tor-browser-builds/](http://f4amtbsowhix7rrf.onion/tor-browser-builds/)
 
-Proof of authenticity (if you trust public TLS CA's and DNS): https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#NightlyBuilds
+Proof of authenticity (if you trust public TLS CA's and DNS): [https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#NightlyBuilds](https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking#NightlyBuilds)
 
 Download and install the latest Tor Browser Nightly release.  You want either `nightly-linux-i686` or `nightly-linux-x86_64` depending on whether your GNU/Linux machine is 32-bit or 64-bit.  You want the `.tar.xz` archive, not the `.mar` archive.
 
 ## Run Tor Browser Nightly
 
-Verify that you can visit regular websites in Tor Browser Nightly, e.g. https://www.torproject.org/
+Verify that you can visit regular websites in Tor Browser Nightly, e.g. [https://www.torproject.org/](https://www.torproject.org/)
 
 Then close Tor Browser Nightly.
 
@@ -65,11 +65,11 @@ If you don't know how to set environment variables, there are (at least) 3 ways 
 
 All of the following Namecoin onion services should work in Tor Browser Nightly:
 
-* http://federalistpapers.bit/
-* http://onionshare.bit/
-* http://riseuptools.bit/
-* http://submit.theintercept.bit/
-* http://submit.wikileaks.bit/
+* [http://federalistpapers.bit/](http://federalistpapers.bit/)
+* [http://onionshare.bit/](http://onionshare.bit/)
+* [http://riseuptools.bit/](http://riseuptools.bit/)
+* [http://submit.theintercept.bit/](http://submit.theintercept.bit/)
+* [http://submit.wikileaks.bit/](http://submit.wikileaks.bit/)
 
 Try viewing the circuit display in Tor Browser while on a Namecoin site.  It will show the real `.onion` domain next to the `.bit` domain.
 
