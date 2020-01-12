@@ -97,20 +97,18 @@ The ncdns Windows installer also automatically installs and configures a Namecoi
 
 **Before running the ncdns Windows installer, you will need to install the following:**
 
-* [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 * [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=53587)
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
 
-* [ncdns v0.0.9.2 GNU/Linux (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-linux-x86_64.tar.gz)
-* [ncdns v0.0.9.2 GNU/Linux (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-linux-i686.tar.gz)
-* [ncdns v0.0.9.2 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-windows-x86_64-install.exe)
-* [ncdns v0.0.9.2 Windows (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-windows-x86_64.tar.gz)
-* [ncdns v0.0.9.2 Windows (32-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-windows-i686-install.exe)
-* [ncdns v0.0.9.2 Windows (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-windows-i686.tar.gz)
-* [ncdns v0.0.9.2 macOS (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2-osx-x86_64.tar.gz)
-* [ncdns v0.0.9.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
-* [ncdns v0.0.9 plain binaries for GNU/Linux (non-x86), DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, and Solaris (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.9)
+* [ncdns v0.0.10.3 GNU/Linux (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-x86_64.tar.gz)
+* [ncdns v0.0.10.3 GNU/Linux (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-i686.tar.gz)
+* [ncdns v0.0.10.3 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64-install.exe)
+* [ncdns v0.0.10.3 Windows (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64.tar.gz)
+* [ncdns v0.0.10.3 Windows (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-i686.tar.gz)
+* [ncdns v0.0.10.3 macOS (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-osx-x86_64.tar.gz)
+* [ncdns v0.0.10.3 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
+* [ncdns v0.0.10.3 plain binaries for GNU/Linux (non-x86), DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, and Solaris (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.10.3)
 * [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
@@ -123,12 +121,12 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 certdehydrate-dane-rest-api is a dependency of ncp11 and the Chromium version of DNSSEC-HSTS.
 
-* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/certdehydrate-dane-rest-api-0.0.1-linux-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/certdehydrate-dane-rest-api-0.0.1-linux-i686.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/certdehydrate-dane-rest-api-0.0.1-windows-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/certdehydrate-dane-rest-api-0.0.1-windows-i686.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/certdehydrate-dane-rest-api-0.0.1-osx-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
+* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-x86_64.tar.gz)
+* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-i686.tar.gz)
+* [certdehydrate-dane-rest-api v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-windows-x86_64.tar.gz)
+* [certdehydrate-dane-rest-api v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-windows-i686.tar.gz)
+* [certdehydrate-dane-rest-api v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-osx-x86_64.tar.gz)
+* [certdehydrate-dane-rest-api v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [certdehydrate-dane-rest-api rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [certdehydrate-dane-rest-api Source Code](https://github.com/namecoin/certdehydrate-dane-rest-api)
 
@@ -157,15 +155,15 @@ Namecoin users will probably want to use `cross_sign_name_constraint_tool` to di
 
 DNSSEC-HSTS enforces TLS for Namecoin websites that support TLS, which protects against sslstrip attacks.  Firefox users need both the WebExtensions Component and the Native Component.  Chromium users need the WebExtensions component and certdehydrate-dane-rest-api (see above), but not the Native Component.
 
-* [DNSSEC-HSTS WebExtensions Component v0.0.1 for Firefox](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-0.0.1.xpi)
-* [DNSSEC-HSTS WebExtensions Component v0.0.2 for Chrome](https://www.namecoin.org/files/dnssec-hsts/dnssec-hsts-0.0.2/dnssec-hsts-0.0.2-crx.tar.xz)
-* [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-linux-x86_64.tar.gz)
-* [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-linux-i686.tar.gz)
-* [DNSSEC-HSTS Native Component v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-windows-x86_64.tar.gz)
-* [DNSSEC-HSTS Native Component v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-windows-i686.tar.gz)
-* [DNSSEC-HSTS Native Component v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/dnssec-hsts-native-0.0.1-osx-x86_64.tar.gz)
-* [DNSSEC-HSTS v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
-* [DNSSEC-HSTS v0.0.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/dnssec-hsts/dnssec-hsts-0.0.2/SHA256SUMS.asc)
+* [DNSSEC-HSTS WebExtensions Component v0.0.2 for Firefox](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-0.0.2-firefox.xpi)
+* [DNSSEC-HSTS WebExtensions Component v0.0.2 for Chromium/Chrome (Unpacked)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-0.0.2-chromium.zip)
+* [DNSSEC-HSTS WebExtensions Component v0.0.2 for Chromium/Chrome (CRX)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-0.0.2-chromium-crx.tar.xz)
+* [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-native-0.0.1-linux-x86_64.tar.gz)
+* [DNSSEC-HSTS Native Component v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-native-0.0.1-linux-i686.tar.gz)
+* [DNSSEC-HSTS Native Component v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-native-0.0.1-windows-x86_64.tar.gz)
+* [DNSSEC-HSTS Native Component v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-native-0.0.1-windows-i686.tar.gz)
+* [DNSSEC-HSTS Native Component v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/dnssec-hsts-native-0.0.1-osx-x86_64.tar.gz)
+* [DNSSEC-HSTS v0.0.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [DNSSEC-HSTS rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [DNSSEC-HSTS WebExtensions Component Source Code](https://github.com/namecoin/dnssec-hsts)
 * [DNSSEC-HSTS Native Component Source Code](https://github.com/namecoin/dnssec-hsts-native)
@@ -178,12 +176,12 @@ DNSSEC-HSTS enforces TLS for Namecoin websites that support TLS, which protects 
 
 ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Tor Browser.
 
-* [ncp11 v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncp11-0.0.1-linux-x86_64.tar.gz)
-* [ncp11 v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncp11-0.0.1-linux-i686.tar.gz)
-* [ncp11 v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncp11-0.0.1-windows-x86_64.tar.gz)
-* [ncp11 v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncp11-0.0.1-windows-i686.tar.gz)
-* [ncp11 v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncp11-0.0.1-osx-x86_64.tar.gz)
-* [ncp11 v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
+* [ncp11 v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-linux-x86_64.tar.gz)
+* [ncp11 v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-linux-i686.tar.gz)
+* [ncp11 v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-windows-x86_64.tar.gz)
+* [ncp11 v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-windows-i686.tar.gz)
+* [ncp11 v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-osx-x86_64.tar.gz)
+* [ncp11 v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [ncp11 rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [ncp11 Source Code](https://github.com/namecoin/ncp11)
 
@@ -200,7 +198,7 @@ This tool applies a name constraint exclusion to an NSS sqlite database for all 
 
 Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all CA's that are on their system by default from signing `.bit` certificates.  For CA's that you manually imported yourself, you probably instead want `cross_sign_name_constraint_tool` (see above).
 
-* [tlsrestrict_nss_tool v0.0.3 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.3)
+* [tlsrestrict_nss_tool v0.0.4 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.4)
 * [tlsrestrict_nss_tool Source Code at GitHub.](https://github.com/namecoin/tlsrestrictnss)
 
 ### Known Issues
@@ -235,12 +233,12 @@ ncprop279 enables Namecoin naming (but not DNS naming) to be used with Tor, via 
 
 See the [Namecoin Tor resolution documentation]({{site.baseurl}}docs/tor-resolution).
 
-* [ncprop279 v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncprop279-0.0.1-linux-x86_64.tar.gz)
-* [ncprop279 v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncprop279-0.0.1-linux-i686.tar.gz)
-* [ncprop279 v0.0.1 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncprop279-0.0.1-windows-x86_64.tar.gz)
-* [ncprop279 v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncprop279-0.0.1-windows-i686.tar.gz)
-* [ncprop279 v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncprop279-0.0.1-osx-x86_64.tar.gz)
-* [ncprop279 v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.9.2/ncdns-0.0.9.2.SHA256SUMS.asc)
+* [ncprop279 v0.0.3 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-x86_64.tar.gz)
+* [ncprop279 v0.0.3 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-i686.tar.gz)
+* [ncprop279 v0.0.3 for Windows (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-windows-x86_64.tar.gz)
+* [ncprop279 v0.0.3 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-windows-i686.tar.gz)
+* [ncprop279 v0.0.3 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-osx-x86_64.tar.gz)
+* [ncprop279 v0.0.3 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [ncprop279 rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [ncprop279 Source Code](https://github.com/namecoin/ncprop279)
 
