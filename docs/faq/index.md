@@ -175,15 +175,15 @@ Below is a comparison table of Namecoin and Blockstack (with Bitcoin added for r
 
 |  | **Namecoin** | **Blockstack** | **Bitcoin** |
 ---|--------------|----------------|-------------|
-| **Lightweight validation mode** | [SPV](https://bitcoin.org/en/glossary/simplified-payment-verification) backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work) (e.g. BitcoinJ+libdohj). | Checkpoints provided by a trusted 3rd party. Blockstack refers to this as "Consensus Hashes", "SNV" ("Simplified Name Verification"), or (confusingly) "SPV". Is not backed by PoW and has no relation to Bitcoin's SPV threat model. | SPV backed by PoW (e.g. BitcoinJ). | 
-| **Hashrate attesting to transaction ordering** | ~71% of Bitcoin as of 2017 Aug 31. | 100% of Bitcoin. | 100% of Bitcoin. | 
-| **Hashrate attesting to transaction validity** | ~71% of Bitcoin as of 2017 Aug 31. | 0% of Bitcoin (miners do not attest to transaction validity). | 100% of Bitcoin. | 
+| **Lightweight validation mode** | [SPV](https://bitcoin.org/en/glossary/simplified-payment-verification) backed by [PoW](https://bitcoin.org/en/glossary/proof-of-work) (e.g. BitcoinJ+libdohj or Electrum-NMC). | Checkpoints provided by a trusted 3rd party. Blockstack refers to this as "Consensus Hashes", "SNV" ("Simplified Name Verification"), or (confusingly) "SPV". Is not backed by PoW and has no relation to Bitcoin's SPV threat model. | SPV backed by PoW (e.g. BitcoinJ or Electrum). | 
+| **Hashrate attesting to transaction ordering** | ~95% of Bitcoin as of 2020 Jan 12. | 100% of Bitcoin. | 100% of Bitcoin. | 
+| **Hashrate attesting to transaction validity** | ~95% of Bitcoin as of 2020 Jan 12. | 0% of Bitcoin (miners do not attest to transaction validity). | 100% of Bitcoin. | 
 | **Miners possessing a majority of hashrate** | None. | None. | None. | 
 | **Mining pools influencing a majority of hashrate** | None. | None. | None. | 
 | **Legal jurisdictions influencing pools with a majority of hashrate** | China. | China. | China. | 
 | **Infrastructure capable of censoring all new blocks (non-selectively)** | Bitcoin Relay Network, by censoring all Bitcoin blocks that commit to Namecoin blocks. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
 | **Infrastructure capable of censoring new blocks based on content (e.g. targeting a name)** | None. | Bitcoin Relay Network. | Bitcoin Relay Network. | 
-| **Scalability (blockchain download size, fully validating node)** | 5.08 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/namecoin/)) (includes name values). | 154.47 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/bitcoin/)), plus name values. | 154.47 GB as of 2017 Aug 31 ([source](https://bitinfocharts.com/bitcoin/)). | 
+| **Scalability (blockchain download size, fully validating node)** | 6.06 GB as of 2020 Jan 12 ([source](https://bitinfocharts.com/namecoin/)) (includes name values). | 300.79 GB as of 2020 Jan 12 ([source](https://bitinfocharts.com/bitcoin/)), plus name values. | 300.79 GB as of 2020 Jan 12 ([source](https://bitinfocharts.com/bitcoin/)). | 
 | **Scalability (maximum name updates per hour)** | ~5494 to ~10989 (~546 on-chain bytes per update, block size limit 500 kB to 1 MB per ~10 minutes) | ~4363 to ~6545 ([~275 on-chain bytes](https://blockchainbdgpzk.onion/tx/c7ec9f0312751d77591fae93f106fa086dab09f89e50159d6e4724d8c7630f16) per update, block size limit 200 kB to 300 kB per ~10 minutes) | N/A | 
 | **Scalability (required incoming bandwidth for read operations, full block node)** | 500 kB to 1 MB per ~10 minutes (if blocks are full) | 1 MB per ~10 minutes for Bitcoin parent chain (blocks usually full), plus all name operation data | 1 MB per ~10 minutes (blocks usually full) | 
 | **Scalability (required incoming bandwidth for read operations, headers-only node)** | ~1 kB to ~10 kB per ~10 minutes, plus a Merkle branch per read operation | Headers-only nodes not possible | 80 B per ~10 minutes | 
