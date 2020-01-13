@@ -53,7 +53,7 @@ You need to have Java installed:
 * [ConsensusJ-Namecoin source code (use the `consensusj-namecoin-0.3.2.1` branch)](https://github.com/JeremyRand/consensusj/)
 * [libdohj source code](https://github.com/dogecoin/libdohj/)
 
-[Preliminary instructions are here.]({{site.baseurl}}docs/bitcoinj-name-lookups/)
+[Preliminary ConsensusJ-Namecoin documentation is here.]({{site.baseurl}}docs/consensusj-namecoin/)
 
 ### Known Issues
 
