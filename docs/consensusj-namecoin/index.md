@@ -1,6 +1,8 @@
 ---
 layout: page
 title: ConsensusJ-Namecoin
+redirect_from:
+  - /docs/bitcoinj-name-lookups/
 ---
 
 {::options parse_block_html="true" /}
