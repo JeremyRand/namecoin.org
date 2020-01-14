@@ -9,6 +9,10 @@ title: Presentations
 
 [Videos and slides are here.]({{site.baseurl}}2020/01/11/36c3-summary.html)
 
+## CloudFest 2019
+
+[Video is here.]({{site.baseurl}}2020/01/13/cloudfest-2019-video.html)
+
 ## 35C3
 
 [Slides are here.]({{site.baseurl}}2019/05/08/35c3-summary.html)
