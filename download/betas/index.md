@@ -198,7 +198,7 @@ This tool applies a name constraint exclusion to an NSS sqlite database for all 
 
 Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all CA's that are on their system by default from signing `.bit` certificates.  For CA's that you manually imported yourself, you probably instead want `cross_sign_name_constraint_tool` (see above).
 
-* [tlsrestrict_nss_tool v0.0.4 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.4)
+* [tlsrestrict_nss_tool v0.0.4.2 binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, macOS (hosted by GitHub)](https://github.com/namecoin/tlsrestrictnss/releases/tag/v0.0.4.2)
 * [tlsrestrict_nss_tool Source Code at GitHub.](https://github.com/namecoin/tlsrestrictnss)
 
 ### Known Issues
