@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Browsing Dot-Bit Websites
+redirect_from:
+  - /dot-bit/browse.html
 ---
 
 {::options parse_block_html="true" /}
