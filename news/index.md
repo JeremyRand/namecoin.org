@@ -7,6 +7,8 @@ title: News
 
 {% include post_tags.html %}
 
+{% assign permalinks = "1" %}
+
 {% for post in site.posts %}
 
 {% include single_post.md %}
