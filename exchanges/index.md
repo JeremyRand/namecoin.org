@@ -36,7 +36,6 @@ title: Exchanges
 [Livecoin](https://www.livecoin.net/)<br>
 [QBTC](https://www.qbtc.ink/)<br>
 [SouthXchange](https://www.southxchange.com/)<br>
-[Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
