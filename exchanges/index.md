@@ -34,6 +34,7 @@ title: Exchanges
 [Coingi](https://coingi.com/trade/nmc-btc)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
+[NLexch](https://www.nlexch.com/markets/nmcbtc)<br>
 [QBTC](https://www.qbtc.ink/)<br>
 [SouthXchange](https://www.southxchange.com/)<br>
 </span>
