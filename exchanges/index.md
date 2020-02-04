@@ -30,7 +30,7 @@ title: Exchanges
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
 [AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
-[Altilly](https://www.altilly.com/market/)<br>
+[Altilly](https://www.altilly.com/asset/NMC)<br>
 [Coingi](https://coingi.com/trade/nmc-btc)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
