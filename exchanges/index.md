@@ -34,7 +34,6 @@ title: Exchanges
 [Coingi](https://coingi.com/trade/nmc-btc)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
-[Nova Exchange](https://novaexchange.com/)<br>
 [QBTC](https://www.qbtc.ink/)<br>
 [SouthXchange](https://www.southxchange.com/)<br>
 [Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
