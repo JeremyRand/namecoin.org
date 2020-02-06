@@ -30,16 +30,13 @@ title: Exchanges
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
 [AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
-[Altilly](https://www.altilly.com/market/)<br>
-[Bleutrade](https://bleutrade.com/exchange/NMC/BTC)<br>
-[bx.in.th](https://bx.in.th)<br>
+[Altilly](https://www.altilly.com/asset/NMC)<br>
 [Coingi](https://coingi.com/trade/nmc-btc)<br>
 [Hodl Hodl](https://www.hodlhodl.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
-[Nova Exchange](https://novaexchange.com/)<br>
+[NLexch](https://www.nlexch.com/markets/nmcbtc)<br>
 [QBTC](https://www.qbtc.ink/)<br>
 [SouthXchange](https://www.southxchange.com/)<br>
-[Tux Exchange](https://www.tuxexchange.com/trade?coin=NMC&market=BTC)<br>
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
