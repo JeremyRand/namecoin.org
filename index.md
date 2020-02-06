@@ -47,7 +47,7 @@ What does Namecoin do under the hood?
 * [Namecoin Identities](https://nameid.org)
 * [.bit DNS]({{site.baseurl}}dot-bit/)
 
-## News
+## News ([RSS Feed]({{site.baseurl}}feed.rss))
 
 {% for post in site.posts limit:10 %}
 {% assign content_words = post.content | number_of_words %}
