@@ -57,6 +57,10 @@ Consider that Namecoin values are limited to 520 bytes, and that the block size 
 
 If you're developing an application, consider doing your development on the Namecoin Testnet.  This prevents your testing from bloating the production blockchain, and also allows you to test without spending real money on names.  If more than one implementation might have the same use case, consider writing a spec so that incompatible implementations of similar ideas don't become a problem.
 
+### Do I need to download the entire Namecoin blockchain to use Namecoin?
+
+No, but you will get better security if you choose to do so.  A *full node* such as Namecoin Core gives you maximum security by downloading the entire blockchain and validating that all transactions comply with the Namecoin consensus rules.  However, if you don't wish to download the entire blockchain, you can instead use a *lightweight SPV node* such as Electrum-NMC, which only downloads block headers (along with transactions that are relevant to you), which are much smaller than the entire blockchain.  Namecoin also makes possible some security models that don't directly correspond to Bitcoin.  For example, the ConsensusJ-Namecoin node downloads block headers like Electrum-NMC, but also downloads the entire blocks from the past year only (i.e. all blocks that contain unexpired name transactions), which provides a security level somewhere between Electrum-NMC and Namecoin Core.
+
 ### What is the smallest currency unit of Namecoin called?
 
 The smallest currency unit of Namecoin is called the *swartz* (similar to the *satoshi* in Bitcoin).  It is named after Aaron Swartz, the activist who was murdered by the U.S. government, and who [proposed Nakanames](https://web.archive.org/web/20170424134548/http://www.aaronsw.com/weblog/squarezooko) (which, along with BitDNS, described the concept that was later implemented as Namecoin).
