@@ -77,7 +77,7 @@ This is to prevent others from stealing your new name by registering it quickly 
 
 ### How are names represented? 
 
-Names and values are attached to special coins with a value of 0.01 NMC. Updates are performed by creating a transaction with the name's previous coin as input. Think of it like a colored coin.
+Names and values are attached to special coins with a value of 0.01 NMC. Updates are performed by creating a transaction with the name's previous coin as input. Think of it like a colored coin.  As far as Namecoin's consensus layer is concerned, names and their values are arbitrary binary blobs; any semantics assigned to those binary blobs (e.g. names being ASCII and values being JSON) are solely conventions used by higher-layer applications (e.g. ncdns).
 
 ### What if I spend that special coin by mistake? 
 
