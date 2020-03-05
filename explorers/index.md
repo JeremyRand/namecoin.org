@@ -9,6 +9,7 @@ title: Blockchain Explorers
 
 [Cyphrs Namecoin Explorer](https://namecoin.cyphrs.com/) (free software; consensus-safe)<br>
 [namecha.in](https://namecha.in/) (non-free software)<br>
+[Namebrow.se](https://www.namebrow.se/) (non-free software)<br>
 
 ### Currency operations only
 
