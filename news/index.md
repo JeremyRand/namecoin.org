@@ -9,6 +9,8 @@ title: News
 
 {% assign permalinks = "1" %}
 
+([RSS Feed]({{site.baseurl}}feed.rss))
+
 {% for post in site.posts %}
 
 {% include single_post.md %}
