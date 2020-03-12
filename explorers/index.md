@@ -13,8 +13,6 @@ title: Blockchain Explorers
 
 ### Currency operations only
 
-[Bchain.info](https://bchain.info/NMC/)<br>
-[BitInfoCharts](https://bitinfocharts.com/namecoin/explorer/)<br>
-[Tokenview](https://nmc.tokenview.com/)<br>
+{% assign shuffled_explorers_currency = site.data.explorers_currency | sample: 3 %}{% for i in shuffled_explorers_currency %}{{ i }}<br>{% endfor %}
 
 To get on the list please post on the [forum](https://forum.namecoin.org).
