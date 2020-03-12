@@ -29,14 +29,7 @@ title: Exchanges
 
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
-[AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
-[Altilly](https://www.altilly.com/asset/NMC)<br>
-[Coingi](https://coingi.com/trade/nmc-btc)<br>
-[Hodl Hodl](https://www.hodlhodl.com/)<br>
-[Livecoin](https://www.livecoin.net/)<br>
-[NLexch](https://www.nlexch.com/markets/nmcbtc)<br>
-[QBTC](https://www.qbtc.ink/)<br>
-[SouthXchange](https://www.southxchange.com/)<br>
+{% assign shuffled_exchanges_basic = site.data.exchanges_basic | sample: 8 %}{% for i in shuffled_exchanges_basic %}{{ i }}<br>{% endfor %}
 </span>
 
 Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
