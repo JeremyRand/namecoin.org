@@ -9,8 +9,7 @@ title: Exchanges
 
 <span id="decentralized-exchanges" style="font-size:130%;">
 **Decentralized exchanges**<br>
-[Bisq](https://bisq.network/) (uses Tor by default)<br>
-[Block DX](https://blockdx.com/) (uses atomic trades)<br>
+{% assign shuffled_exchanges_decentralized = site.data.exchanges_decentralized | sample: 2 %}{% for i in shuffled_exchanges_decentralized %}{{ i }}<br>{% endfor %}
 </span>
 
 <span style="font-size:130%;">
