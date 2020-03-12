@@ -9,8 +9,8 @@ title: Exchanges
 
 <span id="decentralized-exchanges" style="font-size:130%;">
 **Decentralized exchanges**<br>
-[Bisq](https://bisq.network/)<br>
-[Block DX](https://blockdx.com/)<br>
+[Bisq](https://bisq.network/) (uses Tor by default)<br>
+[Block DX](https://blockdx.com/) (uses atomic trades)<br>
 </span>
 
 <span style="font-size:130%;">
