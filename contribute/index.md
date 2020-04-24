@@ -11,6 +11,10 @@ So you'd like to support Namecoin?  Great!  There are several ways you can help 
 
 Donations help our developers pay the bills, and sometimes can even enable new developers to join the project.  [You can donate to the Namecoin project here.]({{site.baseurl}}donate/)
 
+## Buy (and wear) merchandise
+
+Our friends at Cypher Market sell [Namecoin-branded merchandise](https://www.cyphermarket.com/namecoin/) (e.g. T-shirts and stickers).  Not only is this a great way to spread the word, but Cypher Market also donates a cut of the profits to support Namecoin development.
+
 ## Run a full node
 
 Full nodes (Namecoin Core nodes) are the core of the Namecoin P2P network.  The more people run full nodes, and the more geographically and jurisdictionally diverse those full nodes are, the stronger the Namecoin P2P network becomes.  Please consider running [Namecoin Core]({{site.baseurl}}download/#namecoin-core-client-with-qt-name-tab) on as many of the following networks as you can:
