@@ -54,3 +54,7 @@ title: Presentations
 ## Grazer Linuxtage 2015
 
 [Video is here.]({{site.baseurl}}2019/04/20/daniel-kraft-at-grazer-linuxtage-2015-video.html)
+
+## Non-Namecoin Presentations
+
+[ICANN60]({{site.baseurl}}2020/04/30/icann-60-teg-recordings.html)
