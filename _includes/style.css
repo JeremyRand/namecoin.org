@@ -91,6 +91,10 @@ nav ul li {
     padding: 40px;
 }
 
+#content video, #content img {
+    max-width: 100%;
+}
+
 table {
     border-collapse: collapse;
 }
