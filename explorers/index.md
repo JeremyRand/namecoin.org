@@ -8,13 +8,10 @@ title: Blockchain Explorers
 ### With support for name and currency operations
 
 [Cyphrs Namecoin Explorer](https://namecoin.cyphrs.com/) (free software; consensus-safe)<br>
-[namecha.in](https://namecha.in/) (non-free software)<br>
-[Namebrow.se](https://www.namebrow.se/) (non-free software)<br>
+{% assign shuffled_explorers_name_nonfree = site.data.explorers_name_nonfree | sample: 2 %}{% for i in shuffled_explorers_name_nonfree %}{{ i }}<br>{% endfor %}
 
 ### Currency operations only
 
-[Bchain.info](https://bchain.info/NMC/)<br>
-[BitInfoCharts](https://bitinfocharts.com/namecoin/explorer/)<br>
-[Tokenview](https://nmc.tokenview.com/)<br>
+{% assign shuffled_explorers_currency = site.data.explorers_currency | sample: 3 %}{% for i in shuffled_explorers_currency %}{{ i }}<br>{% endfor %}
 
 To get on the list please post on the [forum](https://forum.namecoin.org).
