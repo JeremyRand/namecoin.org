@@ -67,14 +67,15 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-* [Electrum-NMC v3.3.9.1 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/Electrum-NMC-3.3.9.tar.xz)
-* [Electrum-NMC v3.3.9.1 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/Electrum-NMC-3.3.9.tar.gz)
-* [Electrum-NMC v3.3.9.1 for GNU/Linux, Windows, and macOS (Python zip, worst compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/Electrum-NMC-3.3.9.zip)
-* [Electrum-NMC v3.3.9.1 for GNU/Linux (x86_64 AppImage)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/electrum-nmc-nc3.3.9.1-x86_64.AppImage)
-* [Electrum-NMC v3.3.9.1 for Windows (Standalone Executable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/electrum-nmc-nc3.3.9.1.exe)
-* [Electrum-NMC v3.3.9.1 for Windows (Portable version)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/electrum-nmc-nc3.3.9.1-portable.exe)
-* [Electrum-NMC v3.3.9.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/electrum-nmc-nc3.3.9.1-setup.exe)
+* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.xz)
+* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.gz)
+* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python zip, worst compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.zip)
+* [Electrum-NMC v3.3.10 for GNU/Linux (x86_64 AppImage)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-x86_64.AppImage)
+* [Electrum-NMC v3.3.10 for Windows (Standalone Executable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10.exe)
+* [Electrum-NMC v3.3.10 for Windows (Portable version)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-portable.exe)
+* [Electrum-NMC v3.3.10 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-setup.exe)
 * [Electrum-NMC v3.3.9.1 for Android/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/Electrum_NMC-3.3.9.0-debug.apk)
+* [Electrum-NMC v3.3.10 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/SHA256SUMS.asc)
 * [Electrum-NMC v3.3.9.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.9.1/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
