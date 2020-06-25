@@ -177,6 +177,24 @@ No.  Namecoin's merged mining can use *any* Hashcash-SHA256D blockchain as a par
 
 The Tor Project's Onion Services (which have a `.onion` top-level domain) use domains which are a public key hash.  This means that their domain names are not human-meaningful, whereas Namecoin domain names are human-meaningful.  Namecoin's `.bit` domains can point to `.onion` domains, providing a human-meaningful naming layer on top of Tor Onion Services.  Blockchain-based systems like Namecoin are, at this time, unable to match the cryptographic security guarantees (against impersonation or deanonymization attacks) that systems like Onion Service names provide when used directly, but Namecoin's human-meaningful names do make Namecoin more resistant than Onion Service names to some classes of attacks that exploit human psychology rather than breaking cryptography.  For example, humans have trouble remembering a public key hash or recognizing a public key hash as the correct one; this is much better with meaningful names such as Namecoin names (or DNS names).  Attackers can exploit this property of Onion Service names in order to trick users into visiting the incorrect website.  We believe that both systems serve a useful purpose, and determining whether direct usage of Onion Service names or Namecoin naming for Onion Services is more secure for a given user requires consideration of that user's threat model.
 
+# How does Namecoin compare to Let's Encrypt?
+
+Let's Encrypt constitutes a trusted 3rd party, i.e. the Let's Encrypt certificate authority can issue fraudulent certificates to 3rd parties for your domain without your consent.  In contrast, using TLS with Namecoin (assuming that negative certificate overrides are supported by your TLS client) does not involve a trusted 3rd party; only certificates that chain to a `TLSA` record in your name's value will be accepted.
+
+Let's Encrypt also has the ability to censor your ability to receive TLS certificates.  Let's Encrypt routinely uses this capacity to engage in geopolitical censorship.  For example, in response to a [support request pertaining to an error "Policy forbids issuing for name"](https://community.letsencrypt.org/t/error-policy-forbids-issuing-for-name/52233/2), Josh Aas (Executive Director of ISRG, the corporation that operates Let's Encrypt) stated on February 6, 2018:
+
+> The People’s Republic of Donetsk is on the U.S. Treasury Department Specially Designated Nationals list. The website you are inquiring about appears to be a part of, or a state enterprise of, the People’s Republic of Donetsk, thus we cannot provide service according to U.S. law.
+
+Let's Encrypt also routinely censors journalism websites for political purposes.  For example, on January 2, 2019, Let's Encrypt [revoked the TLS certificate for an allegedly-Russian-funded journalism website](https://www.mcclatchydc.com/news/policy/technology/cyber-security/article223832790.html) aimed at American audiences, [on the grounds](https://home.treasury.gov/news/press-releases/sm577) that the website allegedly "engaged in efforts to post content focused on divisive political issues" and "attempted to hold a political rally in the United States".
+
+[ISRG executive director Josh Aas stated](https://community.letsencrypt.org/t/according-to-mcclatchydc-com-lets-encrypt-revoqued-and-banned-usareally-com/81517/10) on January 4, 2019, that "This happens to maybe one domain per month".
+
+In contrast, Namecoin does not have any 3rd party who can censor your ability to receive TLS certificates.
+
+Let's Encrypt's services are entirely gratis.  For Namecoin, the pricing is more complicated.  In Namecoin, you create a private CA and place its public key into the blockchain; you can use that CA to issue as many certificates for your domain as you like without requiring additional blockchain transactions.  Issuing certificates from your private CA (e.g. to rotate your TLS server's keys) is gratis.  However, changing the set of private CA's (e.g. to immediately revoke old certificates before they expire) does require a blockchain transaction, which means you'll have to pay a transaction fee.  The extra storage used by your private CA's public key also implies that renewing your domain name will incur a higher transaction fee than if you weren't using TLS.
+
+TLS certificates issued by Let's Encrypt will work in most TLS clients (without security warnings) without any changes from defaults.  In contrast, Namecoin TLS certificates will only work (without security warnings) if Namecoin is installed.
+
 ### How does Namecoin compare to Blockstack?
 
 Below is a comparison table of Namecoin and Blockstack (with Bitcoin added for reference).
