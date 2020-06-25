@@ -108,9 +108,9 @@ Gokhan created the Namecoin Domain Names v2 specification, which introduced func
 
 fsb4000 rebranded Namecoin Core's Qt GUI, removing all image and text references to Bitcoin.
 
-## artisbigshirts
+## Kevin Risinger (artisbigshirts)
 
-artisbigshirts designed Namecoin's logo.
+Kevin designed Namecoin's logo.
 
 ## Ben Lloyd (Shobute)
 
