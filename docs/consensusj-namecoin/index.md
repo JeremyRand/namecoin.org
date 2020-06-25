@@ -15,6 +15,10 @@ This is documentation for ConsensusJ-Namecoin (a lightweight SPV Namecoin name l
 
 **Warning: this is beta software, and is not suitable for production use.  It is being made available for testing purposes only.  It doesn't support proxying or stream isolation.  In the examples on this page, we explicitly pass command-line arguments telling the client that this is okay.  Leaving off those arguments will result in an error for safety reasons.**
 
+## Installation
+
+You can download ConsensusJ-Namecoin at the [Beta Downloads]({{site.baseurl}}download/betas/#consensusj-namecoin) page.  (If you prefer to build from source, see the next section.)
+
 ## Build prerequisites
 
 (This is only if you want to build from source.)
