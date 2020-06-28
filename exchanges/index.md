@@ -24,7 +24,7 @@ title: Exchanges
 
 <span style="font-size:100%;">
 **Bronze level exchanges**<br>
-...<br>
+{% assign shuffled_exchanges_bronze = site.data.exchanges_bronze | sample: 1 %}{% for i in shuffled_exchanges_bronze %}{{ i }}<br>{% endfor %}
 </span>
 
 <span style="font-size:85%;">
