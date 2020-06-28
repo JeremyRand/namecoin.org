@@ -181,7 +181,7 @@ The Tor Project's Onion Services (which have a `.onion` top-level domain) use do
 
 Let's Encrypt constitutes a trusted 3rd party, i.e. the Let's Encrypt certificate authority can issue fraudulent certificates to 3rd parties for your domain without your consent.  In contrast, using TLS with Namecoin (assuming that negative certificate overrides are supported by your TLS client) does not involve a trusted 3rd party; only certificates that chain to a `TLSA` record in your name's value will be accepted.
 
-Let's Encrypt also has the ability to censor your ability to receive TLS certificates.  Let's Encrypt routinely uses this capacity to engage in geopolitical censorship.  For example, in response to a [support request pertaining to an error "Policy forbids issuing for name"](https://community.letsencrypt.org/t/error-policy-forbids-issuing-for-name/52233/2), Josh Aas (Executive Director of ISRG, the corporation that operates Let's Encrypt) stated on February 6, 2018:
+Let's Encrypt also has the ability to censor your ability to receive TLS certificates.  Let's Encrypt routinely uses this capacity to engage in geopolitical censorship.  For example, in response to a [support request pertaining to an error "Policy forbids issuing for name"](https://community.letsencrypt.org/t/error-policy-forbids-issuing-for-name/52233/3), Josh Aas (Executive Director of ISRG, the corporation that operates Let's Encrypt) stated on February 6, 2018:
 
 > The People’s Republic of Donetsk is on the U.S. Treasury Department Specially Designated Nationals list. The website you are inquiring about appears to be a part of, or a state enterprise of, the People’s Republic of Donetsk, thus we cannot provide service according to U.S. law.
 
