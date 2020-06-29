@@ -171,6 +171,16 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     font-size: 85%;
 }
 
+.exchange-logo {
+    height: 4em;
+}
+
+/* The provided FreeBitcoins logo needs to be cropped to display properly; this CSS trick does so. */
+.exchange-logo-freebitcoins {
+    width: 12em;
+    object-fit: cover;
+}
+
 /* Begin nojs */
 
 html.nojs .dropdown-toggle:focus + .dropdown-menu, html.nojs .dropdown-toggle:active + .dropdown-menu, html.nojs .dropdown-menu:focus, html.nojs .dropdown-menu:active, html.nojs .dropdown-menu:hover {
