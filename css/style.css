@@ -132,6 +132,21 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     z-index: -1;
 }
 
+/* Sponsored exchanges styling (only present on Exchanges page) */
+
+.exchanges-gold {
+    font-size: 130%;
+}
+.exchanges-silver {
+    font-size: 115%;
+}
+.exchanges-bronze {
+    font-size: 100%;
+}
+.exchanges-basic {
+    font-size: 85%;
+}
+
 /* Begin nojs */
 
 html.nojs .dropdown-toggle:focus + .dropdown-menu, html.nojs .dropdown-toggle:active + .dropdown-menu, html.nojs .dropdown-menu:focus, html.nojs .dropdown-menu:active, html.nojs .dropdown-menu:hover {
