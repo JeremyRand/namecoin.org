@@ -40,6 +40,30 @@ body > footer a, body > footer a:hover {
     color: #FFF;
 }
 
+footer #social, footer #page-alternate, footer #funders {
+    float: left;
+}
+
+footer #page-source {
+    float: right;
+    margin-bottom: 10px;
+}
+
+footer #page-alternate {
+    width: 100%;
+}
+
+footer #page-alternate, footer #funders {
+    text-align: center;
+    padding-top: 0px;
+    color: #FFF;
+}
+
+footer #funders .funder {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 nav ul li {
     display: inline;
 }
