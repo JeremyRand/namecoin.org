@@ -7,6 +7,10 @@ title: Electrum-NMC
 
 Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
+## Installation
+
+You can download Electrum-NMC at the [Beta Downloads]({{site.baseurl}}download/betas/#electrum-nmc) page.
+
 ## Name Management
 
 Name transactions are visible in the History tab:
