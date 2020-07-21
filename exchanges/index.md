@@ -5,29 +5,29 @@ title: Exchanges
 
 {::options parse_block_html="true" /}
 
-<span style="font-size:130%;">&#8644;</span> You can buy and sell **Namecoins** here:
+<span class="exchanges-gold">&#8644;</span> You can buy and sell **Namecoins** here:
 
-<span id="decentralized-exchanges" style="font-size:130%;">
+<span id="decentralized-exchanges" class="exchanges-gold">
 **Decentralized exchanges**<br>
 {% assign shuffled_exchanges_decentralized = site.data.exchanges_decentralized | sample: 2 %}{% for i in shuffled_exchanges_decentralized %}{{ i }}<br>{% endfor %}
 </span>
 
-<span style="font-size:130%;">
+<span class="exchanges-gold">
 **Gold level exchanges**<br>
 ...<br>
 </span>
 
-<span style="font-size:115%;">
+<span class="exchanges-silver">
 **Silver level exchanges**<br>
 ...<br>
 </span>
 
-<span style="font-size:100%;">
+<span class="exchanges-bronze">
 **Bronze level exchanges**<br>
 {% assign shuffled_exchanges_bronze = site.data.exchanges_bronze | sample: 1 %}{% for i in shuffled_exchanges_bronze %}{{ i }}<br>{% endfor %}
 </span>
 
-<span style="font-size:85%;">
+<span class="exchanges-basic">
 **Basic level exchanges**<br>
 {% assign shuffled_exchanges_basic = site.data.exchanges_basic | sample: 11 %}{% for i in shuffled_exchanges_basic %}{{ i }}<br>{% endfor %}
 </span>
