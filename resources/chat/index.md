@@ -17,7 +17,7 @@ Two chat channels exist for Namecoin.
 
 \#namecoin is accessible via the following methods:
 
-* OFTC IRC (Tor-friendly): #namecoin
+* [OFTC IRC](ircs://irc.oftc.net:6697/#namecoin) (Tor-friendly)
 * Matrix (Tor-friendly): #namecoin:matrix.org
 * [Riot web chat](https://riot.im/app/#/room/#namecoin:matrix.org) (Tor-friendly)
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin)
@@ -30,7 +30,7 @@ Two chat channels exist for Namecoin.
 
 \#namecoin-dev is accessible via the following methods:
 
-* OFTC IRC (Tor-friendly): #namecoin-dev
+* [OFTC IRC](ircs://irc.oftc.net:6697/#namecoin-dev) (Tor-friendly)
 * Matrix (Tor-friendly): #namecoin-dev:matrix.org
 * [Riot web chat](https://riot.im/app/#/room/#namecoin-dev:matrix.org) (Tor-friendly)
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin-dev)
