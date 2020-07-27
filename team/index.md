@@ -26,6 +26,7 @@ Jeremy is our .bit application specialist, and works on our codebases relating t
 
 OpenPGP (primary): `5174 0B7C 732D 572A 3140 4010 6605 55E1 F8F7 BF85` [(download public key)]({{site.baseurl}}JeremyRand.asc)<br>
 OpenPGP (Gitian signer): `9CDA F04A 7290 3BFE C095 9DBE 2DBE 339E 29F6 294C` [(download public key)]({{site.baseurl}}JeremyRand-Gitian.asc)<br>
+OpenPGP (Git signer): `0729 7809 7FC1 25E6 685B CE40 FD75 50C2 EB80 0711` [(download public key)]({{site.baseurl}}JeremyRand-Git.asc)<br>
 Ricochet: `ricochet:ujb6mp55tlzfpfdi`<br>
 Cwtch: `degdcodd2fhlpv6so3ewyh2dcsyg4732ujauuzx63t7qlavumnyt4uyd`
 
