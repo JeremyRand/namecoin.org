@@ -21,7 +21,8 @@ Two chat channels exist for Namecoin.
 * Matrix (Tor-friendly): #namecoin:matrix.org
 * [Riot web chat](https://riot.im/app/#/room/#namecoin:matrix.org) (Tor-friendly)
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin)
-* Freenode IRC: #namecoin
+* [Freenode IRC](ircs://ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion:6697/#namecoin)
+* [Freenode IRC (clearnet)](ircs://chat.freenode.net:6697/#namecoin)
 * [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin)
 
 ## #namecoin-dev
@@ -34,7 +35,8 @@ Two chat channels exist for Namecoin.
 * Matrix (Tor-friendly): #namecoin-dev:matrix.org
 * [Riot web chat](https://riot.im/app/#/room/#namecoin-dev:matrix.org) (Tor-friendly)
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin-dev)
-* Freenode IRC: #namecoin-dev
+* [Freenode IRC](ircs://ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion:6697/#namecoin-dev)
+* [Freenode IRC (clearnet)](ircs://chat.freenode.net:6697/#namecoin-dev)
 * [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin-dev)
 
 ## Developer Meetings
