@@ -55,4 +55,9 @@
 {% assign random_tagline = site.data.taglines | sample %}
 {{ random_tagline }}
 </noscript>
+{% for tagline in site.data.taglines %}
+    <div class="candidate-tagline" hidden>
+        {{ tagline }}
+    </div>
+{% endfor %}
 </p></div></div>
