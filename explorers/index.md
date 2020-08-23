@@ -12,6 +12,6 @@ title: Blockchain Explorers
 
 ### Currency operations only
 
-{% assign shuffled_explorers_currency = site.data.explorers_currency | sample: 3 %}{% for i in shuffled_explorers_currency %}{{ i }}<br>{% endfor %}
+{% assign shuffled_explorers_currency = site.data.explorers_currency | sample: 2 %}{% for i in shuffled_explorers_currency %}{{ i }}<br>{% endfor %}
 
 To get on the list please post on the [forum](https://forum.namecoin.org).
