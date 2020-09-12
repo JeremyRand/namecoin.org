@@ -14,10 +14,10 @@ So, I've been porting the Namecoin support in Tor Browser Nightly to Windows.
 First off, since this endeavor was going to involve some changes to StemNS, I figured this was a good opportunity to investigate an odd bug that was happening in StemNS sometimes.  
 I had noticed last year that in a fresh Tor Browser install, if Namecoin was enabled on the first run, Tor Launcher would indicate that Tor bootstrap had stalled at the "loading authority certificates" stage.  
 I found that spamming the Tor Launcher buttons to cancel and retry connecting would usually make the connection succeed after 5-10 tries, which seemed to suggest a race condition.  
-After quite a lot of manual inspection of StemNS logs, I found something odd.  
-The Tor control spec states that the `__LeaveStreamsUnattached` config option will cause all streams to wait for the controller (StemNS in this case) to attach them.  
-However, empirically, this was not what was happening.  
-Streams created as a result of user traffic (e.g. Firefox or Electrum-NMC) were waiting for StemNS to attach them, but streams created by Tor's bootstrap were still automatically being attached?  The Tor control spec goes on to say the following:
+After quite a lot of manual inspection of StemNS logs, I found something odd:  
+While the Tor control spec states that the `__LeaveStreamsUnattached` config option will cause all streams to wait for the controller (StemNS in this case) to attach them, this was empirically not what was happening.  
+Rather, streams created as a result of user traffic (e.g. Firefox or Electrum-NMC) were waiting for StemNS to attach them, but streams created by Tor's bootstrap were still automatically being attached.
+The Tor control spec goes on to say the following:
 
 > Attempting to attach streams
 > via TC when "__LeaveStreamsUnattached" is false may cause a race between
@@ -28,8 +28,8 @@ Streams created as a result of user traffic (e.g. Firefox or Electrum-NMC) were 
 > yet, in which case Tor will detach the stream from its current circuit
 > before proceeding with the new attach request.}
 
-Well that certainly explains what was happening.  
-Tor was opening a stream to bootstrap, and (depending on exact timing) StemNS was trying to attach it again, which caused the stream to be detached, thus killing the bootstrap.
+This certainly explained what had been happening.  
+Tor was opening a stream to bootstrap (attaching the stream to a circuit in the process), and (depending on exact timing) StemNS was trying to attach it a 2nd time, which caused the stream to be detached, thus killing the bootstrap.
 
 At this point, I decided to ask the Tor developers whether this was a bug in the spec or the C implementation.  
 Roger Dingledine pointed me to the exact C code that handled this, which indicated exactly how StemNS could detect this case and handle it properly.  
@@ -88,7 +88,7 @@ It does two things when enabled:
 1. Pass the `-v` argument to Electrum-NMC, which enables verbose output.
 2. On Windows, use `python.exe` (which pops up a command prompt window with logs) instead of `pythonw.exe` (which doesn't spawn a command window).
 
-Oh, and I also had to tweak the linker flags for `ncprop279` to make it avoid launching a command prompt window on Windows as well.
+Oh, and I had to tweak the linker flags for `ncprop279` to make it avoid launching a command prompt window on Windows as well.
 
 ![A screenshot of Namecoin in Tor Browser on Windows.]({{ "/images/screenshots/tor/tor-browser-windows-2020-08-20.png" | relative_url }})
 
@@ -105,4 +105,4 @@ I've tagged a stable release that doesn't include this refactor, and if any impo
 And now, we wait for code review from the Tor Browser Team.  
 Let the bikeshedding begin!
 
-This work was funded by Cyphrs and the Cyberia Computer Club.
+This work was funded by Cyphrs and Cyberia Computer Club.
