@@ -15,12 +15,12 @@ While the Tor control spec states that the `__LeaveStreamsUnattached` config opt
 
 > Attempting to attach streams
 > via TC when "__LeaveStreamsUnattached" is false may cause a race between
-> Tor and the controller, as both attempt to attach streams to circuits.}
+> Tor and the controller, as both attempt to attach streams to circuits.
 > 
 > You can try to attachstream to a stream that
 > has already sent a connect or resolve request but hasn't succeeded
 > yet, in which case Tor will detach the stream from its current circuit
-> before proceeding with the new attach request.}
+> before proceeding with the new attach request.
 
 This certainly explained what had been happening.  Tor was opening a stream to bootstrap (attaching the stream to a circuit in the process), and (depending on exact timing) StemNS was trying to attach it a 2nd time, which caused the stream to be detached, thus killing the bootstrap.
 
