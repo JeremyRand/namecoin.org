@@ -5,7 +5,7 @@ author: yanmaani
 tags: [News]
 ---
 
-Namecoin would like for the Tor Browser to support .bit domains.
+Namecoin would like for Tor Browser to support .bit domains.
 The only mature, lightweight way to do this is to use the wallet qua name resolver Electrum-NMC.
 It is written in Python.
 To run Python software, you need an interpreter, like CPython.
@@ -13,10 +13,10 @@ To run Python software, you need an interpreter, like CPython.
 Namecoin and Tor are both intended to be secure projects.
 All their binaries have to build reproducibly.
 The Tor Browser is also intended to be portable.
-It's not acceptable for users to have to install additional software on their computer to run the Tor Browser.
+It's not acceptable for users to have to install additional software on their computer to run Tor Browser.
 
-This means a Python interpreter would have to be bundled in order for Electrum-NMC to be includible in the Tor Browser.
-And since the Tor Browser is a secure project, said Python interpreter has to be built reproducibly.
+This means a Python interpreter would have to be bundled in order for Electrum-NMC to be includible in Tor Browser.
+And since Tor Browser is a secure project, said Python interpreter has to be built reproducibly.
 For this reason, the `tor-browser-build` repository has received some patches to reproducibly build such binaries.
 
 This post details the problems encountered while making them.
@@ -38,7 +38,7 @@ In theory, it should be possible to use GCC to cross-compile CPython for Windows
 
 In practice, Python's ordinary build system doesn't support this.
 It isn't made for cross-compilation.
-Thankfully, one [Erik Janssens](https://github.com/erikjanss) (no relation to the Namecoin project) had created an alternative [Meson](https://mesonbuild.com/)-based [build script](https://github.com/v-finance/cross-python) to compile Python for Windows with Linux using GCC and MinGW.
+Thankfully, one [Erik Janssens](https://github.com/erikjanss) had created an alternative [Meson](https://mesonbuild.com/)-based [build script](https://github.com/v-finance/cross-python) to compile Python for Windows with Linux using GCC and MinGW.
 Many thanks!
 
 This build script needed some minor adaptations to properly integrate it with the Tor Project's RBM build system.
@@ -63,15 +63,15 @@ Python 3.8.5 (default, xx/xx/xx, xx:xx:xx) [gcc] on win32
 >>>
 ```
 
-The changes are now [submitted](https://gitlab.torproject.org/tpo/applications/tor-browser-build/-/merge_requests/66) and subject to review.
+The changes are now submitted and subject to review.
 
 We think other projects that use Python might find these efforts useful.
 In particular, upstream Electrum may benefit from using a reproducible build of Python.
 We want to help others, so we try to submit patches and contribute where appropriate:
 
-* The RBM build descriptor has a custom patch to omit build timestamps in CPython.
-With [this merged upstream](https://github.com/python/cpython/pull/22191), reproducible builds of CPython would become easier, and the maintenance burden lower.
+* The RBM build descriptor carries a custom patch to omit build timestamps in CPython.
+With this merged upstream, reproducible builds of CPython would become easier, and the maintenance burden lower.
 
-* The author of this blog post submitted some [minor documentation changes](https://github.com/v-finance/cross-python/pull/1) for Mr. Janssens's build script.
+* I have submitted some [minor documentation changes](https://github.com/v-finance/cross-python/pull/1) for Mr. Janssens's build script.
 
 * The RBM build descriptor can be used to build Python, without necessarily building the Tor Browser.
