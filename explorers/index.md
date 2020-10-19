@@ -8,7 +8,7 @@ title: Blockchain Explorers
 ### With support for name and currency operations
 
 [Cyphrs Namecoin Explorer](https://namecoin.cyphrs.com/) (free software; consensus-safe)<br>
-{% assign shuffled_explorers_name_nonfree = site.data.explorers_name_nonfree | sample: 2 %}{% for i in shuffled_explorers_name_nonfree %}{{ i }}<br>{% endfor %}
+{% assign shuffled_explorers_name_nonfree = site.data.explorers_name_nonfree | sample: 1 %}{% for i in shuffled_explorers_name_nonfree %}{{ i }}<br>{% endfor %}
 
 ### Currency operations only
 
