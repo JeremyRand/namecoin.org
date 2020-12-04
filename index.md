@@ -22,7 +22,6 @@ title: Namecoin
 * Human-meaningful Tor .onion domains.
 * Decentralized TLS (HTTPS) certificate validation, backed by blockchain consensus.
 * Access websites using the .bit top-level domain.
-* Proposed ideas such as file signatures, voting, bonds/stocks/shares, web of trust, notary services, and proof of existence. (To be implemented.)
 
 </div>
 
