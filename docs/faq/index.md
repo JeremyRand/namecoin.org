@@ -98,7 +98,7 @@ Security concerns:
 
 * ISP's would be in a position to censor names without easy detection.
 * ISP's would be in a position to serve fraudulent PKI data (e.g. TLSA records), which would enable ISP's to easily wiretap users and infect users with malware.
-* Either of the above security concerns would even endanger users who are running Namecoin locally, because it would make it much more difficult to detect misconfigured systems that are accidentally leaking Namecoin queries to the ISP.
+* Either of the above security concerns would even endanger users who are running Namecoin locally, because it would make it much more difficult to detect misconfigured systems that are accidentally leaking Namecoin queries to the ISP.  See this [case study]({{ "/2018/09/24/how-centralized-inproxies-make-everyone-less-safe-case-study.html" | relative_url }}) for a practical example of how this can happen.
 
 Usability concerns:
 
@@ -301,7 +301,27 @@ Blockstack's security model obfuscation raises serious questions about whether a
 
 Monero's MoneroDNS project is similar in concept to Namecoin.  MoneroDNS's technical differences to Namecoin are similar to Monero's technical differences to Bitcoin.  Monero has had much less technical review than Bitcoin, and merge-mined chains based on Monero have significantly less hashrate security available to them than merge-mined chains based on Bitcoin.  On the other hand, Monero's small size enables them to liberally experiment with more advanced features and cryptography, whereas Bitcoin-based systems like Namecoin are more conservative.  The Namecoin and Monero development teams are cooperating on areas of common interest, as both projects agree that Namecoin and Monero both have a future.
 
-## Weaknesses 
+### What is Namecoin's relationship to OpenNIC?
+
+On May 27, 2014, OpenNIC [voted](https://lists.opennicproject.org/sympa/arc/discuss/2014-05/msg00071.html) to add a centralized Namecoin inproxy to their DNS infrastructure.  No Namecoin developers participated in [the discussion](https://lists.opennicproject.org/sympa/arc/discuss/2014-05/msg00021.html) surrounding that vote.
+
+On December 4, 2018, a brief [discussion](https://lists.opennicproject.org/sympa/arc/discuss/2018-12/msg00000.html) occurred within OpenNIC about whether Namecoin should be removed.  The cited reason for considering removing Namecoin was that some OpenNIC server operators had been harassed by blacklist providers and hosting providers due to some botnet activity that was accessing OpenNIC for C&C infrastructure.  The alleged botnet C&C domains included some Namecoin domains, but also included some centralized OpenNIC domains, such as domains on `.fur`.  OpenNIC criticized those blacklist providers for the harassment, saying "none of them have the courtesy to so much as send an email to abuse@domain to let you know that a problem was detected... they claim to be trying to protect the internet but don't give victims a chance to fix the problems".  The discussion "[produced] [little in the way of support or dissent](https://lists.opennicproject.org/sympa/arc/discuss/2019-06/msg00000.html)" for whether to continue resolving Namecoin domains, and OpenNIC decided to continue resolving Namecoin.
+
+On December 19, 2018, [PRISM Break](https://prism-break.org/) lead maintainer Yegor Timoshenko floated the idea to Namecoin developer Jeremy Rand of de-listing OpenNIC due to security concerns about centralized Namecoin resolution.  Jeremy concurred that centralized Namecoin resolution was a security risk, pointed to a [case study]({{ "/2018/09/24/how-centralized-inproxies-make-everyone-less-safe-case-study.html" | relative_url }}) he had previously written on the subject, and recommended that PRISM Break not list centralized Namecoin resolvers; Yegor removed OpenNIC from PRISM Break.
+
+On June 9, 2019, Katie Holly from OpenNIC [contacted](https://gitlab.com/prism-break/prism-break/merge_requests/2073) Yegor and Jeremy on the PRISM Break issue tracker, stated that she had recently discovered Yegor's and Jeremy's concerns, and asked what OpenNIC would need to do to be re-listed on PRISM Break.  Katie also said that OpenNIC would shortly hold an election on whether to remove Namecoin support as Yegor and Jeremy had recommended.
+
+On June 10, 2019, Yegor replied, stating that removing centralized Namecoin resolution was of "critical" priority if OpenNIC was to be re-listed.  Jeremy subsequently recommended the same.
+
+On June 11, 2019, OpenNIC [announced](https://lists.opennicproject.org/sympa/arc/discuss/2019-06/msg00000.html) that they were beginning their election on whether to follow Yegor's and Jeremy's recommendation to remove Namecoin support.
+
+On June 25, 2019, Jeff Taylor from OpenNIC [announced](https://lists.opennicproject.org/sympa/arc/discuss/2019-06/msg00009.html) that the election had concluded in favor of following Yegor's and Jeremy's recommendation, by a final margin of 13 to 2.
+
+On July 30, 2019, Jeremy [published]({{ "/2019/07/30/opennic-does-right-thing-shuts-down-centralized-inproxy.html" | relative_url }}) a blogpost publicly thanking OpenNIC for doing the right thing.  Yegor signed off on the blogpost before publication.  (The blogpost was written on June 30, but publication was delayed by the Tor Developer Meeting.)
+
+There is currently no active relationship between Namecoin and OpenNIC, but some Namecoin developers (including Jeremy) continue to recommend OpenNIC to users who want a centralized naming system that isn't run by ICANN.
+
+## Weaknesses
 
 ### How easy is it for names to be stolen?  What can be done if it happens?
 
