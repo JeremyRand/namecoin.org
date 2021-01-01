@@ -7,7 +7,7 @@ title: Presentations
 
 ## Grayhat 2020
 
-[Video and slides are here.]({{ "/2020/12/25/namecoin-at-grayhat-2020-monero-village.html" | relative_url }})
+[Video and slides are here.]({{ "/2021/01/01/namecoin-at-grayhat-2020-monero-village.html" | relative_url }})
 
 ## 36C3
 
