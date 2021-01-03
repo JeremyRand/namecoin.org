@@ -139,6 +139,31 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 * Build is not yet reproducible.
 
+## certinject
+
+certinject is a tool for adding and manipulating certificates in the Windows CryptoAPI certificate store.  Unlike the built-in Windows tool `certutil`, certinject can easily set the EKU (extended key usage, AKA enhanced key usage) and NC (name constraints) properties on certificates, and does not require Administrator privileges.
+
+* [certinject Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64le.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_arm64.tar.gz)
+* [certinject Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_arm.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_amd64.tar.gz)
+* [certinject Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_386.tar.gz)
+* [certinject Nightly DragonFlyBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--dragonfly_amd64.tar.gz)
+* [certinject Nightly FreeBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_arm.tar.gz)
+* [certinject Nightly FreeBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_amd64.tar.gz)
+* [certinject Nightly FreeBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_386.tar.gz)
+* [certinject Nightly NetBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_arm.tar.gz)
+* [certinject Nightly NetBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_amd64.tar.gz)
+* [certinject Nightly NetBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_386.tar.gz)
+* [certinject Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--openbsd_amd64.tar.gz)
+* [certinject Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--openbsd_386.tar.gz)
+* [certinject Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--solaris_amd64.tar.gz)
+* [certinject Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--windows_amd64.tar.gz)
+* [certinject Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--windows_386.tar.gz)
+* [certinject Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--darwin_amd64.tar.gz)
+* [certinject Source Code](https://github.com/namecoin/certinject)
+
 ## certdehydrate-dane-rest-api
 
 certdehydrate-dane-rest-api is a dependency of ncp11 and the Chromium version of DNSSEC-HSTS.
