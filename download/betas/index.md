@@ -128,6 +128,7 @@ ncdns plain binaries are also available for most major operating systems.  These
 * [ncdns Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--openbsd_amd64.tar.gz)
 * [ncdns Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--openbsd_386.tar.gz)
 * [ncdns Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--solaris_amd64.tar.gz)
+* [ncdns Nightly Windows (64-bit x86) installer](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns-nsis/Cross-Compile%20Fedora/binaries/ncdns--win64-install.exe)
 * [ncdns Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--windows_amd64.tar.gz)
 * [ncdns Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--windows_386.tar.gz)
 * [ncdns Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--darwin_amd64.tar.gz)
