@@ -13,6 +13,8 @@ The more people test these downloads, the faster they'll be ready for release.  
 
 As usual, it is a good idea to verify the hashes and signatures of these downloads (especially the ones not hosted on namecoin.org).  The more people reproduced the hashes, the better.  If you're paranoid, run them inside an isolated virtual machine.
 
+Nightly builds are produced by infrastructure that is not under our direct control.  As such, they should be treated with extra suspicion.
+
 ## Namecoin Core
 
 * [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-aarch64-linux-gnu.tar.gz)
@@ -110,6 +112,26 @@ ncdns plain binaries are also available for most major operating systems.  These
 * [ncdns v0.0.10.3 macOS (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-osx-x86_64.tar.gz)
 * [ncdns v0.0.10.3 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [ncdns v0.0.10.3 plain binaries for GNU/Linux (non-x86), DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, and Solaris (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.10.3)
+* [ncdns Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64.tar.gz)
+* [ncdns Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64le.tar.gz)
+* [ncdns Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_arm64.tar.gz)
+* [ncdns Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_arm.tar.gz)
+* [ncdns Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_amd64.tar.gz)
+* [ncdns Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_386.tar.gz)
+* [ncdns Nightly DragonFlyBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--dragonfly_amd64.tar.gz)
+* [ncdns Nightly FreeBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--freebsd_arm.tar.gz)
+* [ncdns Nightly FreeBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--freebsd_amd64.tar.gz)
+* [ncdns Nightly FreeBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--freebsd_386.tar.gz)
+* [ncdns Nightly NetBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--netbsd_arm.tar.gz)
+* [ncdns Nightly NetBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--netbsd_amd64.tar.gz)
+* [ncdns Nightly NetBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--netbsd_386.tar.gz)
+* [ncdns Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--openbsd_amd64.tar.gz)
+* [ncdns Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--openbsd_386.tar.gz)
+* [ncdns Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--solaris_amd64.tar.gz)
+* [ncdns Nightly Windows (64-bit x86) installer](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns-nsis/Cross-Compile%20Fedora/binaries/ncdns--win64-install.exe)
+* [ncdns Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--windows_amd64.tar.gz)
+* [ncdns Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--windows_386.tar.gz)
+* [ncdns Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--darwin_amd64.tar.gz)
 * [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
 * [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [ncdns Source Code](https://github.com/namecoin/ncdns)
@@ -117,6 +139,31 @@ ncdns plain binaries are also available for most major operating systems.  These
 ### Known Issues
 
 * Build is not yet reproducible.
+
+## certinject
+
+certinject is a tool for adding and manipulating certificates in the Windows CryptoAPI certificate store.  Unlike the built-in Windows tool `certutil`, certinject can easily set the EKU (extended key usage, AKA enhanced key usage) and NC (name constraints) properties on certificates, and does not require Administrator privileges.
+
+* [certinject Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64le.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_arm64.tar.gz)
+* [certinject Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_arm.tar.gz)
+* [certinject Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_amd64.tar.gz)
+* [certinject Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_386.tar.gz)
+* [certinject Nightly DragonFlyBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--dragonfly_amd64.tar.gz)
+* [certinject Nightly FreeBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_arm.tar.gz)
+* [certinject Nightly FreeBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_amd64.tar.gz)
+* [certinject Nightly FreeBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--freebsd_386.tar.gz)
+* [certinject Nightly NetBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_arm.tar.gz)
+* [certinject Nightly NetBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_amd64.tar.gz)
+* [certinject Nightly NetBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--netbsd_386.tar.gz)
+* [certinject Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--openbsd_amd64.tar.gz)
+* [certinject Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--openbsd_386.tar.gz)
+* [certinject Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--solaris_amd64.tar.gz)
+* [certinject Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--windows_amd64.tar.gz)
+* [certinject Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--windows_386.tar.gz)
+* [certinject Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--darwin_amd64.tar.gz)
+* [certinject Source Code](https://github.com/namecoin/certinject)
 
 ## certdehydrate-dane-rest-api
 
