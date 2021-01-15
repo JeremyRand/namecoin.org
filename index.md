@@ -36,7 +36,7 @@ What does Namecoin do under the hood?
 * Like bitcoins, Namecoin names are difficult to censor or seize.
 * Lookups do not generate network traffic (improves privacy).
 
-**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS]({{site.baseurl}}dot-bit/).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
+**Namecoin** was the first fork of [Bitcoin](https://bitcoin.org) and still is one of the most innovative "altcoins".  It was first to implement [merged mining](https://bitcoin.stackexchange.com/questions/273/how-does-merged-mining-work) and a [decentralized DNS]({{ "/dot-bit/" | relative_url }}).  **Namecoin** was also the first solution to [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko%27s_triangle), the long-standing problem of producing a naming system that is simultaneously secure, decentralized, and human-meaningful.
 
 </div>
 </div>
@@ -44,11 +44,11 @@ What does Namecoin do under the hood?
 ## More Information
 
 * [Namecoin Identities](https://nameid.org)
-* [.bit DNS]({{site.baseurl}}dot-bit/)
+* [.bit DNS]({{ "/dot-bit/" | relative_url }})
 
 ## News
 
-([RSS Feed]({{site.baseurl}}feed.rss))
+([RSS Feed]({{ "/feed.rss" | relative_url }}))
 
 {% for post in site.posts limit:10 %}
 {% assign content_words = post.content | number_of_words %}
@@ -57,7 +57,7 @@ What does Namecoin do under the hood?
 
 {% endfor %}
 
-[Earlier news]({{site.baseurl}}news/)
+[Earlier news]({{ "/news/" | relative_url }})
 
 For the latest news go to the [Namecoin forum](https://forum.namecoin.org/) or check out [r/namecoin](https://www.reddit.com/r/namecoin).
 
