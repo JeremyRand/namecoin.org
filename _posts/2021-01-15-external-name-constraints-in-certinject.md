@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In my [previous post]({{ "/2021/01/07/undocumented-windows-feature-external-name-constraints.html" | relative_url }}), I introduced the undocumented Windows feature for external name constraints, which allow us to apply a name constraint without the consent of a CA, and without needing to cross-sign the CA.  I mentioned that the Windows utility `certutil` can be tricked into setting this Property on a certificate using the `-repairstore` command.  Alas, abusing `certutil` to do this comes with some problems:
+In my [previous post]({{ "/2021/01/14/undocumented-windows-feature-external-name-constraints.html" | relative_url }}), I introduced the undocumented Windows feature for external name constraints, which allow us to apply a name constraint without the consent of a CA, and without needing to cross-sign the CA.  I mentioned that the Windows utility `certutil` can be tricked into setting this Property on a certificate using the `-repairstore` command.  Alas, abusing `certutil` to do this comes with some problems:
 
 1. The `-repairstore` command looks suspiciously like it's intended to be used for totally different purposes, and I simply do not trust it to only set a name constraint and nothing else.
 2. Using `certutil` to edit a public CA requires Administrator privileges, which is not great from a sandboxing perspective.
