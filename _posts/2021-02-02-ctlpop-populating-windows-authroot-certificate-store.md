@@ -19,7 +19,7 @@ Well, unfortunately, if a root CA is being downloaded on-the-fly during certific
 
 ## What Can We Do?
 
-It's entirely feasible to download the full list of certificate preimages that `AuthRoot.stl` refers to.  There's even an undocumented [1] `certutil` command for this.  But what do we want to do with it?  Two ideas occurred to me:
+It's entirely feasible to download the full list of certificate preimages that `AuthRoot.stl` refers to.  There's even a `certutil` command for this: `certutil -v -syncWithWU -f -f .\`.  But what do we want to do with it?  Two ideas occurred to me:
 
 1. We could download the full set of certs in SST (serialized store) format (which also includes all the metadata, i.e. Properties besides the cert preimage), and ask `certutil` to import it to the `AuthRoot` logical store.  Unfortunately, this means we'd need to run as Administrator, which is not really ideal.  Also, how do we know for sure that `AuthRoot` is the right logical store to import them?  Seems suboptimal.
 2. We could download the full set of certs to individual files, and use `certinject` to individually inject them to the `AuthRoot` store, with Properties manually parsed from the `AuthRoot.stl` file.  While this does avoid running with Administrator privileges by virtue of using `certinject`, it means we'd have to carefully parse the Properties from `AuthRoot.stl`, and make sure that `certinject` is applying them correctly.  Seems like a lot of attack surface.  Also, we still don't know for sure that they all belong in the `AuthRoot` logical store, and it still requires write privileges to the `AuthRoot` store's registry key.  So this is still not great.
