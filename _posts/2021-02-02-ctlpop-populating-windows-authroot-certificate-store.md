@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In my [previous post]({{ "/2021/01/08/external-name-constraints-in-certinject.html" | relative_url }}), I introduced improvements to `certinject`, which allow us to apply a name constraint to all certificates in a Windows certificate store, without needing Administrator privileges.  Alas, there is a major issue with using `certinject` as presented in that post.  The issue is that most of the built-in root CA's in Windows *aren't part of any cert store!*
+In my [previous post]({{ "/2021/01/15/external-name-constraints-in-certinject.html" | relative_url }}), I introduced improvements to `certinject`, which allow us to apply a name constraint to all certificates in a Windows certificate store, without needing Administrator privileges.  Alas, there is a major issue with using `certinject` as presented in that post.  The issue is that most of the built-in root CA's in Windows *aren't part of any cert store!*
 
 ## Wait, What?
 
