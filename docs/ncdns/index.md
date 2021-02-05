@@ -27,12 +27,7 @@ Or like this:
 
 To enable installing ConsensusJ-Namecoin, exit the installer wizard, install the relevant dependency, and re-run the installer wizard.
 
-The ncdns installer wizard also sets up TLS certificate validation for `.bit` domain names if a supported web browser is installed.  Currently, the following web browsers are supported for Namecoin TLS on Windows:
-
-* Chromium
-* Google Chrome
-* Google Chrome Canary
-* Opera
+The ncdns installer wizard also sets up TLS certificate validation for `.bit` domain names.  This will work for any application that uses the Windows certificate verifier.  As examples, Chromium and Edge use the Windows certificate verifier, and will therefore work fine for Namecoin TLS out of the box.
 
 ### Other OS's
 

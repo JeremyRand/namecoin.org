@@ -106,7 +106,7 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 * [ncdns v0.0.10.3 GNU/Linux (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-x86_64.tar.gz)
 * [ncdns v0.0.10.3 GNU/Linux (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-i686.tar.gz)
-* [ncdns v0.0.10.3 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64-install.exe)
+* [ncdns v0.1 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.1/ncdns-0.1-windows-x86_64-install.exe)
 * [ncdns v0.0.10.3 Windows (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64.tar.gz)
 * [ncdns v0.0.10.3 Windows (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-i686.tar.gz)
 * [ncdns v0.0.10.3 macOS (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-osx-x86_64.tar.gz)
