@@ -9,7 +9,7 @@ So you'd like to support Namecoin?  Great!  There are several ways you can help 
 
 ## Donate
 
-Donations help our developers pay the bills, and sometimes can even enable new developers to join the project.  [You can donate to the Namecoin project here.]({{site.baseurl}}donate/)
+Donations help our developers pay the bills, and sometimes can even enable new developers to join the project.  [You can donate to the Namecoin project here.]({{ "/donate/" | relative_url }})
 
 ## Buy (and wear) merchandise
 
@@ -17,7 +17,7 @@ Our friends at Cypher Market sell [Namecoin-branded merchandise](https://www.cyp
 
 ## Run a full node
 
-Full nodes (Namecoin Core nodes) are the core of the Namecoin P2P network.  The more people run full nodes, and the more geographically and jurisdictionally diverse those full nodes are, the stronger the Namecoin P2P network becomes.  Please consider running [Namecoin Core]({{site.baseurl}}download/#namecoin-core-client-with-qt-name-tab) on as many of the following networks as you can:
+Full nodes (Namecoin Core nodes) are the core of the Namecoin P2P network.  The more people run full nodes, and the more geographically and jurisdictionally diverse those full nodes are, the stronger the Namecoin P2P network becomes.  Please consider running [Namecoin Core]({{ "/download/#namecoin-core-client-with-qt-name-tab" | relative_url }}) on as many of the following networks as you can:
 
 * IPv4 (preferably allowing incoming connections)
 * IPv6 (preferably allowing incoming connections)
@@ -26,7 +26,7 @@ Full nodes (Namecoin Core nodes) are the core of the Namecoin P2P network.  The 
 
 ## Test betas
 
-Do you enjoy living on the cutting edge?  Are you highly skilled at breaking things?  You can help us by testing [beta releases of Namecoin software]({{site.baseurl}}download/betas/), and letting us know what we can improve.
+Do you enjoy living on the cutting edge?  Are you highly skilled at breaking things?  You can help us by testing [beta releases of Namecoin software]({{ "/download/betas/" | relative_url }}), and letting us know what we can improve.
 
 ## Run a `.bit` website
 
@@ -36,7 +36,7 @@ Don't have a website?  Ask your favorite websites' operators to get a `.bit` dom
 
 ## Improve decentralized exchange liquidity
 
-Decentralized exchanges offer better security and privacy than centralized exchanges.  You can help make decentralized exchanges easier to use by posting buy and sell offers on them.  [See the list of decentralized exchanges here.]({{site.baseurl}}exchanges/#decentralized-exchanges)
+Decentralized exchanges offer better security and privacy than centralized exchanges.  You can help make decentralized exchanges easier to use by posting buy and sell offers on them.  [See the list of decentralized exchanges here.]({{ "/exchanges/#decentralized-exchanges" | relative_url }})
 
 ## Run a DNS seed
 

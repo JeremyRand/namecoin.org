@@ -9,7 +9,7 @@ title: News
 
 {% assign permalinks = "1" %}
 
-([RSS Feed]({{site.baseurl}}feed.rss))
+([RSS Feed]({{ "/feed.rss" | relative_url }}))
 
 {% for post in site.posts %}
 

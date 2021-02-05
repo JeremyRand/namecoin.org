@@ -30,8 +30,8 @@
 
 {{ page.application }} for {{ os }} can be used with Namecoin for TLS positive and negative overrides; this allows certificates for `.bit` domains that match the blockchain to be used without errors, and prevents malicious or compromised public CA's from issuing certificates for `.bit` domains.  Instructions:
 
-1. Install [ncdns]({{site.baseurl}}docs/ncdns/).
-1. Download and extract certdehydrate-dane-rest-api and ncp11 from the [Beta Downloads]({{site.baseurl}}download/betas/) page.
+1. Install [ncdns]({{ "/docs/ncdns/" | relative_url }}).
+1. Download and extract certdehydrate-dane-rest-api and ncp11 from the [Beta Downloads]({{ "/download/betas/" | relative_url }}) page.
 1. Create a text file called `certdehydrate_dane_rest_api.conf` in the same directory where `{{ certdehydratedanerestapifile }}` is, and fill it with the following contents (if ncdns is listening on a different IP or port, change the following accordingly):
    
        [certdehydrate-dane-rest-api]
@@ -41,7 +41,7 @@
 1. Run `{{ certdehydratedanerestapifile }}`.
 1. If you want to test certdehydrate-dane-rest-api, try visiting `http://127.0.0.1:8080/lookup?domain=ca-test.bit` in a web browser.  You should see a certificate.  If you instead get an error or an empty page, something is wrong.
 1. Make sure {{ page.application }} is installed.
-{% if tornetwork %}1. Make sure {{ page.application }} is already [configured to use Namecoin for Tor name resolution]({{site.baseurl}}docs/tor-resolution/).
+{% if tornetwork %}1. Make sure {{ page.application }} is already [configured to use Namecoin for Tor name resolution]({{ "/docs/tor-resolution/" | relative_url }}).
 {% endif %}1. Make sure {{ page.application }} is shut down.
 1. In {{ page.application }}'s `Browser` folder, rename `{{ libnssckbifile }}` to `{{ libnssckbitargetfile }}`.
 1. Copy `{{ libncp11file }}` to {{ page.application }}'s `Browser` folder.

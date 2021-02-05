@@ -7,9 +7,9 @@ title: Download
 
 ## Namecoin Core Client (Stable Release)
 
-* Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
+* Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
 * **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
-* Name lookup: allows looking up names (use in combination with [ncdns]({{site.baseurl}}docs/ncdns) or NMControl to browse `.bit` domains).
+* Name lookup: allows looking up names (use in combination with [ncdns]({{ "/docs/ncdns" | relative_url }}) or NMControl to browse `.bit` domains).
 * Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
 * Recommended for miners.
 * Recommended for users who don't own any names.
@@ -32,7 +32,7 @@ Current release: 0.19.0.1.
 
 ## Namecoin Core Client (with Qt Name Tab)
 
-* Name wallet: includes graphical interface and command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{site.baseurl}}exchanges/)).
+* Name wallet: includes graphical interface and command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
 * Name lookup: allows looking up names (use in combination with ncdns or NMControl to browse .bit domains).
 * Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
 * **Not suitable for mining.**
@@ -147,4 +147,4 @@ With Python 2.7 installed you can run nmcontrol.py directly from [source](https:
 
 ## Help Us Test Betas
 
-Want to help us test improvements in Namecoin?  Check out the [Beta Downloads]({{site.baseurl}}download/betas/) page.
+Want to help us test improvements in Namecoin?  Check out the [Beta Downloads]({{ "/download/betas/" | relative_url }}) page.

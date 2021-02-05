@@ -26,7 +26,7 @@ This could be either Namecoin Core or ConsensusJ-Namecoin.  Note that if you're 
 
 ## Install ncdns
 
-See [ncdns documentation]({{site.baseurl}}docs/ncdns).
+See [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
 
 You should install ncdns on a machine which has a trusted network path to the machine running Tor.  It is **not** necessary to install Dnssec-Trigger if you're only planning to use Namecoin resolution with Tor.
 
@@ -36,7 +36,7 @@ You should install ncdns on a machine which has a trusted network path to the ma
 
 ## Install {{ prop279 }}
 
-{{ prop279 }} can be downloaded at the [Beta Downloads]({{site.baseurl}}download/betas/#{{ prop279 }}) page.  The build is not yet reproducible.
+{{ prop279 }} can be downloaded at the [Beta Downloads]({{ "/download/betas/#{{ prop279 }}" | relative_url }}) page.  The build is not yet reproducible.
 
 If you want to build from source:
 
@@ -83,7 +83,7 @@ In a typical Tor Browser installation, `torrc-defaults` is the correct place to 
 
 Make sure that the name lookup client{% if prop279 == "dns-prop279" %}, ncdns,{% endif %} and Tor are running.  Then, run `{{ controllerpython }} poc.py` in the {{ controller }} directory.  It should automatically configure Tor to use Namecoin for any domain name lookups that end in `.bit` or `.bit.onion`.  Here's a screenshot of [the Tor example rendezvous points page](http://federalistpapers.bit.onion/):
 
-![Screenshot.]({{site.baseurl}}images/screenshots/tor/tor-browser-onion-2018-08-01.png)
+![Screenshot.]({{ "/images/screenshots/tor/tor-browser-onion-2018-08-01.png" | relative_url }})
 
 Semantically, `.bit.onion` means that a domain name will always resolve to a `.onion` address (meaning that `.bit.onion` names are encrypted and authenticated regardless of whether TLS is used); `.bit` means that a domain name will resolve to any of `.onion`, IPv6, IPv4, or CNAME, meaning that `.bit` names are only encrypted and authenticated if TLS is used.  These semantics are open to revision later, as the Tor community evolves its canonical naming semantics.
 
