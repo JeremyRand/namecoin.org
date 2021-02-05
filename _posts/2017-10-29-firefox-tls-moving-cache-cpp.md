@@ -29,9 +29,9 @@ I was originally hoping to use a thread-safe data structure for the C++ override
 
 Since I wrote up some really nice scripts for measuring latency for Phase 4, I reused them for Phase 5 to see how things have improved.
 
-<img src="{{site.baseurl}}data/webextensions-latency/2017-10-19/raw-data_html_e7e6307c38d1bb1a.png">
+![Latency graph (uncached)]({{ "/data/webextensions-latency/2017-10-19/raw-data_html_e7e6307c38d1bb1a.png" | relative_url }})
 
-<img src="{{site.baseurl}}data/webextensions-latency/2017-10-19/raw-data_html_4abcef16d0d9da8.png">
+![Latency graph (cached)]({{ "/data/webextensions-latency/2017-10-19/raw-data_html_4abcef16d0d9da8.png" | relative_url }})
 
 This is a quite drastic speedup.  The gradual speedup over time has vanished, which suggests that I was right about it being attributable to the JavaScript JIT warming up.  (However, it should be noted that this time I did a single batch of 45 certificate verifications, so this may be an artifact of that change too.)  More importantly, based on the fact that uncached and cached overrides are indistinguishable in the vast majority of cases, it can be inferred that the Experiment's decision usually enters the C++ code's decision cache before Firefox's built-in certificate verification even finishes.  (The occasional spikes in uncached latency seem to correspond to cases where that's false.)
 
