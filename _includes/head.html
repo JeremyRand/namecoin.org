@@ -10,8 +10,8 @@
 
     <link href="{{ "/css/style.css" | relative_url }}" rel="stylesheet">
     
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="Namecoin News" href="{{site.baseurl}}feed.rss"/>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="Namecoin News" href="{{ '/feed.rss' | relative_url }}"/>
 
     <link rel="icon" href='{{ "/images/namecoin-coin_100px.png" | relative_url }}' sizes="100x100" type="image/png">
     <link rel="icon" href='{{ "/images/namecoin-coin_200px.png" | relative_url }}' sizes="200x200" type="image/png">
