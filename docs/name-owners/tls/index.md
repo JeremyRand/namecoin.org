@@ -105,4 +105,4 @@ If you are using the Dehydrated form, or the default settings for the Constraine
 
 Note that wildcard certificates are not currently supported; each domain name needs its own certificate.
 
-You can test your setup by visiting your `.bit` domain in a [Namecoin-supported TLS client]({{site.baseurl}}docs/tls-client/).
+You can test your setup by visiting your `.bit` domain in a [Namecoin-supported TLS client]({{ "/docs/tls-client/" | relative_url }}).

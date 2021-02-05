@@ -15,6 +15,6 @@ Tor onion services are an effective way to get a stable address when your IP add
 
 ## DyName
 
-If delegation to DNS or a Tor onion service doesn't meet your requirements, you can also use DyName.  DyName is a dynamic IP address update client for `.bit` domains.  DyName should only be used in combination with [delegated alteration]({{site.baseurl}}docs/name-owners/delegated-alteration).  Using DyName will incur transaction fees (and blockchain storage) for each IP address update.
+If delegation to DNS or a Tor onion service doesn't meet your requirements, you can also use DyName.  DyName is a dynamic IP address update client for `.bit` domains.  DyName should only be used in combination with [delegated alteration]({{ "/docs/name-owners/delegated-alteration" | relative_url }}).  Using DyName will incur transaction fees (and blockchain storage) for each IP address update.
 
 To obtain DyName, [visit the GitHub project.](https://github.com/JeremyRand/DyName)
