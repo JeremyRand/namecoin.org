@@ -36,7 +36,7 @@ You should install ncdns on a machine which has a trusted network path to the ma
 
 ## Install {{ prop279 }}
 
-{{ prop279 }} can be downloaded at the [Beta Downloads]({{ "/download/betas/#{{ prop279 }}" | relative_url }}) page.  The build is not yet reproducible.
+{{ prop279 }} can be downloaded at the [Beta Downloads]({{ "/download/betas/#" | relative_url }}{{ prop279 }}) page.  The build is not yet reproducible.
 
 If you want to build from source:
 
