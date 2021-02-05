@@ -39,4 +39,4 @@ Dot-Bit is powered by Namecoin, a free and open source software project based on
 
 ### Sound Awesome?
 
-[Learn how to browse Dot-Bit-enabled websites.]({{ "/dot-bit/browsing-instructions" | relative_url }}) And if you have your own website, [learn how to enable it]({{site.baseurl}}docs/name-owners) for the improved censorship-resistance, security, privacy, and speed that Dot-Bit offers.
+[Learn how to browse Dot-Bit-enabled websites.]({{ "/dot-bit/browsing-instructions" | relative_url }}) And if you have your own website, [learn how to enable it]({{ "/docs/name-owners" | relative_url }}) for the improved censorship-resistance, security, privacy, and speed that Dot-Bit offers.
