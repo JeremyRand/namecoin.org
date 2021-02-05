@@ -17,7 +17,7 @@ This is documentation for ConsensusJ-Namecoin (a lightweight SPV Namecoin name l
 
 ## Installation
 
-You can download ConsensusJ-Namecoin at the [Beta Downloads]({{site.baseurl}}download/betas/#consensusj-namecoin) page.  (If you prefer to build from source, see the next section.)
+You can download ConsensusJ-Namecoin at the [Beta Downloads]({{ "/download/betas/#consensusj-namecoin" | relative_url }}) page.  (If you prefer to build from source, see the next section.)
 
 ## Build prerequisites
 

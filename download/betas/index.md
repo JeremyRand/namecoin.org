@@ -40,7 +40,7 @@ Nightly builds are produced by infrastructure that is not under our direct contr
 
 ## ConsensusJ-Namecoin
 
-ConsensusJ-Namecoin is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing `.bit` domains with [ncdns]({{site.baseurl}}docs/ncdns)).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
+ConsensusJ-Namecoin is a lightweight SPV client that acts as a drop-in replacement for Namecoin Core's name lookup functionality (e.g. for browsing `.bit` domains with [ncdns]({{ "/docs/ncdns" | relative_url }})).  It synchronizes faster and uses less storage than Namecoin Core, but trusts Namecoin miners more than Namecoin Core does.
 
 You need to have Java installed:
 
@@ -55,7 +55,7 @@ You need to have Java installed:
 * [ConsensusJ-Namecoin source code (use the `consensusj-namecoin-0.3.2.1` branch)](https://github.com/JeremyRand/consensusj/)
 * [libdohj source code](https://github.com/dogecoin/libdohj/)
 
-[Preliminary ConsensusJ-Namecoin documentation is here.]({{site.baseurl}}docs/consensusj-namecoin/)
+[Preliminary ConsensusJ-Namecoin documentation is here.]({{ "/docs/consensusj-namecoin/" | relative_url }})
 
 ### Known Issues
 
@@ -67,7 +67,7 @@ You need to have Java installed:
 
 Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
-[Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
+[Preliminary Electrum-NMC documentation is here.]({{ "/docs/electrum-nmc/" | relative_url }})
 
 * [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.xz)
 * [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.gz)
@@ -94,7 +94,7 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is most likely what you want to install.
 
-See the [ncdns documentation]({{site.baseurl}}docs/ncdns).
+See the [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
 
 The ncdns Windows installer also automatically installs and configures a Namecoin client (Namecoin Core or ConsensusJ-Namecoin) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
 
@@ -258,7 +258,7 @@ Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all 
 
 This is a tool that permits Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
 
-See the [Namecoin Tor resolution documentation]({{site.baseurl}}docs/tor-resolution)
+See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | relative_url }})
 * Binaries distributed with [ncdns v0.0.8 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, and macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.8).
 * [Source code at GitHub.](https://github.com/namecoin/dns-prop279)
 
@@ -279,7 +279,7 @@ See the [Namecoin Tor resolution documentation]({{site.baseurl}}docs/tor-resolut
 
 ncprop279 enables Namecoin naming (but not DNS naming) to be used with Tor, via the draft Prop279 pluggable naming API.  ncprop279 is somewhat smaller and more efficient than dns-prop279.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
 
-See the [Namecoin Tor resolution documentation]({{site.baseurl}}docs/tor-resolution).
+See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | relative_url }}).
 
 * [ncprop279 v0.0.3 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-x86_64.tar.gz)
 * [ncprop279 v0.0.3 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-i686.tar.gz)

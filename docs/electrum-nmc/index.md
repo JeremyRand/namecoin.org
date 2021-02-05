@@ -9,41 +9,41 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 ## Installation
 
-You can download Electrum-NMC at the [Beta Downloads]({{site.baseurl}}download/betas/#electrum-nmc) page.
+You can download Electrum-NMC at the [Beta Downloads]({{ "/download/betas/#electrum-nmc" | relative_url }}) page.
 
 ## Name Management
 
 Name transactions are visible in the History tab:
 
-![Screenshot.]({{site.baseurl}}images/screenshots/electrum-nmc/Names-in-History-Tab.png)
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Names-in-History-Tab.png" | relative_url }})
 
 Name operations are visible in the Outputs section of the Transaction Details dialog:
 
-![Screenshot.]({{site.baseurl}}images/screenshots/electrum-nmc/Name-in-Transaction-Details.png)
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Name-in-Transaction-Details.png" | relative_url }})
 
 You can enter a name you'd like to register in the Buy Names tab:
 
-![Screenshot.]({{site.baseurl}}images/screenshots/electrum-nmc/Buy-Name-Entry.png)
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Buy-Name-Entry.png" | relative_url }})
 
 If the name is available to register, you'll see a message like this:
 
-![Domain test1.bit is available to register!]({{site.baseurl}}images/screenshots/electrum-nmc/Buy-Name-Available.png)
+![Domain test1.bit is available to register!]({{ "/images/screenshots/electrum-nmc/Buy-Name-Available.png" | relative_url }})
 
 If the name is already taken, you'll instead see a message like this:
 
-![Domain domob.bit is already registered, sorry!]({{site.baseurl}}images/screenshots/electrum-nmc/Buy-Name-Taken.png)
+![Domain domob.bit is already registered, sorry!]({{ "/images/screenshots/electrum-nmc/Buy-Name-Taken.png" | relative_url }})
 
 You can view a list of your registered names in the Manage Names tab:
 
-![Screenshot.]({{site.baseurl}}images/screenshots/electrum-nmc/Manage-Names-Tab.png)
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Manage-Names-Tab.png" | relative_url }})
 
 You can update or transfer a name by clicking "Configure Name...":
 
-![Screenshot.]({{site.baseurl}}images/screenshots/electrum-nmc/Configure-Name-Dialog.png)
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Configure-Name-Dialog.png" | relative_url }})
 
 ## Name Lookups
 
-To integrate Electrum-NMC's name lookups with applications such as [ncdns]({{site.baseurl}}docs/ncdns/), follow these instructions:
+To integrate Electrum-NMC's name lookups with applications such as [ncdns]({{ "/docs/ncdns/" | relative_url }}), follow these instructions:
 
 1. Enable Electrum-NMC's JSON-RPC interface, as per [the instructions from upstream Electrum](https://electrum.readthedocs.io/en/latest/merchant.html#jsonrpc-interface).
 1. To test the RPC server, try running the following from a terminal (substitute your username, password, and port accordingly): `curl --data-binary '{"id":"curltext","method":"name_show","params":["d/nf"]}' http://username:password@127.0.0.1:7777`.  You should get something like this:

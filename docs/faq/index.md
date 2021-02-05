@@ -26,7 +26,7 @@ The cost includes a registration fee and a transaction fee. The registration fee
 
 ### How do I obtain namecoins? Can I mine them?
 
-You can mine them alongside bitcoins or trade them, see [How to get Namecoins]({{site.baseurl}}get-started/get-namecoins/).
+You can mine them alongside bitcoins or trade them, see [How to get Namecoins]({{ "/get-started/get-namecoins/" | relative_url }}).
 
 ### Who gets the registration fee? 
 
@@ -42,13 +42,13 @@ You have to renew or update a name every 35,999 blocks at the latest (between 20
 
 ### How do I browse a .bit domain?
 
-See [Browsing .bit Websites]({{site.baseurl}}dot-bit/browsing-instructions/).
+See [Browsing .bit Websites]({{ "/dot-bit/browsing-instructions/" | relative_url }}).
 
-You can also use [ncdns]({{site.baseurl}}docs/ncdns) (experimental).  If you have the [ZeroNet](https://zeronet.io/) software installed, you can visit ZeroNet-enabled .bit domains.
+You can also use [ncdns]({{ "/docs/ncdns" | relative_url }}) (experimental).  If you have the [ZeroNet](https://zeronet.io/) software installed, you can visit ZeroNet-enabled .bit domains.
 
 ### How do I register and host a .bit domain?
 
-See [Documentation for Name Owners]({{site.baseurl}}docs/name-owners/).
+See [Documentation for Name Owners]({{ "/docs/name-owners/" | relative_url }}).
 
 ### Do I have to pay renewal fees? 
 
@@ -332,8 +332,8 @@ The good news is that the script system inherent in Bitcoin and Namecoin is desi
 * **Multisig** (similar to Bitcoin) would allow names to be controlled by M-of-N keys.  Some of these keys could belong to the various directors of a company, be stored in a secure location, or be stored by semi-trusted service providers.  This is currently supported by the Namecoin protocol and consensus rules, but not well-exposed to end users.
 * **Offline signing** (similar to Bitcoin) would allow names to be controlled by keys that are located on an air-gapped computer, an isolated offline Qubes virtual machine, or a hardware wallet.  This is currently supported by the Namecoin protocol and consensus rules, but not well-exposed to end users.
 * **Delegated renewal** (Namecoin-specific) would allow a key to be authorized to renew a name, but not change its value or its owner.  Efforts are underway to add this to the Namecoin protocol and consensus rules.
-* **Delegated alteration** (Namecoin-specific) would allow a key to be authorized to alter the value of a name, but not change its owner.  This is supported, but not well exposed to end users. Further improvements are underway.  See the docs on [delegated alteration]({{site.baseurl}}docs/name-owners/delegated-alteration).
-* **Delegated partial alteration** (Namecoin-specific) would allow a key to be authorized to alter a specific subset of the value of a name (for example, be allowed to change a domain name's IP address but not its TLS certificate), but not change other parts of the value or its owner.  This is supported, but not well-exposed to end users.  Further improvements are underway.  See the docs on [delegated alteration]({{site.baseurl}}docs/name-owners/delegated-alteration).
+* **Delegated alteration** (Namecoin-specific) would allow a key to be authorized to alter the value of a name, but not change its owner.  This is supported, but not well exposed to end users. Further improvements are underway.  See the docs on [delegated alteration]({{ "/docs/name-owners/delegated-alteration" | relative_url }}).
+* **Delegated partial alteration** (Namecoin-specific) would allow a key to be authorized to alter a specific subset of the value of a name (for example, be allowed to change a domain name's IP address but not its TLS certificate), but not change other parts of the value or its owner.  This is supported, but not well-exposed to end users.  Further improvements are underway.  See the docs on [delegated alteration]({{ "/docs/name-owners/delegated-alteration" | relative_url }}).
 
 The above features can, of course, be combined arbitrarily for additional layered security.
 

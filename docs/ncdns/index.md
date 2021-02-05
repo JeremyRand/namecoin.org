@@ -9,21 +9,21 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 ## Installation
 
-You can download ncdns at the [Beta Downloads]({{site.baseurl}}download/betas/#ncdns) page.
+You can download ncdns at the [Beta Downloads]({{ "/download/betas/#ncdns" | relative_url }}) page.
 
 ### Windows
 
 An installer wizard is available.  The ncdns Windows installer will offer to automatically install a Namecoin name lookup client (either Namecoin Core or ConsensusJ-Namecoin) and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/):
 
-![Screenshot.]({{site.baseurl}}images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png)
+![Screenshot.]({{ "/images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png" | relative_url }})
 
 If you're missing a dependency for ConsensusJ-Namecoin, you'll see a notice like this:
 
-!["Cannot use BitcoinJ SPV client (Java must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-java-2018-08-10.png)
+!["Cannot use BitcoinJ SPV client (Java must be installed)"]({{ "/images/screenshots/ncdns-nsis/spv-missing-java-2018-08-10.png" | relative_url }})
 
 Or like this:
 
-!["Cannot use BitcoinJ SPV client (Microsoft Visual C++ Redistributable Package must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-vc2010-2018-08-10.png)
+!["Cannot use BitcoinJ SPV client (Microsoft Visual C++ Redistributable Package must be installed)"]({{ "/images/screenshots/ncdns-nsis/spv-missing-vc2010-2018-08-10.png" | relative_url }})
 
 To enable installing ConsensusJ-Namecoin, exit the installer wizard, install the relevant dependency, and re-run the installer wizard.
 
@@ -31,9 +31,9 @@ The ncdns installer wizard also sets up TLS certificate validation for `.bit` do
 
 ### Other OS's
 
-ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a [Namecoin name lookup client]({{site.baseurl}}get-started/name-lookup-clients/) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
+ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a [Namecoin name lookup client]({{ "/get-started/name-lookup-clients/" | relative_url }}) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
 
-TLS instructions for ncdns on GNU/Linux are at the [TLS Client Compatibility]({{site.baseurl}}docs/tls-client/) page.
+TLS instructions for ncdns on GNU/Linux are at the [TLS Client Compatibility]({{ "/docs/tls-client/" | relative_url }}) page.
 
 ## Supplying your own Namecoin node
 
