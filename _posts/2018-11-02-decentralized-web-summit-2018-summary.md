@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-As was [previously announced]({{site.baseurl}}2018/07/23/decentralized-web-summit-2018.html), I (Jeremy Rand) represented Namecoin at [Decentralized Web Summit 2018](https://decentralizedweb.net/) in San Francisco.
+As was [previously announced]({{ "/2018/07/23/decentralized-web-summit-2018.html" | relative_url }}), I (Jeremy Rand) represented Namecoin at [Decentralized Web Summit 2018](https://decentralizedweb.net/) in San Francisco.
 
 This time, the focus of my attendance was less on giving talks and more about talking with other attendees about possible collaborations.  As usual, I won't be publicly disclosing the content of those conversations, because I want people to be able to talk to me at conferences without worrying that off-the-cuff comments will be broadcast to the public.
 

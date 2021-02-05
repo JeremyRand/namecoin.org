@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-One of the main reasons that ConsensusJ-Namecoin is still in the [Beta Downloads section]({{site.baseurl}}download/betas/) of Namecoin.org is that it carries several patches against upstream ConsensusJ that haven't yet been upstreamed.  This presents two resultant issues:
+One of the main reasons that ConsensusJ-Namecoin is still in the [Beta Downloads section]({{ "/download/betas/" | relative_url }}) of Namecoin.org is that it carries several patches against upstream ConsensusJ that haven't yet been upstreamed.  This presents two resultant issues:
 
 1. There are fewer eyes on the ConsensusJ-Namecoin code.
 2. ConsensusJ-Namecoin takes some extra time to benefit from new code from upstream, because I need to manually rebase against that new code (and fix whatever conflicts might show up).
@@ -19,7 +19,7 @@ As expected, upstream ConsensusJ developer Sean Gilligan noticed some things tha
 3. The API server that `libdohj-namecoin` uses by default when not in `leveldbtxcache` mode is WebBTC, which has been down for maintenance for quite a while.  Also, WebBTC is problematic due to its lack of consensus safety (it re-implements the consensus rules instead of relying on Namecoin Core's consensus implementation, and this has caused it to chainfork from the Bitcoin chain before).
 4. The API-server security model isn't actually a bad one (it's a lot easier to Sybil the P2P network than to impersonate an API server), but I tend to think that Electrum is a better (and more standardized) approach to the API-server security model than the `libdohj-namecoin` implementation.  It's conceivable that we could combine the two approaches in the future (maybe make `libdohj-namecoin` query an Electrum instance in addition to the P2P network?), but this is not exactly a high priority for our R&D budget given that `leveldbtxcache` mode isn't in any immediate danger of encountering scaling problems.
 
-Hopefully we'll see more progress on this front in the near future.  In the meantime, I've released ConsensusJ-Namecoin v0.3.2.1 (on the [Beta Downloads]({{site.baseurl}}download/betas/#consensusj-namecoin) page as usual), which incorporates the latest improvements from upstream ConsensusJ (including Sean's code review of my WalletAppKit support).
+Hopefully we'll see more progress on this front in the near future.  In the meantime, I've released ConsensusJ-Namecoin v0.3.2.1 (on the [Beta Downloads]({{ "/download/betas/#consensusj-namecoin" | relative_url }}) page as usual), which incorporates the latest improvements from upstream ConsensusJ (including Sean's code review of my WalletAppKit support).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
 

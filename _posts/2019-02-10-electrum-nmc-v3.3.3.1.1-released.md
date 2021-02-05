@@ -9,6 +9,6 @@ We've released Electrum-NMC v3.3.3.1.1.  This release includes an important fix 
 
 * Remove mandatory wallet dependency for name_show
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund and Cyphrs.

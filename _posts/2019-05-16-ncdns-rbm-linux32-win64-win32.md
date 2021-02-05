@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-As Hugo [mentioned previously]({{site.baseurl}}2019/04/15/ncdns-repro.html), rbm-based build scripts for ncdns are available.  rbm is the build system used by Tor Browser.  This work paves the way for reproducible builds of ncdns, improves the security of the build process against supply-chain attacks, and also paves the way for Windows and macOS support in our next-gen TLS interoperability codebase, ncp11 [1].  I've been spending some time improving those build scripts; here's what's new:
+As Hugo [mentioned previously]({{ "/2019/04/15/ncdns-repro.html" | relative_url }}), rbm-based build scripts for ncdns are available.  rbm is the build system used by Tor Browser.  This work paves the way for reproducible builds of ncdns, improves the security of the build process against supply-chain attacks, and also paves the way for Windows and macOS support in our next-gen TLS interoperability codebase, ncp11 [1].  I've been spending some time improving those build scripts; here's what's new:
 
 * Considerable effort has gone into shrinking the diff compared to upstream tor-browser-build as much as possible.  Upstream Tor has much better QA resources, so it's important to avoid deviating from what they do unless it's critically important.
 * `binutils` and `gcc` are now dependencies of Go projects that use cgo.  This means that we build the compiler from a fixed version of the source code rather than using whatever compiler Debian ships with.  This brings us closer in line with what upstream tor-browser-build does, probably fixes some compiler bugs, and probably improves reproducibility.
@@ -22,4 +22,4 @@ The next things I'll be working on are:
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
 
-[1] Wait, you haven't heard about ncp11 yet?  Go check out [my 35C3 slides and workshop notes]({{site.baseurl}}2019/05/08/35c3-summary.html) about that!
+[1] Wait, you haven't heard about ncp11 yet?  Go check out [my 35C3 slides and workshop notes]({{ "/2019/05/08/35c3-summary.html" | relative_url }}) about that!

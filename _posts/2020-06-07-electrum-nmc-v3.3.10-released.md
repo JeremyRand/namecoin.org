@@ -23,4 +23,4 @@ Here's what's new since v3.3.9.1:
 
 Unfortunately, due to a currently-unresolved upstream bug, we are not able to provide Android/Linux binaries at this time.  Android/Linux users should remain on v3.3.9.1.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).

@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Previously, I covered [AuxPoW deserialization in Electrum-NMC]({{site.baseurl}}2018/07/01/electrum-nmc-auxpow.html).  The next steps are on-disk serialization/deserialization, and verifying the deserialized AuxPoW.  These are now implemented.
+Previously, I covered [AuxPoW deserialization in Electrum-NMC]({{ "/2018/07/01/electrum-nmc-auxpow.html" | relative_url }}).  The next steps are on-disk serialization/deserialization, and verifying the deserialized AuxPoW.  These are now implemented.
 
 It turned out that on-disk serialization/deserialization was a lot easier than anticipated, because Electrum only writes headers to disk *after* they've been verified, and it never reverifies them.  So it was sufficient to simply strip the AuxPoW portion of the headers prior to writing them to disk, and to tweak the header deserialization code so that it won't error when it encounters AuxPoW-enabled headers that don't have AuxPoW data (this is secure since even if such headers are successfully deserialized, they would never pass verification if verification were attempted).
 

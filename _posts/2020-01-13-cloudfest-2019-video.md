@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-As was [previously announced]({{site.baseurl}}2019/03/25/cloudfest-2019.html), Daniel Kraft represented Namecoin at [CloudFest 2019](https://www.cloudfest.com/agenda).  Here is the video of Daniel's talk:
+As was [previously announced]({{ "/2019/03/25/cloudfest-2019.html" | relative_url }}), Daniel Kraft represented Namecoin at [CloudFest 2019](https://www.cloudfest.com/agenda).  Here is the video of Daniel's talk:
 
 ## What The Cryptocurrency Boom Missed: The Namecoin Story
 

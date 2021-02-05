@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In [Phase 5]({{site.baseurl}}2017/10/29/firefox-tls-moving-cache-cpp.html) of Namecoin TLS for Firefox, I discussed the performance benefits of moving the positive override cache from JavaScript to C++.  I've now implemented preliminary work on doing the same for negative overrides.
+In [Phase 5]({{ "/2017/10/29/firefox-tls-moving-cache-cpp.html" | relative_url }}) of Namecoin TLS for Firefox, I discussed the performance benefits of moving the positive override cache from JavaScript to C++.  I've now implemented preliminary work on doing the same for negative overrides.
 
 The code changes for negative overrides' C++ cache are analogous to those for positive overrides, so there's not much to cover in this post about those changes.  However, I did take the chance to refactor the API between the C++ code and the JavaScript code a bit.  Previously, only 1 WebExtension was able to perform overrides; if multiple WebExtensions registered for the API, whichever replied first would be the only one that had any effect.  Now, each WebExtension replies separately to the Experiment, and the Experiment passes those replies on to the C++ code.  The Experiment also notifies the C++ code when all of the WebExtensions have replied.  Although this does add some extra API overhead, it has the benefit of allowing an override to take place immediately if a single WebExtension has determined that it should take place, even if the other (irrelevant) WebExtensions are still evaluating the certificate.
 

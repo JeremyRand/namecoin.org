@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-The refactorings to the raw transaction API that I [mentioned earlier]({{site.baseurl}}2017/09/13/raw-tx-api-refactoring.html) have been merged to Namecoin Core's master branch.  I've been doing some experiments with it, and I used it to successfully register a name on a regtest network with only one unlock of my wallet (which covered both the `name_new` and `name_firstupdate` operations).
+The refactorings to the raw transaction API that I [mentioned earlier]({{ "/2017/09/13/raw-tx-api-refactoring.html" | relative_url }}) have been merged to Namecoin Core's master branch.  I've been doing some experiments with it, and I used it to successfully register a name on a regtest network with only one unlock of my wallet (which covered both the `name_new` and `name_firstupdate` operations).
 
 I also coded support for Coin Control and Fee Control for name registrations, although this code is not yet tested (meaning that if Murphy has anything to say about it, it will need some fixes).
 

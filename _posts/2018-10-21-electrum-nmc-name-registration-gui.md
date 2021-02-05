@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Now that [Electrum-NMC GUI support for updating names]({{site.baseurl}}2018/10/09/electrum-nmc-name-update-gui.html) is a thing, it's time to advance to name registration GUI support.
+Now that [Electrum-NMC GUI support for updating names]({{ "/2018/10/09/electrum-nmc-name-update-gui.html" | relative_url }}) is a thing, it's time to advance to name registration GUI support.
 
 Whereas the `Renew Name` and `Configure Name...` buttons each map directly to a single sequence of two console commands (`name_update` followed by `broadcast`), which makes their implementation relatively straightforward, *registering* a name is more complicated, due to the two-step procedure in which a salted commitment (`name_new`) is broadcast 12 blocks before the name registration itself (`name_firstupdate`) in order to prevent frontrunning attacks.  Given that the name registration procedure was going to be a bit complicated, it seemed like a good idea to create a new console command for this purpose, so that the GUI can maintain a simple mapping to console commands.
 
@@ -40,10 +40,10 @@ With that, we have a single console command, `name_autoregister`, which does wha
 
 And now, here's your regular fix of screenshots:
 
-![A screenshot of entering a name on the Electrum-NMC Buy Names tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Entry.png)
+![A screenshot of entering a name on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Entry.png" | relative_url }})
 
-![A screenshot of a name available for registration on the Electrum-NMC Buy Names tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Available.png)
+![A screenshot of a name available for registration on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Available.png" | relative_url }})
 
-![A screenshot of a name already taken on the Electrum-NMC Buy Names tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Taken.png)
+![A screenshot of a name already taken on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Taken.png" | relative_url }})
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.

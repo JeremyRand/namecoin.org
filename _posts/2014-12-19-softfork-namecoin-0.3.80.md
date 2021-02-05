@@ -15,4 +15,4 @@ Starting at block height 212500 (around New Year’s Eve) miners will begin appl
 
 Be safe and **make an encrypted backup of your wallet.dat file before updating**. Thanks to everybody who helped make this happen!
 
-[Download v0.3.80 here]({{site.baseurl}}download/), and see the [release notes](https://forum.namecoin.org/viewtopic.php?p=13717) and [full changelog](https://github.com/namecoin/namecoin-legacy/blob/namecoinq-release/changelog.md).
+[Download v0.3.80 here]({{ "/download/" | relative_url }}), and see the [release notes](https://forum.namecoin.org/viewtopic.php?p=13717) and [full changelog](https://github.com/namecoin/namecoin-legacy/blob/namecoinq-release/changelog.md).

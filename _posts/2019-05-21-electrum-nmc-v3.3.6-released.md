@@ -46,7 +46,7 @@ We've released Electrum-NMC v3.3.6.  This release includes important security fi
     * kivy: fix rare crash when changing exchange rate settings (#5329)
     * A few other minor bugfixes and usability improvements.
 * Namecoin-specific:
-    * [Checkpointed AuxPoW truncation]({{site.baseurl}}2019/02/02/electrum-nmc-checkpointed-auxpow-truncation.html).  This requires servers to run ElectrumX v1.9.2 or higher.  All public servers have upgraded; if you run a private server, please make sure that you've upgraded if you want Electrum-NMC to keep working.
+    * [Checkpointed AuxPoW truncation]({{ "/2019/02/02/electrum-nmc-checkpointed-auxpow-truncation.html" | relative_url }}).  This requires servers to run ElectrumX v1.9.2 or higher.  All public servers have upgraded; if you run a private server, please make sure that you've upgraded if you want Electrum-NMC to keep working.
     * Pending registrations in Manage Names tab now show the name and value rather than a blank line.
     * Manage Names tab now shows an estimated expiration date in addition to a block count.
     * Manage Names tab now allows copying identifiers and values to the clipboard.
@@ -63,6 +63,6 @@ We've released Electrum-NMC v3.3.6.  This release includes important security fi
 
 I want to draw attention in particular to one of the code quality improvements.  Most forks of Electrum rename the `electrum` Python package, in order to avoid causing namespace conflicts if both Electrum and an Electrum fork are installed on the same system.  Unfortunately, the result of this is that any change to `import` statements in upstream usually triggers a merge conflict.  I brought up this subject with SomberNight from upstream Electrum, in the hopes that we could find a solution that would avoid the merge conflicts.  My initial suggestion was for upstream to switch to relative imports; SomberNight shot that down due to code readability concerns, but he posted a code snippet that was a (non-working) attempt to work around the issue.  Based on the rough direction of his code snippet, I managed to produce a working patch to Electrum-NMC that allows the imports to revert to the upstream version.  For an idea of how much improvement this is, prior to this patch, merging one release tag's worth of commits (i.e. about a month of commits) would typically take me a day or so.  Now, it takes me about 30 minutes.  Kudos to SomberNight for his excellent efforts working with me to get us to a solution that optimizes productivity for both upstream and downstream.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund and Cyphrs.

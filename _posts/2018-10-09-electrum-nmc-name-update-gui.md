@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-I previously wrote about [creating name transactions in the Electrum-NMC console]({{site.baseurl}}2018/10/06/electrum-nmc-name-transaction-creation.html).  Next up, adding GUI support.
+I previously wrote about [creating name transactions in the Electrum-NMC console]({{ "/2018/10/06/electrum-nmc-name-transaction-creation.html" | relative_url }}).  Next up, adding GUI support.
 
 The new `Renew Name` and `Configure Name...` buttons use the previously discussed `name_update` command as their backend, which makes implementation relatively simple, since it's not difficult for GUI functions to access console commands.  I facilitated the `Renew Name` command by making the `value` parameter of `name_update` optional; if not supplied, it will be set to the current value of the name.
 
@@ -19,8 +19,8 @@ The `Configure Name...` button and associated dialog were relatively uneventful 
 
 And now, screenshots!
 
-![A screenshot of the "Renew Name" and "Configure Name..." buttons visible in the Electrum-NMC Manage Names tab.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-06-Manage-Names-Tab.png)
+![A screenshot of the "Renew Name" and "Configure Name..." buttons visible in the Electrum-NMC Manage Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-06-Manage-Names-Tab.png" | relative_url }})
 
-![A screenshot of the "Configure Name" dialog in Electrum-NMC.]({{site.baseurl}}images/screenshots/electrum-nmc/2018-10-06-Configure-Name-Dialog.png)
+![A screenshot of the "Configure Name" dialog in Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/2018-10-06-Configure-Name-Dialog.png" | relative_url }})
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.

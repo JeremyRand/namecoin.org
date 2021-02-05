@@ -14,6 +14,6 @@ We've released Electrum-NMC v3.2.4b1.  This is a beta release (even more so than
 * From upstream Electrum: the Safe-T mini hardware wallet from Archos is now supported.
 * Other improvements from upstream Electrum.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund and Cyphrs.

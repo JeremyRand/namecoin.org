@@ -16,7 +16,7 @@ We've released Electrum-NMC v3.3.8.  This release includes a large number of imp
 * Namecoin-specific:
     * Fix signature creation for P2SH and SegWit names (Namecoin mainnet now supports P2SH and SegWit; these features should now work in Electrum-NMC, including in name transactions).  (Patch by Daniel Kraft.)
     * Fix an error that occurred when displaying the Manage Names tab if the blockchain is empty but the wallet is not.  (Patch by Jeremy Rand.)
-    * [Merkle checkpoints]({{site.baseurl}}2019/04/08/electrum-merkle-checkpoints.html) (improves initial syncup speed).  (Patch by Jeremy Rand; based on a patch by Roger Taylor.)
+    * [Merkle checkpoints]({{ "/2019/04/08/electrum-merkle-checkpoints.html" | relative_url }}) (improves initial syncup speed).  (Patch by Jeremy Rand; based on a patch by Roger Taylor.)
     * Create a `.tar.xz` archive (improves binary download size).  (Patch by Jeremy Rand.)
     * Use random SOCKS authentication for stream isolation of connections to servers (improves performance and anonymity).  (Patch by Jeremy Rand.)
     * Add `stream_id` argument to network RPC methods for stream isolation (improves performance and anonymity).  (Patch by Jeremy Rand.)
@@ -30,6 +30,6 @@ We've released Electrum-NMC v3.3.8.  This release includes a large number of imp
     * Avoid `NotEnoughFunds` error in CoinChooser if zero buckets are sufficient (fixes a spurious error during name registration).  (Bug reported by DogHunter; patch by Jeremy Rand.)
     * Code quality improvements.  (Patches by Daniel Kraft and Jeremy Rand.)
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund and Cyphrs.

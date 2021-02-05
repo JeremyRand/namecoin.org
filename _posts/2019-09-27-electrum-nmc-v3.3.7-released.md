@@ -30,6 +30,6 @@ We've released Electrum-NMC v3.3.7.  Here's what's new since v3.3.6.1:
     * Various rebranding fixes.
     * Various code quality improvements.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by Cyphrs.

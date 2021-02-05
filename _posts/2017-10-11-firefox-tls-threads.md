@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In [Phase 2]({{site.baseurl}}2017/09/30/firefox-tls-webext.html) of Namecoin TLS for Firefox, I mentioned that negative certificate verification overrides were expected to be near-identical in code structure to the positive overrides that I had implemented.  However, as is par for the course, Murphy's Law decided to rear its head (but Murphy has been defeated for now).
+In [Phase 2]({{ "/2017/09/30/firefox-tls-webext.html" | relative_url }}) of Namecoin TLS for Firefox, I mentioned that negative certificate verification overrides were expected to be near-identical in code structure to the positive overrides that I had implemented.  However, as is par for the course, Murphy's Law decided to rear its head (but Murphy has been defeated for now).
 
 The specific issue I encountered is that while positive overrides are called from the main thread of Firefox, negative overrides are called from a thread dedicated to certificate verification.  WebExtensions Experiments always run on the main thread.  This means that the naive way of accessing an Experiment from the C++ function that would handle negative overrides causes Firefox to crash when it detects that the Experiment is being called from the wrong thread.
 
@@ -13,7 +13,7 @@ Luckily, I had recently gained some experience doing synchronous cross-thread ca
 
 After doing this, I was able to get my WebExtensions Experiment to trigger negative certificate verification overrides.
 
-Meanwhile, I talked with David Keeler from Mozilla some more about performance, and it became clear that some additional latency optimizations beyond [Phase 3]({{site.baseurl}}2017/10/07/firefox-tls-latency.html) were going to be highly desirable.  So, I started optimizing.
+Meanwhile, I talked with David Keeler from Mozilla some more about performance, and it became clear that some additional latency optimizations beyond [Phase 3]({{ "/2017/10/07/firefox-tls-latency.html" | relative_url }}) were going to be highly desirable.  So, I started optimizing.
 
 The biggest bottleneck in my codebase was that basically everything was synchronous.  That means that Firefox verifies the certificate according to its normal rules, and only then passes the certificate to my WebExtensions Experiment and has to wait for the Experiment to reply before Firefox can proceed.  Similarly, the WebExtensions Experiment has to wait for the WebExtension to reply before the Experiment can reply to Firefox.  This means 2 layers of cross-thread synchronous calls, one of which is entirely in JavaScript (and is therefore less efficient).
 
@@ -31,7 +31,7 @@ After doing all of the above, I decided to check performance.  On both my Qubes 
 
 The graphs appear to show a noticeable speedup over time.  Part of this is likely to be attributable to the JavaScript JIT warming up.  Another part of it may be an artifact of the script I used to make Firefox verify the certificates: I first did 3 batches of 5 certs, then a batch of 10 certs, then a batch of 20 certs, for a total of 45 certificate verifications.  The graphs also show that certificates that were previously cached tended to verify faster; this is because the cache is located in the Experiment rather than the WebExtension, which eliminates a cross-thread call.
 
-You can also take a look at the raw data used to generate these graphs [in OpenDocument spreadsheet format]({{site.baseurl}}data/webextensions-latency/2017-10-07/raw-data.ods) or [in HTML format]({{site.baseurl}}data/webextensions-latency/2017-10-07/raw-data.html).  This also includes percentile analysis, as well as data roughly corresponding to [Mozilla's telemetry on how long certificate verification takes right now](https://mzl.la/2hJH2Am).  Although measurements on my Fedora system and from Mozilla telemetry aren't directly comparable, it is noteworthy that the median overhead introduced by my changes is about 9% of the median certificate verification time measured by Mozilla telemetry.
+You can also take a look at the raw data used to generate these graphs [in OpenDocument spreadsheet format]({{ "/data/webextensions-latency/2017-10-07/raw-data.ods" | relative_url }}) or [in HTML format]({{site.baseurl}}data/webextensions-latency/2017-10-07/raw-data.html).  This also includes percentile analysis, as well as data roughly corresponding to [Mozilla's telemetry on how long certificate verification takes right now](https://mzl.la/2hJH2Am).  Although measurements on my Fedora system and from Mozilla telemetry aren't directly comparable, it is noteworthy that the median overhead introduced by my changes is about 9% of the median certificate verification time measured by Mozilla telemetry.
 
 It should be noted that this data is not intended to be scientifically reproducible; there are likely to be differences between setups that could impact the latency significantly, and I made no effort to control for or document such differences.  That said, it's likely to be a useful indicator of how well we're doing.  My opinion is that this is much, much closer to a performance impact that Mozilla would plausibly be willing to merge, compared to the performance before this optimization.  However, additional work is still warranted.  (And, of course, it's Mozilla's opinion, not mine, that matters here!)
 

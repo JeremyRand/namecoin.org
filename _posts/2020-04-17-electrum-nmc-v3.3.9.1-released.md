@@ -26,4 +26,4 @@ Here's what's new since v3.3.8:
         * Fix missing help text for `name_show` RPC command.  (Patch by Jeremy Rand.)
         * Fix missing locale data in Python binaries.  (Patch by Jeremy Rand.)
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).

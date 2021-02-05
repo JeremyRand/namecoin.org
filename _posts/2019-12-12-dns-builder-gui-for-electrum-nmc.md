@@ -7,13 +7,13 @@ tags: [News]
 
 In November 2017, Brandon posted some WIP code for adding a DNS Builder GUI to Namecoin-Qt.  To refresh your memory, it looked like this:
 
-![A screenshot of the DNS builder for Namecoin-Qt.]({{site.baseurl}}images/screenshots/namecoin-core/dns-builder-2017-11-19.gif)
+![A screenshot of the DNS builder for Namecoin-Qt.]({{ "/images/screenshots/namecoin-core/dns-builder-2017-11-19.gif" | relative_url }})
 
 Unfortunately, merging that code to Namecoin Core is blocked by several other tasks, so it may be a while before it makes its way into a Namecoin Core release.  However, in the meantime, all is not lost.  Thanks to the magic of Qt GUI's being in XML format, and therefore easy to port between C++ and Python, I've been spending some time porting Brandon's DNS Builder GUI to Electrum-NMC.
 
 Things are still a bit rough around the edges, but it's beginning to take shape.  Check out the below screenshot:
 
-![A screenshot of the DNS builder for Electrum-NMC.]({{site.baseurl}}images/screenshots/electrum-nmc/2019-12-02-DNS-Builder.png)
+![A screenshot of the DNS builder for Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/2019-12-02-DNS-Builder.png" | relative_url }})
 
 So far, the following features work:
 

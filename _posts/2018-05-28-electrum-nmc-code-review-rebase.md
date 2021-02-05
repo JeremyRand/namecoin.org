@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Last year, Ahmed [posted about his progress]({{site.baseurl}}2017/06/17/progress-electrum-nmc.html) porting Electrum to Namecoin.  Electrum-NMC has been on the back burner for me lately, due to the TLS and BitcoinJ efforts taking up most of my time.  However, today I found time to inspect Ahmed's branch.
+Last year, Ahmed [posted about his progress]({{ "/2017/06/17/progress-electrum-nmc.html" | relative_url }}) porting Electrum to Namecoin.  Electrum-NMC has been on the back burner for me lately, due to the TLS and BitcoinJ efforts taking up most of my time.  However, today I found time to inspect Ahmed's branch.
 
 Three main things were on my agenda:
 

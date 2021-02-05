@@ -13,6 +13,6 @@ We've released Electrum-NMC v3.2.2.2.  Here's what's new:
 * Code quality improvements.
 * Build script fix from upstream Electrum.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#electrum-nmc).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#electrum-nmc" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.

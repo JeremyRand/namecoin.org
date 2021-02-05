@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In a previous post [where I introduced `tlsrestrict_nss_tool`]({{site.baseurl}}2018/03/26/integrating-cross-signing-name-constraints-nss.html), I mentioned that NSS's `certutil` doesn't have official binaries for Windows, and that "At some point, we'll probably need to start cross-compiling NSS ourselves, although I admit I'm not sure I'm going to enjoy that."  Well, we've reached that point, and it was an interesting adventure.
+In a previous post [where I introduced `tlsrestrict_nss_tool`]({{ "/2018/03/26/integrating-cross-signing-name-constraints-nss.html" | relative_url }}), I mentioned that NSS's `certutil` doesn't have official binaries for Windows, and that "At some point, we'll probably need to start cross-compiling NSS ourselves, although I admit I'm not sure I'm going to enjoy that."  Well, we've reached that point, and it was an interesting adventure.
 
 Initially, I looked at the NSS build docs themselves, and was rather annoyed to find that there's no documentation about how to cross-compile NSS.  To make matters worse, the only results I could find by Startpaging were people saying that they couldn't figure out how to cross-compile NSS (including some well-known software projects' developers).
 

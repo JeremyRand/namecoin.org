@@ -6,7 +6,7 @@ date:   2017-04-02 00:00:00 +0000
 tags: [News]
 ---
 
-As was [announced]({{site.baseurl}}2017/03/03/qcon-london.html), I represented Namecoin at QCon London 2017.  Below is a brief summary of how it went.
+As was [announced]({{ "/2017/03/03/qcon-london.html" | relative_url }}), I represented Namecoin at QCon London 2017.  Below is a brief summary of how it went.
 
 The theme of the blockchain track was "Beyond the Hype".  As such, the presentations in the track primarily focused on all the things that can go wrong when using a blockchain.  Riccardo Spagni (AKA fluffypony of [Monero](https://getmonero.org/)) is definitely an ideal person to host this track.  My talk was on alternate blockchains, with a focus on Namecoin (and some Monero).  In the spirit of going "Beyond the Hype", my talk was almost entirely about things that can go wrong when using a non-Bitcoin blockchain.
 

@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [Alerts, Namecoin Core Alerts, Releases, Namecoin Core Releases]
 ---
 
-Namecoin Core 0.18.0 has been released on the [Downloads page]({{site.baseurl}}download/#namecoin-core-client-stable-release).  This release schedules a softfork for block height 475,000 on mainnet.  Contained in the softfork are:
+Namecoin Core 0.18.0 has been released on the [Downloads page]({{ "/download/#namecoin-core-client-stable-release" | relative_url }}).  This release schedules a softfork for block height 475,000 on mainnet.  Contained in the softfork are:
 
 * P2SH
 * CSV

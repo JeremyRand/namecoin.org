@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-As was [announced]({{site.baseurl}}2017/03/03/icann-58.html), I represented Namecoin at ICANN58 in Copenhagen.  Below is a brief summary of how it went.
+As was [announced]({{ "/2017/03/03/icann-58.html" | relative_url }}), I represented Namecoin at ICANN58 in Copenhagen.  Below is a brief summary of how it went.
 
 * I presented in the Emerging Identifier Technology Panel.
     - [Free-software-friendly video recording](https://www.namecoin.org/files/videos/icann-58/ICANN-58-Emerging-Identifiers-Technology.webm) is hosted by Namecoin.org.

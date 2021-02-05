@@ -11,7 +11,7 @@ Brandon accurately observed that a way to mitigate this issue is to expose all o
 
 So, I'm picking up where Brandon left off.  For one thing, I'm splitting the code into multiple PR's, which can be merged independently: the GUI equivalents of `name_list`, `name_update`, and `name_autoregister`.  The first of these, `name_list`, is used for displaying the current name inventory.  I've spent some time forward-porting the `name_list` GUI to current Namecoin Core, and here's a preliminary result:
 
-![A screenshot of the Manage Names tab in Namecoin-Qt.]({{site.baseurl}}images/screenshots/namecoin-core/manage-names-2020-08-19.png)
+![A screenshot of the Manage Names tab in Namecoin-Qt.]({{ "/images/screenshots/namecoin-core/manage-names-2020-08-19.png" | relative_url }})
 
 There's still some more code cleanup needed before it can be merged, but I'm optimistic that we can get a merge to happen soon.
 

@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [Releases, Namecoin Core Releases]
 ---
 
-Namecoin Core 0.15.99-name-tab-beta1 has been released on the [Beta Downloads page]({{site.baseurl}}download/betas/#namecoin-core).  Changes since 0.13.99-name-tab-beta1:
+Namecoin Core 0.15.99-name-tab-beta1 has been released on the [Beta Downloads page]({{ "/download/betas/#namecoin-core" | relative_url }}).  Changes since 0.13.99-name-tab-beta1:
 
 * New features:
     + GUI

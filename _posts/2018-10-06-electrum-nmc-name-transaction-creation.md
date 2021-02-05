@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In a previous article, I wrote about [the "reading" side of Electrum-NMC's name script support]({{site.baseurl}}2018/10/04/electrum-nmc-name-script-deserialization-round-2.html) (i.e. detecting and displaying name transactions in the wallet, and doing name lookups).  Obviously, the logical next step is the "writing" side, i.e. creating name transactions.
+In a previous article, I wrote about [the "reading" side of Electrum-NMC's name script support]({{ "/2018/10/04/electrum-nmc-name-script-deserialization-round-2.html" | relative_url }}) (i.e. detecting and displaying name transactions in the wallet, and doing name lookups).  Obviously, the logical next step is the "writing" side, i.e. creating name transactions.
 
 I started out by trying to implement `name_new`.  Electrum's command API is quite flexible (yet quite user-friendly), so most of the relevant functionality was fairly straightforward to implement by adding slight modifications to the existing transaction creation commands.  These modifications essentially just add an extra output to the transaction that has a non-null name operation.  I did, however, need to add some extra functionality to the accounting, to adjust for the fact that a `name_new` transaction destroys 0.01 NMC by permanently locking it inside an output.  (Usually, it's desirable to treat that locked namecent as zero for display purposes, but when funding a transaction, treating it as zero would produce Bad Things ™.)
 

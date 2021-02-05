@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In [Phase 4]({{site.baseurl}}2017/10/11/firefox-tls-threads.html) of Namecoin TLS for Firefox, I mentioned that more optimization work remained (despite the significant latency improvements I discussed in that post).  Optimization work has continued, and I've now moved the override cache from JavaScript to C++, with rather dramatic latency improvement as a result.
+In [Phase 4]({{ "/2017/10/11/firefox-tls-threads.html" | relative_url }}) of Namecoin TLS for Firefox, I mentioned that more optimization work remained (despite the significant latency improvements I discussed in that post).  Optimization work has continued, and I've now moved the override cache from JavaScript to C++, with rather dramatic latency improvement as a result.
 
 Prior to this optimization, my C++ code would synchronously call the WebExtensions Experiment to retrieve override decisions, and the Experiment would block until the WebExtension had returned an override decision.  At this point the decision would be added to the cache within the Experiment, and then the C++ code's call to the Experiment would return.  I had long suspected that this was a major latency bottleneck, for 2 reasons:
 
@@ -35,7 +35,7 @@ Since I wrote up some really nice scripts for measuring latency for Phase 4, I r
 
 This is a quite drastic speedup.  The gradual speedup over time has vanished, which suggests that I was right about it being attributable to the JavaScript JIT warming up.  (However, it should be noted that this time I did a single batch of 45 certificate verifications, so this may be an artifact of that change too.)  More importantly, based on the fact that uncached and cached overrides are indistinguishable in the vast majority of cases, it can be inferred that the Experiment's decision usually enters the C++ code's decision cache before Firefox's built-in certificate verification even finishes.  (The occasional spikes in uncached latency seem to correspond to cases where that's false.)
 
-The raw data is available [in OpenDocument spreadsheet format]({{site.baseurl}}data/webextensions-latency/2017-10-19/raw-data.ods) or [in HTML format]({{site.baseurl}}data/webextensions-latency/2017-10-19/raw-data.html) as before.  The median uncached latency for positive overrides has decreased from 375 microseconds in Phase 4 to 29 microseconds in Phase 5.
+The raw data is available [in OpenDocument spreadsheet format]({{ "/data/webextensions-latency/2017-10-19/raw-data.ods" | relative_url }}) or [in HTML format]({{site.baseurl}}data/webextensions-latency/2017-10-19/raw-data.html) as before.  The median uncached latency for positive overrides has decreased from 375 microseconds in Phase 4 to 29 microseconds in Phase 5.
 
 It should be noted that negative overrides haven't yet been converted to use the C++ override decision cache.  I expect them to be slightly slower than these figures, because negative overrides will have 1 extra cross-thread C++ call.
 

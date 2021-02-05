@@ -11,15 +11,15 @@ But how to improve the UX here?  Distributing the relevant package is legally qu
 
 We already handle this concept to some extent.  For example, here's what the NSIS installer displays when Java isn't already installed:
 
-!["Cannot use BitcoinJ SPV client (Java must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-java-2018-08-10.png)
+!["Cannot use BitcoinJ SPV client (Java must be installed)"]({{ "/images/screenshots/ncdns-nsis/spv-missing-java-2018-08-10.png" | relative_url }})
 
 Compare this to the typical display when Java *is* installed:
 
-!["Install and use the BitcoinJ SPV client (lighter, less secure)"]({{site.baseurl}}images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png)
+!["Install and use the BitcoinJ SPV client (lighter, less secure)"]({{ "/images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png" | relative_url }})
 
 So, over the last day or so, I hacked on the ncdns NSIS script to make it detect the Microsoft Visual C++ 2010 Redistributable Package (like we already do for Java), and refuse to install ConsensusJ-Namecoin if it's not found:
 
-!["Cannot use BitcoinJ SPV client (Microsoft Visual C++ Redistributable Package must be installed)"]({{site.baseurl}}images/screenshots/ncdns-nsis/spv-missing-vc2010-2018-08-10.png)
+!["Cannot use BitcoinJ SPV client (Microsoft Visual C++ Redistributable Package must be installed)"]({{ "/images/screenshots/ncdns-nsis/spv-missing-vc2010-2018-08-10.png" | relative_url }})
 
 This was an excellent excuse for me to get some more experience with NSIS.  Hopefully it saves some users from head-banging confusion.
 

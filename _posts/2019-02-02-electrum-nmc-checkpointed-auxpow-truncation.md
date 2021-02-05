@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-I posted previously about [auditing Electrum-NMC's bandwidth usage]({{site.baseurl}}2018/11/28/electrum-nmc-checkpoints.html).  In that post, I mentioned that there were probably optimizations that could be done to reduce the 3.2 MB per 2016 block headers that get downloaded when looking up a name that's covered by a checkpoint.  I've now implemented one of them: AuxPoW truncation.
+I posted previously about [auditing Electrum-NMC's bandwidth usage]({{ "/2018/11/28/electrum-nmc-checkpoints.html" | relative_url }}).  In that post, I mentioned that there were probably optimizations that could be done to reduce the 3.2 MB per 2016 block headers that get downloaded when looking up a name that's covered by a checkpoint.  I've now implemented one of them: AuxPoW truncation.
 
 Some background: AuxPoW (auxilliary proof of work) is the portion of Namecoin block headers that allows clients to verify that the PoW expended by miners on the parent chain (usually Bitcoin) applies to Namecoin as well.  As a result, SPV clients such as Electrum-NMC (which verify PoW) need to download the AuxPoW data.  However, the AuxPoW data in a Namecoin block header *does not contribute to the block hash*.  As a result, the commitment in a Namecoin block header to the previous block header can be verified without having access to any AuxPoW data.
 

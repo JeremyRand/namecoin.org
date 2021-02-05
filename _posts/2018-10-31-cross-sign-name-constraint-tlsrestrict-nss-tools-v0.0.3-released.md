@@ -22,6 +22,6 @@ We've released `cross_sign_name_constraint_tool` v0.0.3 and `tlsrestrict_nss_too
     * Partial support for continuously syncing an NSS DB on Windows whenever CKBI is updated (not yet ready for use; will be included in a future ncdns release).
     * Code quality improvements.
 
-As usual, you can download it at the [Beta Downloads page]({{site.baseurl}}download/betas/#cross_sign_name_constraint_tool).
+As usual, you can download it at the [Beta Downloads page]({{ "/download/betas/#cross_sign_name_constraint_tool" | relative_url }}).
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.
