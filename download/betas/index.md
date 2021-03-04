@@ -106,10 +106,11 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 * [ncdns v0.0.10.3 GNU/Linux (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-x86_64.tar.gz)
 * [ncdns v0.0.10.3 GNU/Linux (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-i686.tar.gz)
-* [ncdns v0.1 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.1/ncdns-0.1-windows-x86_64-install.exe)
+* [ncdns v0.1.2 Windows (64-bit x86) installer](https://www.namecoin.org/files/ncdns/ncdns-0.1.2/ncdns-0.1.2-windows-x86_64-install.exe)
 * [ncdns v0.0.10.3 Windows (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64.tar.gz)
 * [ncdns v0.0.10.3 Windows (32-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-i686.tar.gz)
 * [ncdns v0.0.10.3 macOS (64-bit x86) plain binaries](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-osx-x86_64.tar.gz)
+* [ncdns v0.1.2 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.1.2/ncdns-0.1.2.SHA256SUMS.asc)
 * [ncdns v0.0.10.3 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
 * [ncdns v0.0.10.3 plain binaries for GNU/Linux (non-x86), DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, and Solaris (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.10.3)
 * [ncdns Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64.tar.gz)
