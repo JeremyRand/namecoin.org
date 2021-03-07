@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [Releases, Namecoin Core Releases]
 ---
 
-Namecoin Core 0.21.0.1 has been released on the [Downloads page]({{site.baseurl}}download/#namecoin-core-client-stable-release).
+Namecoin Core 0.21.0.1 has been released on the [Downloads page]({{ "/download/#namecoin-core-client-stable-release" | relative_url }}).
 
 Here's what's new since 0.19.0.1:
 
