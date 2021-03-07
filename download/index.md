@@ -15,18 +15,17 @@ title: Download
 * Recommended for users who don't own any names.
 * Recommended for users who are comfortable registering, updating, and renewing their names via the command-line.
 
-Current release: 0.19.0.1.
+Current release: 0.21.0.1.
 
-* [Namecoin Core 0.19.0.1 (GNU/Linux RISC-V 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-riscv64-linux-gnu.tar.gz)
-* [Namecoin Core 0.19.0.1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.19.0.1 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.19.0.1 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.19.0.1 (GNU/Linux x86 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-i686-pc-linux-gnu.tar.gz)
-* [Namecoin Core 0.19.0.1 (Windows 64-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-win64-setup-unsigned.exe)
-* [Namecoin Core 0.19.0.1 (Windows 64-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-win64.zip)
-* [Namecoin Core 0.19.0.1 (macOS dmg)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-osx-unsigned.dmg)
-* [Namecoin Core 0.19.0.1 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1-osx64.tar.gz)
-* [Namecoin Core 0.19.0.1 (Source code tarball)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.19.0.1/namecoin-0.19.0.1.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux RISC-V 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (Windows 64-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
+* [Namecoin Core 0.21.0.1 (Windows 64-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
+* [Namecoin Core 0.21.0.1 (macOS dmg)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
+* [Namecoin Core 0.21.0.1 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
+* [Namecoin Core 0.21.0.1 (Source code tarball)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
 * [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
 * [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
 
