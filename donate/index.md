@@ -11,10 +11,10 @@ Note that donations are not tax-deductible.
 
 ## Direct Cryptocurrency Donations
 
-The Namecoin Marketing and Development Fund (operated by Phelix) accepts donations via Bitcoin and Namecoin.
+The Namecoin developers accept unrestricted donations via the following cryptocurrencies:
 
-* BTC: 18kYBKu2pvj9XRRaAfUMbkm72QniwW2Dre
-* NMC: NDtPuyg3adscr6HCE1GUiSsKPtA8ewKgz3
+* [Bitcoin](bitcoin:bc1qcdvp40tmwx288hha62f3357cj2m9rqs9kcyl6szej5z6n9s5ue2qth29jh)
+* [Namecoin](namecoin:NDtPuyg3adscr6HCE1GUiSsKPtA8ewKgz3)
 
 Warnings: Bitcoin and Namecoin do not provide anonymity for donations, although they may (under some circumstances) provide pseudonymity or location-anonymity.
 
@@ -43,7 +43,7 @@ Warnings: Funds are handled by Bountysource (a trusted third party).  Bountysour
 
 Bountysource can be used to place bounties on completion of specified issues or tasks listed on GitHub.  The bounties can be placed via PayPal or Bitcoin.  When the issue is resolved, Bountysource releases the funds to the developer who resolved it.
 
-To place a bounty on an existing issue, click the Bountysource link in the issue description.  If no issue exists for the task you want solved, create a new issue.  
+To place a bounty on an existing issue, click the Bountysource link in the issue description.  If no issue exists for the task you want solved, create a new issue.
 
 The following Namecoin GitHub repositories support placing Bountysource bounties:
 
