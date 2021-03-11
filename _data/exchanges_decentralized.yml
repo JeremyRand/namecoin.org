@@ -1,2 +1,3 @@
-- "<a href='https://bisq.network/'><img class='exchange-logo' src='images/bisq_logo_green.png' alt='Bisq'></a> (uses Tor by default)"
-- "<a href='https://blockdx.com/'><img class='exchange-logo' src='images/BLOCKDX.png' alt='Block DX'></a> (uses atomic trades)"
+- "<a href='https://bisq.network/'><img class='exchange-logo' src='images/bisq_logo_green.png' alt='Bisq'></a> (uses Tor by default; memory-safe)"
+- "<a href='https://blockdx.com/'><img class='exchange-logo' src='images/BLOCKDX.png' alt='Block DX'></a> (uses atomic trades; memory-safe)"
+- "<a href='https://atomicdex.io/'><img class='exchange-logo' src='images/AtomicDEX.svg' alt='AtomicDEX'></a> (uses atomic trades)"
