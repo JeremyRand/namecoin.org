@@ -193,9 +193,9 @@ certinject is a tool for adding and manipulating certificates in the Windows Cry
 * [certinject Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--darwin_amd64.tar.gz)
 * [certinject Source Code](https://github.com/namecoin/certinject)
 
-## certdehydrate-dane-rest-api
+## Encaya
 
-certdehydrate-dane-rest-api is a dependency of ncp11 and the Chromium version of DNSSEC-HSTS.
+Encaya enables Namecoin TLS (positive overrides only) in applications that support AIA, such as Chromium.  Encaya is also a dependency of ncp11 and the Chromium version of DNSSEC-HSTS.
 
 * [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-x86_64.tar.gz)
 * [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-i686.tar.gz)
@@ -203,8 +203,27 @@ certdehydrate-dane-rest-api is a dependency of ncp11 and the Chromium version of
 * [certdehydrate-dane-rest-api v0.0.1 for Windows (32-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-windows-i686.tar.gz)
 * [certdehydrate-dane-rest-api v0.0.1 for macOS (64-bit x86)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-osx-x86_64.tar.gz)
 * [certdehydrate-dane-rest-api v0.0.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
+* [Encaya Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_ppc64.tar.gz)
+* [Encaya Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_ppc64le.tar.gz)
+* [Encaya Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_arm64.tar.gz)
+* [Encaya Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_arm.tar.gz)
+* [Encaya Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_amd64.tar.gz)
+* [Encaya Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_386.tar.gz)
+* [Encaya Nightly DragonFlyBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--dragonfly_amd64.tar.gz)
+* [Encaya Nightly FreeBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--freebsd_arm.tar.gz)
+* [Encaya Nightly FreeBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--freebsd_amd64.tar.gz)
+* [Encaya Nightly FreeBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--freebsd_386.tar.gz)
+* [Encaya Nightly NetBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--netbsd_arm.tar.gz)
+* [Encaya Nightly NetBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--netbsd_amd64.tar.gz)
+* [Encaya Nightly NetBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--netbsd_386.tar.gz)
+* [Encaya Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--openbsd_amd64.tar.gz)
+* [Encaya Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--openbsd_386.tar.gz)
+* [Encaya Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--solaris_amd64.tar.gz)
+* [Encaya Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--windows_amd64.tar.gz)
+* [Encaya Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--windows_386.tar.gz)
+* [Encaya Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--darwin_amd64.tar.gz)
 * [certdehydrate-dane-rest-api rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
-* [certdehydrate-dane-rest-api Source Code](https://github.com/namecoin/certdehydrate-dane-rest-api)
+* [Encaya Source Code](https://github.com/namecoin/encaya)
 
 ### Known Issues
 
