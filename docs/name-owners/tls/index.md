@@ -133,7 +133,7 @@ Remember that if you have an `ns` record above the `tls` record, the `ns` record
 }
 ~~~
 
-The `cert.pem` and `key.pem` files can be used with HTTPS servers like Caddy, Nginx, or Apache, just like for any other certificate.  If you are using the Encaya form, you will need to include `caCert.pem` in your server's certificate chain.
+The `chain.pem` and `key.pem` files can be used with HTTPS servers like Caddy, Nginx, or Apache, just like for any other certificate.
 
 If you are using the Dehydrated form, or the default settings for the Constrained or Encaya form, you will need to make sure that your HTTPS server supports either `ECDHE-ECDSA` or `DHE-ECDSA` ciphersuites.  If you require non-forward-secret ciphersuites or non-ECDSA keys, you will need to use the Constrained or Encaya form to generate a CA, and then manually use that CA to sign an end-entity certificate (via whatever non-Namecoin tooling you like) that uses the desired `KeyUsage` value or key type.
 
