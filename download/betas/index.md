@@ -141,6 +141,33 @@ ncdns plain binaries are also available for most major operating systems.  These
 
 * Build is not yet reproducible.
 
+## generate_nmc_cert
+
+generate_nmc_cert is a tool for generating TLS server certificates of the form expected by Namecoin.  If you run a `.bit` website, you should use generate_nmc_cert to create a TLS certificate for your website.
+
+See the [documentation on setting up TLS for name owners]({{ "/docs/name-owners/tls/" | relative_url }}).
+
+* [generate_nmc_cert Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_ppc64.tar.gz)
+* [generate_nmc_cert Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_ppc64le.tar.gz)
+* [generate_nmc_cert Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_arm64.tar.gz)
+* [generate_nmc_cert Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_arm.tar.gz)
+* [generate_nmc_cert Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_amd64.tar.gz)
+* [generate_nmc_cert Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_386.tar.gz)
+* [generate_nmc_cert Nightly DragonFlyBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--dragonfly_amd64.tar.gz)
+* [generate_nmc_cert Nightly FreeBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--freebsd_arm.tar.gz)
+* [generate_nmc_cert Nightly FreeBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--freebsd_amd64.tar.gz)
+* [generate_nmc_cert Nightly FreeBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--freebsd_386.tar.gz)
+* [generate_nmc_cert Nightly NetBSD (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--netbsd_arm.tar.gz)
+* [generate_nmc_cert Nightly NetBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--netbsd_amd64.tar.gz)
+* [generate_nmc_cert Nightly NetBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--netbsd_386.tar.gz)
+* [generate_nmc_cert Nightly OpenBSD (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--openbsd_amd64.tar.gz)
+* [generate_nmc_cert Nightly OpenBSD (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--openbsd_386.tar.gz)
+* [generate_nmc_cert Nightly Solaris (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--solaris_amd64.tar.gz)
+* [generate_nmc_cert Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--windows_amd64.tar.gz)
+* [generate_nmc_cert Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--windows_386.tar.gz)
+* [generate_nmc_cert Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--darwin_amd64.tar.gz)
+* [generate_nmc_cert Source Code](https://github.com/namecoin/generate_nmc_cert)
+
 ## certinject
 
 certinject is a tool for adding and manipulating certificates in the Windows CryptoAPI certificate store.  Unlike the built-in Windows tool `certutil`, certinject can easily set the EKU (extended key usage, AKA enhanced key usage) and NC (name constraints) properties on certificates, and does not require Administrator privileges.
