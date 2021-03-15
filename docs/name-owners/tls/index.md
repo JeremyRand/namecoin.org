@@ -44,16 +44,40 @@ $ ./generate_nmc_cert -host example.bit -use-ca -use-aia
 e "tls" field for "*.example.bit".
 ~~~
 
-If you're using the Constrained or Encaya form, you can produce multiple certificates for a single Namecoin record.  This allows you to, for example, rotate TLS keys periodically without needing to update your Namecoin record.  To create a new certificate using an existing Namecoin record, set the `-parent-key` command-line argument to the `caKey.pem` file that you created with the first certificate, like this:
+If you're using the Constrained or Encaya form, you can issue multiple TLS certificates for a single Namecoin record, and you can also issue subordinate CA certificates.  This allows you to rotate your TLS keys periodically (which is considered good key hygiene), and also allows you to create TLS certificates or subordinate CA's for specific subdomains -- all without needing to issue a Namecoin transaction.  Examples of how you can do this are below.
+
+To issue a TLS certificate for a subdomain, set the `-parent-chain` and `-parent-key` command-line arguments to the `caChain` and `caKey.pem` file that you created with the first certificate, like this:
 
 ~~~
-$ ./generate_nmc_cert -host www.example.bit -use-ca -parent-key ./caKey-www.example.bit.pem
-2019/12/11 07:11:06 Using existing CA private key
-2019/12/11 07:11:06 Your CA's "tls" record is: [2, 1, 0, "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEm1nvuS+A5WFgafCeYmzVSZOsokU1Fmnh5ZiBC7h0pRkbkx7cCA/MYPPh6zDdMB75ELvXSt0eLaoQQYaz1QDijw=="]
-2019/12/11 07:11:06 written cert.pem
-2019/12/11 07:11:06 written key.pem
-2019/12/11 07:11:06 SUCCESS.  Place cert.pem and key.pem in your HTTPS server, and place the above JSON in the "tls" field for your Namecoin name.
+$ ./generate_nmc_cert -host "sub.example.bit" -use-ca -parent-chain ./caChain-example.bit.pem -parent-key ./caKey-example.bit.pem
+2021/03/15 12:38:56 Using existing CA private key
+2021/03/15 12:38:56 Using existing CA cert chain
+2021/03/15 12:38:56 wrote cert.pem
+2021/03/15 12:38:56 wrote key.pem
+2021/03/15 12:38:56 wrote chain.pem
+2021/03/15 12:38:56 wrote caChain.pem
+2021/03/15 12:38:56 SUCCESS. Place chain.pem and key.pem in your HTTPS server, and place the contents of "namecoin.json" in t
+he "tls" field for "*.sub.example.bit".
 ~~~
+
+To issue a subordinate CA for a subdomain, do the same thing, but use the `-grandparent-chain` and `-grandparent-key` arguments instead:
+
+~~~
+$ ./generate_nmc_cert -host "sub.example.bit" -use-ca -grandparent-chain ./caChain-example.bit.pem -grandparent-key ./caKey-example.bit.pem
+2021/03/15 12:40:49 Using existing CA private key
+2021/03/15 12:40:49 Using existing CA cert chain
+2021/03/15 12:40:49 wrote caCert.pem
+2021/03/15 12:40:49 wrote namecoin.json
+2021/03/15 12:40:49 wrote caKey.pem
+2021/03/15 12:40:49 wrote cert.pem
+2021/03/15 12:40:49 wrote key.pem
+2021/03/15 12:40:49 wrote chain.pem
+2021/03/15 12:40:49 wrote caChain.pem
+2021/03/15 12:40:49 SUCCESS. Place chain.pem and key.pem in your HTTPS server, and place the contents of "namecoin.json" in t
+he "tls" field for "*.sub.example.bit".
+~~~
+
+When using `-parent-chain` or `-grandparent-chain`, you can include multiple subdomains by seperating them with commas.  `-parent-chain` also supports wildcard subdomains e.g. `*.sub.example.bit`.
 
 By default, certificates use the P256 curve and are valid from generation time for approximately 1 year.  Users who know what they are doing can choose different elliptic curves or validity periods; use the `-help` command-line flag to see the list of available options.
 
