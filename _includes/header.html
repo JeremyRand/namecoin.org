@@ -52,10 +52,10 @@
 </header>
 
 <div id="fancy-graphic"><div class="container-fluid"><p id="tagline">
-<noscript>
+<span id="default-tagline">
 {% assign random_tagline = site.data.taglines | sample %}
 {{ random_tagline }}
-</noscript>
+</span>
 {% for tagline in site.data.taglines %}
     <span class="candidate-tagline" hidden>
         {{ tagline }}
