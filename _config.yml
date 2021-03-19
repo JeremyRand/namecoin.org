@@ -9,6 +9,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://www.namecoin.org" # the base hostname & protocol for your site
 files_url: "https://www.namecoin.org"
 forum_url: "https://forum.namecoin.org"
+metrics_url: "https://metrics.rw6nbpjrmcpdxszn3air4bt7t75rpz4cp3c2kbdu72ptua57tzvin4id.onion"
 twitter_username: jekyllrb
 github_username:  jekyll
 
