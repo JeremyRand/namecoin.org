@@ -178,7 +178,7 @@ In general, the Namecoin developers attempt to minimize our patchset against Bit
 
 ### Does Namecoin mandate usage of Bitcoin as a parent chain?
 
-No.  Namecoin's merged mining can use *any* Hashcash-SHA-256d blockchain as a parent chain.  Bitcoin is the most commonly used parent chain, but others (such as BCH) are sometimes used as parent chains as well.  Note that this implies that Namecoin's hashrate and difficulty can theoretically be higher than those of Bitcoin.  (In fact, Namecoin's 24-hour hashrate occasionally does exceed that of Bitcoin.)
+No.  Namecoin's merged mining can use *any* Hashcash-SHA-256d blockchain as a parent chain.  Bitcoin is the most commonly used such parent chain, but others (such as BCH) are sometimes used as parent chains as well.  Note that this implies that Namecoin's hashrate and difficulty can theoretically be higher than those of Bitcoin.  (In fact, Namecoin's 24-hour hashrate occasionally does exceed that of Bitcoin.)
 
 ### How does Namecoin compare to Tor Onion Services?
 
