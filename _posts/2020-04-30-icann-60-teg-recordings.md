@@ -17,14 +17,14 @@ This session included the following presentations:
 ## Low-Quality Free-Software-Friendly Video Recording (With Slides)
 
 <video controls>
-<source src="https://www.namecoin.org/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=62" type="video/webm">
+<source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=62" type="video/webm">
 Video with slides.
 </video>
 
 ## High-Quality Free-Software-Friendly Video Recording (Without Slides)
 
 <video controls>
-<source src="https://www.namecoin.org/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=624" type="video/webm">
+<source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=624" type="video/webm">
 Video without slides.
 </video>
 

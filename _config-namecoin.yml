@@ -1,3 +1,4 @@
 # Site settings
-url: "https://www.namecoin.bit" # the base hostname & protocol for your site
+url: "https://namecoin.bit" # the base hostname & protocol for your site
+files_url: "https://namecoin.bit"
 forum_url: "https://nf.bit"

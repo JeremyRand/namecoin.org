@@ -8,7 +8,7 @@ tags: [News]
 I gave a talk on October 31, 2020, at the [Grayhat 2020](https://grayhat.co/) [Monero Village](https://monerovillage.org/), entitled "Namecoin as a Decentralized Alternative to Certificate Authorities for TLS".  A video recording is below:
 
 <video controls>
-<source src="https://www.namecoin.org/files/videos/grayhat-2020/Grayhat-2020-Namecoin.webm" type="video/webm">
+<source src="{{ site.files_url }}/files/videos/grayhat-2020/Grayhat-2020-Namecoin.webm" type="video/webm">
 Video of "Namecoin as a Decentralized Alternative to Certificate Authorities for TLS" at Grayhat 2020.
 </video>
 

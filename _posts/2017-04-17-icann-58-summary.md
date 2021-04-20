@@ -8,13 +8,13 @@ tags: [News]
 As was [announced]({{ "/2017/03/03/icann-58.html" | relative_url }}), I represented Namecoin at ICANN58 in Copenhagen.  Below is a brief summary of how it went.
 
 * I presented in the Emerging Identifier Technology Panel.
-    - [Free-software-friendly video recording](https://www.namecoin.org/files/videos/icann-58/ICANN-58-Emerging-Identifiers-Technology.webm) is hosted by Namecoin.org.
+    - [Free-software-friendly video recording]({{ site.files_url }}/files/videos/icann-58/ICANN-58-Emerging-Identifiers-Technology.webm) is hosted by Namecoin.org.
     - The above recording is converted from [ICANN's official Adobe Connect video recording](https://schedule.icann.org/event/9nqD/emerging-identifiers-technology).  Copyright ICANN; used with permission.
-    - [Namecoin slides](https://www.namecoin.org/files/videos/icann-58/Namecoin-ICANN58-EIT-Final.pdf) are hosted by Namecoin.org.
+    - [Namecoin slides]({{ site.files_url }}/files/videos/icann-58/Namecoin-ICANN58-EIT-Final.pdf) are hosted by Namecoin.org.
 * I presented in the Technical Experts Group / Board Joint Meeting.
-    - [Free-software-friendly video recording](https://www.namecoin.org/files/videos/icann-58/ICANN-58-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group.webm) is hosted by Namecoin.org.
+    - [Free-software-friendly video recording]({{ site.files_url }}/files/videos/icann-58/ICANN-58-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group.webm) is hosted by Namecoin.org.
     - The above recording is converted from [ICANN's official Adobe Connect video recording](https://schedule.icann.org/event/9oMt/joint-meeting-icann-board-technical-experts-group-teg).  Copyright ICANN; used with permission.
-    - [Namecoin slides](https://www.namecoin.org/files/videos/icann-58/Namecoin-ICANN58-TEG-Final.pdf) are hosted by Namecoin.org.
+    - [Namecoin slides]({{ site.files_url }}/files/videos/icann-58/Namecoin-ICANN58-TEG-Final.pdf) are hosted by Namecoin.org.
 * A significant number of people in the ICANN community are interested in Namecoin.
 * While I have not attended previous ICANN events and therefore cannot evaluate this myself, my understanding is that the EIT panel session had an unusually large audience.
 * There is skepticism in the ICANN community of Namecoin's ability to completely replace the DNS.
@@ -27,7 +27,7 @@ As was [announced]({{ "/2017/03/03/icann-58.html" | relative_url }}), I represen
 * I ran out of business cards in my wallet 3 times in 3 days.  Luckily, I carry a large stash of business cards with my travel laptop, so everyone who requested my business card received it.
 * My wallet is currently sufficiently full of business cards from ICANN58 attendees that I'm having trouble easily fitting my credit card into my wallet.
 * The joint meeting of ICANN's Security and Stability Advisory Committee (SSAC) and the ICANN board included a segment on Special-Use Names and name collisions.  For those who are unaware, this is of interest to Namecoin because it would be problematic for Namecoin if ICANN were to allow someone to purchase .bit as a standard DNS TLD.
-    - [Free-software-friendly video recording](https://www.namecoin.org/files/videos/icann-58/ICANN-58-Joint-Meeting-ICANN-Board-and-Security-and-Stability-Advisory-Committee.webm) is hosted by Namecoin.org.
+    - [Free-software-friendly video recording]({{ site.files_url }}/files/videos/icann-58/ICANN-58-Joint-Meeting-ICANN-Board-and-Security-and-Stability-Advisory-Committee.webm) is hosted by Namecoin.org.
     - The above recording is converted from [ICANN's official Adobe Connect video recording](https://schedule.icann.org/event/9nvu/joint-meeting-icann-board-security-stability-advisory-committee).  Copyright ICANN; used with permission.
     - The discussion of collisions between non-DNS names (such as Namecoin, though Namecoin wasn't explicitly mentioned) and DNS names (such as if ICANN were to issue the .bit TLD to someone) begins at timestamp 42:25.  I highly recommend watching the full segment, but some highlights include:
         + The SAC090 document ["SSAC Advisory on the Stability of the Domain Namespace"](https://www.icann.org/en/system/files/files/sac-090-en.pdf) was cited; most important are 3 Recommendations from SSAC (summarized by Jeremy, apologies for any errors):

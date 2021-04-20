@@ -17,15 +17,15 @@ title: Download
 
 Current release: 0.21.0.1.
 
-* [Namecoin Core 0.21.0.1 (GNU/Linux RISC-V 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 32-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux x86 64-bit)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit installer)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit zip)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
-* [Namecoin Core 0.21.0.1 (macOS dmg)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
-* [Namecoin Core 0.21.0.1 (macOS tar.gz)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
-* [Namecoin Core 0.21.0.1 (Source code tarball)](https://www.namecoin.org/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux RISC-V 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 32-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.21.0.1 (GNU/Linux x86 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.21.0.1 (Windows 64-bit installer)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
+* [Namecoin Core 0.21.0.1 (Windows 64-bit zip)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
+* [Namecoin Core 0.21.0.1 (macOS dmg)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
+* [Namecoin Core 0.21.0.1 (macOS tar.gz)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
+* [Namecoin Core 0.21.0.1 (Source code tarball)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
 * [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
 * [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
 
@@ -46,10 +46,10 @@ Current release: 0.13.99-name-tab-beta1.
 
 ### Windows
 
-* [64-bit Installer](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64-setup-unsigned.exe)
-* [32-bit Installer](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32-setup-unsigned.exe)
-* [64-bit zip](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64.zip)
-* [32-bit zip](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32.zip)
+* [64-bit Installer]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64-setup-unsigned.exe)
+* [32-bit Installer]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32-setup-unsigned.exe)
+* [64-bit zip]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win64.zip)
+* [32-bit zip]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-win32.zip)
 
 [Gitian signatures at GitHub.](https://github.com/namecoin/gitian.sigs/tree/master/0.13.99-name-tab-beta1-win-unsigned)
 
@@ -59,10 +59,10 @@ Current release: 0.13.99-name-tab-beta1.
 
 ### GNU/Linux
 
-* [x86 64-bit tgz](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-x86_64-linux-gnu.tar.gz)
-* [x86 32-bit tgz](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-i686-pc-linux-gnu.tar.gz)
-* [ARM 64-bit tgz](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-aarch64-linux-gnu.tar.gz)
-* [ARM 32-bit tgz](https://namecoin.org/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-arm-linux-gnueabihf.tar.gz)
+* [x86 64-bit tgz]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-x86_64-linux-gnu.tar.gz)
+* [x86 32-bit tgz]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-i686-pc-linux-gnu.tar.gz)
+* [ARM 64-bit tgz]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-aarch64-linux-gnu.tar.gz)
+* [ARM 32-bit tgz]({{ site.files_url }}/files/namecoin-core-0.13.99-name-tab-beta1-notreproduced/namecoin-0.13.99-arm-linux-gnueabihf.tar.gz)
 
 [Gitian signatures at GitHub.](https://github.com/namecoin/gitian.sigs/tree/master/0.13.99-name-tab-beta1-linux)
 
@@ -93,7 +93,7 @@ Current release: 0.13.99-name-tab-beta1.
 
 ### Windows
 
-Download [v0.3.80 installer](https://namecoin.org/files/Namecoin_v0.3.80_setup.exe)<br>
+Download [v0.3.80 installer]({{ site.files_url }}/files/Namecoin_v0.3.80_setup.exe)<br>
 [Release information and signatures]({{ site.forum_url }}/viewtopic.php?f=8&t=2123).
 
 </div>
@@ -112,7 +112,7 @@ GNU/Linux packages provided by OBS.<br>
 
 ### macOS
 
-Download [v0.3.80 Namecoin-Qt](https://namecoin.org/files/Namecoin-Qt.app-0.3.80-a00c33d.zip).<br>
+Download [v0.3.80 Namecoin-Qt]({{ site.files_url }}/files/Namecoin-Qt.app-0.3.80-a00c33d.zip).<br>
 [Release information]({{ site.forum_url }}/viewtopic.php?f=8&t=2235).
 
 </div>
@@ -129,7 +129,7 @@ NMControl connects your browser/application to the client. It allows you, for ex
 
 ### Windows
 
-Download [v0.8.1 installer](https://namecoin.org/files/NMControl_v0.8.1_setup.exe).<br>
+Download [v0.8.1 installer]({{ site.files_url }}/files/NMControl_v0.8.1_setup.exe).<br>
 [Release information and signatures (read this first)]({{ site.forum_url }}/viewtopic.php?f=8&t=2402).
 
 </div>
