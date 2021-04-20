@@ -116,12 +116,12 @@ Included in ncdns binary downloads; see above.
 
 ### Binary downloads
 
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_386.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_386.tar.gz)
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_amd64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_amd64.tar.gz)
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm64.tar.gz)
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm.tar.gz)
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64le.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64le.tar.gz)
-* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_386.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_386.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_amd64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_amd64.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm64.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_arm.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64le.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64le.tar.gz)
+* [{{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64.tar.gz]({{ site.files_url }}/files/certdehydrate-dane-rest-api/certdehydrate-dane-rest-api-master-2018-12-22/certdehydrate-dane-rest-api-HEAD-linux_ppc64.tar.gz)
 
 ### Build from source
 
@@ -142,7 +142,7 @@ Included in ncdns binary downloads; see above.
 
 Only available for amd64; if you're on another arch, you'll need to build from source.
 
-* [{{ site.files_url }}/files/ncp11/master-2018-12-23/ncp11-linux-amd64.tar.gz]({{ site.files_url }}/files/ncp11/master-2018-12-23/ncp11-linux-amd64.tar.gz)
+* [{{ site.files_url }}/files/ncp11/ncp11-master-2018-12-23/ncp11-linux-amd64.tar.gz]({{ site.files_url }}/files/ncp11/ncp11-master-2018-12-23/ncp11-linux-amd64.tar.gz)
 
 ### Build from source
 

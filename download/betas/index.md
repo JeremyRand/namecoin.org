@@ -17,11 +17,11 @@ Nightly builds are produced by infrastructure that is not under our direct contr
 
 ## Namecoin Core
 
-* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 64-bit)]({{ site.files_url }}/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 32-bit)]({{ site.files_url }}/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 64-bit)]({{ site.files_url }}/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 32-bit)]({{ site.files_url }}/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-i686-pc-linux-gnu.tar.gz)
-* [Namecoin Core 0.15.99-name-tab-beta1 (Source code tarball)]({{ site.files_url }}/files/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-aarch64-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux ARM 32-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-arm-linux-gnueabihf.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-x86_64-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (GNU/Linux x86 32-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99-i686-pc-linux-gnu.tar.gz)
+* [Namecoin Core 0.15.99-name-tab-beta1 (Source code tarball)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.15.99-name-tab-beta1/namecoin-0.15.99.tar.gz)
 * [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
 * [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
 
@@ -50,8 +50,8 @@ You need to have Java installed:
 
 **If you're using Windows, you will need to install the [Microsoft Visual C++ 2010 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=26999).**
 
-* [ConsensusJ-Namecoin v0.3.2.1 (cross-platform JAR)]({{ site.files_url }}/files/ConsensusJ-Namecoin/0.3.2.1/namecoinj-daemon-0.3.2-SNAPSHOT.jar)
-* [ConsensusJ-Namecoin v0.3.2.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ConsensusJ-Namecoin/0.3.2.1/SHA256SUMS.asc)
+* [ConsensusJ-Namecoin v0.3.2.1 (cross-platform JAR)]({{ site.files_url }}/files/consensusj-namecoin/consensusj-namecoin-0.3.2.1/namecoinj-daemon-0.3.2-SNAPSHOT.jar)
+* [ConsensusJ-Namecoin v0.3.2.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/consensusj-namecoin/consensusj-namecoin-0.3.2.1/SHA256SUMS.asc)
 * [ConsensusJ-Namecoin source code (use the `consensusj-namecoin-0.3.2.1` branch)](https://github.com/JeremyRand/consensusj/)
 * [libdohj source code](https://github.com/dogecoin/libdohj/)
 
