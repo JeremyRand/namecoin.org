@@ -9,7 +9,7 @@ redirect_from:
 ---
 The proliferation of cryptocurrencies working on decentralized TLDs has spurred a narrative of competition with Namecoin. However, the distance between our communities is small, and the competition is friendly. The free software movement has shown us that multiple approaches strengthen the ecosystem. Competition is not the zero-sum game fundamentalist Chicago-school economists make it out to be.
 
-*This blog post is based on a [forum thread](https://forum.namecoin.org/viewtopic.php?f=5&t=2000) from September 21st.*
+*This blog post is based on a [forum thread]({{ site.forum_url }}/viewtopic.php?f=5&t=2000) from September 21st.*
 
 The title of this post is a reference to the Internet Explorer and Firefox tradition of [sending celebratory cakes](https://www.flickr.com/photos/jollyjake/278562314/) for major releases. While the two teams are competitors, this competition has pushed them to create better products.  We believe the same is true of cryptocurrencies.
 

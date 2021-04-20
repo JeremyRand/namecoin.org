@@ -59,7 +59,7 @@ What does Namecoin do under the hood?
 
 [Earlier news]({{ "/news/" | relative_url }})
 
-For the latest news go to the [Namecoin forum](https://forum.namecoin.org/) or check out [r/namecoin](https://www.reddit.com/r/namecoin).
+For the latest news go to the [Namecoin forum]({{ site.forum_url }}/) or check out [r/namecoin](https://www.reddit.com/r/namecoin).
 
 Official anouncements will also be made on [this BitcoinTalk thread](https://bitcointalk.org/index.php?topic=236340.0).
 
@@ -67,4 +67,4 @@ Official anouncements will also be made on [this BitcoinTalk thread](https://bit
 Help keep us **strong**.  [You can donate to the Namecoin project here.]({{ "/donate/" | relative_url }})
 
 ## Participate
-With **Namecoin** you can make a difference.  We need your **help to free information**, especially in documentation, marketing, and [coding](https://github.com/namecoin/).  You are welcome at the [forum](https://forum.namecoin.org/).  There may be [bounties](https://forum.namecoin.org/viewforum.php?f=18), too.
+With **Namecoin** you can make a difference.  We need your **help to free information**, especially in documentation, marketing, and [coding](https://github.com/namecoin/).  You are welcome at the [forum]({{ site.forum_url }}/).  There may be [bounties]({{ site.forum_url }}/viewforum.php?f=18), too.

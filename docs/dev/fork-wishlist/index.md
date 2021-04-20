@@ -12,7 +12,7 @@ This is a list of proposed consensus forks for Namecoin.  Inclusion on this list
 * [Require AuxPoW to be always active](https://github.com/namecoin/namecoin-core/pull/75).  This is a proposed solution to an incompatibility between BIP 9 (VersionBits) and AuxPoW.
 * [AuxPoW: use BIP 122 chain ID](https://github.com/namecoin/namecoin-core/pull/75#issuecomment-228597157).
 * AuxPoW: Use SegWit commitments.
-* AuxPoW: "correct the merged-mining chain_id awkwardness" ([as midnightmagic put it](https://forum.namecoin.org/viewtopic.php?f=5&t=1824))
+* AuxPoW: "correct the merged-mining chain_id awkwardness" ([as midnightmagic put it]({{ site.forum_url }}/viewtopic.php?f=5&t=1824))
 * AuxPoW: Use protocol from P2Pool.  Would decrease size of AuxPoW headers.  Implementation is in use already by P2Pool; spec incomplete.
 * AuxPoW: Use protocol from Luke-Jr.  Would probably fix GBT, decrease size of AuxPoW headers more than P2Pool, requires a Bitcoin hardfork as well, implementation and spec not public yet.
 * Disable BDB lock limit.
@@ -26,7 +26,7 @@ This is a list of proposed consensus forks for Namecoin.  Inclusion on this list
 
 ## Softforks
 
-* [AuxPoW: restrict timestamp difference to parent block](https://forum.namecoin.org/viewtopic.php?f=8&t=2455&hilit=softfork&sid=e59d68ac212f89a82ed1ccefc7da4996).
+* [AuxPoW: restrict timestamp difference to parent block]({{ site.forum_url }}/viewtopic.php?f=8&t=2455&hilit=softfork&sid=e59d68ac212f89a82ed1ccefc7da4996).
 * Coinbase commitment for UNO set.
 * Make dust spam outputs from the attack between blocks 39k and 41k unspendable.
 * Segregated Name Values.
