@@ -15,11 +15,11 @@ You only need one of ConsensusJ-Namecoin or Electrum-NMC.  ConsensusJ-Namecoin r
 
 ### ConsensusJ-Namecoin
 
-* [{{ "/download/betas/#consensusj-namecoin" | relative_url }}]({{ "/download/betas/#consensusj-namecoin" | relative_url }})
+* [{{ "/download/betas/#consensusj-namecoin" | absolute_url }}]({{ "/download/betas/#consensusj-namecoin" | relative_url }})
 
 ### Electrum-NMC
 
-* [{{ "/download/betas/#electrum-nmc" | relative_url }}]({{ "/download/betas/#electrum-nmc" | relative_url }}) (you want the v3.2.4b1 Beta)
+* [{{ "/download/betas/#electrum-nmc" | absolute_url }}]({{ "/download/betas/#electrum-nmc" | relative_url }}) (you want the v3.2.4b1 Beta)
 
 ## Install a Namecoin lookup client
 
@@ -52,7 +52,7 @@ You only need one of ConsensusJ-Namecoin or Electrum-NMC.
 
 ### Binary downloads
 
-* [{{ "/download/betas/#ncdns" | relative_url }}]({{ "/download/betas/#ncdns" | relative_url }})
+* [{{ "/download/betas/#ncdns" | absolute_url }}]({{ "/download/betas/#ncdns" | relative_url }})
 
 ### Build from source
 
@@ -110,7 +110,7 @@ Included in ncdns binary downloads; see above.
 
 ## Install dns-prop279
 
-1. See instructions at [{{ "/docs/tor-resolution/#install-torns" | relative_url }}]({{ "/docs/tor-resolution/#install-torns" | relative_url }}).
+1. See instructions at [{{ "/docs/tor-resolution/#install-torns" | absolute_url }}]({{ "/docs/tor-resolution/#install-torns" | relative_url }}).
 
 ## Get certdehydrate-dane-rest-api
 
