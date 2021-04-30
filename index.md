@@ -53,7 +53,9 @@ What does Namecoin do under the hood?
 {% for post in site.posts limit:10 %}
 {% assign content_words = post.content | number_of_words %}
 {% assign excerpt_words = post.excerpt | number_of_words %}
-**[{{ post.title }}]({{ post.url | relative_url }})**<br>
+
+### [{{ post.title }}]({{ post.url | relative_url }})
+
 **[{{ post.date | date: "%Y-%m-%d" }}]({{ post.url | relative_url }})** {{ post.excerpt | remove: '<p>' | remove: '</p>' }}  {% if content_words != excerpt_words %} [Read more...]({{ post.url | relative_url }}) {% endif %}
 
 {% endfor %}
