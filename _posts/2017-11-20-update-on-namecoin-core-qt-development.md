@@ -18,7 +18,7 @@ brings it current with Namecoin Core version 0.15.99. There have been many
 bugfixes and improvements, so we welcome users to test the code and report any
 issues.
 
-Secondly, thanks to [support](https://www.namecoin.org/2017/05/19/funding-nlnet.html)
+Secondly, thanks to [support]({{ "/2017/05/19/funding-nlnet.html" | relative_url }})
 from the NLnet Foundation's Internet Hardening Fund, I've began developing the
 DNS configuration dialog. The goal is to make managing Namecoin domains much simpler
 and will remove the need for many users to build `d/` spec JSON documents
