@@ -5,7 +5,7 @@ author: yanmaani
 tags: [News]
 ---
 
-Namecoin Core will, starting version 0.22, no longer require that a salt or TXID be provided in the `name_firstupdate` RPC call. If no transaction ID is provided, the wallet will perform a linear scan over its unspent outputs to attempt to find a matching transaction. If no salt is provided, it will assume that it can be deterministically generated from the private key using the same scheme already implemented in [Electrum-NMC](/2020/05/10/deterministic-salts.html).
+Namecoin Core will, starting version 0.22, no longer require that a salt or TXID be provided in the `name_firstupdate` RPC call. If no transaction ID is provided, the wallet will perform a linear scan over its unspent outputs to attempt to find a matching transaction. If no salt is provided, it will assume that it can be deterministically generated from the private key using the same scheme already [implemented in Electrum-NMC]({{ "/2020/05/10/deterministic-salts.html" | relative_url }}).
 
 To facilitate this, `name_new` has also been changed to use deterministically generated salts.
 
