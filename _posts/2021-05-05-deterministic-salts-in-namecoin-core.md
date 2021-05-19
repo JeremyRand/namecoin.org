@@ -16,8 +16,10 @@ There is therefore no longer any need to write down the salt and transaction ID 
 ```
 name_new "d/myname"
 (wait 12 blocks...)
-name_firstupdate "d/myname" "value"
+name_firstupdate "d/myname" [value]
 ```
+
+Note that `value` is optional; omitting the parameter will cause Namecoin to [use the empty string]({{ "/2020/12/04/namecoin-core-name-firstupdate-name-update-default-values.html" | relative_url }}) by default.
 
 This change is being made as part of the effort to simplify the RPC API for name management. It was also one of the prerequisites for a new name registration GUI, work on which is intended to proceed shortly.
 
