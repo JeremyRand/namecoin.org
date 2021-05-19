@@ -21,4 +21,4 @@ name_firstupdate "d/myname" "value"
 
 This change is being made as part of the effort to simplify the RPC API for name management. It was also one of the prerequisites for a new name registration GUI, work on which is intended to proceed shortly.
 
-This work was funded by NLnet Foundation's NGI0 Discovery Fund, which is funded by the European Commission, the executive branch of the European Union.
+This work was funded by NLnet Foundation's NGI0 Discovery Fund.
