@@ -27,9 +27,6 @@ Two chat channels exist for Namecoin.  If you're not sure which access method to
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin) (clearnet, Tor prohibited)
 * Matrix (Tor-friendly): #namecoin:matrix.org
 * [Matrix Element web chat](https://app.element.io/#/room/#namecoin:matrix.org) (clearnet, Tor-friendly)
-* [Freenode IRC](ircs://ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion:6697/#namecoin) (Tor onion, SASL required, register via Matrix or clearnet)
-* [Freenode IRC](ircs://chat.freenode.net:6697/#namecoin) (clearnet, Tor prohibited)
-* [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin) (clearnet, Tor prohibited)
 
 ## #namecoin-dev
 
@@ -47,9 +44,6 @@ Two chat channels exist for Namecoin.  If you're not sure which access method to
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin-dev) (clearnet, Tor prohibited)
 * Matrix (Tor-friendly): #namecoin-dev:matrix.org
 * [Matrix Element web chat](https://app.element.io/#/room/#namecoin-dev:matrix.org) (clearnet, Tor-friendly)
-* [Freenode IRC](ircs://ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion:6697/#namecoin-dev) (Tor onion, SASL required, register via Matrix or clearnet)
-* [Freenode IRC](ircs://chat.freenode.net:6697/#namecoin-dev) (clearnet, Tor prohibited)
-* [Freenode web chat](https://webchat.freenode.net/?channels=%23namecoin-dev) (clearnet, Tor prohibited)
 
 ## Developer Meetings
 
