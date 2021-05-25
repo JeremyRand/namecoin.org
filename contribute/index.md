@@ -54,7 +54,7 @@ ElectrumX servers help Electrum-NMC users synchronize the blockchain more quickl
 
 ## Merge-mine Namecoin
 
-Do you mine Bitcoin at a mining pool?  Consider using a Bitcoin mining pool that [also merge-mines Namecoin]({{ site.metrics_url }}/timestamps-pool/charts/?sort=name&order=desc).  You can help keep Namecoin mining decentralized by using the lowest-hashrate pool available that still meets your requirements, or by using [P2Pool](https://github.com/p2pool/p2pool) or solo-mining.
+Do you mine Bitcoin at a mining pool?  Consider using a Bitcoin mining pool that [also merge-mines Namecoin]({{ site.metrics_url }}/namecoin/period-timestamps/pool/charts/latest.txt).  You can help keep Namecoin mining decentralized by using the lowest-hashrate pool available that still meets your requirements, or by using [P2Pool](https://github.com/p2pool/p2pool) or solo-mining.
 
 ## Write documentation
 
