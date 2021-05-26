@@ -2,3 +2,4 @@
 url: "https://namecoin.bit" # the base hostname & protocol for your site
 files_url: "https://namecoin.bit"
 forum_url: "https://nf.bit"
+metrics_url: "https://metrics.namecoin.bit"
