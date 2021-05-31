@@ -5,7 +5,6 @@ author: yanmaani
 tags: [News]
 ---
 
-
 Lately, work aiming to simplify the RPC API for name management has been proceeding. This is done both for the sake of improvement itself, and to make it easier to write GUIs for Namecoin.
 
 One unique element in Namecoin is the extensive use of time-dependent transactions. This is comparatively rare in Bitcoin. Either you want to send money or you don't want to send money, but the "when" is usually ASAP. However, in Namecoin, it's pretty common to, for instance, want to renew a name *when* it's close to expiring, or register a name *when* its `NAME_NEW` input has matured.
