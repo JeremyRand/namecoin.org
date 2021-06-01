@@ -9,7 +9,7 @@ Lately, work aiming to simplify the RPC API for name management has been proceed
 
 One unique element in Namecoin is the extensive use of time-dependent transactions. This is comparatively rare in Bitcoin. Either you want to send money or you don't want to send money, but the "when" is usually ASAP. However, in Namecoin, it's pretty common to, for instance, want to renew a name *when* it's close to expiring, or register a name *when* its `NAME_NEW` input has matured.
 
-Historically, this has been a bit of an annoyance. Transactions can only* be broadcast if they have a good chance of making it into the next block, and not all transactions are intended to be broadcast immediately. The way users had to deal with it, then, was to manually keep track of what transactions they wanted broadcast and when.
+Historically, this has been a bit of an annoyance. Transactions can only[1] be broadcast if they have a good chance of making it into the next block, and not all transactions are intended to be broadcast immediately. The way users had to deal with it, then, was to manually keep track of what transactions they wanted broadcast and when.
 
 This isn't suitable. It's bad enough for direct users, but it also makes writing auxilliary software a pain, since the obligation will fall upon it to manage a lot of state. For example, the old name management GUI had to have a series of undocumented internal hooks into the wallet database.
 
@@ -17,9 +17,9 @@ For this reason, a transaction queue has now been added to Namecoin to explicitl
 
 1. Keep a list of transactions we'd like to broadcast
 2. Each block, try to broadcast everything
-3. Remove everything that made it into the mmepool
+3. Remove everything that made it into the mempool
 
-The initial plan was to have a very baroque API, where users could enter transactions and have them broadcast either when a name reached a certain age or when a transaction had a certain height. However, *after already having implemented all this*, it was realized that Bitcoin's existing locking facilities could already cover our needs, and so I took it out. Wasting the effort was a bummer, but you can't be sentimental like that. In the end it made for a better API and cleaner code. Such is life.
+The initial plan was to have a very baroque API, where users could enter transactions and have them broadcast either when a name reached a certain age or when a transaction had a certain height. The reason for this was was that the transaction queue API was first implemented in Electrum-NMC, which doesn't allow you to check whether a transaction is valid without leaking it to the server. *After already having implemented all this*, it was realized that Bitcoin's existing locking facilities could already cover our needs for Bitcoin Core, and so I took it out. Wasting the effort was a bummer, but you can't be sentimental like that. In the end it made for a better API and cleaner code. Such is life.
 
 The API for the transaction queue is thus very simple:
 
@@ -29,10 +29,10 @@ The API for the transaction queue is thus very simple:
 
 `listqueuetransactions` lists all the queued transactions. Note that this may also include transactions queued by RPC calls.
 
-These changes will be available in Namecoin Core starting version 0.22.
+These changes will be available in Namecoin Core starting version 22.0.
 
 This change was a prerequisite for `name_autoregister`, an RPC call to register a name in one step without having to manually call `name_firstupdate`, regarding which we endeavor to have an update in the next few days. That RPC call is the final pre-requisite for completing the new name management GUI.
 
-This work was funded by NLnet Foundation's NGI0 Discovery Fund, which is funded by the European Commission, the executive branch of the European Union.
+This work was funded by NLnet Foundation's NGI0 Discovery Fund.
 
-* Actually, this is only true in Bitcoin. In Namecoin, presumably to take the edge off this wart, there's a special (somewhat ungainly) exemption for `name_firstupdate`, which was the cause of very serious bugs in the past, such as the [June 2018 incident]({{ "/2018/07/08/brownout-june-17-20.html" | relative_url }}).
+[1] Actually, this is only true in Bitcoin. In Namecoin, presumably to take the edge off this wart, there's a special (somewhat ungainly) exemption for `name_firstupdate`, which was the cause of very serious bugs in the past, such as the [June 2018 incident]({{ "/2018/07/08/brownout-june-17-20.html" | relative_url }}).
