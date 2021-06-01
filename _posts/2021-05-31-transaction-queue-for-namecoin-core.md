@@ -19,7 +19,7 @@ For this reason, a transaction queue has now been added to Namecoin to explicitl
 2. Each block, try to broadcast everything
 3. Remove everything that made it into the mempool
 
-The initial plan was to have a very baroque API, where users could enter transactions and have them broadcast either when a name reached a certain age or when a transaction had a certain height. The reason for this was was that the transaction queue API was first implemented in Electrum-NMC, which doesn't allow you to check whether a transaction is valid without leaking it to the server. *After already having implemented all this*, it was realized that Bitcoin's existing locking facilities could already cover our needs for Bitcoin Core, and so I took it out. Wasting the effort was a bummer, but you can't be sentimental like that. In the end it made for a better API and cleaner code. Such is life.
+The initial plan was to have a very baroque API, where users could enter transactions and have them broadcast either when a name reached a certain age or when a transaction had a certain height. The reason for this was was that the transaction queue API was [first implemented in Electrum-NMC]({{ "/2018/10/21/electrum-nmc-name-registration-gui.html" | relative_url }}), which doesn't allow you to check whether a transaction is valid without leaking it to the server. *Having already implemented all this*, it was realized that Bitcoin's existing locking facilities could already cover our needs for Bitcoin Core, and so I took it out. Wasting the effort was a bummer, but you can't be sentimental like that. In the end it made for a better API and cleaner code. Such is life.
 
 The API for the transaction queue is thus very simple:
 
