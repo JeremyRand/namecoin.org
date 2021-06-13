@@ -104,15 +104,14 @@ The ncdns Windows installer also automatically installs and configures a Namecoi
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
 
-* [ncdns v0.0.10.3 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-x86_64.tar.gz)
-* [ncdns v0.0.10.3 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-linux-i686.tar.gz)
-* [ncdns v0.1.2 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.1.2/ncdns-0.1.2-windows-x86_64-install.exe)
-* [ncdns v0.0.10.3 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-x86_64.tar.gz)
-* [ncdns v0.0.10.3 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-windows-i686.tar.gz)
-* [ncdns v0.0.10.3 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3-osx-x86_64.tar.gz)
-* [ncdns v0.1.2 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.1.2/ncdns-0.1.2.SHA256SUMS.asc)
-* [ncdns v0.0.10.3 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
-* [ncdns v0.0.10.3 plain binaries for GNU/Linux (non-x86), DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, and Solaris (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.10.3)
+* [ncdns v0.2 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-linux-x86_64-b6eaf7.tar.xz)
+* [ncdns v0.2 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-linux-i686-5865ed.tar.xz)
+* [ncdns v0.2 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-x86_64-install-b28af1.exe)
+* [ncdns v0.2 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-windows-x86_64-752588.tar.xz)
+* [ncdns v0.2 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-windows-i686-558d6b.tar.xz)
+* [ncdns v0.2 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-osx-x86_64-a7144c.tar.xz)
+* [ncdns v0.2 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.2/sha256sums-unsigned-build.txt)
+* [ncdns v0.2 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.2/sha256sums-unsigned-build.txt.asc)
 * [ncdns Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64le.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_arm64.tar.gz)
@@ -147,6 +146,7 @@ generate_nmc_cert is a tool for generating TLS server certificates of the form e
 
 See the [documentation on setting up TLS for name owners]({{ "/docs/name-owners/tls/" | relative_url }}).
 
+* generate_nmc_cert stable binaries are shipped with ncdns.
 * [generate_nmc_cert Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_ppc64.tar.gz)
 * [generate_nmc_cert Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_ppc64le.tar.gz)
 * [generate_nmc_cert Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/generate_nmc_cert/Cross-Compile%20Go%20latest/binaries/dist/generate_nmc_cert--linux_arm64.tar.gz)
@@ -172,6 +172,7 @@ See the [documentation on setting up TLS for name owners]({{ "/docs/name-owners/
 
 certinject is a tool for adding and manipulating certificates in the Windows CryptoAPI certificate store.  Unlike the built-in Windows tool `certutil`, certinject can easily set the EKU (extended key usage, AKA enhanced key usage) and NC (name constraints) properties on certificates, and does not require Administrator privileges.
 
+* certinject stable binaries are shipped with ncdns.
 * [certinject Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64.tar.gz)
 * [certinject Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_ppc64le.tar.gz)
 * [certinject Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/certinject/Cross-Compile%20Go%20latest/binaries/dist/certinject--linux_arm64.tar.gz)
@@ -197,12 +198,7 @@ certinject is a tool for adding and manipulating certificates in the Windows Cry
 
 Encaya enables Namecoin TLS (positive overrides only) in applications that support AIA, such as Chromium.  Encaya is also a dependency of ncp11 and the Chromium version of DNSSEC-HSTS.
 
-* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for GNU/Linux (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-linux-i686.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for Windows (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-windows-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for Windows (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-windows-i686.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 for macOS (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/certdehydrate-dane-rest-api-0.0.1-osx-x86_64.tar.gz)
-* [certdehydrate-dane-rest-api v0.0.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
+* Encaya stable binaries are shipped with ncdns.
 * [Encaya Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_ppc64.tar.gz)
 * [Encaya Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_ppc64le.tar.gz)
 * [Encaya Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--linux_arm64.tar.gz)
@@ -222,7 +218,6 @@ Encaya enables Namecoin TLS (positive overrides only) in applications that suppo
 * [Encaya Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--windows_amd64.tar.gz)
 * [Encaya Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--windows_386.tar.gz)
 * [Encaya Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/encaya/Cross-Compile%20Go%20latest/binaries/dist/encaya--darwin_amd64.tar.gz)
-* [certdehydrate-dane-rest-api rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 * [Encaya Source Code](https://github.com/namecoin/encaya)
 
 ### Known Issues
@@ -271,13 +266,7 @@ DNSSEC-HSTS enforces TLS for Namecoin websites that support TLS, which protects 
 
 ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Tor Browser.
 
-* [ncp11 v0.0.1 for GNU/Linux (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-linux-x86_64.tar.gz)
-* [ncp11 v0.0.1 for GNU/Linux (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-linux-i686.tar.gz)
-* [ncp11 v0.0.1 for Windows (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-windows-x86_64.tar.gz)
-* [ncp11 v0.0.1 for Windows (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-windows-i686.tar.gz)
-* [ncp11 v0.0.1 for macOS (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncp11-0.0.1-osx-x86_64.tar.gz)
-* [ncp11 v0.0.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
-* [ncp11 rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
+* ncp11 stable binaries are shipped with ncdns.
 * [ncp11 Source Code](https://github.com/namecoin/ncp11)
 
 ### Known Issues
@@ -328,13 +317,7 @@ ncprop279 enables Namecoin naming (but not DNS naming) to be used with Tor, via 
 
 See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | relative_url }}).
 
-* [ncprop279 v0.0.3 for GNU/Linux (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-x86_64.tar.gz)
-* [ncprop279 v0.0.3 for GNU/Linux (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-linux-i686.tar.gz)
-* [ncprop279 v0.0.3 for Windows (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-windows-x86_64.tar.gz)
-* [ncprop279 v0.0.3 for Windows (32-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-windows-i686.tar.gz)
-* [ncprop279 v0.0.3 for macOS (64-bit x86)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncprop279-0.0.3-osx-x86_64.tar.gz)
-* [ncprop279 v0.0.3 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.0.10.3/ncdns-0.0.10.3.SHA256SUMS.asc)
-* [ncprop279 rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
+* ncprop279 stable binaries are shipped with ncdns.
 * [ncprop279 Source Code](https://github.com/namecoin/ncprop279)
 
 ### Known Issues
@@ -347,3 +330,10 @@ See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | rela
 * Stream isolation for streams opened by applications (e.g. Tor Browser) should work fine.  However, stream isolation metadata will only propagate to streams opened by the Namecoin client if you're running Tor 0.4.3.1-alpha or higher with a recent StemNS (TorNS hasn't merged the needed changes yet).  If you meet those requirements, then any Namecoin client is fine.  If not, that means you should only use `ncprop279` with a Namecoin client that will not generate outgoing traffic when you query it.  A full-block-receive Namecoin node such as Namecoin Core or ConsensusJ-Namecoin in leveldbtxcache mode is probably fine.  A headers-only name lookup client such as Electrum-NMC should **not** be used without Tor 0.4.3.1-alpha or higher with a recent StemNS.
 * ncprop279 caches lookups.  Isolation of the caching has the same dependencies as stream isolation.  If you don't have the needed Tor and StemNS version, ncprop279's caching could be used to fingerprint you.
 * Build is not yet reproducible.
+
+## qlib
+
+qlib is a memory-safe alternative to `dig`.  You can use qlib to debug DNS servers such as ncdns and Unbound.  qlib is a library-friendly refactorization of Miek Gieben's `q` tool.
+
+* qlib stable binaries are shipped with ncdns.
+* [qlib Source Code](https://github.com/namecoin/qlib)
