@@ -231,7 +231,7 @@ Encaya enables Namecoin TLS (positive overrides only) in applications that suppo
 
 ## cross_sign_name_constraint_tool
 
-This tool applies a name constraint exclusion to a DER-encoded TLS trust anchor via cross-signing, without that trust anchor's consent. The intended use case is to disallow a CA from issuing certificates for a domain name that it has no legitimate business issuing certificates for. For example:
+`cross_sign_name_constraint_tool` applies a name constraint exclusion to a DER-encoded TLS trust anchor via cross-signing, without that trust anchor's consent. The intended use case is to disallow a CA from issuing certificates for a domain name that it has no legitimate business issuing certificates for. For example:
 
 * Disallowing a public CA from issuing certificates for the `.bit` TLD used by Namecoin.
 * Disallowing a public CA from issuing certificates for a TLD controlled by your corporate intranet.
@@ -286,7 +286,7 @@ ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Tor Bro
 
 ## tlsrestrict_nss_tool
 
-This tool applies a name constraint exclusion to an NSS sqlite database for all CKBI (built-in) TLS trust anchors, without those trust anchors' consent. The intended use case is to disallow public CA's from issuing certificates for TLD's with unique regulatory or policy requirements, such as:
+`tlsrestrict_nss_tool` applies a name constraint exclusion to an NSS sqlite database for all CKBI (built-in) TLS trust anchors, without those trust anchors' consent. The intended use case is to disallow public CA's from issuing certificates for TLD's with unique regulatory or policy requirements, such as:
 
 * The `.bit` TLD used by Namecoin.
 * A TLD controlled by your corporate intranet.
@@ -298,12 +298,12 @@ Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all 
 
 ### Known Issues
 
-* This tool will probably prevent HPKP from working as intended, unless HPKP is applied to user-defined trust anchors. Firefox is capable of doing this (though it's not the default); Chromium is not (as far as we know).
+* `tlsrestrict_nss_tool` will probably prevent HPKP from working as intended, unless HPKP is applied to user-defined trust anchors. Firefox is capable of doing this (though it's not the default); Chromium is not (as far as we know).
 * Build is not yet reproducible.
 
 ## dns-prop279
 
-This is a tool that permits Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
+dns-prop279 that permits Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
 
 See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | relative_url }})
 * Binaries distributed with [ncdns v0.0.8 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, and macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.8).
