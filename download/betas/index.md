@@ -284,6 +284,19 @@ ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Tor Bro
 
 * Build is not yet reproducible.
 
+## pkcs11mod
+
+pkcs11mod is a library for making PKCS#11 modules in Go.  This download includes the pkcs11proxy and p11proxy modules.
+
+* [pkcs11mod Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20ppc64le/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20arm64/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20arm/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20amd64/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20386/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20windows%20amd64/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20windows%20386/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Source Code](https://github.com/namecoin/pkcs11mod)
+
 ## tlsrestrict_nss_tool
 
 This tool applies a name constraint exclusion to an NSS sqlite database for all CKBI (built-in) TLS trust anchors, without those trust anchors' consent. The intended use case is to disallow public CA's from issuing certificates for TLD's with unique regulatory or policy requirements, such as:
