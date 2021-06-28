@@ -5,111 +5,46 @@ title: Setting up TLS (for name owners)
 
 {::options parse_block_html="true" /}
 
-The Namecoin tool `generate_nmc_cert` can be used to create a TLS certificate that will be recognized as valid by TLS implementations where Namecoin is installed.  (Standard certificate generation tools like `openssl` are not usable for this purpose.)
+# Setting up TLS (for name owners)
 
-There are currently 3 forms of Namecoin TLS certificates: Dehydrated, Constrained, and Encaya.  The Dehydrated form is older and is supported by more TLS implementations than the Constrained form.  The Constrained form is more secure and uses less blockchain storage than the Dehydrated form.  The Encaya form retains the Constrained form's security improvements, uses even less blockchain storage than the Constrained form, and has even better compatibility than the Dehydrated form.  It is likely that the Dehydrated and Constrained forms will be phased out once the Encaya form has been more widely adopted by the Namecoin ecosystem.  By default, `generate_nmc_cert` will produce a Dehydrated certificate.
+TLS (*Transport Layer Security*) is the "S" in HTTPS.  All websites using Namecoin should use TLS.  This guide covers how to set up TLS with Namecoin.
 
-Example usage (Dehydrated form):
+## Prerequisites
 
-~~~
-$ ./generate_nmc_cert -host www.example.bit
-2019/12/11 06:47:41 written cert.pem
-2019/12/11 06:47:41 written key.pem
-2019/12/11 06:47:41 Your Namecoin cert is: {"d8":[1,"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOcD7/hnngrlW3XrTviUjXHgbvraj3mw7Wa872Iti6Dp0Jrb9P6ZsINAZSU4mucH37zX7/pscyb6UBO08SqDP+w==",5253561,5358681,10,"MEUCIQDQF/IAHUv1UqGTGrWMvu/Tfj6PiNRBb3eTerpyZmTJjAIgeEc3a8yyNY09PrDSGkEOh0T6ZmVqbesqnZVLYszEnWI="]}
-2019/12/11 06:47:41 SUCCESS: The cert rehydrated to an identical form.  Place the generated files in your HTTPS server, and place the above JSON in the "tls" field for your Namecoin name.
-~~~
+You should install the latest release of the `generate_nmc_cert` tool (it's included with ncdns).  You may also want to install the latest release of the ncdns Windows installer, to test that your certificates work.
 
-To produce a Constrained certificate instead, use the `-use-ca` command-line flag, like this:
+## Concepts
 
-~~~
-$ ./generate_nmc_cert -host www.example.bit -use-ca
-2019/12/11 06:54:39 Your CA's "tls" record is: [2, 1, 0, "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEm1nvuS+A5WFgafCeYmzVSZOsokU1Fmnh5ZiBC7h0pRkbkx7cCA/MYPPh6zDdMB75ELvXSt0eLaoQQYaz1QDijw=="]
-2019/12/11 06:54:39 written caKey.pem
-2019/12/11 06:54:39 written cert.pem
-2019/12/11 06:54:39 written key.pem
-2019/12/11 06:54:39 SUCCESS.  Place cert.pem and key.pem in your HTTPS server, and place the above JSON in the "tls" field for your Namecoin name.
-~~~
+In Namecoin, the blockchain stores the public key of a *CA certificate* (certificate authority certificate) that you've created.  You can use that CA certificate to *issue* TLS certificates, or issue additional CA certificates (referred to as *subordinate CA certificates*).  Issuing TLS certificates or subordinate CA certificates does not require a blockchain transaction.  The CA certificate referenced by the blockchain is valid for your Namecoin domain name and all subdomains, but you can add additional restrictions when issuing TLS certificates or subordinate CA certificates.  This allows you to limit the impact of key compromise.  For example:
 
-To produce an Encaya certificate instead, use both the `-use-ca` and `-use-aia` command-line flags, like this:
+* You can issue TLS certificates (which will be deployed to a public-facing TLS server) with a short expiration time, while keeping the CA certificate and its private key (with a longer expiration time) on an offline machine.  You can then rotate keys by issuing a new TLS certificate periodically.  This means that if your TLS server is temporarily compromised and its private key is stolen, the situation will resolve itself the next time you rotate TLS certificates.
+* You can issue TLS certificates that are only valid for certain subdomains.  For example, if you have multiple physical servers that each handle a different subset of your subdomains, you can give each of them its own TLS certificate, and a compromised server won't be able to impersonate the others.
+* You can issue subordinate CA certificates that are only valid for certain subdomains.  This allows you to give a third party the ability to create TLS certificates for a specific subdomain, without letting them impact the security of the rest of your Namecoin domain.
+
+## Example: The Basics
+
+To create a CA certificate for your Namecoin domain, run the following:
 
 ~~~
-$ ./generate_nmc_cert -host example.bit -use-ca -use-aia
-2021/03/14 05:00:43 wrote namecoin.json
-2021/03/14 05:00:43 wrote caAIAKey.pem
-2021/03/14 05:00:43 wrote caCert.pem
-2021/03/14 05:00:43 wrote caKey.pem
-2021/03/14 05:00:43 wrote cert.pem
-2021/03/14 05:00:43 wrote key.pem
-2021/03/14 05:00:43 SUCCESS. Place cert.pem and key.pem in your HTTPS server, and place the contents of "namecoin.json" in th
-e "tls" field for "*.example.bit".
+mkdir example.bit-ca
+pushd example.bit-ca
+generate_nmc_cert -use-ca -use-aia -host example.bit
+popd
 ~~~
 
-If you're using the Constrained or Encaya form, you can issue multiple TLS certificates for a single Namecoin record, and you can also issue subordinate CA certificates.  This allows you to rotate your TLS keys periodically (which is considered good key hygiene), and also allows you to create TLS certificates or subordinate CA's for specific subdomains -- all without needing to issue a Namecoin transaction.  Examples of how you can do this are below.
+(The directory names in these examples are arbitrary and are just intended to make the examples more clear; you can use whatever directory structure you like.)
 
-To issue a TLS certificate for a subdomain, set the `-parent-chain` and `-parent-key` command-line arguments to the `caChain` and `caKey.pem` file that you created with the first certificate, like this:
+The following files will be created in the `example.bit-ca` directory:
 
-~~~
-$ ./generate_nmc_cert -host "sub.example.bit" -use-ca -parent-chain ./caChain-example.bit.pem -parent-key ./caKey-example.bit.pem
-2021/03/15 12:38:56 Using existing CA private key
-2021/03/15 12:38:56 Using existing CA cert chain
-2021/03/15 12:38:56 wrote cert.pem
-2021/03/15 12:38:56 wrote key.pem
-2021/03/15 12:38:56 wrote chain.pem
-2021/03/15 12:38:56 wrote caChain.pem
-2021/03/15 12:38:56 SUCCESS. Place chain.pem and key.pem in your HTTPS server, and place the contents of "namecoin.json" in t
-he "tls" field for "*.sub.example.bit".
-~~~
+* `caChain.pem`: Certificate chain for issuing TLS certificates or subordinate CA's.
+* `caKey.pem`: Private key for issuing TLS certificates or subordinate CA's.
+* `chain.pem`: TLS certificate chain.
+* `key.pem`: TLS private key.
+* `namecoin.json`: TLSA record to enter in your Namecoin wallet.
 
-To issue a subordinate CA for a subdomain, do the same thing, but use the `-grandparent-chain` and `-grandparent-key` arguments instead:
+(A few other files will be created too, but you don't need to worry about them.)
 
-~~~
-$ ./generate_nmc_cert -host "sub.example.bit" -use-ca -grandparent-chain ./caChain-example.bit.pem -grandparent-key ./caKey-example.bit.pem
-2021/03/15 12:40:49 Using existing CA private key
-2021/03/15 12:40:49 Using existing CA cert chain
-2021/03/15 12:40:49 wrote caCert.pem
-2021/03/15 12:40:49 wrote namecoin.json
-2021/03/15 12:40:49 wrote caKey.pem
-2021/03/15 12:40:49 wrote cert.pem
-2021/03/15 12:40:49 wrote key.pem
-2021/03/15 12:40:49 wrote chain.pem
-2021/03/15 12:40:49 wrote caChain.pem
-2021/03/15 12:40:49 SUCCESS. Place chain.pem and key.pem in your HTTPS server, and place the contents of "namecoin.json" in t
-he "tls" field for "*.sub.example.bit".
-~~~
-
-When using `-parent-chain` or `-grandparent-chain`, you can include multiple subdomains by seperating them with commas.  `-parent-chain` also supports wildcard subdomains e.g. `*.sub.example.bit`.
-
-By default, certificates use the P256 curve and are valid from generation time for approximately 1 year.  Users who know what they are doing can choose different elliptic curves or validity periods; use the `-help` command-line flag to see the list of available options.
-
-The JSON object displayed should be enclosed in an array, and placed in the `tls` field for the domain where you want the TLSA record to appear.  For the Dehydrated and Constrained forms, this will usually be the `_443._tcp` subdomain of the domain name that points to the website.  For the Encaya form, this will usually be the `*` subdomain of the eTLD+1 domain name.  An example of a typical configuration (using the Dehydrated form) is:
-
-~~~
-{
-    "ip": "73.239.16.12", 
-    "map": {
-        "_tcp": {
-            "map": {
-                "_443": {
-                    "tls": [
-                        {
-                            "d8": [
-                                1, 
-                                "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQ+XwIFSYT8U24gBKFDgQ/iRuFcAQGNhJweooIRYw5G9TtAJJ2CyTHWNsfbq+5c6LZ7fErMOdIXHQhHbP68dnZA==", 
-                                4944108, 
-                                5259468, 
-                                10, 
-                                "MEQCICkDDuAmj7F9RvhUaSaOpIfW2HvSPP1YUqQMSBwycYZFAiB/u7K+F2xlfTBizkFLvFPiRfj2oFqttaXBZzO/UKewPw=="
-                            ]
-                        }
-                    ]
-                }
-            }
-        }
-    }
-}
-~~~
-
-An example of the Encaya form is:
+The JSON object contained in `namecoin.json` should be enclosed in an array, and placed in the `tls` field for the `*` subdomain of your eTLD+1 domain name.  For example:
 
 ~~~
 {
@@ -129,38 +64,137 @@ An example of the Encaya form is:
 }
 ~~~
 
-Remember that if you have an `ns` record above the `tls` record, the `ns` record will suppress the `tls` record.  For example, the following configuration will **not** work:
+If your Namecoin domain has no subdomains, you can just load `chain.pem` and `key.pem` into your TLS server (e.g. Caddy, Nginx, or Apache), and you're done.  That was easy.
+
+## Example: Renewing a TLS Certificate
+
+To issue a new TLS certificate (e.g. to rotate keys), use the `-parent-chain` and `parent-key` flags like this:
+
+~~~
+mkdir example.bit-tls
+pushd example.bit-tls
+generate_nmc_cert -use-ca -host example.bit -parent-chain ../example.bit-ca/caChain.pem -parent-key ../example.bit-ca/caKey.pem 
+popd
+~~~
+
+Note that `-use-ca` is still present, but `-use-aia` is not.
+
+You'll get a new `chain.pem` and `key.pem` in the `example.bit-tls` directory, which you can load into your TLS server.
+
+You don't need to do anything in your Namecoin wallet (or pay any fees) when renewing TLS certificates, because Namecoin TLS uses layer 2.
+
+## Example: Issuing a TLS Certificate for a Subdomain
+
+When using `-parent-chain` and `-parent-key`, you can enter a `-host` flag containing a subdomain, like this:
+
+~~~
+mkdir www.example.bit-tls
+pushd www.example.bit-tls
+generate_nmc_cert -use-ca -host www.example.bit -parent-chain ../example.bit-ca/caChain.pem -parent-key ../example.bit-ca/caKey.pem 
+popd
+~~~
+
+This works as long as the `-host` flag is within the tree of the `-host` flag that the CA was created with.  For example, if the CA is for `example.bit`, the following TLS `-host` values will work fine:
+
+* `example.bit` (same domain)
+* `www.example.bit` (subdomain)
+* `sub.www.example.bit` (subdomain of a subdomain)
+* `www.example.bit,forum.example.bit` (multiple subdomains)
+* `*.example.bit` (wildcard subdomain)
+* `*.example.bit,*.*.example.bit` (multi-level wildcard)
+
+But e.g. `example2.bit` or `example.com` will not work.
+
+Similarly, if the CA is a subordinate CA for `www.example.bit` (see next section), the following TLS `-host` values will work fine:
+
+* `www.example.bit`
+* `sub.www.example.bit`
+* `www.example.bit,sub.www.example.bit`
+* `*.www.example.bit`
+
+But the following will not work:
+
+* `example.bit` (not within the tree of the CA)
+* `www.example.bit,forum.example.bit` (all hosts must be within the tree of the CA)
+* `*.example.bit`
+
+You don't need to do anything in your Namecoin wallet (or pay any fees) when issuing TLS certificates for subdomains, because Namecoin TLS uses layer 2.
+
+## Example: Issuing a Subordinate CA Certificate for a Subdomain
+
+Issuing a subordinate CA certificate works like above, except you use the `-grandparent-chain` and `-grandparent-key` flags instead of `-parent-chain` and `-parent-key`
+
+~~~
+mkdir www.example.bit-ca
+pushd www.example.bit-ca
+generate_nmc_cert -use-ca -host www.example.bit -grandparent-chain ../example.bit-ca/caChain.pem -grandparent-key ../example.bit-ca/caKey.pem 
+popd
+~~~
+
+You'll get a new `caChain.pem` and `caKey.pem` in the `www.example.bit-ca` directory, which you can use for issuing new certificates.
+
+The `-host` flag follows similar rules as with issuing a TLS certificate.  For example, if the grandparent CA is for `example.bit`, the following subordinate CA `-host` values will work fine:
+
+* `example.bit` (same domain)
+* `www.example.bit` (subdomain)
+* `sub.www.example.bit` (subdomain of a subdomain)
+* `www.example.bit,forum.example.bit` (multiple subdomains)
+
+Specifying wildcards for subordinate CA's is not necessary.
+
+You don't need to do anything in your Namecoin wallet (or pay any fees) when issuing subordinate CA certificates, because Namecoin TLS uses layer 2.
+
+## Testing Your Website
+
+The best way to test your website is to try visiting it on a Windows 10 installation after running the ncdns for Windows installer.  It should load without errors.
+
+## Selecting the Elliptic Curve
+
+`generate_nmc_cert` defaults to the P256 curve, which balances security with compatibility.  If you really want a different curve, know what you're doing, and are prepared for the consequences, you can do so by adding one of the following flags:
+
+* `-ecdsa-curve P224`
+* `-ecdsa-curve P384`
+* `-ecdsa-curve P521`
+* `-ed25519`
+
+Note that Ed25519 is more secure than the default P256, but is not widely supported by TLS implementations yet.
+
+## Selecting the Validity Period
+
+When issuing certificates, you can change the expiration date via the `-duration` flag, which defaults to `8760h0m0s` (365 days).  You can also use the `-start-date` flag to set the start date to something other than the present time (format is `Jan 1 15:04:05 2011`).
+
+## Revoking Certificates
+
+Ideally, you've picked validity periods that are short enough that you can just wait for certificates to expire when you rotate keys.  However, in the event of emergency (e.g. you have credible reason to believe that your keys have been compromised), you can revoke your keys by deleting the TLS record from the blockchain in your Namecoin wallet (which will incur a transaction fee).  You will need to start over and re-issue all TLS certificates and subordinate CA certificates.
+
+## TLS and NS Records
+
+Remember that if you have an NS record at or above the TLS record in the blockchain, the TLS record will be suppressed.
+
+For example, the following configuration will **not** work:
 
 ~~~
 {
     "ns": "ns21.cloudns.net.",
     "map": {
-        "_tcp": {
-            "map": {
-                "_443": {
-                    "tls": [
-                        {
-                            "d8": [
-                                1, 
-                                "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQ+XwIFSYT8U24gBKFDgQ/iRuFcAQGNhJweooIRYw5G9TtAJJ2CyTHWNsfbq+5c6LZ7fErMOdIXHQhHbP68dnZA==", 
-                                4944108, 
-                                5259468, 
-                                10, 
-                                "MEQCICkDDuAmj7F9RvhUaSaOpIfW2HvSPP1YUqQMSBwycYZFAiB/u7K+F2xlfTBizkFLvFPiRfj2oFqttaXBZzO/UKewPw=="
-                            ]
-                        }
-                    ]
-                }
-            }
+        "*": {
+            "tls": [
+                [
+                    2,
+                    1,
+                    0,
+                    "MDkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDIgADcO7sJ5kaRYGipnz5YMXwo6NDGLWV4qVoJIn+1by1oAo="
+                ]
+            ]
         }
     }
 }
 ~~~
 
-The `chain.pem` and `key.pem` files can be used with HTTPS servers like Caddy, Nginx, or Apache, just like for any other certificate.
+## Cipher suites
 
-If you are using the Dehydrated form, or the default settings for the Constrained or Encaya form, you will need to make sure that your HTTPS server supports either `ECDHE-ECDSA` or `DHE-ECDSA` ciphersuites.  If you require non-forward-secret ciphersuites or non-ECDSA keys, you will need to use the Constrained or Encaya form to generate a CA, and then manually use that CA to sign an end-entity certificate (via whatever non-Namecoin tooling you like) that uses the desired `KeyUsage` value or key type.
+All TLS 1.3 cipher suites will work with Namecoin.  If you must use TLS 1.2 or lower, your TLS server will need to support an appropriate cipher suite such as one of the `ECDHE-ECDSA` cipher suites.  If possible, please avoid using TLS 1.2 or lower (with or without Namecoin), as they are outdated and insecure.
 
-Wildcard certificates are only supported by the Encaya form.
+## Using Your Own Tooling
 
-You can test your setup by visiting your `.bit` domain in a [Namecoin-supported TLS client]({{ "/docs/tls-client/" | relative_url }}).
+If you prefer, you can issue subordinate CA certificates and TLS certificates using your own CA tooling.  Just point your tooling to the CA certificate and CA private key.  You should make sure that any certificates that you issue with your own tooling contain the Subject Serial Number `Namecoin TLS Certificate`.
