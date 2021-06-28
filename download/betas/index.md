@@ -292,7 +292,7 @@ Namecoin users will probably want to use `tlsrestrict_nss_tool` to disallow all 
 
 ## dns-prop279
 
-dns-prop279 that permits Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
+dns-prop279 enables Namecoin naming (or any other naming method that speaks the DNS protocol) to be used with Tor, via the draft Prop279 pluggable naming API.  `.bit` domains can point to IP addresses (A/AAAA records), DNS names (CNAME records), and onion services.
 
 See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | relative_url }})
 * Binaries distributed with [ncdns v0.0.8 plain binaries for GNU/Linux, DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, Solaris, Windows, and macOS (hosted by GitHub)](https://github.com/namecoin/ncdns/releases/tag/v0.0.8).
