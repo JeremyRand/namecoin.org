@@ -331,6 +331,13 @@ See the [Namecoin Tor resolution documentation]({{ "/docs/tor-resolution" | rela
 * ncprop279 caches lookups.  Isolation of the caching has the same dependencies as stream isolation.  If you don't have the needed Tor and StemNS version, ncprop279's caching could be used to fingerprint you.
 * Build is not yet reproducible.
 
+## StemNS
+
+StemNS enables Prop279 pluggable naming in Tor.  It is a dependency of ncprop279.  StemNS is a lightweight, security-focused fork of meejah's TorNS.
+
+* [StemNS v0.1.1 Python tarball (hosted by GitHub)](https://github.com/namecoin/StemNS/releases/tag/v0.1.1)
+* [StemNS Source Code at GitHub.](https://github.com/namecoin/StemNS)
+
 ## qlib
 
 qlib is a memory-safe alternative to `dig`.  You can use qlib to debug DNS servers such as ncdns and Unbound.  qlib is a library-friendly refactorization of Miek Gieben's `q` tool.
