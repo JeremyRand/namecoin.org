@@ -44,7 +44,7 @@ The following files will be created in the `example.bit-ca` directory:
 
 (A few other files will be created too, but you don't need to worry about them.)
 
-The JSON object contained in `namecoin.json` should be enclosed in an array, and placed in the `tls` field for the `*` subdomain of your eTLD+1 domain name.  For example:
+The JSON value contained in `namecoin.json` should be enclosed in an array, and placed in the `tls` field for the `*` subdomain of your eTLD+1 domain name.  For example:
 
 ~~~
 {
