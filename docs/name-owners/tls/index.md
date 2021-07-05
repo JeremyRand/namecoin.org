@@ -5,8 +5,6 @@ title: Setting up TLS (for name owners)
 
 {::options parse_block_html="true" /}
 
-# Setting up TLS (for name owners)
-
 TLS (*Transport Layer Security*) is the "S" in HTTPS.  All websites using Namecoin should use TLS.  This guide covers how to set up TLS with Namecoin.
 
 ## Prerequisites
