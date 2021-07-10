@@ -30,6 +30,7 @@ OpenPGP (Git signer): `0729 7809 7FC1 25E6 685B CE40 FD75 50C2 EB80 0711` [(down
 OpenPGP (Jekyll signer): `9405 8478 534E 143D 1E78  A6BB 5E23 7E1F 50A5 A878` [(download public key)]({{ "/JeremyRand-Jekyll.asc" | relative_url }})<br>
 OpenPGP (RBM signer): `B18A 917F B906 3B6B 0F13  2374 8298 5AFE 22E0 F366` [(download public key)]({{ "/JeremyRand-RBM.asc" | relative_url }})<br>
 Ricochet: `ricochet:ujb6mp55tlzfpfdi`<br>
+Ricochet-Refresh: `ricochet:mjacuh3sbb4sg352yxwmtjwxvnbkdao6eooedlxhywbqon5ipscxasad`<br>
 Cwtch: `degdcodd2fhlpv6so3ewyh2dcsyg4732ujauuzx63t7qlavumnyt4uyd`
 
 ## Brandon "Brando" Roberts
