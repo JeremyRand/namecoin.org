@@ -23,7 +23,7 @@ If you don't wish to purchase namecoins on an exchange, you can also mine them.
 
 Namecoins can be mined in the same way as bitcoins. However, it is recommended to do merged mining, i.e. namecoins are mined as a free by-product of Bitcoin mining.
 
-For a list of current Namecoin mining pools, see [our Metrics data]({{ site.metrics_url }}/namecoin/period-timestamps/pool/charts/latest.txt).  Ask your favorite [Bitcoin mining pool](https://blockchain.info/pools) to offer merged mining of Namecoin in case they don't.
+For a list of current Namecoin mining pools, see [our Metrics data]({{ site.metrics_url }}/namecoin/period-timestamps-14-days/pool/charts/latest.txt).  Ask your favorite [Bitcoin mining pool](https://blockchain.info/pools) to offer merged mining of Namecoin in case they don't.
 
 You can also run your own mining pool. [Eloipool](https://bitcointalk.org/index.php?topic=61731.0) and [P2Pool](https://github.com/p2pool/p2pool) software has support for [merged mining](https://en.bitcoin.it/wiki/Merged_mining_specification).
 
