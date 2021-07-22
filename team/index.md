@@ -24,11 +24,13 @@ Ryan is our security specialist and all-around-badass, handling everything from 
 **Lead Application Engineer & Community Organizer** <br>
 Jeremy is our .bit application specialist, and works on our codebases relating to TLS, Tor, and SPV, among other projects. Jeremy also handles fundraising (along with Phelix), represents Namecoin at conferences, and acts as our build engineer. Outside of Namecoin, he has a background in console game hacking (in particular, synchronizing multiple game consoles with each other and with virtual reality hardware) and educational robotics. Jeremy has a Master's degree in Computer Science and is a member of the [State Sponsored Actors Club](https://www.state-sponsored-actors.org/).
 
-OpenPGP (primary): `5174 0B7C 732D 572A 3140 4010 6605 55E1 F8F7 BF85` [(download public key)]({{ "/JeremyRand.asc" | relative_url }})<br>
+OpenPGP (Email): `1D04 FB9D 50BF 2A8E 9F3E  58AD DC7E 7F8A E30E 73E6` [(download public key)]({{ "/JeremyRand-Email.asc" | relative_url }})<br>
 OpenPGP (Gitian signer): `9CDA F04A 7290 3BFE C095 9DBE 2DBE 339E 29F6 294C` [(download public key)]({{ "/JeremyRand-Gitian.asc" | relative_url }})<br>
-OpenPGP (Git signer): `0729 7809 7FC1 25E6 685B CE40 FD75 50C2 EB80 0711` [(download public key)]({{ "/JeremyRand-Git.asc" | relative_url }})<br>
+OpenPGP (Git signer): `A9F5 A19D 56DB 3217 70B6  7238 EB03 139A 459D D06E` [(download public key)]({{ "/JeremyRand-Git-2021.asc" | relative_url }})<br>
 OpenPGP (Jekyll signer): `9405 8478 534E 143D 1E78  A6BB 5E23 7E1F 50A5 A878` [(download public key)]({{ "/JeremyRand-Jekyll.asc" | relative_url }})<br>
 OpenPGP (RBM signer): `B18A 917F B906 3B6B 0F13  2374 8298 5AFE 22E0 F366` [(download public key)]({{ "/JeremyRand-RBM.asc" | relative_url }})<br>
+OpenPGP (primary) (superseded 2021): `5174 0B7C 732D 572A 3140 4010 6605 55E1 F8F7 BF85` [(download public key)]({{ "/JeremyRand.asc" | relative_url }})<br>
+OpenPGP (Git signer) (superseded 2021): `0729 7809 7FC1 25E6 685B CE40 FD75 50C2 EB80 0711` [(download public key)]({{ "/JeremyRand-Git.asc" | relative_url }})<br>
 Ricochet: `ricochet:ujb6mp55tlzfpfdi`<br>
 Ricochet-Refresh: `ricochet:mjacuh3sbb4sg352yxwmtjwxvnbkdao6eooedlxhywbqon5ipscxasad`<br>
 Cwtch: `degdcodd2fhlpv6so3ewyh2dcsyg4732ujauuzx63t7qlavumnyt4uyd`
