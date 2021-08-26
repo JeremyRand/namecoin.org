@@ -189,7 +189,7 @@ For example, the following configuration will **not** work:
 }
 ~~~
 
-## Cipher suites
+## Cipher Suites
 
 All TLS 1.3 cipher suites will work with Namecoin.  If you must use TLS 1.2 or lower, your TLS server will need to support an appropriate cipher suite such as one of the `ECDHE-ECDSA` cipher suites.  If possible, please avoid using TLS 1.2 or lower (with or without Namecoin), as they are outdated and insecure.
 
