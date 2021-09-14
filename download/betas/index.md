@@ -96,7 +96,7 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 See the [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
 
-The ncdns Windows installer also automatically installs and configures a Namecoin client (Namecoin Core or ConsensusJ-Namecoin) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
+The ncdns Windows installer also automatically installs and configures a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
 
 **Before running the ncdns Windows installer, you will need to install the following:**
 
@@ -104,14 +104,14 @@ The ncdns Windows installer also automatically installs and configures a Namecoi
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up Namecoin Core and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
 
-* [ncdns v0.2 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-linux-x86_64-b6eaf7.tar.xz)
-* [ncdns v0.2 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-linux-i686-5865ed.tar.xz)
-* [ncdns v0.2 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-x86_64-install-b28af1.exe)
-* [ncdns v0.2 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-windows-x86_64-752588.tar.xz)
-* [ncdns v0.2 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-windows-i686-558d6b.tar.xz)
-* [ncdns v0.2 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2/ncdns-0.2-osx-x86_64-a7144c.tar.xz)
-* [ncdns v0.2 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.2/sha256sums-unsigned-build.txt)
-* [ncdns v0.2 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.2/sha256sums-unsigned-build.txt.asc)
+* [ncdns v0.2.2 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-linux-x86_64-6c85dc.tar.xz)
+* [ncdns v0.2.2 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-linux-i686-c32920.tar.xz)
+* [ncdns v0.2.2 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-x86_64-install-3d2c71.exe)
+* [ncdns v0.2.2 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-windows-x86_64-649676.tar.xz)
+* [ncdns v0.2.2 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-windows-i686-695a10.tar.xz)
+* [ncdns v0.2.2 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/ncdns-0.2.2-osx-x86_64-c0fcb0.tar.xz)
+* [ncdns v0.2.2 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/sha256sums-unsigned-build.txt)
+* [ncdns v0.2.2 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.2.2/sha256sums-unsigned-build.txt.asc)
 * [ncdns Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64le.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_arm64.tar.gz)
