@@ -13,7 +13,7 @@ You can download ncdns at the [Beta Downloads]({{ "/download/betas/#ncdns" | rel
 
 ### Windows
 
-An installer wizard is available.  The ncdns Windows installer will offer to automatically install a Namecoin name lookup client (either Namecoin Core or ConsensusJ-Namecoin) and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/):
+An installer wizard is available.  The ncdns Windows installer will offer to automatically install a Namecoin name lookup client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and [Dnssec-Trigger](https://www.nlnetlabs.nl/projects/dnssec-trigger/):
 
 ![Screenshot.]({{ "/images/screenshots/ncdns-nsis/select-spv-dnssec-trigger-2018-07-31.png" | relative_url }})
 
@@ -37,10 +37,10 @@ TLS instructions for ncdns on GNU/Linux are at the [TLS Client Compatibility]({{
 
 ## Supplying your own Namecoin node
 
-The ncdns Windows installer will offer to install Namecoin Core or ConsensusJ-Namecoin, and configure ncdns to use it.  However, there are several reasons why you might want to supply your own Namecoin node:
+The ncdns Windows installer will offer to install Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC, and configure ncdns to use it.  However, there are several reasons why you might want to supply your own Namecoin node:
 
 * You're not using Windows.
-* You want to use a Namecoin node that isn't Namecoin Core or ConsensusJ-Namecoin.
+* You want to use a custom Namecoin node implementation.
 * You want to run a Namecoin node on a different machine than ncdns.
 * You want to handle updating your Namecoin node separately from updating ncdns.
 
