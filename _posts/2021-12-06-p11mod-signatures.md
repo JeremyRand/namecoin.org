@@ -12,7 +12,7 @@ In a previous post, I covered [p11mod]({{ "/2021/07/10/lab-leak-p11mod.html" | r
 * Sign messages with private keys.
 * Verify signatures with public keys.
 
-This new functionality was made possible by integration tests from OpenDNSSEC.  Thanks to the OpenDNSSEC developers for that!
+None of these operations are required by Namecoin, but they do make p11mod useful for a wider variety of use cases, which helps attract more users and developers.  This new functionality was made possible by integration tests from OpenDNSSEC.  Thanks to the OpenDNSSEC developers for that!
 
 I also fixed a PKCS#11 specification compliance bug in p11mod (stupid off-by-one error in object handle validation), which was surfaced by a GnuTLS upgrade that enforces greater strictness.  Kudos to the GnuTLS developers for being strict and helping me fix a bug!
 
