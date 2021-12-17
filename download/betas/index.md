@@ -69,16 +69,16 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{ "/docs/electrum-nmc/" | relative_url }})
 
-* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.xz)
-* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.tar.gz)
-* [Electrum-NMC v3.3.10 for GNU/Linux, Windows, and macOS (Python zip, worst compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/Electrum-NMC-3.3.10.zip)
-* [Electrum-NMC v3.3.10 for GNU/Linux (x86_64 AppImage)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-x86_64.AppImage)
-* [Electrum-NMC v3.3.10 for Windows (Standalone Executable)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10.exe)
-* [Electrum-NMC v3.3.10 for Windows (Portable version)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-portable.exe)
-* [Electrum-NMC v3.3.10 for Windows (Installer)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/electrum-nmc-nc3.3.10-setup.exe)
-* [Electrum-NMC v3.3.9.1 for Android/Linux]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.9.1/Electrum_NMC-3.3.9.0-debug.apk)
-* [Electrum-NMC v3.3.10 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.10/SHA256SUMS.asc)
-* [Electrum-NMC v3.3.9.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-3.3.9.1/SHA256SUMS.asc)
+* [Electrum-NMC v4.0.0b0 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum-NMC-4.0.0b0.tar.xz)
+* [Electrum-NMC v4.0.0b0 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum-NMC-4.0.0b0.tar.gz)
+* [Electrum-NMC v4.0.0b0 for GNU/Linux (x86_64 AppImage)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-x86_64.AppImage)
+* [Electrum-NMC v4.0.0b0 for Windows (Standalone Executable)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0.exe)
+* [Electrum-NMC v4.0.0b0 for Windows (Portable version)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-portable.exe)
+* [Electrum-NMC v4.0.0b0 for Windows (Installer)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-setup.exe)
+* [Electrum-NMC v4.0.0b0 for macOS (DMG)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0.dmg)
+* [Electrum-NMC v4.0.0b0 for Android/Linux (64-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum_NMC-4.0.0.0-arm64-v8a-debug.apk)
+* [Electrum-NMC v4.0.0b0 for Android/Linux (32-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum_NMC-4.0.0.0-armeabi-v7a-debug.apk)
+* [Electrum-NMC v4.0.0b0 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
@@ -87,7 +87,7 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 * Hardware wallets other than Trezor and Safe-T mini are untested and probably don't work.
 * Name transactions are not yet supported for hardware wallets.
 * The Android/Linux version doesn't yet have most of the Namecoin-specific GUI features.
-* macOS binaries are not yet available (but the Python binaries should work on macOS).
+* macOS binaries are untested, unsigned, and are built on Cirrus infrastructure.  The Python binaries should work on macOS.
 * Build reproducibility is not yet tested.
 
 ## ncdns
