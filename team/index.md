@@ -14,6 +14,8 @@ Note that you should not blindly trust OpenPGP fingerprints listed on this page.
 **Chief Namecoin Scientist** <br>
 Daniel is our lead C++ developer, currently working on Namecoin Core. Daniel is also our specialist for identity applications, being the author of NameID, the Bitmessage Namecoin integration, and the OTR Namecoin integration. Daniel has a PhD in Mathematics from the University of Graz in Austria.
 
+OpenPGP: `1142 850E 6DFF 65BA 63D6  88A8 B249 2AC4 A733 0737` [(download public key)]({{ "/DanielKraft.asc" | relative_url }})
+
 ## Ryan Castellucci
 
 **Lead Security Engineer** <br>
