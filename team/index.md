@@ -7,7 +7,7 @@ title: Team
 
 <p class="lead">Namecoin is developed by an international team of academics and volunteers working to protect free speech online and save the world from an Orwellian surveillance state.</p>
 
-Note that you should not blindly trust OpenPGP fingerprints listed on this page.  Verify them via a variety of sources/methods.
+Note that you should not blindly trust crypto fingerprints listed on this page.  Verify them via a variety of sources/methods.
 
 ## Daniel Kraft (domob)
 
