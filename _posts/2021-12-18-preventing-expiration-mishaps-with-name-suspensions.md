@@ -30,4 +30,9 @@ I've now implemented this in Electrum-NMC.  The RPC interface adds fields for th
 
 ![A screenshot of the Manage Names tab in Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/2021-12-18-Manage-Names-Tab.png" | relative_url }})
 
-This should be released in Electrum-NMC v4.0.0b1.  Namecoin Core will hopefully follow soon after.
+Some additional observations:
+
+* Suspensions will only help you as a name owner if you actually actively use your name.  They won't help you if you hold an unused name for squatting purposes.  While I don't think any of the Namecoin developers are opposed to additional anti-expiry mechanisms that work for squatters, I think it's arguably a good thing that suspensions incentivise active use of names.
+* Because suspensions decrease the effective duration of resolvability for names (this is a necessary consequence of implementing suspensions on the policy layer), they mean that name owners will renew somewhat more often with respect to time.  Theoretically, this means that name owners will pay higher fees with respect to time, and that the blockchain will grow faster with respect to time.  In practice, the difference is likely to be negligible, and if it is detectable at all, it will be in the form of increased block reward (which indirectly improves blockchain hashrate) and decreased incentive to squat on names (which indirectly improves usefulness of the system).
+
+Suspensions should be released in Electrum-NMC v4.0.0b1.  Namecoin Core will hopefully follow soon after.
