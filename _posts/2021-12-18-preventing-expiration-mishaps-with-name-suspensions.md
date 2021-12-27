@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-Forgetting to renew a Namecoin name on time is rather catastrophic: it means that anyone else can re-register it and then hold the name hostage.  In practice today, it is likely that such re-registrations will be done by good Samaritan volunteers who are happy to donate the name back to you.  However, as per the Cypherpunk philosophy of "don't trust, verify", it's not desirable to rely on those good Samaritans, since they constitute a trusted third party.  How can we improve this situation?
+Forgetting to renew a Namecoin name on time is rather catastrophic: it means that anyone else can re-register it and then hold the name hostage.  In practice today, it is likely that such re-registrations will be done by Good Samaritan volunteers who are happy to donate the name back to you.  However, as per the cypherpunk philosophy of "don't trust, verify", it's not desirable to rely on those Good Samaritans, since they constitute a trusted third party.  How can we improve this situation?
 
 Let's start by observing two fundamental properties of expired names:
 
@@ -17,7 +17,7 @@ Astute readers will have noticed that these are, in principle, distinct properti
 1. **Policy layer**: Expired names resolve as `NXDOMAIN`.
 2. **Consensus layer**: Expired domains can be registered by anyone.
 
-And what are their respective impacts:
+And what are their respective impacts?
 
 1. **Temporary DoS**: Expired names resolve as `NXDOMAIN`.
 2. **Permanent hijacking**: Expired domains can be registered by anyone.
@@ -32,7 +32,7 @@ I've now implemented this in Electrum-NMC.  The RPC interface adds fields for th
 
 Some additional observations:
 
-* Suspensions will only help you as a name owner if you actually actively use your name.  They won't help you if you hold an unused name for squatting purposes.  While I don't think any of the Namecoin developers are opposed to additional anti-expiry mechanisms that work for squatters, I think it's arguably a good thing that suspensions incentivise active use of names.
+* Suspensions will only help you as a name owner if you actually actively use your name.  They won't help you if you hold an unused name for squatting purposes.  While I don't think any of the Namecoin developers are opposed to additional anti-expiry mechanisms that work for squatters, I think it's arguably a good thing that suspensions incentivize active use of names.
 * Because suspensions decrease the effective duration of resolvability for names (this is a necessary consequence of implementing suspensions on the policy layer), they mean that name owners will renew somewhat more often with respect to time.  Theoretically, this means that name owners will pay higher fees with respect to time, and that the blockchain will grow faster with respect to time.  In practice, the difference is likely to be negligible, and if it is detectable at all, it will be in the form of increased block reward (which indirectly improves blockchain hashrate) and decreased incentive to squat on names (which indirectly improves usefulness of the system).
 
 Suspensions should be released in Electrum-NMC v4.0.0b1.  Namecoin Core will hopefully follow soon after.
