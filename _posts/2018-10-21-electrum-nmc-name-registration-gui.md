@@ -40,10 +40,10 @@ With that, we have a single console command, `name_autoregister`, which does wha
 
 And now, here's your regular fix of screenshots:
 
-![A screenshot of entering a name on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Entry.png" | relative_url }})
+![A screenshot of entering a name on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/Buy-Name-Entry-2018-10-17.png" | relative_url }})
 
-![A screenshot of a name available for registration on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Available.png" | relative_url }})
+![A screenshot of a name available for registration on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/Buy-Name-Available-2018-10-17.png" | relative_url }})
 
-![A screenshot of a name already taken on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-17-Buy-Name-Taken.png" | relative_url }})
+![A screenshot of a name already taken on the Electrum-NMC Buy Names tab.]({{ "/images/screenshots/electrum-nmc/Buy-Name-Taken-2018-10-17.png" | relative_url }})
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.

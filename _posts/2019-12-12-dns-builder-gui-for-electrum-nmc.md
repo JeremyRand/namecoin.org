@@ -13,7 +13,7 @@ Unfortunately, merging that code to Namecoin Core is blocked by several other ta
 
 Things are still a bit rough around the edges, but it's beginning to take shape.  Check out the below screenshot:
 
-![A screenshot of the DNS builder for Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/2019-12-02-DNS-Builder.png" | relative_url }})
+![A screenshot of the DNS builder for Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/DNS-Builder-2019-12-02.png" | relative_url }})
 
 So far, the following features work:
 
