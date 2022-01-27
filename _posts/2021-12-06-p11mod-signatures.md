@@ -5,7 +5,7 @@ author: Jeremy Rand
 tags: [News]
 ---
 
-In a previous post, I covered [p11mod]({{ "/2021/07/10/lab-leak-p11mod.html" | relative_url }}) and how it improves the auditability of Namecoin's TLS interoperability with NSS and GnuTLS.  Recently, I've expanded the subset of the PKCS#11 implementation that p11mod covers, by adding the following:
+In a [previous post]({{ "/2021/07/10/lab-leak-p11mod.html" | relative_url }}), I covered p11mod and how it improves the auditability of Namecoin's TLS interoperability with NSS and GnuTLS.  Recently, I've expanded the subset of the PKCS#11 implementation that p11mod covers; p11mod can now:
 
 * Import certificates, public keys, and private keys.
 * Delete certificates, public keys, and private keys.
