@@ -68,6 +68,14 @@ No, but you will get better security if you choose to do so.  A *full node* such
 
 The smallest currency unit of Namecoin is called the *swartz* (similar to the *satoshi* in Bitcoin).  It is named after Aaron Swartz, the activist who was murdered by the U.S. government, and who [proposed Nakanames](https://web.archive.org/web/20170424134548/http://www.aaronsw.com/weblog/squarezooko) (which, along with BitDNS, described the concept that was later implemented as Namecoin).
 
+### What do Namecoin addresses look like?
+
+Namecoin addresses follow the same format as Bitcoin addreses, but with different prefixes (to avoid ambiguity about whether an address is for Bitcoin or Namecoin):
+
+* New-style Bech32 addresses begin with `nc1`.
+* Old-style P2SH addresses begin with `6`.
+* Even-older-style P2PKH addresses begin with `N` or `M`.
+
 ## Design 
 
 ### What is a namespace? 
