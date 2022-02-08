@@ -144,6 +144,14 @@ Longer answer from a low-level point of view:
 
 Namecoin is a fork of Bitcoin, and therefore Namecoin (like Bitcoin) supports a wide variety of smart contract schemes, including the ability for a transaction to have an arbitrary number of outputs (thereby making multiple payments atomically).  Because Namecoin represents names as transaction outputs, it is naturally possible to atomically transfer a name in combination with a currency payment.  This isn't a feature that Namecoin was specifically designed to support, it's simply a feature that naturally exists, which would have required extra effort to not support.  Technically, it would be possible to softfork Namecoin to ban name outputs from coexisting in a transaction with currency outputs, but in practice this would have detrimental effects unrelated to atomic name trades, because it would also ban change outputs from single-party name transactions.  There *is* a restriction in Namecoin's consensus rules that prevents two name outputs from being created atomically.  As far as we're aware, there is no documented reason for this rule (none of us were around to ask when the rule was first created, and Vince isn't around for us to ask anymore), and this rule also has harmful side effects that are unrelated to atomic name trades, e.g. it prevents CoinJoin-style constructions for name transactions.  Because CoinJoin is useful for both scalability and privacy, we would prefer that this rule be removed, and it is possible that a future consensus fork will do so.
 
+### Does Namecoin have any browser add-ons?
+
+Yes; we have a PKCS#11 module (ncp11) for TLS certificate validation, and we have a WebExtension (DNSSEC-HSTS) for protecting against SSLStrip attacks.  However, there is no browser add-on for resolving `.bit` domains to IP addresses.
+
+### Why doesn't Namecoin use a WebExtension to resolve `.bit` domains to IP addresses?
+
+There is no WebExtensions API for intercepting DNS lookups; thus such a WebExtension is not possible.  It *is* possible to abuse the HTTP proxy API to simulate DNS interception (and there are various 3rd-party WebExtensions that purport to do this for Namecoin).  Unfortunately, this form of API abuse is fundamentally incompatible with HTTPS.  Since such WebExtensions cannot work with HTTPS and are therefore inherently insecure, we recommend avoiding such WebExtensions.  It also is possible to use the WebRequest API to redirect `.bit` URL's to the associated IP address.  Unfortunately, this will not work with properly configured servers, because both the HTTP `Host` header and the TLS SNI header won't match; thus we recommend against this as well.
+
 ## Comparison of Namecoin to other projects
 
 ### What is the relationship of Namecoin to Bitcoin?
