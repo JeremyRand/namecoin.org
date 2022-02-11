@@ -21,12 +21,12 @@ Finally, I implemented a first pass at the Manage Names tab.  Display of the nam
 
 So, with that explanation out of the way, here's what you really came here for: *screenshots!*
 
-![A screenshot of name transactions visible in the Electrum-NMC History tab.]({{ "/images/screenshots/electrum-nmc/2018-09-29-Names-in-History-Tab.png" | relative_url }})
+![A screenshot of name transactions visible in the Electrum-NMC History tab.]({{ "/images/screenshots/electrum-nmc/Names-in-History-Tab-2018-09-29.png" | relative_url }})
 
-![A screenshot of name data visible in the Electrum-NMC Transaction Details tab.]({{ "/images/screenshots/electrum-nmc/2018-09-29-Name-in-Transaction-Details.png" | relative_url }})
+![A screenshot of name data visible in the Electrum-NMC Transaction Details tab.]({{ "/images/screenshots/electrum-nmc/Name-in-Transaction-Details-2018-09-29.png" | relative_url }})
 
-![A screenshot of a name_show command's output in the Electrum-NMC Console tab.]({{ "/images/screenshots/electrum-nmc/2018-09-29-Name-Show-in-Console-Tab.png" | relative_url }})
+![A screenshot of a name_show command's output in the Electrum-NMC Console tab.]({{ "/images/screenshots/electrum-nmc/Name-Show-in-Console-Tab-2018-09-29.png" | relative_url }})
 
-![A screenshot of the Electrum-NMC Manage Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-01-Manage-Names-Tab.png" | relative_url }})
+![A screenshot of the Electrum-NMC Manage Names tab.]({{ "/images/screenshots/electrum-nmc/Manage-Names-Tab-2018-10-01.png" | relative_url }})
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.

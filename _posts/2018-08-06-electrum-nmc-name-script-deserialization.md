@@ -9,6 +9,6 @@ I previously wrote about [making ElectrumX (the server) handle name scripts]({{ 
 
 Most of the details of this work are fairly mundane implementation details that probably won't interest most readers.  So, instead, how about a screenshot?
 
-![A screenshot of name transactions visible in the Electrum-NMC History tab.]({{ "/images/screenshots/electrum-nmc/2018-07-17-Names-in-History-Tab.png" | relative_url }})
+![A screenshot of name transactions visible in the Electrum-NMC History tab.]({{ "/images/screenshots/electrum-nmc/Names-in-History-Tab-2018-07-17.png" | relative_url }})
 
 This work was funded by NLnet Foundation's Internet Hardening Fund.

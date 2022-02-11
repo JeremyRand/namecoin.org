@@ -19,8 +19,8 @@ The `Configure Name...` button and associated dialog were relatively uneventful 
 
 And now, screenshots!
 
-![A screenshot of the "Renew Name" and "Configure Name..." buttons visible in the Electrum-NMC Manage Names tab.]({{ "/images/screenshots/electrum-nmc/2018-10-06-Manage-Names-Tab.png" | relative_url }})
+![A screenshot of the "Renew Name" and "Configure Name..." buttons visible in the Electrum-NMC Manage Names tab.]({{ "/images/screenshots/electrum-nmc/Manage-Names-Tab-2018-10-06.png" | relative_url }})
 
-![A screenshot of the "Configure Name" dialog in Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/2018-10-06-Configure-Name-Dialog.png" | relative_url }})
+![A screenshot of the "Configure Name" dialog in Electrum-NMC.]({{ "/images/screenshots/electrum-nmc/Configure-Name-Dialog-2018-10-06.png" | relative_url }})
 
 This work was funded by Cyphrs and NLnet Foundation's Internet Hardening Fund.

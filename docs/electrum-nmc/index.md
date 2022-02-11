@@ -37,11 +37,23 @@ You can view a list of your registered names in the Manage Names tab:
 
 ![Screenshot.]({{ "/images/screenshots/electrum-nmc/Manage-Names-Tab.png" | relative_url }})
 
+In-progress name registrations will show an ETA:
+
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Registration-ETA.png" | relative_url }})
+
 You can update or transfer a name by clicking "Configure Name...":
 
 ![Screenshot.]({{ "/images/screenshots/electrum-nmc/Configure-Name-Dialog.png" | relative_url }})
 
+For domain names, the DNS Builder facilitates updating the name's data without manually touching JSON:
+
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/DNS-Builder.png" | relative_url }})
+
 ## Name Lookups
+
+The `name_show` command can be called from the console:
+
+![Screenshot.]({{ "/images/screenshots/electrum-nmc/Name-Show-in-Console-Tab.png" | relative_url }})
 
 To integrate Electrum-NMC's name lookups with applications such as [ncdns]({{ "/docs/ncdns/" | relative_url }}), follow these instructions:
 
