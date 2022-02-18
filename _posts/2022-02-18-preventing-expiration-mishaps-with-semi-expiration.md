@@ -10,17 +10,17 @@ Forgetting to renew a Namecoin name on time is rather catastrophic: it means tha
 Let's start by observing two fundamental properties of expired names:
 
 1. Expired names resolve as `NXDOMAIN`.
-2. Expired domains can be registered by anyone.
+2. Expired names can be registered by anyone.
 
 Astute readers will have noticed that these are, in principle, distinct properties.  Where are they enforced?
 
 1. **Policy layer**: Expired names resolve as `NXDOMAIN`.
-2. **Consensus layer**: Expired domains can be registered by anyone.
+2. **Consensus layer**: Expired names can be registered by anyone.
 
 And what are their respective impacts?
 
 1. **Temporary DoS**: Expired names resolve as `NXDOMAIN`.
-2. **Permanent hijacking**: Expired domains can be registered by anyone.
+2. **Permanent hijacking**: Expired names can be registered by anyone.
 
 So what happens if we make the following change?  We introduce a new state for names: *Semi-Expired*.  Semi-expired names obey Property 1 but not Property 2.  Names semi-expire when they come within 4032 blocks (4 weeks) of expiration.  Does the situation improve?
 
