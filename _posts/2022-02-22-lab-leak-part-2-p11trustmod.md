@@ -49,6 +49,8 @@ As you can see, this API matches the behavior of libraries like NSS, which query
 
 So, all things considered, p11trustmod eliminates quite a lot of boilerplate code that ncp11 would have otherwise needed to mix in with the Namecoin-specific ncp11 code.  By proactively implementing this additional layer of abstraction between p11mod and ncp11, we reduce the risk of a second "Omicron lab leak" of insufficiently auditable code.  p11trustmod is nearly finished with implementation but still needs testing; once testing is complete, we can move on to the Namecoin-specific code in ncp11, which I expect to be quite simple since the complex things have been split out into p11mod/p11trustmod.
 
+In other p11mod news, p11mod now supports generating key pairs.  Thanks to OpenDNSSEC for facilitating this.
+
 [1] Technically this isn't quite true.  In addition to X.509 certificates, there are a couple of other object classes that are used for setting the trust policy bits on the Namecoin root CA.  Those classes are only used by optional features, though.
 
 [2] There are a few ways this might happen.  NSS sometimes retrieves a list of all known CA's, e.g. to display in the certificate GUI.  NSS also retrieves trust bits objects by searching for an object class or a certificate hash instead of a PKIX name or full certificate.
