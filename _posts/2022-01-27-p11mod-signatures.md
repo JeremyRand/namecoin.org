@@ -17,3 +17,5 @@ None of these operations are required by Namecoin, but they do make p11mod usefu
 I also fixed a PKCS#11 specification compliance bug in p11mod (stupid off-by-one error in object handle validation), which was surfaced by a GnuTLS upgrade that enforces greater strictness.  Kudos to the GnuTLS developers for being strict and helping me fix a bug!
 
 All of these improvements are now tested daily on Cirrus via p11proxy.
+
+This work was funded by NLnet Foundation's Internet Hardening Fund.

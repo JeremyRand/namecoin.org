@@ -120,3 +120,5 @@ I've now done exactly that.  p11mod has been merged as a subpackage of the pkcs1
 In addition, I've improved testability of pkcs11mod/p11mod.  The repo now includes two example modules, pkcs11proxy and p11proxy.  These simply act as a passthrough shim between pkcs11mod and Miek's pkcs11 package, and p11mod and Jacob's p11 package, respectively.  Thus, you can load Mozilla's CKBI (built-in certificates) module into NSS via the pkcs11proxy and p11proxy shims, and confirm that the resulting behavior matches loading CKBI into NSS without the shims (e.g. you can do a TLS handshake and make sure that certificate acceptance behavior matches).  So, there are now nightly builds of both pkcs11proxy and p11proxy courtesy of Cirrus, as well as nightly integration tests that make sure both pkcs11proxy and p11proxy work as expected in Firefox, Chromium, GNU Wget, tstclnt, and gnutls-client, among other applications.  This is a major improvement over the previous situation, where testing pkcs11mod required Namecoin-specific tests with ncp11.
 
 Coming soon: refactoring the Namecoin-specific parts of ncp11.
+
+This work was funded by NLnet Foundation's Internet Hardening Fund.
