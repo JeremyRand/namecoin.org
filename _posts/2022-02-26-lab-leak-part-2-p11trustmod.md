@@ -51,8 +51,8 @@ So, all things considered, p11trustmod eliminates quite a lot of boilerplate cod
 
 In other p11mod news, p11mod now supports generating key pairs.  Thanks to OpenDNSSEC for facilitating this.
 
+This work was funded by NLnet Foundation's Internet Hardening Fund.
+
 [1] Technically this isn't quite true.  In addition to X.509 certificates, there are a couple of other object classes that are used for setting the trust policy bits on the Namecoin root CA.  Those classes are only used by optional features, though.
 
 [2] There are a few ways this might happen.  NSS sometimes retrieves a list of all known CA's, e.g. to display in the certificate GUI.  NSS also retrieves trust bits objects by searching for an object class or a certificate hash instead of a PKIX name or full certificate.
-
-This work was funded by NLnet Foundation's Internet Hardening Fund.
