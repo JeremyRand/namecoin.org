@@ -40,7 +40,7 @@ Decentralized exchanges offer better security and privacy than centralized excha
 
 ## Run a DNS seed
 
-DNS seeds help Namecoin users find peers.  You can run a DNS seed via [dnsseeder](https://github.com/gombadi/dnsseeder) (use the `namecoin.json` config file).  Typical bandwidth usage is approximately 2.5 MB per day.  If you've set up a DNS seed, let us know so we can add it to the client.
+DNS seeds help Namecoin users find peers.  You can run a DNS seed via [dnsseeder](https://github.com/gombadi/dnsseeder) (use the `namecoin.json` config file).  Typical bandwidth usage is approximately 2.5 MB per day.  Please consider running a DNS seed on both IPv4 and IPv6.  If you've set up a DNS seed, let us know so we can add it to the client.
 
 ## Run an ElectrumX server
 
