@@ -107,7 +107,7 @@ If name registration fees went to miners, it would enable an attack in which min
 Two reasons:
 
 1. It incentivizes owners of names who no longer intend to use them to either let them expire or sell them, thereby decreasing squatting.
-2. It ensures that if a name owner loses their private keys, the name will eventually be returned to the pool instead of permanently being stuck in limbo.  Names being stuck in limbo would both pollute the namespace and be a security risk (since it would not be possible to revoke TLS keys for such names).
+2. It ensures that if a name owner loses their private keys, the name will eventually be returned to the pool of available names instead of permanently being stuck in limbo.  Names being stuck in limbo would both pollute the namespace and be a security risk (since it would not be possible to revoke TLS keys for such names).
 
 ### Does Namecoin support "layer 2" technologies?
 
