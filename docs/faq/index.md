@@ -82,9 +82,9 @@ Namecoin addresses follow the same format as Bitcoin addreses, but with differen
 
 Namespaces are name prefixes used by applications to distinguish between different type of names in Namecoin.  For example, `d/example` is the domain name `example.bit`, and `id/example` is an identity.  Namespaces help prevent multiple applications from accidentally conflicting.  Namecoin itself isn't aware of namespaces, and namespaces don't have any effect on validation rules; they are only used by higher-level applications that use Namecoin.
 
-### Why is there a separate `name_new` step? 
+### Why is there a separate pre-registration step?
 
-This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted during the `name_new` step, only a salted hash of it. There is a mandatory minimum delay of 12 blocks before you can broadcast your name with `name_firstupdate`; this means that by the time other people know what name you're registering, they would have to reverse at least 12 blocks in order to steal the name.
+This is to prevent others from stealing your new name by registering it quickly themselves when they see your transaction. The name is not broadcasted during the pre-registration step, only a salted hash of it. There is a mandatory minimum delay of 12 blocks before you can broadcast your name with the registration step; this means that by the time other people know what name you're registering, they would have to reverse at least 12 blocks in order to steal the name.
 
 ### How are names represented? 
 
@@ -93,6 +93,21 @@ Names and values are attached to special coins with a value of 0.01 NMC. Updates
 ### What if I spend that special coin by mistake? 
 
 The code prevents those coins from being used for normal payments.
+
+### Why does registering a name incur a fee?
+
+Fees on name operations are a rate-limiting mechanism to disincentivize squatting.
+
+### Why don't name registration fees go to miners?
+
+If name registration fees went to miners, it would enable an attack in which miners could register names at a discount compared to typical users.  This would incentivize miners to sell discounted name registration services, which would enable miners to frontrun registrations that passed through such services, bypassing the frontrunning protections enabled by the [separate pre-registration step](#why-is-there-a-separate-pre-registration-step).
+
+### Why do names have to be renewed regularly?
+
+Two reasons:
+
+1. It incentivizes owners of names who no longer intend to use them to either let them expire or sell them, thereby decreasing squatting.
+2. It ensures that if a name owner loses their private keys, the name will eventually be returned to the pool of available names instead of permanently being stuck in limbo.  Names being stuck in limbo would both pollute the namespace and be a security risk (since it would not be possible to revoke TLS keys for such names).
 
 ### Does Namecoin support "layer 2" technologies?
 
