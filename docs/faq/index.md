@@ -175,6 +175,10 @@ Yes; we have a PKCS#11 module (ncp11) for TLS certificate validation, and we hav
 
 There is no WebExtensions API for intercepting DNS lookups; thus such a WebExtension is not possible.  It *is* possible to abuse the HTTP proxy API to simulate DNS interception (and there are various 3rd-party WebExtensions that purport to do this for Namecoin).  Unfortunately, this form of API abuse is fundamentally incompatible with HTTPS.  Since such WebExtensions cannot work with HTTPS and are therefore inherently insecure, we recommend avoiding such WebExtensions.  It also is possible to use the WebRequest API to redirect `.bit` URL's to the associated IP address.  Unfortunately, this will not work with properly configured servers, because both the HTTP `Host` header and the TLS SNI header won't match; thus we recommend against this as well.
 
+### Why doesn't Namecoin use "proof of stake"?
+
+We defer to the analysis of Bitcoin developer Andrew Poelstra about the [security problems with PoS](https://download.wpsoftware.net/bitcoin/pos.pdf).  For a more accessible summary, Namecoin developer [Yanmaani's article on PoS](https://yanmaani.github.io/proof-of-stake-is-a-scam-and-the-people-promoting-it-are-scammers/) may be of interest.
+
 ## Comparison of Namecoin to other projects
 
 ### What is the relationship of Namecoin to Bitcoin?
