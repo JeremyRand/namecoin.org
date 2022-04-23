@@ -5,38 +5,32 @@ title: Exchanges
 
 {::options parse_block_html="true" /}
 
-<span style="font-size:130%;">&#8644;</span> You can buy and sell **Namecoins** here:
+<span class="exchanges-gold">&#8644;</span> You can buy and sell **Namecoins** here:
 
-<span style="font-size:130%;">
+<span id="decentralized-exchanges" class="exchanges-gold">
+**Decentralized exchanges**<br>
+{% assign shuffled_exchanges_decentralized = site.data.exchanges_decentralized | sample: 3 %}{% for i in shuffled_exchanges_decentralized %}{{ i }}<br>{% endfor %}
+</span>
+
+<span class="exchanges-gold">
 **Gold level exchanges**<br>
 ...<br>
 </span>
 
-<span style="font-size:115%;">
+<span class="exchanges-silver">
 **Silver level exchanges**<br>
-[<img alt="Kraken" src="images/kraken.png">](https://kraken.com)<br>
+...<br>
 </span>
 
-<span style="font-size:100%;">
+<span class="exchanges-bronze">
 **Bronze level exchanges**<br>
-[<img alt="Cryptonit" src="images/cryptonit.png" width="160px">](https://cryptonit.net)<br>
+{% assign shuffled_exchanges_bronze = site.data.exchanges_bronze | sample: 1 %}{% for i in shuffled_exchanges_bronze %}{{ i }}<br>{% endfor %}
 </span>
 
-<span style="font-size:85%;">
+<span class="exchanges-basic">
 **Basic level exchanges**<br>
-[247exchange](https://www.247exchange.com/)<br>
-[24change](https://24change.com)<br>
-[alcurEX](https://alcurex.org)<br>
-[btc-e](https://btc-e.com)<br>
-[Bter](https://bter.com)<br>
-[Cex.io](https://cex.io/nmc-btc)<br>
-[Cryptsy](https://www.cryptsy.com)<br>
-[ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
-[ShapeShift](https://shapeshift.io/)<br>
-[Vircurex](https://vircurex.com)<br>
+{% assign shuffled_exchanges_basic = site.data.exchanges_basic | sample: 10 %}{% for i in shuffled_exchanges_basic %}{{ i }}<br>{% endfor %}
 </span>
 
-Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges atm are not verified in any way.
-The current fees are 1000/300/100NMC per year*. To get on the list contact exchanges a|t namecoin.org
-
-*Kraken received an honorary silver level for supporting us with their libcoin library.
+Gold, silver and bronze level exchanges donate to the Namecoin project. The higher the donation the higher the level. Note that the exchanges are not verified in any way.
+The current fees are 1000/300/100NMC per year. To get on the list contact exchanges a|t namecoin.org

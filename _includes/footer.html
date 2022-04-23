@@ -1,12 +1,37 @@
 <footer class="site-footer">
 
-        <div class="container">
+        <div class="container-fluid" id="social">
             <ul class="list-inline">
                 <li><a href="https://github.com/namecoin"><i class="fa fa-github fa-2x" title="GitHub">GitHub</i></a></li>
                 <li><a href="https://twitter.com/Namecoin"><i class="fa fa-twitter fa-2x" title="Twitter">Twitter</i></a></li>
-                <li><a href="https://www.facebook.com/Namecoin.bit"><i class="fa fa-facebook fa-2x" title="Facebook">Facebook</i></a></li>
-                <li><a href="https://pay.reddit.com/r/namecoin"><i class="fa fa-users fa-2x" title="Reddit">Reddit</i></a></li>
+                <li><a href="https://www.reddit.com/r/namecoin"><i class="fa fa-reddit-alien fa-2x" title="Reddit">Reddit</i></a></li>
+                <li><a href="{{ site.forum_url }}/"><i class="fa fa-comments fa-2x" title="Forum">Forum</i></a></li>
+                <li><a href="{{ "/license.html" | relative_url }}"><i class="fa fa-2x" title="Copyright">Copyright</i></a></li>
+                <li><a href="{{ "/team/security/" | relative_url }}"><i class="fa fa-2x" title="Vulnerability Disclosure">Security</i></a></li>
             </ul>
         </div>
 
+        <div class="container-fluid" id="page-source">
+            <a href="https://github.com/namecoin/namecoin.org/blob/master/{{page.path}}"><i>Submit corrections or improvements to this page</i></a>
+        </div>
+
+        <div class="container-fluid" id="page-alternate">
+            <ul class="list-inline">
+                <li>This page is available via:</li>
+                <li><a href="https://www.namecoin.org{{page.url}}">DNS (namecoin.org)</a></li>
+                <li><a href="https://www.rw6nbpjrmcpdxszn3air4bt7t75rpz4cp3c2kbdu72ptua57tzvin4id.onion{{page.url}}">Onion</a></li>
+                <li><a href="http://127.0.0.1:43110/1EZSUprqJQph9JwKg3gAJtiNs899vatZTo{{page.url}}">ZeroNet</a></li>
+                <li><a href="https://namecoin.bit{{page.url}}">Namecoin (namecoin.bit)</a></li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" id="funders">
+            <p>Thanks to our funders:</p>
+            {% assign shuffled_sponsors = site.data.sponsors | sample: 10 %}
+            <ul class="list-inline">
+                {% for i in shuffled_sponsors %}
+                    <li class="funder">{{ i }}</li>
+                {% endfor %}
+            </ul>
+        </div>
 </footer>
