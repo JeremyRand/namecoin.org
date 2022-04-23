@@ -7,14 +7,12 @@ title: Blockchain Explorers
 
 ### With support for name and currency operations
 
-[namecoin.webbtc](http://namecoin.webbtc.com/) (open source)<br>
-[namecha.in](https://namecha.in/) (closed source)<br>
+[Cyphrs Namecoin Explorer](https://namecoin.cyphrs.com/) (free software; consensus-safe)<br>
+[namecha.in](https://namecha.in/) (non-free software)<br>
 
 ### Currency operations only
 
-[bkchain](https://bkchain.org/nmc)<br>
 [Bchain.info](https://bchain.info/NMC/)<br>
 [BitInfoCharts](https://bitinfocharts.com/de/namecoin/explorer/)<br>
-[Coinplorer](https://coinplorer.com/NMC)
 
 To get on the list please post on the [forum](https://forum.namecoin.org).
