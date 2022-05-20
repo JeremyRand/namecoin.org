@@ -75,6 +75,10 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 </div>
 
+## Tor Browser
+
+[Tor Browser Nightly](https://nightlies.tbb.torproject.org/nightly-builds/tor-browser-builds/) for GNU/Linux has experimental Namecoin resolution built-in.  Set the environment variable `TOR_ENABLE_NAMECOIN=1` to use it.
+
 ## Namecoin Core Client (Stable Release)
 
 **If you installed the ncdns Windows installer, then you probably already have Namecoin Core.**
