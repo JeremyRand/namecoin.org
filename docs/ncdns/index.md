@@ -9,7 +9,7 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 ## Installation
 
-You can download ncdns at the [Beta Downloads]({{ "/download/betas/#ncdns" | relative_url }}) page.
+You can download ncdns at the [Downloads]({{ "/download/#ncdns" | relative_url }}) page.
 
 ### Windows
 

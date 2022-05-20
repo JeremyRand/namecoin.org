@@ -104,14 +104,6 @@ The ncdns Windows installer also automatically installs and configures a Namecoi
 
 ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
 
-* [ncdns v0.3 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-x86_64-e41ca2.tar.xz)
-* [ncdns v0.3 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-i686-990513.tar.xz)
-* [ncdns v0.3 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-x86_64-install-a1e8b8.exe)
-* [ncdns v0.3 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-x86_64-ac643c.tar.xz)
-* [ncdns v0.3 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-i686-e076b4.tar.xz)
-* [ncdns v0.3 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-osx-x86_64-b17766.tar.xz)
-* [ncdns v0.3 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
-* [ncdns v0.3 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
 * [ncdns Nightly GNU/Linux (64-bit POWER BE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_ppc64le.tar.gz)
 * [ncdns Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncdns/Cross-Compile%20Go%20latest/binaries/dist/ncdns--linux_arm64.tar.gz)

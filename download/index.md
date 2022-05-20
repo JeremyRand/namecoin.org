@@ -5,7 +5,37 @@ title: Download
 
 {::options parse_block_html="true" /}
 
+## ncdns
+
+ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is most likely what you want to install.
+
+See the [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
+
+The ncdns Windows installer also automatically installs and configures a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
+
+**Before running the ncdns Windows installer, you will need to install the following:**
+
+* [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=53587)
+
+ncdns plain binaries are also available for most major operating systems.  These are useful for advanced users or for users who are not on Windows.  Using these will require setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; they can sometimes be used for TLS certificate validation, but additional setup is required.
+
+Current release: 0.3.
+
+* [ncdns v0.3 GNU/Linux (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-x86_64-e41ca2.tar.xz)
+* [ncdns v0.3 GNU/Linux (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-i686-990513.tar.xz)
+* [ncdns v0.3 Windows (64-bit x86) installer]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-x86_64-install-a1e8b8.exe)
+* [ncdns v0.3 Windows (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-x86_64-ac643c.tar.xz)
+* [ncdns v0.3 Windows (32-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-i686-e076b4.tar.xz)
+* [ncdns v0.3 macOS (64-bit x86) plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-osx-x86_64-b17766.tar.xz)
+* [ncdns v0.3 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
+* [ncdns v0.3 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
+* [ncdns Windows Installer Source Code](https://github.com/namecoin/ncdns-nsis)
+* [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
+* [ncdns Source Code](https://github.com/namecoin/ncdns)
+
 ## Namecoin Core Client (Stable Release)
+
+**If you installed the ncdns Windows installer, then you probably already have Namecoin Core.**
 
 * Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
 * **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
@@ -122,6 +152,12 @@ Download [v0.3.80 Namecoin-Qt]({{ site.files_url }}/files/namecoin-core/namecoin
 ## NMControl Middleware
 
 NMControl connects your browser/application to the client. It allows you, for example, to browse .bit domains. [Source and installation instructions on Github](https://github.com/namecoin/nmcontrol).
+
+**Generally, we recommend ncdns instead of NMControl.**  Usage of NMControl may be warranted in the following circumstances:
+
+* You rely on reproducible builds of the non-installer binaries.  (Python source code is inherently reproducible; ncdns is not yet reproducible.)
+* You rely on the non-default Private Mode of NMControl.  (Private Mode prevents external DNS traffic from `.bit` lookups; ncdns can trigger such lookups from Unbound.)
+* You rely on encrypted DNS (e.g. DoH) for non-`.bit` lookups, **and** you rely on the Windows installer (NMControl's installer won't affect non-`.bit` DNS lookups, while ncdns installs DNSSEC-Trigger, which will interfere with DoH.)
 
 <div class="row">
 
