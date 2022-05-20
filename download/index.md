@@ -32,11 +32,7 @@ Plain binaries are useful for advanced users only.  They require setting up a Na
 * [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-x86_64-ac643c.tar.xz)
 * [32-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-i686-e076b4.tar.xz)
 
-* [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
-* [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
 * [Installer Source Code](https://github.com/namecoin/ncdns-nsis)
-* [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
-* [ncdns Source Code](https://github.com/namecoin/ncdns)
 
 </div>
 
@@ -51,11 +47,6 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 * [Distro packages](https://repology.org/project/ncdns/versions)
 
-* [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
-* [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
-* [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
-* [ncdns Source Code](https://github.com/namecoin/ncdns)
-
 </div>
 
 <div class="col-sm-4">
@@ -66,14 +57,14 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 * [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-osx-x86_64-b17766.tar.xz)
 
+</div>
+
+</div>
+
 * [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
 * [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
-* [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
-* [ncdns Source Code](https://github.com/namecoin/ncdns)
-
-</div>
-
-</div>
+* [Source Code](https://github.com/namecoin/ncdns)
+* [rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 
 ## Tor Browser
 
