@@ -81,8 +81,6 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 ## Namecoin Core Client (Stable Release)
 
-**If you installed the ncdns Windows installer, then you probably already have Namecoin Core.**
-
 * Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
 * **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
 * Name lookup: allows looking up names (use in combination with [ncdns]({{ "/docs/ncdns" | relative_url }}) or NMControl to browse `.bit` domains).
@@ -93,17 +91,49 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 Current release: 0.21.0.1.
 
-* [Namecoin Core 0.21.0.1 (GNU/Linux RISC-V 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 32-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux x86 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit installer)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit zip)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
-* [Namecoin Core 0.21.0.1 (macOS dmg)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
-* [Namecoin Core 0.21.0.1 (macOS tar.gz)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
-* [Namecoin Core 0.21.0.1 (Source code tarball)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
-* [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
-* [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
+<div class="row">
+
+<div class="col-sm-4">
+
+### Windows
+
+**Most users should install ncdns (see above) instead; it includes Namecoin Core.**
+
+* [64-bit installer]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
+* [64-bit zip]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-win-unsigned)
+
+</div>
+
+<div class="col-sm-4">
+
+### GNU/Linux
+
+* [RISC-V 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
+* [ARM 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
+* [ARM 32-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
+* [x86 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-linux)
+
+</div>
+
+<div class="col-sm-4">
+
+### macOS
+
+* [dmg]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
+* [tar.gz]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-osx-unsigned)
+
+</div>
+
+</div>
+
+* [Source code tarball]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
+* [Source code](https://github.com/namecoin/namecoin-core/)
 
 ## Namecoin Core Client (with Qt Name Tab)
 
