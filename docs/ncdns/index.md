@@ -29,6 +29,8 @@ To enable installing ConsensusJ-Namecoin, exit the installer wizard, install the
 
 The ncdns installer wizard also sets up TLS certificate validation for `.bit` domain names.  This will work for any application that uses the Windows certificate verifier.  As examples, Chromium and Edge use the Windows certificate verifier, and will therefore work fine for Namecoin TLS out of the box.
 
+The ncdns installer wizard also configures Namecoin resolution in Tor Browser, if Tor Browser is installed.
+
 ### Other OS's
 
 ncdns plain binaries (without install scripts) are available for most major operating systems.  These require installing a [Namecoin name lookup client]({{ "/get-started/name-lookup-clients/" | relative_url }}) and a DNS resolver (e.g. Dnssec-Trigger) separately, and manually configuring ncdns to integrate with them (see instructions below).  ncdns plain binaries are only recommended for advanced users at this time.
