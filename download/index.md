@@ -49,6 +49,8 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 * [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-x86_64-e41ca2.tar.xz)
 * [32-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-i686-990513.tar.xz)
 
+* [Distro packages](https://repology.org/project/ncdns/versions)
+
 * [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
 * [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
 * [ncdns rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
