@@ -284,6 +284,7 @@ pkcs11mod is a library for making PKCS#11 modules in Go.  This download includes
 * [pkcs11mod Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20linux%20386/binaries/dist/pkcs11mod.tar.gz)
 * [pkcs11mod Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20windows%20amd64/binaries/dist/pkcs11mod.tar.gz)
 * [pkcs11mod Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20windows%20386/binaries/dist/pkcs11mod.tar.gz)
+* [pkcs11mod Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/pkcs11mod/Compile%20Go%20latest%20darwin%20amd64/binaries/dist/pkcs11mod.tar.gz)
 * [pkcs11mod Source Code](https://github.com/namecoin/pkcs11mod)
 
 ## tlsrestrict_nss_tool
