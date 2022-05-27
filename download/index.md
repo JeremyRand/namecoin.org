@@ -5,6 +5,71 @@ title: Download
 
 {::options parse_block_html="true" /}
 
+## ncdns
+
+ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is most likely what you want to install.
+
+See the [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
+
+Current release: 0.3.
+
+<div class="row">
+
+<div class="col-sm-4">
+
+### Windows
+
+The installer also automatically installs and configures a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
+
+* [64-bit x86 installer]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-x86_64-install-a1e8b8.exe)
+
+**Before running the installer, you will need to install the following:**
+
+* [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=53587)
+
+Plain binaries are useful for advanced users only.  They require setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; additional setup is required for TLS certificate validation.
+
+* [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-x86_64-ac643c.tar.xz)
+* [32-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-i686-e076b4.tar.xz)
+
+* [Installer Source Code](https://github.com/namecoin/ncdns-nsis)
+
+</div>
+
+<div class="col-sm-4">
+
+### GNU/Linux
+
+Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; additional setup is required for TLS certificate validation.
+
+* [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-x86_64-e41ca2.tar.xz)
+* [32-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-linux-i686-990513.tar.xz)
+
+* [Distro packages](https://repology.org/project/ncdns/versions)
+
+</div>
+
+<div class="col-sm-4">
+
+### macOS
+
+Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; additional setup is required for TLS certificate validation.
+
+* [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-osx-x86_64-b17766.tar.xz)
+
+</div>
+
+</div>
+
+* [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
+* [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
+* [Source Code](https://github.com/namecoin/ncdns)
+* [rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
+
+## Tor Browser
+
+[Tor Browser Nightly](https://nightlies.tbb.torproject.org/nightly-builds/tor-browser-builds/) for GNU/Linux has experimental Namecoin resolution built-in.  Set the environment variable `TOR_ENABLE_NAMECOIN=1` to use it.
+
 ## Namecoin Core Client (Stable Release)
 
 * Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
@@ -17,17 +82,49 @@ title: Download
 
 Current release: 0.21.0.1.
 
-* [Namecoin Core 0.21.0.1 (GNU/Linux RISC-V 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux ARM 32-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
-* [Namecoin Core 0.21.0.1 (GNU/Linux x86 64-bit)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit installer)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
-* [Namecoin Core 0.21.0.1 (Windows 64-bit zip)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
-* [Namecoin Core 0.21.0.1 (macOS dmg)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
-* [Namecoin Core 0.21.0.1 (macOS tar.gz)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
-* [Namecoin Core 0.21.0.1 (Source code tarball)]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
-* [Namecoin Core Gitian signatures](https://github.com/namecoin/gitian.sigs/)
-* [Namecoin Core source code](https://github.com/namecoin/namecoin-core/)
+<div class="row">
+
+<div class="col-sm-4">
+
+### Windows
+
+**Most users should install ncdns (see above) instead; it includes Namecoin Core.**
+
+* [64-bit installer]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
+* [64-bit zip]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-win-unsigned)
+
+</div>
+
+<div class="col-sm-4">
+
+### GNU/Linux
+
+* [RISC-V 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
+* [ARM 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
+* [ARM 32-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
+* [x86 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-linux)
+
+</div>
+
+<div class="col-sm-4">
+
+### macOS
+
+* [dmg]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
+* [tar.gz]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
+
+* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-osx-unsigned)
+
+</div>
+
+</div>
+
+* [Source code tarball]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
+* [Source code](https://github.com/namecoin/namecoin-core/)
 
 ## Namecoin Core Client (with Qt Name Tab)
 
@@ -122,6 +219,12 @@ Download [v0.3.80 Namecoin-Qt]({{ site.files_url }}/files/namecoin-core/namecoin
 ## NMControl Middleware
 
 NMControl connects your browser/application to the client. It allows you, for example, to browse .bit domains. [Source and installation instructions on Github](https://github.com/namecoin/nmcontrol).
+
+**Generally, we recommend ncdns instead of NMControl.**  Usage of NMControl may be warranted in the following circumstances:
+
+* You rely on reproducible builds of the non-installer binaries.  (Python source code is inherently reproducible; ncdns is not yet reproducible.)
+* You rely on the non-default Private Mode of NMControl.  (Private Mode prevents external DNS traffic from `.bit` lookups; ncdns can trigger such lookups from Unbound.)
+* You rely on encrypted DNS (e.g. DoH) for non-`.bit` lookups, **and** you rely on the Windows installer (NMControl's installer won't affect non-`.bit` DNS lookups, while ncdns installs DNSSEC-Trigger, which will interfere with DoH.)
 
 <div class="row">
 

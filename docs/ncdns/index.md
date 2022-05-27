@@ -9,7 +9,7 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 ## Installation
 
-You can download ncdns at the [Beta Downloads]({{ "/download/betas/#ncdns" | relative_url }}) page.
+You can download ncdns at the [Downloads]({{ "/download/#ncdns" | relative_url }}) page.
 
 ### Windows
 
@@ -28,6 +28,8 @@ Or like this:
 To enable installing ConsensusJ-Namecoin, exit the installer wizard, install the relevant dependency, and re-run the installer wizard.
 
 The ncdns installer wizard also sets up TLS certificate validation for `.bit` domain names.  This will work for any application that uses the Windows certificate verifier.  As examples, Chromium and Edge use the Windows certificate verifier, and will therefore work fine for Namecoin TLS out of the box.
+
+The ncdns installer wizard also configures Namecoin resolution in Tor Browser, if Tor Browser is installed.
 
 ### Other OS's
 
