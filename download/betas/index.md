@@ -67,18 +67,19 @@ You need to have Java installed:
 
 Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
-[Preliminary Electrum-NMC documentation is here.]({{ "/docs/electrum-nmc/" | relative_url }})
+[Electrum-NMC documentation is here.]({{ "/docs/electrum-nmc/" | relative_url }})
 
-* [Electrum-NMC v4.0.0b0 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum-NMC-4.0.0b0.tar.xz)
-* [Electrum-NMC v4.0.0b0 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum-NMC-4.0.0b0.tar.gz)
-* [Electrum-NMC v4.0.0b0 for GNU/Linux (x86_64 AppImage)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-x86_64.AppImage)
-* [Electrum-NMC v4.0.0b0 for Windows (Standalone Executable)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0.exe)
-* [Electrum-NMC v4.0.0b0 for Windows (Portable version)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-portable.exe)
-* [Electrum-NMC v4.0.0b0 for Windows (Installer)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0-setup.exe)
-* [Electrum-NMC v4.0.0b0 for macOS (DMG)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/electrum-nmc-nc4.0.0b0.dmg)
-* [Electrum-NMC v4.0.0b0 for Android/Linux (64-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum_NMC-4.0.0.0-arm64-v8a-debug.apk)
-* [Electrum-NMC v4.0.0b0 for Android/Linux (32-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/Electrum_NMC-4.0.0.0-armeabi-v7a-debug.apk)
-* [Electrum-NMC v4.0.0b0 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b0/SHA256SUMS.asc)
+* [Electrum-NMC v4.0.0b1 for GNU/Linux, Windows, and macOS (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1.tar.xz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1.tar.xz.asc))
+* [Electrum-NMC v4.0.0b1 for GNU/Linux, Windows, and macOS (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1.tar.gz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1.tar.gz.asc))
+* [Electrum-NMC v4.0.0b1 for GNU/Linux (x86_64 AppImage)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-x86_64.AppImage) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-x86_64.AppImage.asc))
+* [Electrum-NMC v4.0.0b1 for Windows (Standalone Executable)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1.exe) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1.exe.asc))
+* [Electrum-NMC v4.0.0b1 for Windows (Portable version)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-portable.exe) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-portable.exe.asc))
+* [Electrum-NMC v4.0.0b1 for Windows (Installer)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-setup.exe) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1-setup.exe.asc))
+* [Electrum-NMC v4.0.0b1 for macOS (DMG)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1.dmg)
+* [Electrum-NMC v4.0.0b1 for Android/Linux (64-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.0-arm64-v8a-debug.apk) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.0-arm64-v8a-debug.apk.asc))
+* [Electrum-NMC v4.0.0b1 for Android/Linux (32-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.0-armeabi-v7a-debug.apk) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.0-armeabi-v7a-debug.apk.asc))
+* [Electrum-NMC v4.0.0b1 source only (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1-src.tar.xz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1-src.tar.xz.asc))
+* [Electrum-NMC v4.0.0b1 source only (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1-src.tar.gz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum-NMC-4.0.0b1-src.tar.gz.asc))
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
