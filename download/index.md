@@ -11,7 +11,7 @@ ncdns is software for accessing `.bit` domain names.  If you want to access `.bi
 
 See the [ncdns documentation]({{ "/docs/ncdns" | relative_url }}).
 
-Current release: 0.3.
+Current release: v0.3.1 (Windows 64-bit x86), v0.3 (other platforms).
 
 <div class="row">
 
@@ -21,15 +21,11 @@ Current release: 0.3.
 
 The installer also automatically installs and configures a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and Dnssec-Trigger/Unbound, and sets up TLS certificate validation in any supported web browsers that are installed (see documentation for a list of supported browsers).  It's basically all you need for browsing `.bit` domain names.
 
-* [64-bit x86 installer]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-x86_64-install-a1e8b8.exe)
-
-**Before running the installer, you will need to install the following:**
-
-* [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=53587)
+* [64-bit x86 installer]({{ site.files_url }}/files/ncdns/ncdns-0.3.1/ncdns-0.3.1-x86_64-install-fb9d49.exe)
 
 Plain binaries are useful for advanced users only.  They require setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or Electrum-NMC) and a recursive DNS resolver (e.g. Unbound) separately; additional setup is required for TLS certificate validation.
 
-* [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-x86_64-ac643c.tar.xz)
+* [64-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3.1/ncdns-0.3.1-windows-x86_64-af37f1.tar.xz)
 * [32-bit x86 plain binaries]({{ site.files_url }}/files/ncdns/ncdns-0.3/ncdns-0.3-windows-i686-e076b4.tar.xz)
 
 * [Installer Source Code](https://github.com/namecoin/ncdns-nsis)
@@ -61,8 +57,10 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 
 </div>
 
-* [Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
-* [Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
+* [v0.3.1 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3.1/sha256sums-unsigned-build.txt)
+* [v0.3.1 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3.1/sha256sums-unsigned-build.txt.asc)
+* [v0.3 Hashes]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt)
+* [v0.3 Signature (Release signed by Jeremy Rand)]({{ site.files_url }}/files/ncdns/ncdns-0.3/sha256sums-unsigned-build.txt.asc)
 * [Source Code](https://github.com/namecoin/ncdns)
 * [rbm Build Harness Source Code](https://github.com/namecoin/ncdns-repro)
 
