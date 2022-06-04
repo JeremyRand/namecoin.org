@@ -66,7 +66,7 @@ If your Namecoin domain has no subdomains, you can just load `chain.pem` and `ke
 
 ## Example: Renewing a TLS Certificate
 
-To issue a new TLS certificate (e.g. to rotate keys), use the `-parent-chain` and `parent-key` flags like this:
+To issue a new TLS certificate (e.g. to rotate keys), use the `-parent-chain` and `parent-key` flags, like this:
 
 ~~~
 mkdir example.bit-tls
@@ -120,7 +120,7 @@ You don't need to do anything in your Namecoin wallet (or pay any fees) when iss
 
 ## Example: Issuing a Subordinate CA Certificate for a Subdomain
 
-Issuing a subordinate CA certificate works like above, except you use the `-grandparent-chain` and `-grandparent-key` flags instead of `-parent-chain` and `-parent-key`
+Issuing a subordinate CA certificate works like above, except you use the `-grandparent-chain` and `-grandparent-key` flags instead of `-parent-chain` and `-parent-key`, like this:
 
 ~~~
 mkdir www.example.bit-ca
@@ -191,7 +191,7 @@ For example, the following configuration will **not** work:
 
 ## Cipher Suites
 
-All TLS 1.3 cipher suites will work with Namecoin.  If you must use TLS 1.2 or lower, your TLS server will need to support an appropriate cipher suite such as one of the `ECDHE-ECDSA` cipher suites.  If possible, please avoid using TLS 1.2 or lower (with or without Namecoin), as they are outdated and insecure.
+All TLS 1.3 cipher suites will work with Namecoin.  If you must use TLS 1.2 or lower, your TLS server will need to support an appropriate cipher suite, such as one of the `ECDHE-ECDSA` cipher suites.  If possible, please avoid using TLS 1.2 or lower (with or without Namecoin), as they are outdated and insecure.
 
 ## Using Your Own Tooling
 
