@@ -9,7 +9,7 @@ TLS (*Transport Layer Security*) is the "S" in HTTPS.  All websites using Nameco
 
 ## Prerequisites
 
-You should install the latest release of the `generate_nmc_cert` tool (it's included with ncdns).  You may also want to install the latest release of the ncdns Windows installer, to test that your certificates work.
+You should install the latest release of [the `generate_nmc_cert` tool]({{ "/download/betas/#generate_nmc_cert" | relative_url }}).  You may also want to install the latest release of the [ncdns]({{ "/docs/ncdns/" | relative_url }}) Windows installer, to test that your certificates work.
 
 ## Concepts
 
