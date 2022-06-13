@@ -35,7 +35,7 @@ However, this introduced a new issue.  Now, `certutil` wouldn't segfault, but it
 
 Unfortunately, this meant that now, if an application tries to unload pkcs11mod, the application will be forcibly closed 5 seconds later.  This works fine for applications like `certutil` which will exit right after that point anyway.  But in Firefox, you probably don't want your browser to kill itself 5 seconds after you click the Unload button in the Security Devices dialog.  So, what to do...?
 
-![One does not simply avoid user-agent sniffing.  Even in PKCS#11 modules.]({{ "/images/memes/one-does-not-simply-avoid-user-agent-sniffing.jpg" | relative_url )
+![One does not simply avoid user-agent sniffing.  Even in PKCS#11 modules.]({{ "/images/memes/one-does-not-simply-avoid-user-agent-sniffing.jpg" | relative_url }})
 
 Yep, once again, sometimes the dumb approach is the best option that presents itself.  We simply check the process name that pkcs11mod is loaded into.  If it's `certutil.exe`, we start the 5-second exit timer; otherwise, we don't.  The number of applications that exhibit this bug is, I'm guessing, small enough that we can simply enumerate them.
 
