@@ -71,14 +71,15 @@ Requires setting up a Namecoin client (Namecoin Core, ConsensusJ-Namecoin, or El
 ## Namecoin Core Client (Stable Release)
 
 * Name wallet: includes command-line interface for registering, tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
-* **No graphical interface for name wallet.  Use the Name Tab Beta (see below) if you require this functionality.**
+* Name wallet: includes graphical interface for tracking, updating, and renewing names (if you don't already have some namecoins, you'll need to [buy some at an exchange]({{ "/exchanges/" | relative_url }})).
+* **No graphical interface for registering names.  Use the Name Tab Beta (see below) if you require this functionality.**
 * Name lookup: allows looking up names (use in combination with [ncdns]({{ "/docs/ncdns" | relative_url }}) or NMControl to browse `.bit` domains).
 * Currency wallet: includes graphical interface and command-line interface for receiving and sending namecoins.
 * Recommended for miners.
-* Recommended for users who don't own any names.
-* Recommended for users who are comfortable registering, updating, and renewing their names via the command-line.
+* Recommended for users who don't intend to register new names.
+* Recommended for users who are comfortable registering new names via the command-line.
 
-Current release: 0.21.0.1.
+Current release: 22.0.
 
 <div class="row">
 
@@ -88,10 +89,8 @@ Current release: 0.21.0.1.
 
 **Most users should install ncdns (see above) instead; it includes Namecoin Core.**
 
-* [64-bit installer]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64-setup-unsigned.exe)
-* [64-bit zip]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-win64.zip)
-
-* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-win-unsigned)
+* [64-bit installer]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-win64-setup-unsigned.exe)
+* [64-bit zip]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-win64.zip)
 
 </div>
 
@@ -99,12 +98,12 @@ Current release: 0.21.0.1.
 
 ### GNU/Linux
 
-* [RISC-V 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-riscv64-linux-gnu.tar.gz)
-* [ARM 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-aarch64-linux-gnu.tar.gz)
-* [ARM 32-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-arm-linux-gnueabihf.tar.gz)
-* [x86 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-x86_64-linux-gnu.tar.gz)
-
-* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-linux)
+* [POWER 64-bit BE]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-powerpc64-linux-gnu.tar.gz)
+* [POWER 64-bit LE]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-powerpc64le-linux-gnu.tar.gz)
+* [ARM 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-aarch64-linux-gnu.tar.gz)
+* [ARM 32-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-arm-linux-gnueabihf.tar.gz)
+* [RISC-V 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-riscv64-linux-gnu.tar.gz)
+* [x86 64-bit]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-x86_64-linux-gnu.tar.gz)
 
 </div>
 
@@ -112,16 +111,15 @@ Current release: 0.21.0.1.
 
 ### macOS
 
-* [dmg]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx-unsigned.dmg)
-* [tar.gz]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1-osx64.tar.gz)
-
-* [Gitian signatures](https://github.com/namecoin/gitian.sigs/tree/master/0.21.0.1-osx-unsigned)
+* [dmg]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-osx-unsigned.dmg)
+* [tar.gz]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0-osx64.tar.gz)
 
 </div>
 
 </div>
 
-* [Source code tarball]({{ site.files_url }}/files/namecoin-core/namecoin-core-0.21.0.1/namecoin-nc0.21.0.1.tar.gz)
+* [Guix signatures](https://github.com/namecoin/guix.sigs/tree/master/nc22.0)
+* [Source code tarball]({{ site.files_url }}/files/namecoin-core/namecoin-core-22.0/namecoin-nc22.0.tar.gz)
 * [Source code](https://github.com/namecoin/namecoin-core/)
 
 ## Namecoin Core Client (with Qt Name Tab)
