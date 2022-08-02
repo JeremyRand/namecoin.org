@@ -30,6 +30,7 @@ OpenPGP (Electrum-NMC signer): `A0BE 08C8 6566 1A93 16E0  A7FF 762E D28D A5C0 07
 OpenPGP (Email): `1D04 FB9D 50BF 2A8E 9F3E  58AD DC7E 7F8A E30E 73E6` [(download public key)]({{ "/JeremyRand-Email.asc" | relative_url }})<br>
 OpenPGP (Gitian signer): `9CDA F04A 7290 3BFE C095 9DBE 2DBE 339E 29F6 294C` [(download public key)]({{ "/JeremyRand-Gitian.asc" | relative_url }})<br>
 OpenPGP (Git signer): `A9F5 A19D 56DB 3217 70B6  7238 EB03 139A 459D D06E` [(download public key)]({{ "/JeremyRand-Git-2021.asc" | relative_url }})<br>
+OpenPGP (Guix signer): `1D26 753A 41DA D558 3DCE  D3BF 6D98 CECB E80A B63F` [(download public key)]({{ "/JeremyRand-Guix.asc" | relative_url }})<br>
 OpenPGP (Jekyll signer): `9405 8478 534E 143D 1E78  A6BB 5E23 7E1F 50A5 A878` [(download public key)]({{ "/JeremyRand-Jekyll.asc" | relative_url }})<br>
 OpenPGP (RBM signer): `B18A 917F B906 3B6B 0F13  2374 8298 5AFE 22E0 F366` [(download public key)]({{ "/JeremyRand-RBM.asc" | relative_url }})<br>
 OpenPGP (primary) (superseded 2021): `5174 0B7C 732D 572A 3140 4010 6605 55E1 F8F7 BF85` [(download public key)]({{ "/JeremyRand.asc" | relative_url }})<br>
