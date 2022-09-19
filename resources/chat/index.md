@@ -27,6 +27,10 @@ Two chat channels exist for Namecoin.  If you're not sure which access method to
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin) (clearnet, Tor prohibited)
 * Matrix (Tor-friendly): #namecoin:matrix.org
 * [Matrix Element web chat](https://app.element.io/#/room/#namecoin:matrix.org) (clearnet, Tor-friendly)
+* [Libera IRC](ircs://libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7q2v5zrpyd.onion:6697/#namecoin) (Tor onion, SASL required, registration required without Tor)
+* [Libera IRC](ircs://irc.libera.chat:6697/#namecoin) (clearnet, Tor prohibited)
+* [Libera Kiwiirc web chat](https://web.libera.chat/#namecoin) (clearnet, Tor prohibited, lots of features)
+* [Libera Gamja web chat](https://web.libera.chat/gamja/#namecoin) (clearnet, Tor prohibited, lightweight)
 
 ## #namecoin-dev
 
@@ -44,6 +48,10 @@ Two chat channels exist for Namecoin.  If you're not sure which access method to
 * [OFTC web chat](https://webchat.oftc.net/?channels=%23namecoin-dev) (clearnet, Tor prohibited)
 * Matrix (Tor-friendly): #namecoin-dev:matrix.org
 * [Matrix Element web chat](https://app.element.io/#/room/#namecoin-dev:matrix.org) (clearnet, Tor-friendly)
+* [Libera IRC](ircs://libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7q2v5zrpyd.onion:6697/#namecoin-dev) (Tor onion, SASL required, registration required without Tor)
+* [Libera IRC](ircs://irc.libera.chat:6697/#namecoin-dev) (clearnet, Tor prohibited)
+* [Libera Kiwiirc web chat](https://web.libera.chat/#namecoin-dev) (clearnet, Tor prohibited, lots of features)
+* [Libera Gamja web chat](https://web.libera.chat/gamja/#namecoin-dev) (clearnet, Tor prohibited, lightweight)
 
 ## Developer Meetings
 
