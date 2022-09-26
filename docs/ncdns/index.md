@@ -5,7 +5,7 @@ title: ncdns
 
 {::options parse_block_html="true" /}
 
-ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is what you want to install.  (Technically speaking, ncdns is a Namecoin to DNS bridge.  It allows software that speaks the DNS protocol to use Namecoin.)
+ncdns is software for accessing `.bit` domain names.  If you want to access `.bit` domain names, ncdns is what you want to install.  ncdns works with most Internet applications (not just web browsers), and uses caching for extra speed (particularly helpful when used with Electrum-NMC).  (Technically speaking, ncdns is a Namecoin to DNS bridge.  It allows software that speaks the DNS protocol to use Namecoin.)
 
 ## Installation
 

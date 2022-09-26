@@ -44,7 +44,7 @@ Registered names semi-expire if they are not renewed or updated for 31,968 block
 
 See [Browsing .bit Websites]({{ "/dot-bit/browsing-instructions/" | relative_url }}).
 
-You can also use [ncdns]({{ "/docs/ncdns" | relative_url }}) (experimental).  If you have the [ZeroNet](https://zeronet.io/) software installed, you can visit ZeroNet-enabled .bit domains.
+If you have the [ZeroNet](https://zeronet.io/) software installed, you can visit ZeroNet-enabled .bit domains.
 
 ### How do I register and host a .bit domain?
 
