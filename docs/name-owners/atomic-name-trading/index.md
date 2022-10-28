@@ -7,9 +7,211 @@ title: Atomic Name Trading
 
 Because both currency transactions and name operations share a common technical backing (the Namecoin blockchain), it is possible to construct transactions that transfer both namecoins and a name *atomically*. This means that it is guaranteed that either both transfers succeed or both transfers are not executed at all. A potentially very useful application of this technique is trading of names for namecoins, since this makes it possible to sell or buy a name in a completely trustless manner without the necessity to use escrow.
 
-At the moment, it is possible to make such transfers only using RPC commands to Namecoin Core directly. But in the future, hopefully an easy-to-use UI will be developed that handles all the technicalities. On this page, the basic work-flow will be described with RPC commands. We will assume as an example that Bob wants to buy `d/my-cool-domain` from Sally for 10 NMC. The work-flow for this transaction is shown below on the testnet. 
+There are two protocols for atomic name trading:
 
-## Bob Prepares a Buy Offer
+* The newer protocol is supported only by Electrum-NMC v4.0.6+; the older protocol is supported only by Namecoin Core.
+* The newer protocol is accessible via both CLI/RPC and GUI; the older protocol is CLI/RPC-only.
+* The newer protocol is *non-interactive*: one party can publish an offer (e.g. on a pastebin or forum), and the second party can then accept the offer without needing to send information back to the first party.  Under the hood, this is achieved via Bitcoin smart contract techniques such as `SIGHASH` and `nLockTime`.  The older protocol is *interactive*: the parties must coordinate the trade in a multi-step negotiation procedure.
+* The newer protocol supports auctions (CLI/RPC only); the older protocol does not.
+* Both protocols utilize Layer 2 (the only step that hits the blockchain is the final step that completes the trade).  This avoids excessive fees and blockchain bloat.
+* Both protocols are fully decentralized and trustless, modulo the reliance on a publishing mechanism (e.g. a pastebin or forum), which could be implemented in a decentralized, censorship-resistant manner but is considered out of scope.  A malicious pastebin operator can censor offers but cannot tamper with them.
+* It probably goes without saying that the older protocol will be scrapped in the future, once the newer protocol is available in Namecoin Core.
+
+The basic workflow is as follows:
+
+## Electrum-NMC: Bob Prepares a Buy Offer
+
+We will assume as an example that Bob wants to buy `d/my-cool-domain` from Sally for 10 NMC.  Bob can create a Buy Offer in Electrum-NMC like this:
+
+Console:
+
+```
+name_buy("d/my-cool-domain", amount="10")
+```
+
+CLI:
+
+```
+electrum-nmc name_buy d/my-cool-domain 10
+```
+
+GUI:
+
+Use the Buy Names tab.
+
+The command will return a Buy Offer in hex format.  Bob can give this Buy Offer to Sally via any medium, such as email or a public pastebin.
+
+Note that by creating this Buy Offer, Bob is committing to pay 10 NMC to anyone who transfers `d/my-cool-domain` to him, even if Sally no longer controls that name at the time of the trade.  Bob can revoke this obligation by double-spending the currency input used by the Buy Offer.
+
+## Electrum-NMC: Sally Accepts a Buy Offer
+
+After Sally receives the Buy Offer from Bob, she can accept it in Electrum-NMC like this (she enters the Buy Offer in the `offer` parameter):
+
+Console:
+
+```
+name_sell("d/my-cool-domain", requested_amount="10", offer="0123456789ABCDEF")
+```
+
+CLI:
+
+```
+electrum-nmc name_sell d/my-cool-domain 10 --offer 0123456789ABCDEF
+```
+
+GUI:
+
+Use the Manage Names tab.
+
+Note that the transaction fee to the miner will be paid by Sally.  The command will return a trade transaction.  Sally can now broadcast it in Electrum-NMC like this (she enters the trade transaction as the argument to `broadcast`):
+
+Console:
+
+```
+broadcast("FEDCBA9876543210")
+```
+
+CLI:
+
+```
+electrum-nmc broadcast FEDCBA9876543210
+```
+
+GUI:
+
+Broadcasted automatically from the Manage Names tab.
+
+This completes the trade; once the transaction is confirmed, Bob now owns `d/my-cool-domain` and Sally is 10 NMC (minus the transaction fee) richer.
+
+## Electrum-NMC: Sally Prepares a Sell Offer
+
+We will assume as an example that Sally wants to sell `d/my-cool-domain` to anyone willing to pay 10 NMC for it.  Sally can create a Sell Offer in Electrum-NMC like this:
+
+Console:
+
+```
+name_sell("d/my-cool-domain", requested_amount="10")
+```
+
+CLI:
+
+```
+electrum-nmc name_sell d/my-cool-domain 10
+```
+
+GUI:
+
+Use the Manage Names tab.
+
+The command will return a Sell Offer in hex format.  Sally can publish this Sell Offer via any public medium, such as a pastebin.
+
+Note that by creating this Sell Offer, Sally is committing to transfer `d/my-cool-domain` to anyone who pays her 10 NMC; she does not have any control over who accepts the Sell Offer.  Sally can revoke this obligation by updating or renewing `d/my-cool-domain`.  If Sally specifically wants only Bob to be able to receive `d/my-cool-domain`, then she should ask Bob to create a Buy Offer instead.
+
+## Electrum-NMC: Bob Accepts a Sell Offer
+
+After Bob finds Sally's Sell Offer on a public medium such as a pastebin, he can accept it in Electrum-NMC like this (he enters the Sell Offer in the `offer` parameter):
+
+Console:
+
+```
+name_buy("d/my-cool-domain", amount="10", offer="0123456789ABCDEF")
+```
+
+CLI:
+
+```
+electrum-nmc name_buy d/my-cool-domain 10 --offer 0123456789ABCDEF
+```
+
+GUI:
+
+Use the Buy Names tab.
+
+Note that the transaction fee to the miner will be paid by Bob.  The command will return a trade transaction.  Bob can now broadcast it in Electrum-NMC like this (he enters the trade transaction as the argument to `broadcast`):
+
+Console:
+
+```
+broadcast("FEDCBA9876543210")
+```
+
+CLI:
+
+```
+electrum-nmc broadcast FEDCBA9876543210
+```
+
+GUI:
+
+Broadcasted automatically from the Buy Names tab.
+
+This completes the trade; once the transaction is confirmed, Bob now owns `d/my-cool-domain` and Sally is 10 NMC richer.
+
+## Electrum-NMC: Sally Prepares an Auction
+
+We will assume as an example that Sally wants to sell `d/my-cool-domain` via a [Dutch auction](https://en.wikipedia.org/wiki/Dutch_auction).  Sally has chosen to open the auction at block height 300k with price 10 NMC, and intends to decrease the price by 1 NMC every 10 blocks until it reaches the minimum price of 1 NMC.  Sally can create an Auction in Electrum-NMC like this:
+
+Console:
+
+```
+name_sell_auction("d/my-cool-domain", requested_amounts=["10","9","8","7","6","5","4","3","2","1"], locktimes=[300000,300010,300020,300030,300040,300050,300060,300070,300080,300090])
+```
+
+CLI:
+
+```
+electrum-nmc name_sell_auction d/my-cool-domain '["10","9","8","7","6","5","4","3","2","1"]' '[300000,300010,300020,300030,300040,300050,300060,300070,300080,300090]'
+```
+
+Creating Auctions is not available in the GUI yet.
+
+The command will return an Auction in JSON format.  Sally can publish this Auction via any public medium, such as a pastebin.
+
+Note that by creating this Auction, Sally is committing to transfer `d/my-cool-domain` to the first person who bids on the auction; she does not have any control over who bids.  Sally can revoke this obligation by updating or renewing `d/my-cool-domain`.
+
+## Electrum-NMC: Bob Bids on an Auction
+
+After Bob finds Sally's Auction on a public medium such as a pastebin, he can bid on it in Electrum-NMC like this (he enters the Auction in the `offers` parameter):
+
+Console:
+
+```
+name_buy_auction("d/my-cool-domain", amount="5", offers=["0123456789ABCDEF",...])
+```
+
+CLI:
+
+```
+electrum-nmc name_buy_auction d/my-cool-domain 5 '["0123456789ABCDEF",...]'
+```
+
+Bidding on Auctions is not available in the GUI yet.
+
+Note that the transaction fee to the miner will be paid by Bob.  The command will return a bid transaction corresponding to the Auction stage selected by the following algorithm:
+
+1. Disqualify any stages that are above Bob's bid price.
+2. Prefer stages that can be broadcasted earlier.
+3. If more than one stage can be broadcasted immediately, prefer the stage with the lowest price.
+
+Bob can now broadcast his bid in Electrum-NMC like this (he enters the bid transaction as the argument to `broadcast`):
+
+Console:
+
+```
+broadcast("FEDCBA9876543210")
+```
+
+CLI:
+
+```
+electrum-nmc broadcast FEDCBA9876543210
+```
+
+This completes the Auction; once the transaction is confirmed, Bob now owns `d/my-cool-domain` and Sally is 5 NMC richer.
+
+## Namecoin Core: Bob Prepares a Buy Offer
+
+We will assume as an example that Bob wants to buy `d/my-cool-domain` from Sally for 10 NMC. The work-flow for this transaction is shown below on the testnet.
 
 Bob finds the domain of interest and Sally's offer to sell the domain. This could happen, for instance, via Sally using a special value for the domain or by some other channel out of the scope of this page. For instance: 
 
@@ -34,7 +236,7 @@ To construct the transaction, Bob needs to use the `createrawtransaction` RPC co
 
 In this example, these three parts will be written in seperate files for simplicity, and then these files will be used in the final RPC command. Of course, it is also possible to write everything directly onto the command line. 
 
-### Currency Inputs
+## Namecoin Core: Currency Inputs
 
 Assuming a transaction fee of 0.005 NMC is appropriate, Bob needs to find one of his unspent inputs of at least 10.005 NMC to include in the transaction. For this, the `listunspent` command can be used. A suitable input could be this one: 
 
@@ -62,7 +264,7 @@ With a size of 974.9 NMC, it is large enough. It will produce `974.9 - 10.005 = 
 
 If no single unspent output is large enough, Bob could instead either include multiple inputs into this file, or produce a suitable output first by sending a sufficiently large amount to himself.
 
-### Currency Outputs
+## Namecoin Core: Currency Outputs
 
 Required currency outputs are the price paid to Sally as well as the change paid back to Bob. So Bob first creates a new address of his own to receive the change. We will use `mwAEUoA3NzSmASyWxrTK1mhsd4pFvruoXj` for this purpose. Then, the corresponding data to be put in `tx.out` is: 
 
@@ -73,7 +275,7 @@ Required currency outputs are the price paid to Sally as well as the change paid
 }
 ```
 
-### The Name Operation
+## Namecoin Core: The Name Operation
 
 The last part of the transaction that needs to be created is the name operation. It should be a `name_update` of `d/my-cool-domain` to some value (can be chosen by Bob already at this stage, but it usually isn't too important for a name trade) and to Bob's address `mwKDtLZ9EHSeL8TjkZAcppsnb7M3LRhoGR`. The corresponding data to put in the last file `tx.op` is this: 
 
@@ -86,7 +288,7 @@ The last part of the transaction that needs to be created is the name operation.
 }
 ```
 
-### Finishing the Offer
+## Namecoin Core: Finishing the Offer
 
 With all this in place, the transaction can be created: 
 
@@ -187,7 +389,7 @@ $ namecoin-cli signrawtransactionwithwallet <large hex string>
 
 Finally, Bob can now again check the signed transaction with `decoderawtransaction`, although this is not strictly necessary. He can now pass the partially-signed transaction (the hex string above) to Sally. 
 
-## Sally Accepts the Offer
+## Namecoin Core: Sally Accepts the Offer
 
 After Sally receives the partial transaction from Bob, she can check that everything is fine: 
 
@@ -289,3 +491,11 @@ bdf33963b3635d41d597e07805ee8f0f8e637e7e09e46ff5117931e7ffdb8550
 ```
 
 That's it. When the transaction is confirmed, the trade is completed. However, there's no risk to either Bob or Sally that the trade could ever be done only partially, i.e., someone cheat the other. 
+
+## Credits
+
+* Daniel Kraft: Initial interactive protocol.
+* Phelix: Refined interactive UI.
+* Ryan Castellucci: Non-interactive protocol.
+* Yanmaani: Auction protocol.
+* Jeremy Rand: Refined non-interactive UI.
