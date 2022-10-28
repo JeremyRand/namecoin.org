@@ -412,13 +412,17 @@ In the meantime, practical advice is that if you want a name but it's squatted, 
 
 ### Is Namecoin anonymous?
 
-Like Bitcoin, Namecoin is not anonymous.  A thorough description of Bitcoin's poor anonymity properties is outside the scope of this FAQ.
+Like Bitcoin, Namecoin is not automatically anonymous.  A thorough description of Bitcoin's poor anonymity properties is outside the scope of this FAQ.
 
-When used properly in conjunction with Tor, Namecoin *may* offer sufficient pseudonymity or location-anonymity for many use cases.  Users who need these properties are advised to carefully evaluate their specific situation.  Using Namecoin over Tor does *not* by itself magically make you anonymous.
+Electrum-NMC v4.0.6+ has experimental support for anonymity.  To get high-quality anonymity, you need to hide information from several attackers:
 
-We recognize that better anonymity is an important use case.  We occasionally receive questions from users about whether Namecoin can be used anonymously.  While we don't know much about these users (for obvious reasons), some of them appear to be in circumstances where failure of anonymity could lead to significant negative consequences.  We aim to support these use cases in the future, but right now it would be irresponsible and reckless to do so.
+* Blockchain graph analysis.  You should enable the anonymity mode in Electrum-NMC's settings, which will attempt to protect you from graph analysis that links your names together.
+* ElectrumX server operators.  You should run your own ElectrumX server, and only allow it (and its Namecoin Core node) to connect via Tor.
+* Exchanges.  You should only purchase NMC from exchanges that allow access over Tor, do not collect personally identifiable information, and allow trading an anonymous cryptocurrency (e.g. Monero or Zcash) for NMC.
 
-We are currently engaging with projects that provide blockchain anonymity (e.g. Monero and Zcash), with the goal of achieving similar anonymity for Namecoin.  Both Monero and Zcash have mathematical security proofs of their anonymity, subject to given assumptions and a given anonymity set.  Blockchain anonymity is also an active research area, so further innovations may very well occur in the future.
+Namecoin Core does not yet support anonymity; nor do Electrum-NMC versions prior to v4.0.6.
+
+Namecoin anonymity is experimental and unaudited.  Don't rely on it more than is warranted for your safety.
 
 ### I heard that an academic study found that Namecoin is only used by 28 websites; is that really true?
 
