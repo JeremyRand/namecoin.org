@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Anonymity Improvents in Electrum-NMC v4.0.6"
+title: "Anonymity Improvements in Electrum-NMC v4.0.6"
 author: Jeremy Rand
 date:   2022-10-28 02:00:00 +0000
 tags: [News]
