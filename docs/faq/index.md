@@ -155,6 +155,22 @@ Maintaining a fork of a web browser or OS is a substantial time investment, and 
 
 These advantages do not obviously apply to us, so Tor Browser's relative success would not obviously apply to us either.
 
+### Why does Namecoin use atomic name trades for NMC rather than BTC or some other coin?
+
+* Namecoin atomic name trades are non-interactive, which improves UX; cross-chain trades require interactivity.
+* Namecoin atomic name trades are as fast as any other transaction; cross-chain trades require substantial latency while the multiple steps of the trade smart contract confirm.
+* Namecoin atomic name trades are Layer 2 except for the final step that finalizes the trade, which reduces fees and blockchain bloat; cross-chain trades are on-chain.
+* Namecoin atomic name trades are *cryptographically* atomic; a succesful double-spend attack cannot break the atomic property.  Cross-chain trades are only *economically* atomic; an attacker who can successfully double-spend can break the atomic property.
+* Namecoin atomic name trades have built-in support for auctions (non-interactively, on Layer 2); cross-chain trades do not have any mechanism for this.
+
+### Is it possible to hide the usage of atomic name trades?  Is that desirable?
+
+From a fundamentalist privacy perspective, making all transactions look alike is desirable, which would seem to imply that atomic name trades should look like any other name update.  However, this is not really an accurate view of how Namecoin is used.  Namecoin names are typically used to establish a trust relationship, and in a trust relationship, the trusting party typically wants to know about events happening to the trusted party that may impact that trust relationship.  For example, if `wikileaks.bit` belongs to WikiLeaks, but that domain then gets put up for auction, whistleblowers may consider this information important when deciding whether to leak documents to the submission system hosted at that domain.  Thus, users who resolve a name probably do not want trades to look the same as other updates.
+
+Furthermore, there are two distinct classes of name owners involved: name owners who are doing a trade, and name owners who are doing a non-trade update.  Atomic name trades use a `SIGHASH` smart contract, and removing that smart contract component from a trade transaction doesn't conceal it, it just makes the transaction invalid.  So name owners who are doing a trade cannot make their transactions look like non-trade updates.  It *is* possible for a name owner doing a non-trade update to make a `SIGHASH` smart contract with themself, thus making their non-trade update look like a trade.  However, this will typically incur higher fees, and will also incur suspicion among their users (see above paragraph), so there is no incentive for them to do this.
+
+Theoretically, Namecoin could softfork in order to force name owners to make their non-trade updates look like trades, but this would sacrifice the integrity of Namecoin's trust relationship use case in favor of the dubious privacy needs of name owners who are covertly selling the trust relationships they've accumulated.  We do not think this would be a consensus change that would be in the public interest; thus, we have no intent to pursue such a softfork.
+
 ### Is Namecoin's support of atomic name trades a feature primarily aimed at squatters?
 
 Short answer: No.  The Namecoin developers are strongly against trademark infringement, and we do not endorse the behavior of users who squat on domains, either in Namecoin or the DNS.
