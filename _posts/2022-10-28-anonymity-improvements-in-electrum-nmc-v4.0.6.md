@@ -10,7 +10,7 @@ Electrum-NMC v4.0.6 (soon to be released) brings some long-awaited anonymity imp
 
 ## Automatic Coin Control for Names
 
-I first described this feature in [my 34C3 presentation on anonymity]({{ "/2018/03/09/34c3-slides-videos.html" | relative_url }}).  There's not much else to say here; my presentation covers how the feature works and why that design was chosen.  The delay between 34C3 and implementation is due to the preferences expressed by the Tor developers, hopefully it was worth the wait.
+I first described this feature in [my 34C3 presentation on anonymity]({{ "/2018/03/19/34c3-slides-videos.html" | relative_url }}).  There's not much else to say here; my presentation covers how the feature works and why that design was chosen.  The delay between 34C3 and implementation is due to the preferences expressed by the Tor developers, hopefully it was worth the wait.
 
 ## Whonix/Tails Support
 
