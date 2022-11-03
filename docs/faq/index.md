@@ -94,6 +94,14 @@ Names and values are attached to special coins with a value of 0.01 NMC. Updates
 
 The code prevents those coins from being used for normal payments.
 
+### What is a sidechain?
+
+A *sidechain* is a blockchain whose consensus rules necesarily involve validating data from another blockchain (referred to as the *parent chain*).  The concept of sidechains was first proposed by Satoshi Nakamoto in 2010, and was first deployed in production by Namecoin in October 2011.  Subsequent examples of sidechains deployed in production include P2Pool (December 2011) and Liquid (October 2018).  Note that the existence of Turing-complete scripts (e.g. on Ethereum) that can validate blockchain data does **not** make Turing-complete blockchains sidechains, because the validation logic in such cases is part of the transction rather than the consensus rules.
+
+### What is a merge-mined sidechain?
+
+A *merge-mined sidechain* is a sidechain in which the data being validated from the parent chain is the parent chain's proof of work.  Merge-mined sidechains (including Namecoin and P2Pool) were the first type of sidechain, and should not be confused with other types of sidechains such as *pegged sidechains* (including Liquid).
+
 ### Why does registering a name incur a fee?
 
 Fees on name operations are a rate-limiting mechanism to disincentivize squatting.
