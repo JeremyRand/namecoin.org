@@ -66,7 +66,7 @@ If your Namecoin domain has no subdomains, you can just load `chain.pem` and `ke
 
 ## Example: Renewing a TLS Certificate
 
-To issue a new TLS certificate (e.g. to rotate keys), use the `-parent-chain` and `parent-key` flags, like this:
+To issue a new TLS certificate (e.g. to rotate keys, or because it's nearing expiration), use the `-parent-chain` and `parent-key` flags, like this:
 
 ~~~
 mkdir example.bit-tls
@@ -144,7 +144,7 @@ You don't need to do anything in your Namecoin wallet (or pay any fees) when iss
 
 ## Example: Renewing a Subordinate CA Certificate without Rotating Keys
 
-To reuse your keys from an existing subordinate CA certificate when renewing it, use the `-parent-key` flag, like this:
+To reuse your keys from an existing subordinate CA certificate when renewing it (e.g. because it's nearing expiration), use the `-parent-key` flag, like this:
 
 ~~~
 mkdir www.example.bit-renew-ca
@@ -159,7 +159,7 @@ You don't need to do anything in your Namecoin wallet (or pay any fees) when ren
 
 ## Example: Renewing a Non-Subordinate CA Certificate without Rotating Keys
 
-To reuse your keys from your existing non-subordinate CA certificate (the one whose public key is in the blockchain) when renewing it, use the `-parent-key` and `-grandparent-key` flags, like this:
+To reuse your keys from your existing non-subordinate CA certificate (the one whose public key is in the blockchain) when renewing it (e.g. because it's nearing expiration), use the `-parent-key` and `-grandparent-key` flags, like this:
 
 ~~~
 mkdir example.bit-renew-ca
