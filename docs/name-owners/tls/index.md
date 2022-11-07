@@ -142,6 +142,40 @@ Specifying wildcards for subordinate CA's is not necessary.
 
 You don't need to do anything in your Namecoin wallet (or pay any fees) when issuing subordinate CA certificates, because Namecoin TLS uses layer 2.
 
+## Example: Renewing a Subordinate CA Certificate without Rotating Keys
+
+To reuse your keys from an existing subordinate CA certificate when renewing it, use the `-parent-key` flag, like this:
+
+~~~
+mkdir www.example.bit-renew-ca
+pushd www.example.bit-renew-ca
+generate_nmc_cert -use-ca -host www.example.bit -grandparent-chain ../example.bit-ca/caChain.pem -grandparent-key ../example.bit-ca/caKey.pem -parent-key ../www.example.bit-ca/caKey.pem
+popd
+~~~
+
+You'll get a new `caChain.pem` in the `www.example.bit-renew-ca` directory.  You'll then need to add the new `caChain.pem`'s contents to the `chain.pem` and/or `caChain.pem` of any TLS certificates or subordinate CA certificates that you previously issued with this CA, and update the `chain.pem` files on your TLS server accordingly.
+
+You don't need to do anything in your Namecoin wallet (or pay any fees) when renewing subordinate CA certificates, because Namecoin TLS uses layer 2.
+
+## Example: Renewing a Non-Subordinate CA Certificate without Rotating Keys
+
+To reuse your keys from your existing non-subordinate CA certificate (the one whose public key is in the blockchain) when renewing it, use the `-parent-key` and `-grandparent-key` flags, like this:
+
+~~~
+mkdir example.bit-renew-ca
+pushd example.bit-renew-ca
+generate_nmc_cert -use-ca -use-aia -host example.bit -grandparent-key ../example.bit-ca/caAIAKey.pem -parent-key ../example.bit-ca/caKey.pem
+popd
+~~~
+
+You'll get a new `caChain.pem` in the `example.bit-renew-ca` directory.  You'll then need to add the new `caChain.pem`'s contents to the `chain.pem` and/or `caChain.pem` of any TLS certificates or subordinate CA certificates that you previously issued with this CA, and update the `chain.pem` files on your TLS server accordingly.
+
+You don't need to do anything in your Namecoin wallet (or pay any fees) when renewing non-subordinate CA certificates, because Namecoin TLS uses layer 2.
+
+## Can I Renew a TLS Certificate without Rotating Keys?
+
+No; TLS server keys (in contrast to CA keys) should always be rotated after expiration for security reasons.
+
 ## Testing Your Website
 
 The best way to test your website is to try visiting it on a Windows 10 installation after running the ncdns for Windows installer.  It should load without errors.
