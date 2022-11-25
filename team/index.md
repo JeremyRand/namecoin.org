@@ -16,11 +16,6 @@ Daniel is our lead C++ developer, currently working on Namecoin Core. Daniel is 
 
 OpenPGP: `1142 850E 6DFF 65BA 63D6  88A8 B249 2AC4 A733 0737` [(download public key)]({{ "/DanielKraft.asc" | relative_url }})
 
-## Ryan Castellucci
-
-**Lead Security Engineer** <br>
-Ryan is our security specialist and all-around-badass, handling everything from web infrastructure to C++ development to crisis management.
-
 ## Jeremy Rand (biolizard89)
 
 **Lead Application Engineer & Community Organizer** <br>
@@ -79,6 +74,11 @@ Aerth did the initial work in creating pkcs11mod (a Go library for creating PKCS
 **ZeroNet Specialist** <br>
 Lola works on enhancing Namecoin integration in ZeroNet, a decentralized website hosting system loosely based on BitTorrent.
 
+## Somewhat
+
+**Quality Assurance Specialist** <br>
+Somewhat beta-tests our releases, helping catch bugs that our developers and CI tests failed to notice.
+
 ## Robert Min
 
 **Proxy Leak Mitigation Intern** <br>
@@ -95,6 +95,10 @@ We have several developers who are no longer active in the community, listed bel
 ## Mikhail Sindeyev (thecoder)
 
 Mikhail (then acting under a pseudonym) was our lead C++ developer for roughly a year (prior to Daniel), working on namecoind and creating Namecoin-Qt. Mikhail was a PhD student at Moscow State University. In 2014 Mikhail tragically died of a stroke at the age of 29. His identity was made public shortly after his death so that his great contribution to free speech technology would be recognized.
+
+## Ryan Castellucci
+
+Ryan was our security specialist and all-around-badass, handling everything from web infrastructure to C++ development to crisis management.  They are mostly retired but still occasionally offer cryptographic/security advice as needed.
 
 ## Phelix
 
@@ -126,7 +130,7 @@ Theymos proposed that Appamatto's BitDNS design utilize a native token-like curr
 
 ## Dan Kaminsky
 
-Dan suggested to Aaron that Zooko's Triangle, if accurate, constituted an impossibility proof of Bitcoin, because a currency and a naming system reduce to the same problem.  Dan's insight directly led to Aaron proposing Nakanames, which used a Bitcoin-like system to solve Zooko's Triangle.  Dan is well-known for discovering and coordinating a fix for a large-scale DNS cache poisoning vulnerability, and for being one of the Recovery Key Share Holders for the ICANN root zone.
+Dan suggested to Aaron that Zooko's Triangle, if accurate, constituted an impossibility proof of Bitcoin, because a currency and a naming system reduce to the same problem.  Dan's insight directly led to Aaron proposing Nakanames, which used a Bitcoin-like system to solve Zooko's Triangle.  Dan was well-known for discovering and coordinating a fix for a large-scale DNS cache poisoning vulnerability, and for being one of the Recovery Key Share Holders for the ICANN root zone.  Dan tragically died in 2021 at age 42.
 
 ## Satoshi Nakamoto
 
