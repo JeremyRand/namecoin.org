@@ -79,7 +79,7 @@ Lola works on enhancing Namecoin integration in ZeroNet, a decentralized website
 **Quality Assurance Specialist** <br>
 Somewhat beta-tests our releases, helping catch bugs that our developers and CI tests failed to notice.
 
-## Robert Min
+## Robert Nganga
 
 **Proxy Leak Mitigation Intern** <br>
 Robert works on tools for detecting and preventing proxy leaks in the Namecoin and Tor ecosystems.
