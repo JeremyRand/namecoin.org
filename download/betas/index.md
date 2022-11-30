@@ -257,9 +257,17 @@ DNSSEC-HSTS enforces TLS for Namecoin websites that support TLS, which protects 
 
 ## ncp11
 
-ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Tor Browser.
+ncp11 enables Namecoin TLS in applications that support PKCS#11, such as Firefox and Tor Browser.
 
 * ncp11 stable binaries are shipped with ncdns.
+* [ncp11 Nightly GNU/Linux (64-bit POWER LE) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20linux%20ppc64le/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly GNU/Linux (64-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20linux%20arm64/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly GNU/Linux (32-bit ARM) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20linux%20arm/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly GNU/Linux (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20linux%20amd64/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly GNU/Linux (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20linux%20386/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly Windows (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20windows%20amd64/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly Windows (32-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20windows%20386/binaries/dist/ncp11.tar.gz)
+* [ncp11 Nightly macOS (64-bit x86) plain binaries](https://api.cirrus-ci.com/v1/artifact/github/namecoin/ncp11/Compile%20Go%20latest%20darwin%20amd64/binaries/dist/ncp11.tar.gz)
 * [ncp11 Source Code](https://github.com/namecoin/ncp11)
 
 ### Known Issues
