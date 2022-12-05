@@ -70,7 +70,7 @@ The smallest currency unit of Namecoin is called the *swartz* (similar to the *s
 
 ### What do Namecoin addresses look like?
 
-Namecoin addresses follow the same format as Bitcoin addreses, but with different prefixes (to avoid ambiguity about whether an address is for Bitcoin or Namecoin):
+Namecoin addresses follow the same format as Bitcoin addresses, but with different prefixes (to avoid ambiguity about whether an address is for Bitcoin or Namecoin):
 
 * New-style Bech32 addresses begin with `nc1`.
 * Old-style P2SH addresses begin with `6`.
@@ -96,7 +96,7 @@ The code prevents those coins from being used for normal payments.
 
 ### What is a sidechain?
 
-A *sidechain* is a blockchain whose consensus rules necesarily involve validating data from another blockchain (referred to as the *parent chain*).  The concept of sidechains was first proposed by Satoshi Nakamoto in 2010, and was first deployed in production by Namecoin in October 2011.  Subsequent examples of sidechains deployed in production include P2Pool (December 2011) and Liquid (October 2018).  Note that the existence of Turing-complete scripts (e.g. on Ethereum) that can validate blockchain data does **not** make Turing-complete blockchains sidechains, because the validation logic in such cases is part of the transction rather than the consensus rules.
+A *sidechain* is a blockchain whose consensus rules necessarily involve validating data from another blockchain (referred to as the *parent chain*).  The concept of sidechains was first proposed by Satoshi Nakamoto in 2010, and was first deployed in production by Namecoin in October 2011.  Subsequent examples of sidechains deployed in production include P2Pool (December 2011) and Liquid (October 2018).  Note that the existence of Turing-complete scripts (e.g. on Ethereum) that can validate blockchain data does **not** make Turing-complete blockchains sidechains, because the validation logic in such cases is part of the transaction rather than the consensus rules.
 
 ### What is a merge-mined sidechain?
 
@@ -168,7 +168,7 @@ These advantages do not obviously apply to us, so Tor Browser's relative success
 * Namecoin atomic name trades are non-interactive, which improves UX; cross-chain trades require interactivity.
 * Namecoin atomic name trades are as fast as any other transaction; cross-chain trades require substantial latency while the multiple steps of the trade smart contract confirm.
 * Namecoin atomic name trades are Layer 2 except for the final step that finalizes the trade, which reduces fees and blockchain bloat; cross-chain trades are on-chain.
-* Namecoin atomic name trades are *cryptographically* atomic; a succesful double-spend attack cannot break the atomic property.  Cross-chain trades are only *economically* atomic; an attacker who can successfully double-spend can break the atomic property.
+* Namecoin atomic name trades are *cryptographically* atomic; a successful double-spend attack cannot break the atomic property.  Cross-chain trades are only *economically* atomic; an attacker who can successfully double-spend can break the atomic property.
 * Namecoin atomic name trades have built-in support for auctions (non-interactively, on Layer 2); cross-chain trades do not have any mechanism for this.
 
 ### Is it possible to hide the usage of atomic name trades?  Is that desirable?
