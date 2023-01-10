@@ -12,3 +12,5 @@ Later, I worked on the main tasks, which included determining the IP address and
 While resolving some of the [issues](https://github.com/namecoin/heteronculous-horklump/issues), I am now working on blocking system calls that transfer data to an IP address+port that is not the targeted proxy.
 
 This work was funded by Outreachy under the Tor Project umbrella.
+
+*Publishing of this post was delayed by infrastructure issues on Namecoin Project's end; we apologize for the delay, which was not due to any fault of Robert.*
