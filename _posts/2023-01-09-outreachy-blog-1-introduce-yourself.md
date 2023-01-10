@@ -23,4 +23,4 @@ Finally, I feel Outreachy will give me with beneficial networking chances. I am 
 
 This work was funded by Outreachy under the Tor Project umbrella.
 
-*[Cross-posted from Medium.](https://medium.com/@mindo.robert1/outreachy-blog-1-introduce-yourself-ae45357227)*
+*[Cross-posted from Medium.](https://medium.com/@mindo.robert1/outreachy-blog-1-introduce-yourself-ae45357227)  The cross-posting was delayed by infrastructure issues on Namecoin Project's end; we apologize for the delay, which was not due to any fault of Robert.*
