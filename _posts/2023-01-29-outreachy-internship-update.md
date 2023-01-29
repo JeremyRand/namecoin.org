@@ -11,8 +11,6 @@ Lastly, we are currently in the process of implementing SOCKSification, which in
 
 The program instructions are manipulated using flags through [easyconfig](https://github.com/hlandau/easyconfig/tree/v1.0.18) which enables easy manipulation of arguments. Logging is done using [xlog](https://github.com/hlandau/xlog) which provides different options for logging. [U-root](https://github.com/u-root/u-root/tree/v0.10.0/pkg/strace) was preferred for tracing since it is easier to use.
 
-Suggestions are much welcomed! [Project Repository](https://github.com/namecoin/heteronculous-horklump) & [Project Summary](https://www.namecoin.org/2022/11/29/introducing-intern-robert-nganga.html)
-
-
+Suggestions are much welcomed! [Project Repository](https://github.com/namecoin/heteronculous-horklump) & [Project Summary]({{ "/2022/11/29/introducing-intern-robert-nganga.html" | relative_url }})
 
 This work was funded by [Outreachy](https://www.outreachy.org/) under the Tor Project umbrella.
