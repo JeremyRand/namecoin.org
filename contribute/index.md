@@ -13,7 +13,7 @@ Donations help our developers pay the bills, and sometimes can even enable new d
 
 ## Buy (and wear) merchandise
 
-Our friends at Cypher Market sell [Namecoin-branded merchandise](https://www.cyphermarket.com/namecoin/) (e.g. T-shirts and stickers).  Not only is this a great way to spread the word, but Cypher Market also donates a cut of the profits to support Namecoin development.
+You can buy Namecoin-branded merchandise (e.g. T-shirts and stickers) from our friends at [Cypher Market](https://www.cyphermarket.com/namecoin/) and [TeeSpring](https://namecoin.creator-spring.com/).  Not only is this a great way to spread the word, but a cut of the profits supports Namecoin development.
 
 ## Run a full node
 
