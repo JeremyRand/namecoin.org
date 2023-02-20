@@ -17,7 +17,7 @@ To SOCKSify the program, we intercept the connect syscall and change the target 
 
 SOCKSification occurs in the function [Socksify.](https://github.com/robertmin1/heteronculous-horklump/blob/test-3/main.go#L412) This function allows an application running on a Linux system to use the SOCKS5 protocol to route network traffic through a proxy server.
 
-The function begins by checking whether the "one circuit" configuration option is set. If not, it initializes a set of authentication data and generates a random index to select a username and password pair to use for authentication with the proxy server. All connections done will have different authentication details, this is important in order to prevent vulnerability to a Sybil attack, applications that connect to a P2P network (such as the Bitcoin network) may need to avoid using the same Tor circuit for all connections. This is because a malicious Tor exit relay can then block the application's view of the network.
+The function begins by checking whether the "one circuit" configuration option is set. If not, it initializes a set of authentication data consisting of 10 SOCKS user+pass pairs. Each connection is then assigned to a randomly selected slot from those 10. This is important in order to prevent vulnerability to a Sybil attack. Applications that connect to a P2P network (such as the Bitcoin network) may need to avoid using the same Tor circuit for all connections. Otherwise, a malicious Tor exit relay can block the application's view of the network. Furthermore, using a different Tor circuit for each connection can also be helpful for things like download managers, as it avoids slowdowns caused by an unlucky slow Tor circuit. 
 
 The function then reads the IP address and port number of the address we're diverting from exit_addr, a thread-safe map. The address for each process that requires the SOCKS5 proxy is saved in the map.
 
@@ -25,7 +25,6 @@ The function then opens the file descriptor associated with the program's networ
 
 The NewClient function is called, as well as the client's Dial method. This creates a new client containing details such as authentication credentials and timeout values. The Dial method is then called, which carries out the redirecting. To listen to an existing net.Conn , we are currently utilizing a customized version of SOCKS5.
 
-<ins>Relevant Links</ins>
+### Relevant Links
 
-[Modified SOCKS5 Repository](https://github.com/robertmin1/socks5) We are planning to contribute the changes to the main SOCKS5 repository
-[Current Work In Progress Codebase](https://github.com/robertmin1/heteronculous-horklump/tree/test-3) 
+[SOCKS5 Repository](https://github.com/txthinking/socks5) We are planning to contribute the changes to the main SOCKS5 repository (Allowing the Dial Function to listen to an existing net.Conn file)
