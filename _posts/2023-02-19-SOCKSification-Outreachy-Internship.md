@@ -28,3 +28,7 @@ The NewClient function is called, as well as the client's Dial method. This crea
 ### Relevant Links
 
 [SOCKS5 Repository](https://github.com/txthinking/socks5) We are planning to contribute the changes to the main SOCKS5 repository (Allowing the Dial Function to listen to an existing net.Conn file)
+
+[Heteronculous-horklump Repository](https://github.com/namecoin/heteronculous-horklump): The main codebase.
+
+[Temporary Heteronculous-horklump Repository](https://github.com/robertmin1/heteronculous-horklump): Contains the SOCKSification work in progress, which will be soon be merged upstream.
