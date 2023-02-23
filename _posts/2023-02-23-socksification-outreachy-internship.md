@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Outreachy Internship Progress"
+title: "SOCKSification: Outreachy Internship Progress"
 author: "Robert Nganga"
 tags: [News]
 ---
@@ -32,3 +32,5 @@ The NewClient function is called, as well as the client's Dial method. This crea
 [Heteronculous-horklump Repository](https://github.com/namecoin/heteronculous-horklump): The main codebase.
 
 [Temporary Heteronculous-horklump Repository](https://github.com/robertmin1/heteronculous-horklump): Contains the SOCKSification work in progress, which will be soon be merged upstream.
+
+This work was funded by [Outreachy](https://www.outreachy.org/) under the Tor Project umbrella.
