@@ -6,7 +6,7 @@ tags: [News]
 ---
 
 
-Electrum-NMC has recently undergone significant improvements aimed at refining the user experience and expanding functionality. The most prominent changes involve the introduction of three distinct tabs within the graphical user interface (GUI): Binary, Domain, and ASCII. The Binary tab now serves as a dedicated space for users to interact with the hexadecimal representations of names, providing a standardized and transparent view of binary data. The Domain tab focuses on simplifying interactions by allowing users to employ a simpler format like "name.bit" instead of the original "d/name" format. Meanwhile, the ASCII tab preserves the original format of registration, ensuring compatibility for users who prefer the original format. 
+Electrum-NMC has recently undergone significant improvements aimed at refining the user experience and expanding functionality. The most prominent changes involve the introduction of three distinct tabs within the graphical user interface (GUI): Hex, Domain, and ASCII. The Hex tab now serves as a dedicated space for users to interact with the hexadecimal representations of names, providing a standardized and transparent view of binary data. The Domain tab focuses on simplifying interactions by allowing users to employ a simpler format like "name.bit" instead of the original "d/name" format. Meanwhile, the ASCII tab preserves the original format of registration, ensuring compatibility for users who prefer the original format. 
 
 ## Graceful Handling of Invalid ASCII
 
