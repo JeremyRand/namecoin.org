@@ -78,8 +78,8 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 * [Electrum-NMC v4.0.0b1 for macOS (DMG)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/electrum-nmc-nc4.0.0b1.dmg)
 * [Electrum-NMC v4.0.0b1 for Android/Linux (64-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.1-arm64-v8a-debug.apk) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.1-arm64-v8a-debug.apk.asc))
 * [Electrum-NMC v4.0.0b1 for Android/Linux (32-bit ARM)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.1-armeabi-v7a-debug.apk) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.0b1/Electrum_NMC-4.0.0.1-armeabi-v7a-debug.apk.asc))
-* [Electrum-NMC v4.0.6 source only (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-4.0.6-src.tar.xz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-4.0.6-src.tar.xz.asc))
-* [Electrum-NMC v4.0.6 source only (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-4.0.6-src.tar.gz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-4.0.6-src.tar.gz.asc))
+* [Electrum-NMC v4.0.6 source only (Python tar.xz, best compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-sourceonly-4.0.6.tar.xz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-sourceonly-4.0.6.tar.xz.asc))
+* [Electrum-NMC v4.0.6 source only (Python tar.gz, average compression)]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-sourceonly-4.0.6.tar.gz) | ([Signature]({{ site.files_url }}/files/electrum-nmc/electrum-nmc-4.0.6/Electrum-NMC-sourceonly-4.0.6.tar.gz.asc))
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
