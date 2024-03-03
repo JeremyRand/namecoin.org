@@ -57,6 +57,11 @@ Warnings: Funds are handled by Bountysource (a trusted third party).  Bountysour
 
 ## Tip4Commit Bounties
 
-We are currently looking into Tip4Commit; check back later for updates on this option.
+Tip4Commit can be used to place bounties on commits to certain Namecoin Git repositories. The bounties are placed via Bitcoin. When a commit is merged, Tip4Commit releases the funds to the developer who authored the commit.
 
-<!--Cloudflare (a company described by anonymity researcher Jacob Appelbaum as a global active adversary) wiretaps Tip4Commit traffic, has the capability of injecting malicious changes to the Tip4Commit website, and discriminates against Tor users who try to access Tip4Commit.-->
+The following Namecoin GitHub repositories support placing Tip4Commit bounties:
+
+* [ncdns](https://tip4commit.com/github/namecoin/ncdns)
+* [ncdns Windows installer](https://tip4commit.com/github/namecoin/ncdns-nsis)
+
+Warnings: Funds are handled by Tip4Commit (a trusted third party in unknown jurisdiction). Bitcoin does not provide anonymity for donations, although it may (under some circumstances) provide pseudonymity or location-anonymity. Tip4Commit takes a 1% cut of any donations made via this method. Cloudflare (a potential global active adversary) wiretaps Tip4Commit traffic, has the capability of injecting malicious changes to the Tip4Commit website, and discriminates against Tor users who try to access Tip4Commit.
