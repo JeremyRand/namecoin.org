@@ -33,6 +33,7 @@ ShapeShift can be used to [donate to the Namecoin Marketing and Development Fund
 
 Warnings: Funds are handled by ShapeShift (a trusted third party).  ShapeShift is a registered company under the jurisdiction of Switzerland.  While some of the cryptocurrencies supported by ShapeShift are intended to provide some level of anonymity, the effectiveness of such anonymity features ranges from dubious to unproven.  The cryptocurrencies supported by ShapeShift may (under some circumstances) provide pseudonymity or location-anonymity.  Cloudflare (a company described by anonymity researcher Jacob Appelbaum as a global active adversary) wiretaps ShapeShift traffic, has the capability of injecting malicious changes to the ShapeShift website, and discriminates against Tor users who try to access ShapeShift.  ShapeShift takes a cut of any donations made via this method, which they state "usually falls in the range of about 0.5-1% or so."
 
+<!--
 ## Bountysource Donations
 
 Bountysource can be used to [donate to the Namecoin project](https://salt.bountysource.com/checkout/amount?team=namecoin) via PayPal and credit cards (VISA, MasterCard, and American Express).  Both one-time and monthly-recurring donation options are available.  The Namecoin Bountysource account is operated by Jeremy Rand.
@@ -52,6 +53,7 @@ The following Namecoin GitHub repositories support placing Bountysource bounties
 More GitHub repositories may be added later.
 
 Warnings: Funds are handled by Bountysource (a trusted third party).  Bountysource is a registered company under the jurisdiction of the state of California in the U.S.  PayPal does not provide anonymity for donations, nor does it provide pseudonymity or location-anonymity.  Bitcoin donations using Bountysource are processed by Coinbase, which is not particularly anonymity-friendly.  Bountysource takes a 10% cut of any donations made via this method.
+-->
 
 ## Tip4Commit Bounties
 
