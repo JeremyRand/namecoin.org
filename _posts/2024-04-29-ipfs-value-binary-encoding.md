@@ -12,6 +12,10 @@ Previously, interacting with IPFS required the creation of TXT records and knowl
 
 ![IPFS Images]({{ "/images/screenshots/electrum-nmc/IPFS-GUI-Introduction.png" | relative_url }})
 
+<video controls>
+<source src="{{ site.files_url }}/files/videos/docs/ipfs/brave-ipfs.webm" type="video/webm">
+Demo video of Namecoin + IPFS in Brave.
+</video>
 
 ## Added Option for Value Encoding
 
