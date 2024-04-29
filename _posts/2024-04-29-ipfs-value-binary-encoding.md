@@ -5,6 +5,7 @@ author: Robert Nganga
 tags: [News]
 ---
 
+Several new Electrum-NMC enhancements have been added.
 
 ## The Dedicated GUI for IPFS & IPNS
 
