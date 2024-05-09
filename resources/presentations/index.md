@@ -5,6 +5,10 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## Global Conference on Educational Robotics 2022
+
+[Video, slides, and paper are here.]({{ "/2024/05/09/gcer-2022-video.html" | relative_url }})
+
 ## Grayhat 2020
 
 [Video and slides are here.]({{ "/2021/01/01/namecoin-at-grayhat-2020-monero-village.html" | relative_url }})
