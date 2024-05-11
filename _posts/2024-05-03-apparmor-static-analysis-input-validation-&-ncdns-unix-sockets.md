@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Enhancing Security and Efficiency"
+title: "Electrum-NMC AppArmor, Static Analysis, and Input Validation + ncdns Unix Sockets"
 author: Robert Nganga
 tags: [News]
 ---
 
-Several new Electrum-NMC & Ncdns enhancements have been added.
+Several new Electrum-NMC & ncdns enhancements have been added.
 
 ## AppArmor Profiles for Electrum-NMC
 
@@ -14,7 +14,7 @@ By using AppArmor profiles, we can ensure that Electrum-NMC operates within a pr
 The profiles are provided in the contrib folder. For more information on AppArmor, [visit their website.](https://ubuntu.com/tutorials/beginning-apparmor-profile-development#1-overview)
 
 ## Input Validation in Electrum-NMC's DNS Builder GUI
-When passing data to the DNS Builder, certain validations are performed to offer hints and warnings about invalid data or outdated methods (such as algorithms). 
+When passing data to the DNS Builder, certain validations are performed to offer hints and warnings about invalid data or outdated methods (such as algorithms).
 
 ![IP Validation]({{ "/images/screenshots/electrum-nmc/DNS-Builder-IP-Validation-2024.png" | relative_url }})
 
@@ -24,11 +24,11 @@ When passing data to the DNS Builder, certain validations are performed to offer
 
 We run static analysis using tools such as Flake8, MyPy, and Pylint, comparing results with Electrum (Bitcoin version) to focus on Electrum-NMC-specific issues. This process, integrated into our CI, helps catch bugs early. Looking to contribute? Static analysis issues provide good first-time issues!
 
-## Enabling Ncdns Perfrom RPC Requests via Unix Domain Sockets
+## Enabling ncdns to Perform RPC Requests via Unix Domain Sockets
 
 Enabling ncdns to perform RPC requests via Unix domain sockets offers a more secure communication method than TCP/IP. To utilize a Unix domain socket, specify it in the `namecoinrpcaddress` field as `unix:// + "your unix socket path"` such as `unix:///tmp/test.XXXX`
 
-Since Namecoin Core supports only TCP/IP, we'll redirect RPC requests from the Unix Socket to Bitcoin Core. This can be achieved using a commnad such as socat command:
+Since Namecoin Core supports only TCP/IP, we'll redirect RPC requests from the Unix Socket to Namecoin Core. This can be achieved using a commnad such as socat command:
 ```
 socat -d UNIX-LISTEN:"my-unix-socket-path",fork TCP:"host-address"
 socat -d UNIX-LISTEN:/tmp/test.XXXX,fork TCP:localhost:8332
