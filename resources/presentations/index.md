@@ -7,7 +7,7 @@ title: Presentations
 
 ## GPN 22 / MoneroKon 4
 
-[Videos are here.]({{ "/2024/07/16/tor-2024-gpn-22-monerokon-4-summary.html" | relative_url }})
+[Videos are here.]({{ "/2024/07/24/tor-2024-gpn-22-monerokon-4-summary.html" | relative_url }})
 
 ## Global Conference on Educational Robotics 2022
 
