@@ -21,7 +21,7 @@ Topics to be covered include:
 * Why isn't unauthenticated TLS (e.g. self-signed certificates) good enough for onion services?
 * How can we authenticate a TLS certificate for a .onion domain without relying on public CA's like Let's Encrypt or any other trusted third parties? (No we're not using a blockchain.)
 * How can we teach standard (unmodified) web browsers like Firefox to apply different certificate validation logic for .onion certificates?
-* How can we teach standard (unmodified) web browsers like Firefox to validate certificates using typically-unsupported elliptic curves like Ed25519 (which Tor uses)?*
+* How can we teach standard (unmodified) web browsers like Firefox to validate certificates using typically-unsupported elliptic curves like Ed25519 (which Tor uses)?
 
 [Video is here.](https://media.ccc.de/v/gpn22-469-self-authenticating-tls-certificates-for-tor-onion-services)
 
