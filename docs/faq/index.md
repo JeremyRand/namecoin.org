@@ -486,13 +486,13 @@ they are or who they are.  Now I go to a court system.  I get some legal opinion
 Low-quality video of this exchange:
 
 <video controls>
-<source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=42:42,43:38" | relative_url }}" type="video/webm">
+<source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=42:42,43:38" type="video/webm">
 </video>
 
 High-quality video of this exchange:
 
 <video controls>
-<source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=51:39,52:34" | relative_url }}" type="video/webm">
+<source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=51:39,52:34" type="video/webm">
 </video>
 
 Namecoin does not implement such a backdoor, for the reasons explained in [Why doesn't Namecoin implement a backdoor?](#why-doesnt-namecoin-implement-a-backdoor).
@@ -526,13 +526,13 @@ The ENS developers appear to be trying to give the impression that they removed 
     Low-quality video of this exchange:
 
     <video controls>
-    <source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=39:25,40:33" | relative_url }}" type="video/webm">
+    <source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=39:25,40:33" type="video/webm">
     </video>
 
     High-quality video of this exchange:
 
     <video controls>
-    <source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=48:21,49:29" | relative_url }}" type="video/webm">
+    <source src="{{ site.files_url }}/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=48:21,49:29" type="video/webm">
     </video>
 
     The fact that ENS considered the primary obstacle to gTLD registration to be the reservedness of `.ETH` as a country code, rather than the trademark seizure policy, suggests that the ENS developers are not opposed to trademark seizures, which their backdoor enables.
