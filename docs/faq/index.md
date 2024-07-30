@@ -526,13 +526,13 @@ The ENS developers appear to be trying to give the impression that they removed 
     Low-quality video of this exchange:
 
     <video controls>
-    <source src="https://www.namecoin.org/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=39:25,40:33" type="video/webm">
+    <source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-LQ-Video-with-Slides.webm#t=39:25,40:33" | relative_url }}" type="video/webm">
     </video>
 
     High-quality video of this exchange:
 
     <video controls>
-    <source src="https://www.namecoin.org/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=48:21,49:29" type="video/webm">
+    <source src="{{ "/files/videos/icann-60/ICANN-60-Joint-Meeting-ICANN-Board-and-Technical-Experts-Group-HQ-Video-Only.webm#t=48:21,49:29" | relative_url }}" type="video/webm">
     </video>
 
     The fact that ENS considered the primary obstacle to gTLD registration to be the reservedness of `.ETH` as a country code, rather than the trademark seizure policy, suggests that the ENS developers are not opposed to trademark seizures, which their backdoor enables.
