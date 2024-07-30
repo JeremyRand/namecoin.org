@@ -595,7 +595,7 @@ One of the ENS developers (Virgil Griffith) also is known for [running wiretap i
 
 In addition to the ENS-specific concerns, ENS also inherits [the problems of Ethereum](#why-isnt-namecoin-implemented-as-an-ethereum-contract), on which they are dependent.
 
-[Source material for the ICANN60 session is here.]({{{ "/2020/04/30/icann-60-teg-recordings.html" | relative_url }})
+[Source material for the ICANN60 session is here.]({{ "/2020/04/30/icann-60-teg-recordings.html" | relative_url }})
 
 ### How does Namecoin compare to Handshake?
 
