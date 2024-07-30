@@ -579,7 +579,7 @@ More generally, there is a disturbing attitude of hubris by the ENS developers, 
 
 > there’s just about no way ENS can go wrong. It can’t be hacked
 
-Hmm, where have we heard this kind of marketing language before...?
+Hmm, where have we heard [this kind of marketing language](https://web.archive.org/web/20180725131926/https://twitter.com/officialmcafee/status/1021805449681817600) before...?
 
 > my Bitfi wallet is truly the world's first unhackable device
 > 
