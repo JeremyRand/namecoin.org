@@ -18,10 +18,10 @@ title: Namecoin
 ## What can Namecoin be used for?
 
 * Protect free-speech rights online by making the web more resistant to censorship.
-* Attach identity information such as GPG and OTR keys and email, Bitcoin, and Bitmessage addresses to an identity of your choice.
 * Human-meaningful Tor .onion domains.
 * Decentralized TLS (HTTPS) certificate validation, backed by blockchain consensus.
 * Access websites using the .bit top-level domain.
+* Attach identity information such as GPG and OTR keys and email, Bitcoin, and Bitmessage addresses to an identity of your choice.
 
 </div>
 
