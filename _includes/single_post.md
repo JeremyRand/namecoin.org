@@ -7,6 +7,8 @@
 
 <article class="post-content">
 {{ post.content }}
+
+*If you liked this article, maybe consider [donating]({{ "/donate/" | relative_url }}), [buying a t-shirt](https://namecoin.creator-spring.com/), or [contributing in some other way]({{ "/contribute/" | relative_url }}). Funding from average users like you helps keep us independent. Thanks for your support!*
 </article>
 
 </div>
