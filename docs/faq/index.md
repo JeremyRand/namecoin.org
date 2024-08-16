@@ -80,6 +80,12 @@ Namecoin addresses follow the same format as Bitcoin addresses, but with differe
 * Old-style P2SH addresses begin with `6`.
 * Even-older-style P2PKH addresses begin with `N` or `M`.
 
+### What abbreviations are used for Namecoin?
+
+* For application-agnostic software (e.g. wallets) that is forked from Bitcoin-specific software, `-NMC` is typically suffixed (e.g. Electrum-NMC).
+* For application-specific software (e.g. DNS or TLS tools), `nc` is typically prefixed (e.g. ncdns).
+* For the currency, either `NMC` or `ℕ` (Unicode "DOUBLE-STRUCK CAPITAL N" / `U+2115`) can be used as an abbreviation.
+
 ## Design 
 
 ### What is a namespace? 
@@ -358,6 +364,18 @@ Let's Encrypt's services are entirely gratis.  For Namecoin, the pricing is more
 
 TLS certificates issued by Let's Encrypt will work in most TLS clients (without security warnings) without any changes from defaults.  In contrast, Namecoin TLS certificates will only work (without security warnings) if Namecoin is installed.
 
+### How does Namecoin compare to DANE?
+
+* Both Namecoin and DANE protect from MITM and censorship attacks by public certificate authorities.
+* Both Namecoin and DANE protect from MITM attacks by DNS resolvers.
+* Namecoin additionally protects from MITM and censorship attacks by DNS registrars, DNS registries, and the ICANN root.
+* In terms of compatibility with commonly-used TLS client software, Namecoin's advantages over DANE are similar to Namecoin's advantages over [Handshake](#how-does-namecoin-compare-to-handshake).
+
+### How does Namecoin compare to Certificate Transparency (CT)?
+
+* CT makes misissued certificates detectable after-the-fact, but does not prevent them from being accepted by TLS clients. In contrast, Namecoin prevents misissued certificates from being accepted by TLS clients in the first place.
+* CT does not protect against censorship attacks by public certificate authorities; Namecoin does.
+
 ### How does Namecoin's Encaya TLS compare to Let's DANE?
 
 In short, Namecoin's Encaya design optimizes for minimal attack surface and maximal scalability, while Let's DANE optimizes for maximal compatibility.  For more details, see this comparison table:
@@ -545,6 +563,14 @@ A secondary backdoor exists in the `.eth` registrar smart contract.  [As ENS dev
 
 Of course, this completely glosses over the fact that "changing the rules for registration and renewal of names" still permits a massive amount of mischief by the backdoor holders.
 
+[According to EasyDNS CEO Mark Jeftovic](https://web.archive.org/web/20240520180852/https://easydns.com/blog/2017/09/19/dns-on-blockchain-ethereum-name-service-ens-vrm-and-governance-oh-my/), the consensus of the ENS developers in private conversations (which confirms why they created the backdoor) is:
+
+> there needs to be a mechanism for when a domain has to come down.
+
+> there was always the need for “the handbrake” – a big lever that “stops the train” when things go terribly wrong.
+
+> Hard forking the blockchain every time you needed to take down a domain was not practical.
+
 The ENS developers have also given dangerous security advice to Tor users, in an article entitled ["How Secure Is Using ENS for Tor .Onion Addresses?"](https://web.archive.org/web/20220528075149/https://medium.com/the-ethereum-name-service/how-secure-is-using-ens-for-tor-onion-addresses-85b22f44b6e0)  For example, the ENS developers advertise in that article that:
 
 > Both the logic of the naming service and all records are stored on Ethereum. ENS has no servers.
@@ -656,7 +682,7 @@ On the other hand, Symas Corporation, which is [a sponsor of Monero](https://www
 
 ### How does Namecoin compare to OpenTimestamps?
 
-For proof-of-existence timestamping purposes, OpenTimestamps and Namecoin offer roughly equivalent security once their proofs have been committed to in a Bitcoin transaction, and OpenTimestamps provides this security with much better scalability (in terms of transaction fees and blockchain storage used).  For such use cases, OpenTimestamps is preferable, as it conserves Namecoin blockchain storage for use cases (such as DNS) that require that storage.
+Namecoin writes the hash of the timestamped file directly to the blockchain, while OpenTimestamps uses Merkle trees to commit to a large number of timestamped files in a single transaction. For proof-of-existence timestamping purposes, OpenTimestamps and Namecoin offer roughly equivalent security once their proofs have been committed to in a Bitcoin transaction. However, OpenTimestamps's usage of Merkle trees allows it to provide this security with much better scalability (in terms of transaction fees and blockchain storage used) -- so much so that OpenTimestamps doesn't need to charge fees to users, and is able to fully fund its Bitcoin transaction fees via donations. For such use cases, OpenTimestamps is preferable, as it conserves Namecoin blockchain storage for use cases (such as DNS) that require that storage, and avoids the UX and privacy issues of users having to pay fees to timestamp a file.
 
 However, OpenTimestamps does not provide exclusivity proofs as Namecoin does.  For example, Alice can commit to both a "Heads" and "Tails" coin flip result in OpenTimestamps, and selectively reveal whichever commitment is to her benefit later, which might constitute fraud under some situations.  Alice would not be able to do this type of fraud in Namecoin, because Namecoin guarantees not just that the commitment *existed* (as OpenTimestamps does) but also that the commitment is *exclusive* (i.e. that no other commitments were covertly made).  For use cases that require exclusivity proofs, Namecoin may be preferable over OpenTimestamps, subject to other concerns such as scalability.
 
