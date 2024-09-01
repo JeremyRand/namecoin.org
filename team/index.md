@@ -39,6 +39,11 @@ Cwtch: `degdcodd2fhlpv6so3ewyh2dcsyg4732ujauuzx63t7qlavumnyt4uyd`
 **Lead C++ GUI Engineer** <br>
 Brandon is a hacker with a background in independent journalism and machine learning who works on Namecoin-Qt. In addition to his work on Namecoin Core, he maintains a Namecoin port of Bitcore, Bitcore-Namecoin. When he's not on his computer he's probably skateboarding.
 
+## Hugo Landau
+
+**Lead Networking Engineer** <br>
+Hugo is the creator of ncdns, the core middleware component for Namecoin DNS resolution, as well as the principal author of the Namecoin Domain Names specification. He is also the author of the madns DNS library, the nccald Namecoin calendar daemon, and the winsvcwrap Windows service supervision tool. Besides Namecoin, his other work includes the ACME client acmetool and firmware reverse engineering for the purposes of creating owner-controlled hardware free of firmware blobs, such as for the POWER9 Talos II. He is also an OpenSSL committer.
+
 ## Joseph Bisch
 
 **Lead Porting & Reproducible Build Engineer** <br>
@@ -81,7 +86,7 @@ Somewhat beta-tests our releases, helping catch bugs that our developers and CI 
 
 ## Robert Nganga
 
-**Proxy Leak Mitigation Intern** <br>
+**Proxy Leak Mitigation Specialist** <br>
 Robert works on tools for detecting and preventing proxy leaks in the Namecoin and Tor ecosystems.
 
 ## Anonymous Developers
