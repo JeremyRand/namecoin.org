@@ -89,6 +89,11 @@ Somewhat beta-tests our releases, helping catch bugs that our developers and CI 
 **Proxy Leak Mitigation Specialist** <br>
 Robert works on tools for detecting and preventing proxy leaks in the Namecoin and Tor ecosystems.
 
+## Rose Turing
+
+**C++ GUI Developer & Threat Modeling Specialist** <br>
+Rose works on the Namecoin Core GUI and related codebases. She also helps organize hacker conference events, and optimizes Namecoin for users with interesting threat models.
+
 ## Anonymous Developers
 
 We have several developers who prefer to remain anonymous; their anonymity does not reflect the incredible impact their contributions have made to Namecoin. We are deeply grateful for their work.
