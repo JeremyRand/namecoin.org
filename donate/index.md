@@ -29,7 +29,7 @@ Warnings: Bitcoin does not provide anonymity for donations, although it may (und
 
 ## ShapeShift Cryptocurrency Donations
 
-ShapeShift can be used to [donate to the Namecoin developers](https://www.shapeshift.io/) (operated by Phelix) using many cryptocurrencies other than Bitcoin and Namecoin.  Set the "Receive" address to the Bitcoin address of the Namecoin developers (see above).
+ShapeShift can be used to [donate to the Namecoin developers](https://www.shapeshift.io/) using many cryptocurrencies other than Bitcoin and Namecoin.  Set the "Receive" address to the Bitcoin address of the Namecoin developers (see above).
 
 Warnings: Funds are handled by ShapeShift (a trusted third party).  ShapeShift is a registered company under the jurisdiction of Switzerland.  While some of the cryptocurrencies supported by ShapeShift are intended to provide some level of anonymity, the effectiveness of such anonymity features ranges from dubious to unproven.  The cryptocurrencies supported by ShapeShift may (under some circumstances) provide pseudonymity or location-anonymity.  Cloudflare (a company described by anonymity researcher Jacob Appelbaum as a global active adversary) wiretaps ShapeShift traffic, has the capability of injecting malicious changes to the ShapeShift website, and discriminates against Tor users who try to access ShapeShift.  ShapeShift takes a cut of any donations made via this method, which they state "usually falls in the range of about 0.5-1% or so."
 
