@@ -30,7 +30,6 @@ OpenPGP (Jekyll signer): `9405 8478 534E 143D 1E78  A6BB 5E23 7E1F 50A5 A878` [(
 OpenPGP (RBM signer): `B18A 917F B906 3B6B 0F13  2374 8298 5AFE 22E0 F366` [(download public key)]({{ "/JeremyRand-RBM.asc" | relative_url }})<br>
 OpenPGP (primary) (superseded 2021): `5174 0B7C 732D 572A 3140 4010 6605 55E1 F8F7 BF85` [(download public key)]({{ "/JeremyRand.asc" | relative_url }})<br>
 OpenPGP (Git signer) (superseded 2021): `0729 7809 7FC1 25E6 685B CE40 FD75 50C2 EB80 0711` [(download public key)]({{ "/JeremyRand-Git.asc" | relative_url }})<br>
-Ricochet: `ricochet:ujb6mp55tlzfpfdi`<br>
 Ricochet-Refresh: `ricochet:mjacuh3sbb4sg352yxwmtjwxvnbkdao6eooedlxhywbqon5ipscxasad`<br>
 Cwtch: `degdcodd2fhlpv6so3ewyh2dcsyg4732ujauuzx63t7qlavumnyt4uyd`
 
