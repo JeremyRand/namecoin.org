@@ -780,7 +780,7 @@ In the meantime, practical advice is that if you want a name but it's squatted, 
 
 Like Bitcoin, issuing Namecoin transactions is not automatically anonymous.  A thorough description of Bitcoin's poor anonymity properties is outside the scope of this FAQ.
 
-Both Namecoin Core and Electrum-NMC support resolving Namecoin names anonymously.
+Both Namecoin Core and Electrum-NMC support resolving Namecoin names anonymously if Tor is enabled.
 
 To register names anonymously, see our [anonymous registration]({{ "/docs/name-owners/anonymity/" | relative_url }}) documentation.
 
