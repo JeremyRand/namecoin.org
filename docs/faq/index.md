@@ -776,6 +776,10 @@ On July 30, 2019, Jeremy [published]({{ "/2019/07/30/opennic-does-right-thing-sh
 
 There is currently no active relationship between Namecoin and OpenNIC, but some Namecoin developers (including Jeremy) continue to recommend OpenNIC to users who want a centralized naming system that isn't run by ICANN.
 
+### Is Namecoin associated with any memecoins?
+
+Yes, Namecoin collaborates with Dogecoin on areas of common interest from time to time (mostly related to sidechains). Any other memecoins claiming association with us are scams trying to part you from your money.
+
 ## Weaknesses
 
 ### How easy is it for names to be stolen?  What can be done if it happens?
