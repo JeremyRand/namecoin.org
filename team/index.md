@@ -105,6 +105,10 @@ Alice works on anonymity research involving machine learning. She has a backgrou
 
 We have several developers who prefer to remain anonymous; their anonymity does not reflect the incredible impact their contributions have made to Namecoin. We are deeply grateful for their work.
 
+# Representation
+
+The developers who are authorized to issue statements on behalf of The Namecoin Project are Daniel Kraft and Jeremy Rand. Statements issued by Namecoin developers, if not stated otherwise, speak only for themselves, not for the project. If in doubt about the authenticity of any Namecoin-related applications, projects, or communications, please contact Daniel or Jeremy for clarification.
+
 # Former Developers
 
 We have several developers who are no longer active in the community, listed below.
