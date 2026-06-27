@@ -65,6 +65,34 @@ Don't suggest this publicly; otherwise someone else could frontrun them and take
 
 Yes, you need TLS (or some other transport security layer, e.g. SSH) in order to avoid vulnerability to eavesdropping and man-in-the-middle (MITM) attacks; Namecoin doesn't magically remove this requirement. The only protection that Namecoin grants you is that if you use TLS, and the certificate doesn't match the blockchain, you will get a certificate warning (even if a public CA is participating in the attack). If you do not use TLS, or bypass a certificate warning, Namecoin cannot protect you.
 
+### Do I need to use TLS with a .bit domain that points to a Tor onion service or I2P eepsite?
+
+Yes. There are a variety of scenarios where TLS is still important for Tor and I2P services:
+
+1. The application and the Tor daemon may be in different, mutually sandboxed trust domains:
+    a. In Whonix, a compromised Gateway could eavesdrop or MITM traffic; TLS prevents this (since the attacker would also have to compromise the Workstation, which is isolated by the hypervisor).
+    b. In Android, a compromised Orbot could eavesdrop or MITM traffic; TLS prevents this (since the attacker would also have to compromise the app, which is isolated by Android's app isolation).
+    c. In Debian, a compromised system Tor daemon could eavesdrop or MITM traffic; TLS prevents this (since the attacker would also have to compromise the primary user account, which is isolated by Tor running as a sandboxed service).
+2. The application and the Tor daemon may be connected via an insecure network path:
+    a. Many large onion services that are also available over clearnet run their HTTP daemons and their Tor daemons on separate cloud machines on different IP's; TLS prevents a compromised network path from eavesdropping or MITMing traffic.
+    b. Some users connect to a Tor daemon that's running on a WiFi router or an SBC; TLS prevents an attacker on the same WiFi network from eavesdropping or MITMing traffic.
+3. The Tor daemon may be operated by a third party:
+    a. For Tor2Web inproxy environments, a malicious Tor2Web operator could eavesdrop or MITM traffic; TLS prevents this (reducing the risk to a deanonymization hazard).
+    b. For [StormyCloud's I2P to onion exit](https://www.stormycloud.org/i2p/), StormyCloud could eavesdrop or MITM traffic; TLS prevents this (making such usage reasonably safe, even against deanonymization if you're comfortable with I2P's threat model for anonymity).
+4. TLS has some security features that onion services don't have:
+    a. TLS supports ML-KEM (post-quantum key agreement) [since 2024 October](https://www.firefox.com/en-US/firefox/132.0/releasenotes/?redirect_source=mozilla-org); onion services still do not support end-to-end post-quantum key agreement (though they do support *link-layer* ML-KEM [since 2025 June](https://forum.torproject.org/t/stable-release-0-4-8-17/19681), which is a different thing). TLS therefore provides additional security against "store now, decrypt later" quantum attacks.
+    b. TLS supports ML-DSA (post-quantum certificates) [since 2026 February](https://www.redhat.com/en/blog/whats-new-post-quantum-cryptography-rhel-101); onion services and I2P services still do not support ML-DSA. TLS therefore provides additional security against MITM quantum attacks.
+    c. TLS supports client authentication; onion services do not (though they do support client *authorization*, which is a different thing). TLS therefore provides additional security if the client needs to authenticate to the server.
+5. TLS provides defense in depth in case of a vulnerability in Tor or I2P. For example, onion services with TLS were immune to this Tor bug from 2026 June: [race condition lets rendezvous point mitm onion service](https://gitlab.torproject.org/tpo/core/tor/-/work_items/41297).
+6. Many applications expect TLS (for example, web browsers restrict features such as microphone and camera when not running over TLS). Patching them to not require TLS when running over an onion service or eepsite introduces complexity in security-critical code paths (especially in the case of the `.bit` eTLD, whose status as clearnet or onion/eepsite is not obvious without querying the Namecoin blockchain); always using TLS avoids the need to patch applications.
+
+Even if some of these scenarios do not apply to *your endpoint*, you probably have no way to know whether they apply to *the other endpoint* (e.g. even if you don't run Whonix on your web server, some of your website's users might). Therefore, it is best to assume that TLS benefits you.
+
+Some caveats might apply to TLS's benefits:
+
+1. A TLS stack might expose the application to additional attack surface, e.g. Heartbleed. Typically the right way to mitigate this is to write applications in a memory-safe language. (This caveat doesn't apply to applications that already use TLS for clearnet traffic, e.g. web browsers.)
+2. The TLS protocol handshake might expose the application to fingerprinting. In many cases, such as web browsers, different applications can already be fingerprinted in other ways. (This caveat doesn't apply to protocols that only have one client implementation and one server implementation.)
+
 ### Do I have to pay renewal fees? 
 
 Other than the standard transaction fee, not at the moment.  This might change in the future, to improve economic incentives.
