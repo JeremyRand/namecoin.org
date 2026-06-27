@@ -16,7 +16,7 @@ The Namecoin software is used to register names and store associated values in t
 
 ### Do I need to back up my wallet?
 
-If you're using Namecoin to register or otherwise own names, or to transfer namecoins, then you do need to periodically back up your wallet.  Like Bitcoin, your wallet's keys are located in your `wallet.dat` file.  You should encrypt this file by going to `Settings` > `Encrypt Wallet` and making a backup thereafter. Close the Namecoin client and make a backup of your `wallet.dat` file in your Namecoin profile folder.  (On GNU/Linux, this is usually `~/.namecoin/`; on Windows, it is usually `C:\Users\<Your Username>\AppData\Roaming\Namecoin\`).  It is currently recommended to back up more often than every 100 transactions (including both currency and name transactions).
+If you're using Namecoin to register or otherwise own names, or to transfer namecoins, then you do need to back up your wallet. The procedure is equivalent to upstream Bitcoin Core and Electrum; see their documentation for details.
 
 If you are only using Namecoin to look up names (e.g. browsing `.bit` domains), then you do not need to encrypt or back up your wallet.
 
