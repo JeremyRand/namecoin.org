@@ -780,6 +780,12 @@ There is currently no active relationship between Namecoin and OpenNIC, but some
 
 Yes, Namecoin collaborates with Dogecoin on areas of common interest from time to time (mostly related to sidechains). Any other memecoins claiming association with us are scams trying to part you from your money.
 
+### Do statements by Namecoin represent Namecoin's funders?
+
+No, our funders speak for themselves. They do not necessarily agree with us on anything, besides Namecoin being a worthwhile project to fund. It is more likely than not that all of them disagree with us about at least something.
+
+While we have turned down funding in the past because it had ethically problematic conditions attached to it, we have never turned down funding because we disagreed with a funder's overall goals. Hence, it should not be inferred that our choice to accept funding from someone means that we agree with them, either.
+
 ## Weaknesses
 
 ### How easy is it for names to be stolen?  What can be done if it happens?
