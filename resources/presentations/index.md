@@ -5,6 +5,10 @@ title: Presentations
 
 {::options parse_block_html="true" /}
 
+## MoneroKon 5
+
+[Video is here.]({{ "/2026/07/24/monerokon-5-summary.html" | relative_url }})
+
 ## Global Conference on Educational Robotics 2025
 
 [Video, slides, and paper are here.]({{ "/2025/09/26/gcer-2025.html" | relative_url }})
