@@ -7,7 +7,7 @@ title: Presentations
 
 ## MoneroKon 5
 
-[Video is here.]({{ "/2026/07/24/monerokon-5-summary.html" | relative_url }})
+[Video is here.]({{ "/2026/08/17/monerokon-5-summary.html" | relative_url }})
 
 ## Global Conference on Educational Robotics 2025
 
