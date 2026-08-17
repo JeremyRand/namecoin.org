@@ -9,7 +9,7 @@ As was [previously announced]({{ "/2025/06/15/monerokon-5.html" | relative_url }
 
 MoneroKon's official recording is below:
 
-## MoneroKon 5: SocksTrace: A Proxy Leak Detector for Anonymity-Focused Network Applications
+## SocksTrace: A Proxy Leak Detector for Anonymity-Focused Network Applications
 
 Speaker: Robert Nganga (Jeremy Rand filling in)
 
